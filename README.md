@@ -8,8 +8,8 @@ Reference from paper [ContrXT: Generating contrastive explanations from any text
 
 ```
 
-2. Run script code
+### Run demo
 
 ```sh
-
+sh scripts/demo/demo.sh
 ```
