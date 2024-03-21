@@ -12,4 +12,6 @@ Reference from paper [ContrXT: Generating contrastive explanations from any text
 
 ```sh
 sh scripts/demo/demo.sh
+
+python scripts\demo\demo.py
 ```
