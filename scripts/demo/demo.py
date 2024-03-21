@@ -120,6 +120,7 @@ if __name__ == '__main__':
         save_surrogates = True,
         save_bdds = True
     )
+    exit(123)
 
     print("##### Step 1: Trace #####")
     exp.run_trace()
