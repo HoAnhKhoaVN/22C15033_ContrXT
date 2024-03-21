@@ -1,0 +1,17 @@
+colorama
+graphviz
+joblib
+numpy
+pandas
+pydot
+pyparsing
+python-dateutil
+pytz
+scikit-learn
+scipy
+six
+stopit
+threadpoolctl
+tqdm
+pyeda
+apyori
