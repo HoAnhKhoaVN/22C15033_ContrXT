@@ -54,6 +54,27 @@ class DataManager():
             
         s = ' '.join(s_complete).title().replace('_', '')
         return s
+    
+    def filter_classes(
+        self,
+        classes: List[Text]
+    )-> None:
+        """Filter the dataframe categories with a list of classes.
+
+        Args:
+            classes (List[Text]): List of allowed classes.
+        """
+        # region 1: Get classes
+        self.classes = classes
+        self.classes.sort
+
+        # endregion
+
+        # region 2: Filter the class in dataframe
+        self.df = self.df[self.df['Y_predicted'].isin(values= self.classes)]
+
+        # endregion
+
 
 
 if __name__ == '__main__':
