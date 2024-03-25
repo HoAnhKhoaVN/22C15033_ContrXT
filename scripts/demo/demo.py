@@ -96,8 +96,8 @@ def simple_classifier(
     predicted_labels_t1 = [class_names[i] for i in prediction_1]
     predicted_labels_t2 = [class_names[i] for i in prediction_2]
 
-    print(f'predicted_labels_t1 : {predicted_labels_t1}')
-    print(f'predicted_labels_t2 : {predicted_labels_t2}')
+    print(f'predicted_labels_t1 : {predicted_labels_t1[:3]}...')
+    print(f'predicted_labels_t2 : {predicted_labels_t2[:3]}...')
     # endregion Get model predictions
 
     return X_t1, X_t2, predicted_labels_t1, predicted_labels_t2
@@ -115,8 +115,8 @@ if __name__ == '__main__':
         predicted_labels_t1,
         X_t2,
         predicted_labels_t2,
-        hyperamaters_selection = True,
-        save_path = 'results/demo_1'
+        hyperparamaters_selection= True,
+        save_path = 'results/demo_1',
         save_surrogates = True,
         save_bdds = True
     )
