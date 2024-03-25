@@ -76,6 +76,14 @@ class DataManager():
 
         # endregion
 
+    @staticmethod
+    def check_column_names(s: Text)-> Text:
+        s = str(s)
+        s = s.replace('/', '').replace(' ', '_').replace('-', '_')
+        s = s.replace('?', 'unknown').replace('(', '').replace(')', '')
+        s = ''.join([x.title() for x in s.split('_')])
+        return s
+
 
 
 if __name__ == '__main__':

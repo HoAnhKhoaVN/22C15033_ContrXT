@@ -14,7 +14,7 @@ class ContrXT(object):
         X_t2: pd.Series,
         predicted_labels_t2: List[Text],
         data_type: Text = 'text',
-        hyperparamaters_selection : bool = True,
+        hyperparameters_selection : bool = True,
         log_level = logging.INFO,
         save_path: Text = 'results',
         graphviz_path : Text = 'C:/Program Files (x86)/Graphviz2.38/bin',
@@ -23,7 +23,7 @@ class ContrXT(object):
         save_csvs : bool = True,
         save_bdds : bool = False
     ) -> None:
-        self.hyperparamaters_selection = hyperparamaters_selection
+        self.hyperparameters_selection = hyperparameters_selection
         self.log_level = log_level
         self.save_path = save_path
         self.graphviz_path = graphviz_path
@@ -62,7 +62,7 @@ class ContrXT(object):
         self.trace = Trace(
             self.data_manager,
             log_level = self.log_level,
-            hyperparamaters_selection = self.hyperparamaters_selection,
+            hyperparameters_selection= self.hyperparameters_selection,
             save_path = self.save_path,
             surrogate_type = self.surrogate_type,
             save_surrogates = self.save_surrogates,
