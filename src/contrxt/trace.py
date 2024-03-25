@@ -1,6 +1,7 @@
 
 
 
+from collections import defaultdict
 import logging
 import os
 from typing import Text
@@ -58,7 +59,9 @@ class Trace(object):
         self.hyperparameters_selection = hyperparameters_selection
 
         self._assign_classes()
-        
+        self._initialize_hyperparamaters()
+        self._initialize_result_dicts()
+ 
     def _assign_classes(self)->None:
         """Get list of common classes.
         """
@@ -75,4 +78,57 @@ class Trace(object):
         self.data_manager['time_1'].filter_classes(self.classes)
         self.data_manager['time_2'].filter_classes(self.classes)
         # endregion
+
+    def _initialize_result_dicts(self)->None:
+        """Initialize result dictionaries.
+        """
+        self.bdds = {'time_1': {}, 'time_2': {}}
+        self.paths = {'time_1': {}, 'time_2': {}}
+        self.times = {'time_1': {}, 'time_2': {}}
+        self.fidelities = {'time_1': {}, 'time_2': {}}
+
+    def _initialize_hyperparamaters(self)->None:
+        """Initialize hyperparamaters dictionary.
+        """
+        if self.surrogate_type == 'fair':
+            self.hyperparameters = {
+                'time_1': defaultdict(
+                    lambda : {
+                        'max_depth': 5,
+                        'min_samples_split': 0.02,
+                        'predict_threshold': 0.5,
+                        'sensitive_class': None,
+                        'sensitive_feature': None
+                    }
+                ),
+                'time_2': defaultdict(
+                    lambda : {
+                        'max_depth': 5,
+                        'min_samples_split': 0.02,
+                        'predict_threshold': 0.5,
+                        'sensitive_class': None,
+                        'sensitive_feature': None
+                    }
+                )
+            } 
+
+        else: # sklearn
+            self.hyperparameters = {
+                'time_1': defaultdict(
+                    lambda : {
+                        'max_depth': 5,
+                        'min_samples_split': 0.02,
+                        'criterion': 'gini',
+                        'min_samples_leaf': 0.01
+                    }
+                ),
+                'time_2': defaultdict(
+                    lambda : {
+                        'max_depth': 5,
+                        'min_samples_split': 0.02,
+                        'criterion': 'gini',
+                        'min_samples_leaf': 0.01
+                    }
+                )
+            } 
 
