@@ -7,8 +7,8 @@ import os
 from typing import Text
 
 import numpy as np
-from contrxt.data.data_manager import DataManager
-from contrxt.utils.logger import build_logger
+from src.contrxt.data.data_manager import DataManager
+from src.contrxt.utils.logger import build_logger
 
 
 class Trace(object):
