@@ -37,7 +37,8 @@ class DataManager():
             })
         self.classes = self.Y_predicted.unique().astype('str')
         self.classes.sort()
-
+    
+    @staticmethod
     def check_var_names(s: Text)->Text:
         """Check for potential pyeda error and automatically fix."""
         banned_words = ['and', 'or', 'xor', 'not', 'nand', 'nor']
