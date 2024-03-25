@@ -41,7 +41,7 @@ def build_logger(
             os.makedirs(out_dir)
         
         file_hander = logging.FileHandler(out_file)
-        file_hander.se(formatter)
+        file_hander.setFormatter(formatter)
         logger.addHandler(hdlr= file_hander)
     
     logger.setLevel(log_level)
