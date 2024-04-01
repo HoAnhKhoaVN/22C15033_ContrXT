@@ -71,5 +71,16 @@ class ContrXT(object):
 
         self.explain = None
 
+    def run_trace(
+        self,
+        percent_dataset: float = 1.0
+    )-> None:
+        """Run trace to generate BDD
+
+        Args:
+            percent_dataset (float, optional): _description_. Defaults to 1.
+        """
+        self.trace.run_trace(percent_dataset)
+
 if __name__ == '__main__':
     pass
