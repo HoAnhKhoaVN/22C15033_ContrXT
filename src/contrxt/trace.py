@@ -4,6 +4,8 @@
 from collections import defaultdict
 import logging
 import os
+import time
+import traceback
 from typing import Text
 
 import numpy as np
@@ -130,5 +132,54 @@ class Trace(object):
                         'min_samples_leaf': 0.01
                     }
                 )
-            } 
+            }
 
+    def _generate_tree(
+        self,
+        time_label : Text,
+    )->None:
+        """Generate surrogate tree
+
+        Args:
+            time_label (Text): Description of paramater `time_label`
+        """
+        for class_id in self.classes:
+            try:
+                self.logger.info(f'Starting explanation in {time_label} for class_id {class_id}')
+                start_time = time()
+
+                if self.surrogate_type == 'fair':
+                    pass
+                else: # sklearn
+                    surrogate_explainer = SklearnSurrogate(
+                       
+                    )
+
+            except Exception as e:
+                self.logger.debug(nsg = e)
+                self.logger.exception(traceback.print_exc())
+                break
+
+    def run_trace(
+        self,
+        percent_dataset : float = 1.0
+    )-> None:
+        """Run trace to generate BDD
+
+        Args:
+            percent_dataset (float, optional): _description_. Defaults to 1.0.
+        """
+
+        # region 1: Generate data prediction
+        for time_label in ['time_1', 'time_2']:
+            self.data_manager[time_label].generate_data_predictions(percent_dataset)
+            self._generate_tree(time_label)
+
+        # endregion
+
+        # region 2: save csv file
+        if self.save_csvs:
+            self._save_results(percent_dataset)
+            self._save_surrogate_paths()
+
+        # endregion
