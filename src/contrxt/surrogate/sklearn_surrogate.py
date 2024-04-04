@@ -1,4 +1,5 @@
 
+import os
 import random
 import time
 from typing import Any, Dict, List, Text
@@ -7,7 +8,9 @@ from pandas import Series
 from sklearn import tree
 from sklearn.model_selection import RandomizedSearchCV
 from src.contrxt.surrogate.genetic_surrogate import GeneticSurrogate
-
+from sklearn import metrics
+from sklearn.tree._tree import TREE_UNDEFINED
+from pydot import graph_from_dot_data
 
 class SklearnSurrogate(GeneticSurrogate):
     def __init__(
@@ -111,4 +114,173 @@ class SklearnSurrogate(GeneticSurrogate):
         self.logger.info(f'Best model: {self._model}')
 
         # endregion
+
+    def fit(self):
+        """Train model surrogate with dataset for `class_id`.
+        """
+        # region 1: Prepare
+        s = time()
+        np.random.seed(42)
+        random.seed(42)
+
+        # endregion: Prepare
+
+        # region 2: Train model
+        self._model.fit(
+            X = self.X,
+            y = self.predicted_labels
+        )
+
+        # endregion: Train model
+
+        # region 3: Cacl the score
+        self.score()
+
+        # endregion
+
+    def score(self):
+        """Calculate the score for sklearn model. It is the fidelity score.
+        """
+        # region 1: Predict on training set
+        self.surrogate_predictions = self._model.predict(X = self.X)
+
+        # endregion
+
+        # region 2: Compute the fidelity
+        self.fidelity = {
+            'f1_binary': metrics.f1_score(
+                y_true= self.predicted_labels,
+                y_pred= self.surrogate_predictions,
+                average= 'binary'
+            ),
+            'f1_macro': metrics.f1_score(
+                y_true= self.predicted_labels,
+                y_pred= self.surrogate_predictions,
+                average= 'macro'
+            ),
+            'f1_weighted': metrics.f1_score(
+                y_true= self.predicted_labels,
+                y_pred= self.surrogate_predictions,
+                average= "weighted"
+            ),
+            'recall_weighted': metrics.recall_score(
+                y_true= self.predicted_labels,
+                y_pred= self.surrogate_predictions,
+                average= 'weighted'
+            ),
+            'precision_weighted': metrics.precision_score(
+                y_true= self.predicted_labels,
+                y_pred= self.surrogate_predictions,
+                average= 'weighted'
+            ),
+            'balanced_accuracy': metrics.balanced_accuracy_score(
+                y_true= self.predicted_labels,
+                y_pred= self.surrogate_predictions,
+            ),
+        }
+        self.fidelity = {k: round(v, 3) for k, v in self.fidelity.item()}
+
+        # endregion
+
+        # region 3: Write the log
+        self.logger.debug(self.predicted_labels[:100])
+        self.logger.debug(self.surrogate_predictions[:100])
+        self.logger.info(f'Fidelity of the surrogate: {self.fidelity}')
+        self.logger.info(metrics.classification_report(
+            y_true=self.predicted_labels,
+            y_pred=self.surrogate_predictions)
+        )
+        # endregion
+
+    def surrogate_to_bdd_string(self):
+        """Transform surrogate to BDD string using depth first search
+        """
+
+        self.logger.info(msg= 'Transform surrogate to BDD...')
+        stack = []
+        self.bdd = []
+
+        def _tree_recurese(
+            node: Any
+        )->None:
+            """Recurese
+
+            Args:
+                node (Any): tree
+            """
+
+            if self._model.tree_.feature[node] == TREE_UNDEFINED: # Stop condition
+                value = np.argmax(self._model.tree_.value[node][0])
+                if value == 1: # ????
+                    path = ' & '.join(stack)
+                    self.bdd.append(path)
+                    self.paths[path] = self._model.tree_.n_node_samples[node]
+                return
+        
+            # region Recursion case
+            name = self.feature_names[self._model.tree_.features[node]]
+            stack.append(f'~{name}')
+            self.logger.debug(stack)
+
+            _tree_recurese(self._model.tree_.children_left[node])
+
+            stack.pop()
+            self.logger.debug(stack)
+
+            stack.append(name)
+            self.logger.debug(stack)
+
+            _tree_recurese(self._model.tree_.children_right[node])
+
+            stack.pop()
+            self.logger.debug(stack)            
+
+            # endregion
+        
+        # region run main code
+        _tree_recurese(0)
+        self.bdd = ' | '.join(self.bdd)
+        self.logger.info(f'BDD String for class {self.class_id}: {self.bdd}')
+
+        # endregion
+
+    def save_surrogate_image(
+        self,
+        save_path: Text
+        )-> None:
+        """Save decision tree surrogates to image.
+
+        Args:
+            save_path (Text): Path to save 
+        """
+        # region 1: Prepare path
+        folder_path = os.path.join(
+            save_path,
+            "surrogate_tree"
+        )
+
+
+        if not os.path.exists(folder_path):
+            os.mkdir(path = folder_path)
+
+        fname = os.path.join(
+            folder_path,
+            f'{self.class_id}_{self.time_label}.png'
+        )
+
+        # endregion
+
+        # region 2: Export graph viz
+        graph_str = tree.export_graphviz(
+            decision_tree= self._model,
+            class_names= [self.class_id, f'NOT {self.class_id}'],
+            feature_names= self.feature_names,
+            filled= True
+        )
+
+        (graph, )  = graph_from_dot_data(graph_str)
+        self.logger.info(f'Saving {fname} to disk')
+        graph.write_png(fname)
+        # endregion
+
 
