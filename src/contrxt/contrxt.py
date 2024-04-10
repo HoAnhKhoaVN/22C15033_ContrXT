@@ -2,6 +2,7 @@
 import logging
 from typing import List, Text
 import pandas as pd
+from src.contrxt.explain import Explain
 from src.contrxt.data.text_data_manager import TextDataManager
 from src.contrxt.data.tabular_data_manager import TabularDataManager
 from src.contrxt.trace import Trace
@@ -81,6 +82,18 @@ class ContrXT(object):
             percent_dataset (float, optional): _description_. Defaults to 1.
         """
         self.trace.run_trace(percent_dataset)
+
+    def run_explain(self)-> None:
+        """Show explanations in natuaral language
+        """
+        self.explain = Explain(
+            data_manager= self.data_manager,
+            save_path= self.save_path,
+            graph_path=self.graphviz_path,
+            log_level=self.log_level,
+            save_bdds=self.save_bdds,
+            save_csvs= self.save_csvs
+        )
 
 if __name__ == '__main__':
     pass
