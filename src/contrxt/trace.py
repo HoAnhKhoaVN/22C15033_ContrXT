@@ -9,6 +9,8 @@ import traceback
 from typing import Text
 
 import numpy as np
+import pandas as pd
+from src.contrxt.surrogate.sklearn_surrogate import SklearnSurrogate
 from src.contrxt.data.data_manager import DataManager
 from src.contrxt.utils.logger import build_logger
 
@@ -134,6 +136,97 @@ class Trace(object):
                 )
             }
 
+    def _save_results(
+        self,
+        percent_dataset: float = 1
+    )-> None:
+        """Save results to csv
+
+        Args:
+            percent_dataset (float, optional): _description_. Defaults to 1.
+        """
+        bdd_df = []
+
+        for time_label in ['time_1', 'time_2']:
+            for class_id in self.classes:
+                class_id = str(class_id)
+
+                try:
+                    row = (
+                        time_label,
+                        class_id,
+                        self.bdds[time_label][class_id],
+                        self.times[time_label][class_id],
+                        percent_dataset,
+                        *self.hyperparameters[time_label][class_id].values(),
+                        *self.fidelities[time_label][class_id].values()
+                    )
+
+                    bdd_df.append(row)
+
+                except KeyError:
+                    continue
+
+        hyperparameters_cols = list(self.hyperparameters['time_1'][self.classes[0]].keys())
+        fidelity_cols = list(self.fidelities[time_label][self.classes[0]].keys())
+        lst_cols = ['time_label', 'class_id', 'bdd_string', 'run_time', 'percent_dataset']
+        final_cols = lst_cols + hyperparameters_cols + fidelity_cols
+        bdd_df = pd.DataFrame(bdd_df, columns= final_cols)
+
+        self.logger.info(f'Mean fidelity : {round(bdd_df[fidelity_cols[0]].mean(), 3)}')
+
+        if not os.path.exists(self.save_path):
+            os.mkdir(self.save_path)
+
+        try:
+            file_name = f'{self.save_path}/trace.csv'
+            self.logger.info(f'Result Trace in file {file_name}')
+            bdd_df.to_csv(file_name)
+        except PermissionError:
+            self.logger.error('Error: cannot save result, file is use!')
+
+    def _save_surrogate_paths(self):
+        """Save surrogate path to csv file
+        """
+        # region 1: Prepare to save csv file
+        cols = ['time_label', 'class_id', 'bdd_string', 'n']
+        paths_df = pd.DataFrame([], columns= cols)
+
+        for time_label in ['time_1', 'time_2']:
+            for class_id in self.classes:
+                class_id = str(class_id)
+
+                try:
+                    df_paths_class = pd.DataFrame.from_dict(
+                        data= self.paths[time_label][class_id],
+                        orient='index',
+                    ).set_index()
+
+                    df_paths_class.columns = ['bdd_string', 'n']
+
+                    df_paths_class['class_id'] = class_id
+                    df_paths_class['time_label'] = time_label
+
+                    df_paths_class = df_paths_class[cols]
+
+                    paths_df = pd.concat([paths_df, df_paths_class])
+                except KeyError:
+                    continue
+
+        # endregion
+
+
+        # region 2: Save file
+        try:
+            fn = f'{self.save_path}/surrogate_paths.csv'
+            self.logger.info(f'Results the paths that save in {fn}')
+            paths_df.to_csv(fn)
+        except PermissionError:
+            self.logger.error('Error: cannot save result, file is use!')
+
+
+        # endregion
+   
     def _generate_tree(
         self,
         time_label : Text,
@@ -146,17 +239,40 @@ class Trace(object):
         for class_id in self.classes:
             try:
                 self.logger.info(f'Starting explanation in {time_label} for class_id {class_id}')
-                start_time = time()
+                start_time = time.time()
 
                 if self.surrogate_type == 'fair':
                     pass
                 else: # sklearn
                     surrogate_explainer = SklearnSurrogate(
-                       
+                        X = self.data_manager[time_label].surrogate_train_data[class_id],
+                        predicted_labels= self.data_manager[time_label].Y_predicted_binarized[class_id],
+                        time_label= time_label,
+                        class_id= class_id,
+                        feature_names= self.data_manager[time_label].feature_names,
+                        hyperparameters= self.hyperparameters[time_label][class_id]
                     )
+                if self.hyperparameters_selection:
+                    surrogate_explainer.hyperparameters_selection()
+                    self.hyperparameters[time_label][class_id] = surrogate_explainer.hyperparameters
+                
+                surrogate_explainer.fit()
+                surrogate_explainer.surrogate_to_bdd_string()
+
+
+                self.bdds[time_label][class_id] = surrogate_explainer.bdd
+                self.paths[time_label][class_id] = surrogate_explainer.paths
+                self.fidelities[time_label][class_id] = surrogate_explainer.fidelity
+
+                if self.save_surrogates:
+                    surrogate_explainer.save_surrogate_image(self.save_path)
+
+                self.times[time_label][class_id] = round(time.time() - start_time, 3)
+
+                break
 
             except Exception as e:
-                self.logger.debug(nsg = e)
+                self.logger.debug(msg = e)
                 self.logger.exception(traceback.print_exc())
                 break
 
