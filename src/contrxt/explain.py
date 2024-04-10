@@ -175,7 +175,7 @@ class Explain(object):
     def _save_bdd(
         self,
         name: Text,
-        bdd: Dict[Text]
+        bdd: Dict
     )-> None:
         """Save the BDD to PDF file. Remove useless non PDF file.
 
