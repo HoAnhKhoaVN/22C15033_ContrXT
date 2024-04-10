@@ -60,7 +60,7 @@ class SklearnSurrogate(GeneticSurrogate):
             cv (int, optional): _description_. Defaults to 5.
         """
         # region 1: Init
-        start_time = time()
+        start_time = time.time()
         np.random.seed(42)
         random.seed(42)
         self.logger.info(f'Begining hyperparameter selection...')
@@ -70,9 +70,9 @@ class SklearnSurrogate(GeneticSurrogate):
         # region 2: Create a grid for search
         default_grid = {
             'criterion' : ['gini', 'entropy'],
-            'min_sample_leaf': [0.01, 0.02],
+            'min_samples_leaf': [0.01, 0.02],
             'max_depth': [3, 5, 7],
-            'min_sample_split': [0.01, 0.02, 0.03]
+            'min_samples_split': [0.01, 0.02, 0.03]
         }
         seach_space = grid_para if grid_para is not None else default_grid
 
@@ -109,8 +109,8 @@ class SklearnSurrogate(GeneticSurrogate):
         # region 5: Access the best estimator
         self.model_ = random_search_estimator.best_estimator_
         self.hyperparameters['max_depth'] = self.model_.max_depth
-        self.hyperparameters['min_sample_split'] = self.model_.min_sample_split
-        self.logger.info(f'Time for fitting surrogate: {round(time() - start_time, 3)}')
+        self.hyperparameters['min_samples_split'] = self.model_.min_samples_split
+        self.logger.info(f'Time for fitting surrogate: {round(time.time() - start_time, 3)}')
         self.logger.info(f'Best model: {self._model}')
 
         # endregion
@@ -119,7 +119,7 @@ class SklearnSurrogate(GeneticSurrogate):
         """Train model surrogate with dataset for `class_id`.
         """
         # region 1: Prepare
-        s = time()
+        s = time.time()
         np.random.seed(42)
         random.seed(42)
 
@@ -178,7 +178,7 @@ class SklearnSurrogate(GeneticSurrogate):
                 y_pred= self.surrogate_predictions,
             ),
         }
-        self.fidelity = {k: round(v, 3) for k, v in self.fidelity.item()}
+        self.fidelity = {k: round(v, 3) for k, v in self.fidelity.items()}
 
         # endregion
 
@@ -218,7 +218,7 @@ class SklearnSurrogate(GeneticSurrogate):
                 return
         
             # region Recursion case
-            name = self.feature_names[self._model.tree_.features[node]]
+            name = self.feature_names[self._model.tree_.feature[node]]
             stack.append(f'~{name}')
             self.logger.debug(stack)
 
