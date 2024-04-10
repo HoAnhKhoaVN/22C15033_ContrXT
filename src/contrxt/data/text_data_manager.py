@@ -50,11 +50,11 @@ class TextDataManager(DataManager):
 
         onehot_vectorizer = CountVectorizer(binary= True, lowercase= False)
 
-        onehot_vectorizer.fit(raw_documents=data['X'])
+        onehot_vectorizer.fit(data['X'])
 
         self.feature_names = onehot_vectorizer.get_feature_names_out()
 
-        for i, class_id in enumerate(self.classes):
+        for i, class_id in enumerate(self.classes): 
             df_data_class :pd.DataFrame = data.copy()
             class_id = str(class_id)
             n_positive_class = sum(data['Y_predicted'] == class_id)
