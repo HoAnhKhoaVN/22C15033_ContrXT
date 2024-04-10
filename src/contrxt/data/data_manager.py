@@ -52,6 +52,8 @@ class DataManager():
 
             if w in string.digits:
                 s_complete.append(f'z{w}')
+
+            s_complete.append(w)
             
         s = ' '.join(s_complete).title().replace('_', '')
         return s
