@@ -123,9 +123,11 @@ if __name__ == '__main__':
 
     print("##### Step 1: Trace #####")
     exp.run_trace()
-    exit(126)
+
     print("##### Step 2: Run explanation #####")
     exp.run_explain()
+
+    exit(126)
 
     print("##### Step 3: Binary Decision Diagram to Natural Language #####")
     exp.explain.BDD2Text()
