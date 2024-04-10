@@ -1,6 +1,6 @@
 from typing import List, Text, Any
 import pandas as pd
-from utils.logger import build_logger
+from src.contrxt.utils.logger import build_logger
 import logging
 
 
