@@ -12,6 +12,7 @@ from src.contrxt.utils.logger import build_logger
 from src.contrxt.data.data_manager import DataManager
 from pyeda.inter import expr2bdd, expr
 from src.contrxt.utils.helper import union, jaccard_distance
+from graphviz import Source
 
 TIMEOUT = 72000 # second
 
@@ -61,9 +62,6 @@ class Explain(object):
         if os.path.exists(f'{self.save_path}/path_add_del.csv'):
             os.remove(f'{self.save_path}/path_add_del.csv')
 
-        bdd_str = ' | '.join(path_list)
-        bdd_bool = expr2bdd(expr(bdd_str))
-        sat_bdd = bdd_bool.satisfy_all()
     def load_bdd_data(self):
         """Load binary decision diagram
         """
@@ -185,7 +183,76 @@ class Explain(object):
             name (Text): Name of PDF files.
             bdd (Dict[Text]): Logic binary 
         """
-        pass
+        # region 1: Init
+        self.logger.info(msg = f'Print {name} PDF file.')
+        graph_viz = Source(bdd.to_dot())
+
+        # endregion
+
+        # region 2: Get path
+        path = f'{self.bdd_img_path}/{name}'
+        if os.path.exists(path):
+            os.remove(path)
+
+        # endregion
+
+        # Region  3: Render
+        graph_viz.render(
+            filename= path,
+            view= False
+        )
+        # endregion
+
+    @staticmethod
+    def calculate_kpi(
+        main_sat,
+        other_sat,
+        last_sat
+    )-> float:
+        """Return the KPI (ADD/ DEL)
+
+        Args:
+            main_sat (_type_): _description_
+            other_sat (_type_): _description_
+            last_sat (_type_): _description_
+
+        Returns:
+            float: KPI
+        """
+        try: 
+            res = main_sat / (main_sat + other_sat + last_sat)
+        except ZeroDivisionError:
+            res = 0.0
+
+        return res
+    
+    @staticmethod
+    def calculate_kpi_global(df: pd.DataFrame)-> pd.DataFrame:
+        """Calculate KPI Global
+
+        Args:
+            df (pd.DataFrame): _description_
+
+        Returns:
+            pd.DataFrame: _description_
+        """
+        # region 1: Get max value to normalize
+        max_sat_add = df['sat_add'].max()
+        max_sat_del = df['sat_del'].max()
+        max_sat_still = df['sat_still'].max()
+
+        # endregion
+
+        # region 2: Get global features
+        # TODO: Explain x==x ????
+        df['add_global'] = [x if x == x else 0 for x in df['sat_add']/max_sat_add]
+        df['del_global'] = [x if x == x else 0 for x in df['sat_del']/max_sat_del]
+        df['still_global'] = [x if x == x else 0 for x in df['sat_still']/max_sat_still]
+
+        # endregion
+
+        return df
+
 
     def _obdd_diff(
         self,
@@ -289,7 +356,7 @@ class Explain(object):
         self.results[class_id]['add'] = self.calculate_kpi(sat_add, sat_del, sat_still)
         self.results[class_id]['del'] = self.calculate_kpi(sat_del, sat_add, sat_still)
         self.results[class_id]['still'] = self.calculate_kpi(sat_still, sat_add, sat_del)
-        self.results[class_id]['j'] = self.jaccard_distance(set_feature_f, set_feature_g)
+        self.results[class_id]['j'] = jaccard_distance(set_feature_f, set_feature_g)
 
         self.results[class_id]['s1'] = str(len(set_feature_f))
         self.results[class_id]['s2'] = str(len(set_feature_g))
@@ -336,9 +403,51 @@ class Explain(object):
         return False
     
     def _save_results(self)-> None:
-        """_summary_
+        """Save the results to csv
         """
-        pass
+        # region 1. Prepare DataFrame
+        path = f'{self.save_path}/explain.csv'
+        self.logger.info(f'Saving results to {path}')
+
+        kpi_df = pd.DataFrame.from_dict(
+            data= self.results,
+            orient= 'index'
+        ).reset_index()
+
+        kpi_df = kpi_df.rename(columns={'index': 'class_id'})
+
+        kpi_df = self.calculate_kpi_global(kpi_df)
+
+        kpi_df = kpi_df[[
+            'class_id',
+            'add',
+            'del',
+            'still',
+            'add_global',
+            'del_global'
+            'still_global',
+            'sat_add',
+            'sat_del',
+            'sat_still',
+            'j',
+            's1',
+            's2',
+            'union',
+            'runtime'
+        ]]
+
+        kpi_df = kpi_df.round(3)
+
+        # endregion
+
+        # region 2: Save csv file
+        try:
+            kpi_df.to_csv(path_or_buf=path, index= False)
+        except PermissionError:
+            self.logger.error(f'Error: Can save file. File {path} is use!')
+
+
+        # endregion
 
     def run_explain(self)->None:
         """Run explanin for each class
