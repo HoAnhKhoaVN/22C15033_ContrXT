@@ -105,7 +105,7 @@ class TextDataManager(DataManager):
             int: Count of occurrences in the corpus.
         """
         count = 0
-        rule_dict :Dict = ast.literal_eval(re.sub(r'(\w+):', r'"\1'), rule)
+        rule_dict :Dict = ast.literal_eval(re.sub(r'(\w+):', r'"\1":', rule))
         contains = [k for k, v in rule_dict.items() if v]
         avoids = [k for k, v in rule_dict.items() if not v]
         for sent in self.X:

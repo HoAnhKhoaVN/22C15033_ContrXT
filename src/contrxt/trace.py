@@ -181,7 +181,7 @@ class Trace(object):
         try:
             file_name = f'{self.save_path}/trace.csv'
             self.logger.info(f'Result Trace in file {file_name}')
-            bdd_df.to_csv(file_name)
+            bdd_df.to_csv(file_name, sep = ';', decimal= ',')
         except PermissionError:
             self.logger.error('Error: cannot save result, file is use!')
 
@@ -200,7 +200,7 @@ class Trace(object):
                     df_paths_class = pd.DataFrame.from_dict(
                         data= self.paths[time_label][class_id],
                         orient='index',
-                    ).set_index()
+                    ).reset_index()
 
                     df_paths_class.columns = ['bdd_string', 'n']
 

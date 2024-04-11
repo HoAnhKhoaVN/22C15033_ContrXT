@@ -116,7 +116,7 @@ if __name__ == '__main__':
         X_t2,
         predicted_labels_t2,
         hyperparameters_selection= True,
-        save_path = 'results/demo_2',
+        save_path = 'results/demo_5',
         save_surrogates = True,
         save_bdds = True
     )

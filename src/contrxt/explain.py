@@ -13,6 +13,7 @@ from src.contrxt.data.data_manager import DataManager
 from pyeda.inter import expr2bdd, expr
 from src.contrxt.utils.helper import union, jaccard_distance
 from graphviz import Source
+from src.contrxt.utils.BDD2Text import BDD2Text
 
 TIMEOUT = 72000 # second
 
@@ -59,13 +60,13 @@ class Explain(object):
         self.results = defaultdict(lambda: {})
 
 
-        if os.path.exists(f'{self.save_path}/path_add_del.csv'):
-            os.remove(f'{self.save_path}/path_add_del.csv')
+        if os.path.exists(f'{self.save_path}/paths_add_del.csv'):
+            os.remove(f'{self.save_path}/paths_add_del.csv')
 
     def load_bdd_data(self):
         """Load binary decision diagram
         """
-        bdd_dict = defaultdict(lambda: {})
+        bdd_dict = defaultdict(lambda: list())
 
         trace_result_df :pd.DataFrame = pd.read_csv(
             f'{self.save_path}/trace.csv',
@@ -73,11 +74,14 @@ class Explain(object):
             sep=';'
         )
 
-        for _, row in trace_result_df.itertuples():
+        for _, row in trace_result_df.iterrows():
             class_id = str(row['class_id'])
+            print(f'class_id : {class_id}')
             bdd_string = row['bdd_string']
+
+            print(f'bdd_string: {bdd_string}')
             bdd_dict[class_id].append(bdd_string)
-        return bdd_string
+        return bdd_dict
     
     @staticmethod
     def _remove_diff(
@@ -91,19 +95,19 @@ class Explain(object):
             set_feature (List[Text]): List of vocabulary for add | dell | still method.
         """
         # region 1: Convert key to string
-        lst = [{str(k): v for k, v in x.items()} for x in lst]
-        set_feature = [str(x) for x in set_feature]
+        lst = [{str(k): v for (k, v) in x.items()} for x in lst]
+        set_feature = {str(x) for x in set_feature}
 
         # endregion
 
         # region 2: Remove `key` in `set_feature`
-        for idx , path in lst:
+        for idx , path in enumerate(lst):
             to_pop = []
             for key in path.keys():
                 if key in set_feature:
                     to_pop.append(key)
-                for key in to_pop:
-                    del lst[idx][key]
+            for key in to_pop:
+                del lst[idx][key]
         return lst
 
         # endregion
@@ -169,7 +173,7 @@ class Explain(object):
             csv_row = ';'.join([class_id, rule, type_, count_tot])
             
             # write file
-            with open(f'{self.save_path}/path_add_del.csv', 'w', encoding='utf-8') as f:
+            with open(f'{self.save_path}/paths_add_del.csv', 'a', encoding='utf-8') as f:
                 f.write(f'{csv_row}\n')
         
     def _save_bdd(
@@ -267,7 +271,7 @@ class Explain(object):
             d_1 (Any): Status for model training in dataset 1
             d_2 (Any): Status for model training in dataset 2
         """
-        start_time = time()
+        start_time = time.time()
         # region 1: Convert expression to bdd and transform to boolean expression
         f = expr2bdd(expr(d_1))
         g = expr2bdd(expr(d_2))
@@ -344,6 +348,8 @@ class Explain(object):
             self._save_bdd(f'{class_id}_add', f_add_bdd)
             self._save_bdd(f'{class_id}_del', f_del_bdd)
             self._save_bdd(f'{class_id}_still', f_still_bdd)
+            self._save_bdd(f'{class_id}_f', f)
+            self._save_bdd(f'{class_id}_g', g)
 
         if self.save_csvs:
             self._save_kpi_csv(class_id, sat_add_lst, 'add')
@@ -361,7 +367,7 @@ class Explain(object):
         self.results[class_id]['s1'] = str(len(set_feature_f))
         self.results[class_id]['s2'] = str(len(set_feature_g))
         self.results[class_id]['union'] = str(union(set_feature_g, set_feature_g))
-        self.results[class_id]['runtime'] = round(number= time() - start_time, ndigits= 3)
+        self.results[class_id]['run_time'] = round(number= time.time() - start_time, ndigits= 3)
 
         self.logger.info(self.results[class_id])
         # endregion
@@ -381,6 +387,8 @@ class Explain(object):
             self.logger.info(f'Starting computation for class {class_id}')
 
             try:
+                print(f'Type class_id : {type(class_id)}')
+                print(f'class_id : {class_id}')
                 d_1 = self.bdd_dict[class_id][0]
                 d_2 = self.bdd_dict[class_id][1]
             except KeyError:
@@ -424,7 +432,7 @@ class Explain(object):
             'del',
             'still',
             'add_global',
-            'del_global'
+            'del_global',
             'still_global',
             'sat_add',
             'sat_del',
@@ -433,7 +441,7 @@ class Explain(object):
             's1',
             's2',
             'union',
-            'runtime'
+            'run_time'
         ]]
 
         kpi_df = kpi_df.round(3)
@@ -457,3 +465,19 @@ class Explain(object):
         
         if self.save_csvs:
             self._save_results()
+
+
+    def BDD2Text(self, classes=None):
+        '''Prints BDD2Text for selected classes.
+        '''
+        def create_BDD2Text(class_id):
+            text = BDD2Text(f'{self.save_path}/paths_add_del.csv', class_id, 85)
+            text.simple_text()
+        if not classes:
+            for class_id in self.bdd_dict:
+                create_BDD2Text(class_id)
+        if isinstance(classes, list):
+            for class_id in classes:
+                create_BDD2Text(class_id)
+        if isinstance(classes, str):
+            create_BDD2Text(classes)

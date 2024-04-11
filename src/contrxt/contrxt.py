@@ -94,6 +94,7 @@ class ContrXT(object):
             save_bdds=self.save_bdds,
             save_csvs= self.save_csvs
         )
+        self.explain.run_explain()
 
 if __name__ == '__main__':
     pass
