@@ -1,11 +1,11 @@
 import ast
 import re
-import contrxt.data.data_manager
+import src.contrxt.data.data_manager
 
 import numpy as np
 import pandas as pd
 
-class TabularDataManager(contrxt.data.data_manager.DataManager):
+class TabularDataManager(src.contrxt.data.data_manager.DataManager):
     """_summary_
 
     Args:
