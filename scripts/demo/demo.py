@@ -49,8 +49,8 @@ def simple_classifier(
     encoder = preprocessing.LabelEncoder() # Encode the label
     X_t1, X_t2 = df_time_1['corpus'], df_time_2['corpus']
     Y_t1, Y_t2 = (
-        encoder.fit_transform(y = df_time_1['category']),
-        encoder.fit_transform(y = df_time_2['category']),
+        encoder.fit_transform(df_time_1['category']),
+        encoder.fit_transform(df_time_2['category']),
     ) 
 
     # endregion Encode the categorical target
