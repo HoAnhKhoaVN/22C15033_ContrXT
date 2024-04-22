@@ -101,7 +101,7 @@ class BDD2Text(object):
         temp['class'] = temp['class'].astype('str')
 
         def string_to_dict(string):
-            """stolen from https://stackoverflow.com/a/58561819/5842939"""
+            """stolen from https:/stackoverflow.com/a/58561819/5842939"""
 
             # Add quotes to dict keys
             string = re.sub(r'(\w+):', r'"\1":', string)
