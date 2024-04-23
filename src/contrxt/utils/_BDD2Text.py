@@ -2,9 +2,10 @@
 
 import ast
 import re
-from typing import Dict, List, Text
+from typing import Dict, List, Text, Tuple
 
 import pandas as pd
+import textwrap
 
 
 class BDD2Text(object):
@@ -46,7 +47,9 @@ class BDD2Text(object):
 
         self.path_dict_still : List = still_dict['path'].tolist()[0]
         self.N_still : List[bool] = self.rule_trimmer(N_still, self.threshold)
-        self.used_paths_still = [x for i, x in enumerate(self.path_dict_still) if self.N_del[i]]
+        self.used_paths_still = [x for i, x in enumerate(self.path_dict_still) if self.N_still[i]]
+
+        self.wrapper = textwrap.TextWrapper(width = wrapp_size)
 
 
     def prepare_data(
@@ -237,11 +240,47 @@ class BDD2Text(object):
         assert isinstance(bc, (int, type(None))), f'Background color code should be integer not {type(bc)}'
         assert isinstance(tc, (int, type(None))), f'Text color code should be integer not {type(tc)}'
         assert isinstance(bold, bool), f'Bold should be integer not {type(bold)}'
-        assert isinstance(bold, bool), f'Bold should be integer not {type(bold)}'
-                assert isinstance(bold, bool), f'Bold should be integer not {type(bold)}'
+        assert isinstance(underline, bool), f'Underline should be integer not {type(underline)}'
+        assert isinstance(_reversed, bool), f'Reversed should be integer not {type(_reversed)}'
         # endregion
 
+        # region 2: Default color
+        if bc is not None:
+            bc = f'\u001b[48;5;{bc}m'
+        else:
+            bc = ''
 
+        if tc is not None:
+            tc = f'\u001b[38;5;{tc}m'
+        else:
+            tc = ""
+
+        if bold:
+            b = '\u001b[1m'
+        else:
+            b = ''
+
+
+        if underline:
+            u = '\u001b[4m'
+        else:
+            u = ''
+
+
+        if _reversed:
+            r = '\u001b[7m'
+        else:
+            r = ''
+
+        # endregion
+
+        # region 3: Format code
+        text = f'{b}{u}{r}{bc}{tc}{text}\u001b[0m'
+
+        # endregion
+
+        return (text)
+    
     def simple_text(
         self,
         fn: Text
@@ -251,6 +290,32 @@ class BDD2Text(object):
         Args:
             fn (Text): _description_
         """
+        def agg_0_1(dictak: Dict)-> Tuple[List, List]:
+            """Split tokens which ended as 0 or 1.
+
+            Args:
+                dictak (Dict): Dictionary for token.
+
+            Returns:
+                Tuple[List, List]: List for zero and one.
+            """
+            zeros, ones = [], []
+            for k, v in dictak.items():
+                if v==0:
+                    zeros.append(k)
+                else:
+                    ones.append(k)
+            return zeros, ones
+
+            
+        
+        def list_to_string():
+            pass
+
+        def list_to_string_2():
+            pass
+
+
         with open(fn, 'w', encoding='utf-8') as f:
             # region 1: Creating class name
             f.write('='*70)
@@ -312,5 +377,58 @@ class BDD2Text(object):
                 
                 f.write(self.wrapper.fill(to_print))
                 f.write(f'\n')
+            
+            # endregion
 
+            # region 4:
+            if kind == 'add':
+                used_paths = self.used_paths_add
+            elif kind == 'del':
+                used_paths = self.used_paths_del
+            elif kind == 'still':
+                used_paths = self.used_paths_still
+            if sum(Ns) <= 4:
+                num_list = []
+                for i, item in enumerate(used_paths):
+                    zeros, ones = agg_0_1(item)
+                    num_list.append((i, len(zeros)+ len(ones)))
+                
+                num_list = list(sorted(num_list, key = lambda x: x[1]))
+                num_list = [x[0] for x in num_list]
+
+                for ni in num_list:
+                    item = used_paths[ni]
+                    rem = self.text_formatter('Having', tc = 10)
+                    rem2 = self.text_formatter('not', tc =9, underline= True)
+
+                    zeros, ones = agg_0_1(item)
+                    string_on = list_to_string(ones, add_feature= False)
+                    string_ze = list_to_string(zeros, add_feature = False)
+                    string_ze_pos = list_to_string_2(zeros, "pos")
+                    string_ze_neg = list_to_string_2(zeros, "neg")
+                    string_on_pos = list_to_string_2(ones, "pos")
+
+                    if 'XXXX' in string_on:
+                        if 'XXXX' not in string_ze:
+                            if len(zeros) > 1:
+                                iii = 'are'
+                            else:
+                                iii = 'is'
+                            
+                            print_text = f' - If there {iii} {rem2} {string_ze_pos}.'
+                            f.write(print_text)
+                            print(print_text)
+                    elif 'XXXX' not in string_on:
+                        if 'XXXX' not in string_ze:
+                            if len(zeros) > 1:
+                                iii = 'are'
+                            else:
+                                iii = 'is'
+                            print_text = f' - {rem} {string_on_pos} but {rem2} {string_ze_neg}.'
+                            f.write(print_text)
+                            print(print_text)   
+                        else:
+                            print_text = f' - {rem} {string_on_pos}.'
+                            f.write(print_text)
+                            print(print_text)                                                       
             # endregion
