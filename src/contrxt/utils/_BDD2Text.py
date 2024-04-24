@@ -6,6 +6,7 @@ from typing import Dict, List, Text, Tuple
 
 import pandas as pd
 import textwrap
+from apyori import apriori
 
 
 class BDD2Text(object):
@@ -172,6 +173,12 @@ class BDD2Text(object):
 
         # endregion
         return df
+    
+    def remove_key(self, dic, key):
+        try:
+            del dic[key]
+        except KeyError:
+            pass
 
     def rule_trimmer(
         self,
@@ -280,6 +287,8 @@ class BDD2Text(object):
         # endregion
 
         return (text)
+    def dict_to_list(self, d: Dict)->List:
+        return [x[0] + str(x[1]) for x in d.items()]
     
     def simple_text(
         self,
@@ -307,13 +316,176 @@ class BDD2Text(object):
                     ones.append(k)
             return zeros, ones
 
-            
-        
-        def list_to_string():
-            pass
+        def list_to_string(
+            data: List[Text],
+            add_feature = True
+        )->Text:
+            """Concat list feature to string.
 
-        def list_to_string_2():
-            pass
+            Args:
+                data (List[Text]): List of features.
+                add_feature (bool, optional): _description_. Defaults to True.
+
+            Returns:
+                Text: A string which lists the features.
+            """
+            if len(data) > 1:
+                t = ""
+                data_1 = data[:-1]
+                last = data[-1]
+
+                for i in data_1:
+                    i = self.text_formatter(i, bold= True)
+                    t += f'{i}, '
+                last = self.text_formatter(last, bold= True)
+                t += f'and {last}'
+
+                if add_feature:
+                    t += ' features'
+            
+            elif len(data) == 1:
+                t = self.text_formatter(data[0], bold= True)
+                if add_feature :
+                    t += ' feature'
+            
+            else:
+                t = 'XXXX'
+            
+            return t
+
+        def list_to_string_2(
+            data: List[Text],
+            is_pos: bool = True,
+        )-> Text:
+            """Concat list of features to string which color.
+            If `is_pos` is True text color is `green`. Else, text color is `red`.
+
+            Args:
+                data (List[Text]): List of features.
+                is_pos (bool): Check features are positive or negative. Default is True.
+
+            Returns:
+                Text: A string which lists the COLORED features.
+            """
+            t = data
+
+            # region 1: Check positive or negative
+            if is_pos:
+                tc = 10 # green
+            else:
+                tc = 9 # red
+
+            # endregion
+
+            # region 2: Text formatter
+            if len(data) > 1:
+                t = ""
+                data_1 = data[:-1]
+                last = data[-1]
+
+                for i in data_1:
+                    i = self.text_formatter(i, bold= True, tc = tc)
+                    t += f'{i}, '
+                last = self.text_formatter(last, bold= True, tc = tc)
+                t += f'and {last}'
+            
+            elif len(data) == 1:
+                t = self.text_formatter(data[0], bold= True, tc = tc)
+
+            # endregion
+
+            return t
+
+        def get_best_rule(dicts: Dict)-> Tuple:
+            """_summary_
+
+            Args:
+                dicts (Dict): _description_
+
+            Returns:
+                Tuple: _description_
+            """
+
+            def get_apriori(path_dict):
+                def dict_item_count(dict_list: List[Dict])-> List:
+                    res = []
+                    for d in dict_list:
+                        dd = self.dict_to_list(d)
+
+                        res.append(dd)
+                    return res
+                
+
+                path_dict = dict_item_count(path_dict)
+                association_rules = apriori(path_dict)
+                association_rules = list(association_rules)
+
+                res = []
+                for item in association_rules:
+                    if len(list(item[0])) > 1:
+                        res.append(list(item[0]))
+
+                return res
+
+            rules = get_apriori(dicts)
+            nums = []
+
+            for rule in rules:
+                keys = [x[:-1] for x in rule]
+                vals = [x[-1] for x in rule]
+
+                num = 0
+                for d in dicts:
+                    if all(d.get(k, '-') for k, v in zip(keys, vals)):
+                        num+=1
+                    nums.append(num* len(rule))
+
+            maxnum = max(nums)
+            maxind = nums.index(maxnum)
+            return rules[maxind], maxnum
+
+        def divide_rules(kind: Text):
+            if kind == 'add':
+                dicts = self.path_dict_add
+            elif kind == 'del':
+                dicts = self.path_dict_del
+            elif kind == 'still':
+                dicts = self.path_dict_still
+
+            rule, _ = get_best_rule(dicts)
+
+            
+            matched = []
+            rest = []
+
+            for d in dicts:
+                keys = [x[:-1] for x in rule]
+                vals = [x[-1] for x in rule]
+
+                if all(d.get(k, '-') == v for k, v in zip(keys, vals)):
+                    matched.append(d)
+                else:
+                    rest.append(d)
+                
+            return ((matched, rule), rest)
+
+        def rules_to_shared(data)-> Text:
+            nums = [int(x[-1]) for x in data]
+            words = [x[:-1] for x in data]
+            pos_words = [x[:-1] for x in data if x[-1]=='1']
+            neg_words = [x[:-1] for x in data if x[-1]=='0']
+            _sum = sum(nums)
+            if len(data) > 1:
+                if _sum == 0:
+                    return f'the document must {self.text_formatter("not", tc = 9, underline= True)} contain {list_to_string_2(words, False)}'
+                if _sum == 1:
+                    return f'the document must contain {list_to_string_2(pos_words)} and must not cntain {list_to_string_2(neg_words, False)}'
+                if _sum == 2:
+                    return f'the document must contain {list_to_string_2(words)}'
+            elif len(data) == 1:
+                if 1 in nums:
+                    return f' the document must contain {list_to_string_2(words)}'
+                return f'the document must {self.text_formatter("not", tc = 9, underline= True)} contain {list_to_string_2(words, False)}'
 
 
         with open(fn, 'w', encoding='utf-8') as f:
@@ -387,6 +559,8 @@ class BDD2Text(object):
                 used_paths = self.used_paths_del
             elif kind == 'still':
                 used_paths = self.used_paths_still
+
+            # region 4.1: Basic case
             if sum(Ns) <= 4:
                 num_list = []
                 for i, item in enumerate(used_paths):
@@ -404,9 +578,9 @@ class BDD2Text(object):
                     zeros, ones = agg_0_1(item)
                     string_on = list_to_string(ones, add_feature= False)
                     string_ze = list_to_string(zeros, add_feature = False)
-                    string_ze_pos = list_to_string_2(zeros, "pos")
-                    string_ze_neg = list_to_string_2(zeros, "neg")
-                    string_on_pos = list_to_string_2(ones, "pos")
+                    string_ze_pos = list_to_string_2(zeros)
+                    string_ze_neg = list_to_string_2(zeros, False)
+                    string_on_pos = list_to_string_2(ones)
 
                     if 'XXXX' in string_on:
                         if 'XXXX' not in string_ze:
@@ -430,5 +604,192 @@ class BDD2Text(object):
                         else:
                             print_text = f' - {rem} {string_on_pos}.'
                             f.write(print_text)
-                            print(print_text)                                                       
+                            print(print_text)
+            # endregion
+            # region 4.2: Complex case
+            else:
+                matched, rest = divide_rules(kind)
+                has_rule = matched[0]
+                rule = matched[1]
+
+                # region: Getting the number of rules with some shared part inside.
+                num_list = []
+                for i, item in enumerate(has_rule):
+                    zeros, ones = agg_0_1(item)
+                    num_list.append((i, len(zeros) + len(ones)))
+                num_list = list(sorted(num_list, key=lambda x: x[1]))
+                sag = 0
+
+                for ni in num_list:
+                    item = has_rule[ni]
+                    if Ns[ni]:
+                        sag += 1
+
+                # endregion
+                
+                # number of paths w/0 shared parts
+                # some_num = sum(Ns[-(tot_num - len(matched[0])):])
+                # paths used for classification
+
+                final_remaining = sum(Ns)
+
+                vaz = 1
+                if sag > 1 and sum(Ns) > sag:
+                    print_text = f'\n Out of these {sum(Ns)} classification rules, {sag} share the following criteria.'
+                    f.write(print_text)
+                    print(print_text)
+                else:
+                    vaz = 0
+                
+                keys_to_remove = []
+
+                if final_remaining != sag:
+                    if sag != 1:
+                        print_text = f'{rules_to_shared(rule)}'
+                        f.write(print_text)
+                        print(print_text)
+
+                        keys_to_remove = [x[:-1] for x in rule]
+                
+                ###############################################
+                ###### STATE REMAINDER OF SHARED RULES ########
+                ###############################################
+                if len(has_rule) > 1: 
+                    #################
+                    # DELETED STUFF #
+                    #################
+
+                    if sag != 1:
+                        if sum(Ns) > 2:
+                            msg = 'In addition, one of the following must hold:'
+                        elif sum(Ns) == 2:
+                            msg = "in addition, the following must hold:"
+                        
+                        if vaz == 1:
+                            print(msg)
+                        
+                        num_list = []
+                        for i , item in enumerate(has_rule):
+                            zeros, ones = agg_0_1(item)
+                            num_list.append((i, len(zeros) + len(ones)))
+                        num_list = list(sorted(num_list, key= lambda x: x[1]))
+                        num_list = [x[0] for x in num_list]
+
+                        #################
+                        #### LISTING ####
+                        #################
+
+                        for ni in num_list:
+                            item = has_rule[ni]
+
+                            # checking for the frequency
+                            if Ns[ni] and vaz ==1:
+
+                                for k in keys_to_remove:
+                                    self.remove_key(item, k)
+                                rem = self.text_formatter("Having", tc = 10)
+                                rem2 = self.text_formatter(text= 'not', tc = 9, underline= True)
+
+                                zeros, ones = agg_0_1(item)
+                                string_on = list_to_string(ones, add_feature= False)
+                                string_ze = list_to_string(zeros, add_feature = False)
+                                string_ze_pos = list_to_string_2(zeros)
+                                string_ze_neg = list_to_string_2(zeros, False)
+                                string_on_pos = list_to_string_2(ones)
+
+                                if 'XXXX' in string_on:
+                                    if 'XXXX' not in string_ze:
+                                        if len(zeros) > 1:
+                                            iii = 'are'
+                                        else:
+                                            iii = 'is'
+                                        
+                                        print_text = f' - If there {iii} {rem2} {string_ze_pos}.'
+                                        f.write(print_text)
+                                        print(print_text)
+                                elif 'XXXX' not in string_on:
+                                    if 'XXXX' not in string_ze:
+                                        if len(zeros) > 1:
+                                            iii = 'are'
+                                        else:
+                                            iii = 'is'
+                                        print_text = f' - {rem} {string_on_pos} but {rem2} {string_ze_neg}.'
+                                        f.write(print_text)
+                                        print(print_text)   
+                                    else:
+                                        print_text = f' - {rem} {string_on_pos}.'
+                                        f.write(print_text)
+                                        print(print_text)
+                        
+                        remaining = tot_num - sag
+                        final_remaining = sum(Ns[-(remaining):])
+
+                        paths_to_list = rest
+
+                        # if there is nothing shared
+                        if sag != 1:
+                            if final_remaining == 1:
+                                rem = '\nHere is the remaining rule:'
+                                f.write(f'{rem}')
+                                print(f'{rem}')
+                            elif final_remaining > 1:
+                                rem = '\n Here are the remaining rules:'
+                                f.write(rem)
+                                print(rem)
+                        
+                        if sag == 1:
+                            paths_to_list = used_paths
+                        
+                        to_show = sum(Ns) - sag
+                        num_list = []
+
+                        for i, item in enumerate(paths_to_list[:to_show]):
+                            zeros, ones = agg_0_1(item)
+                            num_list.append((i, len(zeros) + len(ones)))
+                        num_list = list(sorted(num_list, key = lambda x: x[1]))
+                        num_list = [x[0] for x in num_list]
+
+                        ###############
+                        ### LISTING ###
+                        ###############
+
+                        for ni in num_list:
+                            item = paths_to_list[ni]
+
+                            rem = self.text_formatter("Having", tc = 10)
+                            rem2 = self.text_formatter('not', tc = 9, underline= True)
+                            zeros, ones = agg_0_1(item)
+                            string_on = list_to_string(ones, add_feature= False)
+                            string_ze = list_to_string(zeros, add_feature = False)
+                            string_ze_pos = list_to_string_2(zeros)
+                            string_ze_neg = list_to_string_2(zeros, False)
+                            string_on_pos = list_to_string_2(ones)
+
+                            if 'XXXX' in string_on:
+                                if 'XXXX' not in string_ze:
+                                    if len(zeros) > 1:
+                                        iii = 'are'
+                                    else:
+                                        iii = 'is'
+                                    
+                                    print_text = f' - If there {iii} {rem2} {string_ze_pos}.'
+                                    f.write(print_text)
+                                    print(print_text)
+                            elif 'XXXX' not in string_on:
+                                if 'XXXX' not in string_ze:
+                                    if len(zeros) > 1:
+                                        iii = 'are'
+                                    else:
+                                        iii = 'is'
+                                    print_text = f' - {rem} {string_on_pos} but {rem2} {string_ze_neg}.'
+                                    f.write(print_text)
+                                    print(print_text)   
+                                else:
+                                    print_text = f' - {rem} {string_on_pos}.'
+                                    f.write(print_text)
+                                    print(print_text)
+
+                        f.write('\n')
+                        print()
+            # endregion
             # endregion
