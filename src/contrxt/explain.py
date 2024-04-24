@@ -13,7 +13,7 @@ from src.contrxt.data.data_manager import DataManager
 from pyeda.inter import expr2bdd, expr
 from src.contrxt.utils.helper import union, jaccard_distance
 from graphviz import Source
-from src.contrxt.utils.BDD2Text import BDD2Text
+from src.contrxt.utils._BDD2Text import BDD2Text
 
 TIMEOUT = 72000 # second
 
