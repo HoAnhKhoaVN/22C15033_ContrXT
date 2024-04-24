@@ -472,7 +472,7 @@ class Explain(object):
         '''
         def create_BDD2Text(class_id):
             text = BDD2Text(f'{self.save_path}/paths_add_del.csv', class_id, 85)
-            text.simple_text()
+            text.simple_text(fn = f'{self.save_path}/explain_text.ans')
         if not classes:
             for class_id in self.bdd_dict:
                 create_BDD2Text(class_id)

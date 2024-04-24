@@ -90,7 +90,8 @@ class BDD2Text(object):
             # Remove : in text
             s = re.sub(
                 pattern=r'(\w+):',
-                repl=r'"\1"' # \1 is backreference in regrex to define the first capturing group.
+                repl=r'"\1":', # \1 is backreference in regrex to define the first capturing group.
+                string= s
             )
 
             # endregion
@@ -103,7 +104,7 @@ class BDD2Text(object):
 
                 Args:
                     match (re.Match): _description_
-
+s
                 Returns:
                     Text: _description_
                 """

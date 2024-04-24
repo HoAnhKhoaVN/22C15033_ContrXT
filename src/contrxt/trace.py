@@ -269,7 +269,7 @@ class Trace(object):
 
                 self.times[time_label][class_id] = round(time.time() - start_time, 3)
 
-                break
+                # break
 
             except Exception as e:
                 self.logger.debug(msg = e)
