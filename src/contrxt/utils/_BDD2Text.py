@@ -491,9 +491,16 @@ class BDD2Text(object):
         with open(fn, 'w', encoding='utf-8') as f:
             # region 1: Creating class name
             f.write('='*70)
+            print('='*70)
+
             f.write(self.label)
+            print(self.label)
+
             f.write('='*70)
+            print('='*70)
+
             f.write("\n")
+            print()
 
             # endregion
 
@@ -523,6 +530,7 @@ class BDD2Text(object):
 
                 if tot_num > 0:
                     f.write(title)
+                    print(title)
 
             # endregion
 
@@ -530,6 +538,7 @@ class BDD2Text(object):
                 if tot_num == 0:
                     colored_title_thing = self.text_formatter(title_thing, bc = color)
                     f.write(f'There are no "{colored_title_thing}" classification rules.\n')
+                    print(f'There are no "{colored_title_thing}" classification rules.\n')
                     continue
 
                 rule_rules = 'rule'
@@ -548,7 +557,10 @@ class BDD2Text(object):
                     to_print += f', but only {sum(Ns)} {is_are} used to classify the {int(self.threshold* 100)}% of the items.'
                 
                 f.write(self.wrapper.fill(to_print))
+                print(self.wrapper.fill(to_print))
+                
                 f.write(f'\n')
+                print()
             
             # endregion
 
