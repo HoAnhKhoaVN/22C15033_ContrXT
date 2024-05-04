@@ -1,4 +1,3 @@
-
 import logging
 from typing import List, Text
 import pandas as pd
@@ -7,7 +6,7 @@ from src.contrxt.data.text_data_manager import TextDataManager
 from src.contrxt.data.tabular_data_manager import TabularDataManager
 from src.contrxt.trace import Trace
 from sys import platform
-from contanst import (
+from src.contrxt.constant import (
     GRAPHVIZ_LINUX,
     GRAPHVIZ_WIN
 )
