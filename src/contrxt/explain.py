@@ -1,5 +1,3 @@
-
-
 from collections import defaultdict
 import logging
 import os
@@ -13,7 +11,8 @@ from src.contrxt.data.data_manager import DataManager
 from pyeda.inter import expr2bdd, expr
 from src.contrxt.utils.helper import union, jaccard_distance
 from graphviz import Source
-from src.contrxt.utils._BDD2Text import BDD2Text
+from src.contrxt.utils.BDD2Text import BDD2Text
+
 
 TIMEOUT = 72000 # second
 
@@ -472,7 +471,8 @@ class Explain(object):
         '''
         def create_BDD2Text(class_id):
             text = BDD2Text(f'{self.save_path}/paths_add_del.csv', class_id, 85)
-            text.simple_text(fn = f'{self.save_path}/explain_text.ans')
+            text.simple_text(f'{self.save_path}/explain_text.ans')
+
         if not classes:
             for class_id in self.bdd_dict:
                 create_BDD2Text(class_id)
