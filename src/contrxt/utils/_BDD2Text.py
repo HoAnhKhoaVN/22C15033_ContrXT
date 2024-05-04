@@ -183,7 +183,7 @@ s
 
     def rule_trimmer(
         self,
-        data: List,
+        data: List[int],
         threshold = 0.8,
     )->List[bool]:
         """
@@ -491,13 +491,13 @@ s
 
         with open(fn, 'w', encoding='utf-8') as f:
             # region 1: Creating class name
-            f.write('='*70)
+            f.write(f"{'='*70}\n")
             print('='*70)
 
             f.write(self.label)
             print(self.label)
 
-            f.write('='*70)
+            f.write(f"{'='*70}\n")
             print('='*70)
 
             f.write("\n")
@@ -530,7 +530,7 @@ s
                 title = self.text_formatter(title, bc = color)
 
                 if tot_num > 0:
-                    f.write(title)
+                    f.write(f'{title}\n')
                     print(title)
 
             # endregion
@@ -565,144 +565,212 @@ s
             
             # endregion
 
-            # region 4:
-            if kind == 'add':
-                used_paths = self.used_paths_add
-            elif kind == 'del':
-                used_paths = self.used_paths_del
-            elif kind == 'still':
-                used_paths = self.used_paths_still
+                # region 4:
+                if kind == 'add':
+                    used_paths = self.used_paths_add
+                elif kind == 'del':
+                    used_paths = self.used_paths_del
+                elif kind == 'still':
+                    used_paths = self.used_paths_still
 
-            # region 4.1: Basic case
-            if sum(Ns) <= 4:
-                num_list = []
-                for i, item in enumerate(used_paths):
-                    zeros, ones = agg_0_1(item)
-                    num_list.append((i, len(zeros)+ len(ones)))
-                
-                num_list = list(sorted(num_list, key = lambda x: x[1]))
-                num_list = [x[0] for x in num_list]
+                # region 4.1: Basic case
+                if sum(Ns) <= 4:
+                    num_list = []
+                    for i, item in enumerate(used_paths):
+                        zeros, ones = agg_0_1(item)
+                        num_list.append((i, len(zeros)+ len(ones)))
+                    
+                    num_list = list(sorted(num_list, key = lambda x: x[1]))
+                    num_list = [x[0] for x in num_list]
 
-                for ni in num_list:
-                    item = used_paths[ni]
-                    rem = self.text_formatter('Having', tc = 10)
-                    rem2 = self.text_formatter('not', tc =9, underline= True)
+                    for ni in num_list:
+                        item = used_paths[ni]
+                        rem = self.text_formatter('Having', tc = 10)
+                        rem2 = self.text_formatter('not', tc =9, underline= True)
 
-                    zeros, ones = agg_0_1(item)
-                    string_on = list_to_string(ones, add_feature= False)
-                    string_ze = list_to_string(zeros, add_feature = False)
-                    string_ze_pos = list_to_string_2(zeros)
-                    string_ze_neg = list_to_string_2(zeros, False)
-                    string_on_pos = list_to_string_2(ones)
+                        zeros, ones = agg_0_1(item)
+                        string_on = list_to_string(ones, add_feature= False)
+                        string_ze = list_to_string(zeros, add_feature = False)
+                        string_ze_pos = list_to_string_2(zeros)
+                        string_ze_neg = list_to_string_2(zeros, False)
+                        string_on_pos = list_to_string_2(ones)
 
-                    if 'XXXX' in string_on:
-                        if 'XXXX' not in string_ze:
-                            if len(zeros) > 1:
-                                iii = 'are'
+                        if 'XXXX' in string_on:
+                            if 'XXXX' not in string_ze:
+                                if len(zeros) > 1:
+                                    iii = 'are'
+                                else:
+                                    iii = 'is'
+                                
+                                print_text = f' - If there {iii} {rem2} {string_ze_pos}.'
+                                f.write(print_text)
+                                print(print_text)
+                        elif 'XXXX' not in string_on:
+                            if 'XXXX' not in string_ze:
+                                if len(zeros) > 1:
+                                    iii = 'are'
+                                else:
+                                    iii = 'is'
+                                print_text = f' - {rem} {string_on_pos} but {rem2} {string_ze_neg}.'
+                                f.write(print_text)
+                                print(print_text)   
                             else:
-                                iii = 'is'
-                            
-                            print_text = f' - If there {iii} {rem2} {string_ze_pos}.'
-                            f.write(print_text)
-                            print(print_text)
-                    elif 'XXXX' not in string_on:
-                        if 'XXXX' not in string_ze:
-                            if len(zeros) > 1:
-                                iii = 'are'
-                            else:
-                                iii = 'is'
-                            print_text = f' - {rem} {string_on_pos} but {rem2} {string_ze_neg}.'
-                            f.write(print_text)
-                            print(print_text)   
-                        else:
-                            print_text = f' - {rem} {string_on_pos}.'
-                            f.write(print_text)
-                            print(print_text)
-            # endregion
-            # region 4.2: Complex case
-            else:
-                matched, rest = divide_rules(kind)
-                has_rule = matched[0]
-                rule = matched[1]
-
-                # region: Getting the number of rules with some shared part inside.
-                num_list = []
-                for i, item in enumerate(has_rule):
-                    zeros, ones = agg_0_1(item)
-                    num_list.append((i, len(zeros) + len(ones)))
-                num_list = list(sorted(num_list, key=lambda x: x[1]))
-                sag = 0
-
-                for ni in num_list:
-                    item = has_rule[ni]
-                    if Ns[ni]:
-                        sag += 1
-
+                                print_text = f' - {rem} {string_on_pos}.'
+                                f.write(print_text)
+                                print(print_text)
                 # endregion
-                
-                # number of paths w/0 shared parts
-                # some_num = sum(Ns[-(tot_num - len(matched[0])):])
-                # paths used for classification
-
-                final_remaining = sum(Ns)
-
-                vaz = 1
-                if sag > 1 and sum(Ns) > sag:
-                    print_text = f'\n Out of these {sum(Ns)} classification rules, {sag} share the following criteria.'
-                    f.write(print_text)
-                    print(print_text)
+                # region 4.2: Complex case
                 else:
-                    vaz = 0
-                
-                keys_to_remove = []
+                    matched, rest = divide_rules(kind)
+                    has_rule = matched[0]
+                    rule = matched[1]
 
-                if final_remaining != sag:
-                    if sag != 1:
-                        print_text = f'{rules_to_shared(rule)}'
+                    # region: Getting the number of rules with some shared part inside.
+                    num_list = []
+                    for i, item in enumerate(has_rule):
+                        zeros, ones = agg_0_1(item)
+                        num_list.append((i, len(zeros) + len(ones)))
+                    num_list = list(sorted(num_list, key=lambda x: x[1]))
+                    sag = 0
+
+                    for ni in num_list:
+                        item = has_rule[ni]
+                        if Ns[ni]:
+                            sag += 1
+
+                    # endregion
+                    
+                    # number of paths w/0 shared parts
+                    # some_num = sum(Ns[-(tot_num - len(matched[0])):])
+                    # paths used for classification
+
+                    final_remaining = sum(Ns)
+
+                    vaz = 1
+                    if sag > 1 and sum(Ns) > sag:
+                        print_text = f'\n Out of these {sum(Ns)} classification rules, {sag} share the following criteria.'
                         f.write(print_text)
                         print(print_text)
+                    else:
+                        vaz = 0
+                    
+                    keys_to_remove = []
 
-                        keys_to_remove = [x[:-1] for x in rule]
-                
-                ###############################################
-                ###### STATE REMAINDER OF SHARED RULES ########
-                ###############################################
-                if len(has_rule) > 1: 
-                    #################
-                    # DELETED STUFF #
-                    #################
+                    if final_remaining != sag:
+                        if sag != 1:
+                            print_text = f'{rules_to_shared(rule)}'
+                            f.write(print_text)
+                            print(print_text)
 
-                    if sag != 1:
-                        if sum(Ns) > 2:
-                            msg = 'In addition, one of the following must hold:'
-                        elif sum(Ns) == 2:
-                            msg = "in addition, the following must hold:"
-                        
-                        if vaz == 1:
-                            print(msg)
-                        
-                        num_list = []
-                        for i , item in enumerate(has_rule):
-                            zeros, ones = agg_0_1(item)
-                            num_list.append((i, len(zeros) + len(ones)))
-                        num_list = list(sorted(num_list, key= lambda x: x[1]))
-                        num_list = [x[0] for x in num_list]
-
+                            keys_to_remove = [x[:-1] for x in rule]
+                    
+                    ###############################################
+                    ###### STATE REMAINDER OF SHARED RULES ########
+                    ###############################################
+                    if len(has_rule) > 1: 
                         #################
-                        #### LISTING ####
+                        # DELETED STUFF #
                         #################
 
-                        for ni in num_list:
-                            item = has_rule[ni]
+                        if sag != 1:
+                            if sum(Ns) > 2:
+                                msg = 'In addition, one of the following must hold:'
+                            elif sum(Ns) == 2:
+                                msg = "in addition, the following must hold:"
+                            
+                            if vaz == 1:
+                                print(msg)
+                            
+                            num_list = []
+                            for i , item in enumerate(has_rule):
+                                zeros, ones = agg_0_1(item)
+                                num_list.append((i, len(zeros) + len(ones)))
+                            num_list = list(sorted(num_list, key= lambda x: x[1]))
+                            num_list = [x[0] for x in num_list]
 
-                            # checking for the frequency
-                            if Ns[ni] and vaz ==1:
+                            #################
+                            #### LISTING ####
+                            #################
 
-                                for k in keys_to_remove:
-                                    self.remove_key(item, k)
+                            for ni in num_list:
+                                item = has_rule[ni]
+
+                                # checking for the frequency
+                                if Ns[ni] and vaz ==1:
+
+                                    for k in keys_to_remove:
+                                        self.remove_key(item, k)
+                                    rem = self.text_formatter("Having", tc = 10)
+                                    rem2 = self.text_formatter(text= 'not', tc = 9, underline= True)
+
+                                    zeros, ones = agg_0_1(item)
+                                    string_on = list_to_string(ones, add_feature= False)
+                                    string_ze = list_to_string(zeros, add_feature = False)
+                                    string_ze_pos = list_to_string_2(zeros)
+                                    string_ze_neg = list_to_string_2(zeros, False)
+                                    string_on_pos = list_to_string_2(ones)
+
+                                    if 'XXXX' in string_on:
+                                        if 'XXXX' not in string_ze:
+                                            if len(zeros) > 1:
+                                                iii = 'are'
+                                            else:
+                                                iii = 'is'
+                                            
+                                            print_text = f' - If there {iii} {rem2} {string_ze_pos}.'
+                                            f.write(print_text)
+                                            print(print_text)
+                                    elif 'XXXX' not in string_on:
+                                        if 'XXXX' not in string_ze:
+                                            if len(zeros) > 1:
+                                                iii = 'are'
+                                            else:
+                                                iii = 'is'
+                                            print_text = f' - {rem} {string_on_pos} but {rem2} {string_ze_neg}.'
+                                            f.write(print_text)
+                                            print(print_text)   
+                                        else:
+                                            print_text = f' - {rem} {string_on_pos}.'
+                                            f.write(print_text)
+                                            print(print_text)
+                            
+                            remaining = tot_num - sag
+                            final_remaining = sum(Ns[-(remaining):])
+
+                            paths_to_list = rest
+
+                            # if there is nothing shared
+                            if sag != 1:
+                                if final_remaining == 1:
+                                    rem = '\nHere is the remaining rule:'
+                                    f.write(f'{rem}')
+                                    print(f'{rem}')
+                                elif final_remaining > 1:
+                                    rem = '\n Here are the remaining rules:'
+                                    f.write(rem)
+                                    print(rem)
+                            
+                            if sag == 1:
+                                paths_to_list = used_paths
+                            
+                            to_show = sum(Ns) - sag
+                            num_list = []
+
+                            for i, item in enumerate(paths_to_list[:to_show]):
+                                zeros, ones = agg_0_1(item)
+                                num_list.append((i, len(zeros) + len(ones)))
+                            num_list = list(sorted(num_list, key = lambda x: x[1]))
+                            num_list = [x[0] for x in num_list]
+
+                            ###############
+                            ### LISTING ###
+                            ###############
+
+                            for ni in num_list:
+                                item = paths_to_list[ni]
+
                                 rem = self.text_formatter("Having", tc = 10)
-                                rem2 = self.text_formatter(text= 'not', tc = 9, underline= True)
-
+                                rem2 = self.text_formatter('not', tc = 9, underline= True)
                                 zeros, ones = agg_0_1(item)
                                 string_on = list_to_string(ones, add_feature= False)
                                 string_ze = list_to_string(zeros, add_feature = False)
@@ -733,76 +801,8 @@ s
                                         print_text = f' - {rem} {string_on_pos}.'
                                         f.write(print_text)
                                         print(print_text)
-                        
-                        remaining = tot_num - sag
-                        final_remaining = sum(Ns[-(remaining):])
 
-                        paths_to_list = rest
-
-                        # if there is nothing shared
-                        if sag != 1:
-                            if final_remaining == 1:
-                                rem = '\nHere is the remaining rule:'
-                                f.write(f'{rem}')
-                                print(f'{rem}')
-                            elif final_remaining > 1:
-                                rem = '\n Here are the remaining rules:'
-                                f.write(rem)
-                                print(rem)
-                        
-                        if sag == 1:
-                            paths_to_list = used_paths
-                        
-                        to_show = sum(Ns) - sag
-                        num_list = []
-
-                        for i, item in enumerate(paths_to_list[:to_show]):
-                            zeros, ones = agg_0_1(item)
-                            num_list.append((i, len(zeros) + len(ones)))
-                        num_list = list(sorted(num_list, key = lambda x: x[1]))
-                        num_list = [x[0] for x in num_list]
-
-                        ###############
-                        ### LISTING ###
-                        ###############
-
-                        for ni in num_list:
-                            item = paths_to_list[ni]
-
-                            rem = self.text_formatter("Having", tc = 10)
-                            rem2 = self.text_formatter('not', tc = 9, underline= True)
-                            zeros, ones = agg_0_1(item)
-                            string_on = list_to_string(ones, add_feature= False)
-                            string_ze = list_to_string(zeros, add_feature = False)
-                            string_ze_pos = list_to_string_2(zeros)
-                            string_ze_neg = list_to_string_2(zeros, False)
-                            string_on_pos = list_to_string_2(ones)
-
-                            if 'XXXX' in string_on:
-                                if 'XXXX' not in string_ze:
-                                    if len(zeros) > 1:
-                                        iii = 'are'
-                                    else:
-                                        iii = 'is'
-                                    
-                                    print_text = f' - If there {iii} {rem2} {string_ze_pos}.'
-                                    f.write(print_text)
-                                    print(print_text)
-                            elif 'XXXX' not in string_on:
-                                if 'XXXX' not in string_ze:
-                                    if len(zeros) > 1:
-                                        iii = 'are'
-                                    else:
-                                        iii = 'is'
-                                    print_text = f' - {rem} {string_on_pos} but {rem2} {string_ze_neg}.'
-                                    f.write(print_text)
-                                    print(print_text)   
-                                else:
-                                    print_text = f' - {rem} {string_on_pos}.'
-                                    f.write(print_text)
-                                    print(print_text)
-
-                        f.write('\n')
-                        print()
-            # endregion
-            # endregion
+                            f.write('\n')
+                            print()
+                # endregion
+                # endregion
