@@ -1,4 +1,3 @@
-
 import logging
 from typing import List, Text
 import pandas as pd
@@ -6,6 +5,21 @@ from src.contrxt.explain import Explain
 from src.contrxt.data.text_data_manager import TextDataManager
 from src.contrxt.data.tabular_data_manager import TabularDataManager
 from src.contrxt.trace import Trace
+from sys import platform
+from src.contrxt.constant import (
+    GRAPHVIZ_LINUX,
+    GRAPHVIZ_WIN
+)
+
+if platform == "linux" or platform == "linux2":
+    print(f'OS is Linux!!!')
+    GRAPHVIZ_PATH = GRAPHVIZ_LINUX
+elif platform == "darwin":
+    print(f'OS is Mac OS!!!')
+    GRAPHVIZ_PATH = GRAPHVIZ_LINUX
+elif platform == "win32":
+    print(f'OS is Windows!!!')
+    GRAPHVIZ_PATH = GRAPHVIZ_WIN
 
 class ContrXT(object):
     def __init__(
@@ -18,7 +32,7 @@ class ContrXT(object):
         hyperparameters_selection : bool = True,
         log_level = logging.INFO,
         save_path: Text = 'results',
-        graphviz_path : Text = 'C:/Program Files (x86)/Graphviz2.38/bin',
+        graphviz_path : Text = GRAPHVIZ_PATH,
         surrogate_type: Text = 'sklearn',
         save_surrogates : bool = False,
         save_csvs : bool = True,
