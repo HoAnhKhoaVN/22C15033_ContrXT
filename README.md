@@ -5,11 +5,9 @@ Reference from paper [ContrXT: Generating contrastive explanations from any text
 ## Install
 1. Connect conda
 ```sh
-
-cd D:\Desktop\xAI\exp\22C15033_ContrXT
-
 D:
 
+cd D:\Desktop\xAI\exp\22C15033_ContrXT
 conda env list
 
 conda activate 'env_conda'
