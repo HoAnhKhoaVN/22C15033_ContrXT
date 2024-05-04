@@ -236,6 +236,7 @@ class Trace(object):
         Args:
             time_label (Text): Description of paramater `time_label`
         """
+        count = 0
         for class_id in self.classes:
             try:
                 self.logger.info(f'Starting explanation in {time_label} for class_id {class_id}')
@@ -269,7 +270,10 @@ class Trace(object):
 
                 self.times[time_label][class_id] = round(time.time() - start_time, 3)
 
-                # break
+                if count == 0:
+                    break
+                else:
+                    count+=1
 
             except Exception as e:
                 self.logger.debug(msg = e)
