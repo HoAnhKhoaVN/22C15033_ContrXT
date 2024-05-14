@@ -2,3 +2,5 @@ logs/*
 results/*
 *.png
 *.pyc
+*.txt
+*.csv
