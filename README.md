@@ -20,3 +20,26 @@ sh scripts/demo/demo.sh
 
 python scripts/demo/demo.py
 ```
+
+
+### Run on server
+1. Connect virtual enviroment
+```sh
+conda activate khoaha_venv
+```
+
+2. List conda enviroment
+```sh
+conda env list
+```
+
+3. Install `pip` in Conda
+```sh
+conda install pip
+```
+
+4. Install Graphviz
+```sh
+sudo apt-get install graphviz
+```
+unzip -q VNTC.zip
