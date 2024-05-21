@@ -1,1 +1,2 @@
- 
+TWENTY_NEW_GROUP_TRAIN_PATH = 'D:/Desktop/xAI/exp/22C15033_ContrXT/src/text_cls/datasets/20newsgroups/train.csv'
+TWENTY_NEW_GROUP_TEST_PATH = "D:/Desktop/xAI/exp/22C15033_ContrXT/src/text_cls/datasets/20newsgroups/test.csv"
