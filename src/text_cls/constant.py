@@ -1,2 +1,5 @@
-TWENTY_NEW_GROUP_TRAIN_PATH = 'D:/Desktop/xAI/exp/22C15033_ContrXT/src/text_cls/datasets/20newsgroups/train.csv'
-TWENTY_NEW_GROUP_TEST_PATH = "D:/Desktop/xAI/exp/22C15033_ContrXT/src/text_cls/datasets/20newsgroups/test.csv"
+TWENTY_NEW_GROUP_TRAIN_PATH = 'src/text_cls/dataset/20newsgroups/train.csv'
+TWENTY_NEW_GROUP_TEST_PATH = "src/text_cls/dataset/20newsgroups/test.csv"
+
+VNTC_TRAIN_PATH = "src/text_cls/dataset/VNTC/train"
+VNTC_TEST_PATH = "src/text_cls/dataset/VNTC/test"
