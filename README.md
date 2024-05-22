@@ -38,8 +38,18 @@ conda env list
 conda install pip
 ```
 
+
 4. Install Graphviz
 ```sh
 sudo apt-get install graphviz
 ```
-unzip -q VNTC.zip
+
+5. Experiment with test classification
+```sh
+sh scripts/text_cls/run_text_cls.sh
+```
+
+
+```sh
+conda activate khoaha_venv
+```
