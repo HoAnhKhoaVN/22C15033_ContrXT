@@ -16,3 +16,4 @@ tqdm
 pyeda
 apyori
 chardet
+nltk
