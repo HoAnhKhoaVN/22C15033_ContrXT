@@ -1,0 +1,38 @@
+# Project configuration
+
+project:
+  name: "MyProject"
+  version: "1.0.0"
+  description: "This is a sample project configuration file."
+
+# Database configuration
+database:
+  host: "localhost"
+  port: 5432
+  username: "dbuser"
+  password: "dbpass"
+  database_name: "mydatabase"
+
+# API settings
+api:
+  endpoint: "https://api.example.com"
+  timeout: 30  # timeout in seconds
+  retries: 3
+
+# Logging configuration
+logging:
+  level: "INFO"
+  file: "logs/project.log"
+  max_size: "10MB"
+  backup_count: 5
+
+# Feature toggles
+features:
+  enable_feature_x: true
+  enable_feature_y: false
+
+# List of supported environments
+environments:
+  - development
+  - testing
+  - production
