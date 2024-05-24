@@ -1,0 +1,10 @@
+path:
+  input: "src/text_cls/dataset/20newsgroups/train.csv"
+
+method:
+  noun_phrase: true
+  clean_text: true 
+  remove_stopwords: true
+  lemmatize_words: true
+  # split_sentences: true
+  # spell_checking: true
