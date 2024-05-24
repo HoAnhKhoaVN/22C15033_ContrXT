@@ -17,3 +17,5 @@ pyeda
 apyori
 chardet
 nltk
+textblob
+pyyaml
