@@ -6,3 +6,5 @@ VNTC_TEST_PATH = "src/text_cls/dataset/VNTC/test"
 
 VNTC_TRAIN_CSV_PATH = "src/text_cls/dataset/VNTC/train.csv"
 VNTC_TEST_CSV_PATH = "src/text_cls/dataset/VNTC/test.csv"
+
+CONFIG_PATH = 'src/text_cls/config.yml'
