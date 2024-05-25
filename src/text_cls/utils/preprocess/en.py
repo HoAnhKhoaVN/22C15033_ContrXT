@@ -41,6 +41,7 @@ class EnglishTextPreprocessor:
         self.stop_words = set(stopwords.words('english'))
         self.lemmatizer = WordNetLemmatizer()
         self.stemmer = PorterStemmer()
+        self.idx = 0
 
     def stem_text(self, text: str) -> str:
         """
@@ -251,6 +252,8 @@ class EnglishTextPreprocessor:
         Returns:
             A list of preprocessed words.
         """
+        self.idx+=1
+        print(f'{self.idx}')
         try:
             sents = self.split_sentences(text)
 
