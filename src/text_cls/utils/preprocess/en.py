@@ -253,11 +253,7 @@ class EnglishTextPreprocessor:
 
         # Extracting noun phrases using TextBlob
         blob = TextBlob(text)
-        print(f'blob.noun_phrases: {blob.noun_phrases}')
         noun_phrases = check_alphabet(blob.noun_phrases)
-        print(f'noun_phrases :{noun_phrases}')
-        
-        # print(noun_phrases)
 
         # Tokenizing the sentence by replacing spaces in noun phrases with underscores
         processed_sentence = blob.string.replace(" ", "%20")
