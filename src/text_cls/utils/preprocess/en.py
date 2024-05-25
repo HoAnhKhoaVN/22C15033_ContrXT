@@ -6,6 +6,8 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.stem import PorterStemmer
 from tqdm import tqdm
+
+from src.text_cls.constant import LABEL, TEXT
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
@@ -315,7 +317,6 @@ class EnglishTextPreprocessor:
     def preprocess_dataframe(
         self,
         df: pd.DataFrame,
-        text_column: str,
         noun_phrase: bool = False,    
     ) -> pd.DataFrame:
         """
@@ -336,7 +337,7 @@ class EnglishTextPreprocessor:
 
         # Preprocess
         preprocess_texts = []
-        for text in tqdm(df_processed[text_column]):
+        for text in tqdm(df_processed[TEXT]):
             new_text = self.preprocess_text(
                 text,
                 noun_phrase,
@@ -344,7 +345,7 @@ class EnglishTextPreprocessor:
 
             preprocess_texts.append(new_text)
             
-        df_processed[text_column] = preprocess_texts
+        df_processed[TEXT] = preprocess_texts
 
         return df_processed
     
@@ -361,7 +362,7 @@ class EnglishTextPreprocessor:
         Returns:
         pd.DataFrame: The DataFrame with NaN text rows removed.
         """
-        return df.dropna(subset=['text'])
+        return df.dropna(subset=[TEXT, LABEL])
 
 if __name__ == "__main__":
     # region INIT
@@ -374,7 +375,6 @@ if __name__ == "__main__":
     # region PREPROCESS
     preprocessed_df = preprocessor.preprocess_dataframe(
         train_df[:3],
-        'text',
         noun_phrase = True,
     )
 

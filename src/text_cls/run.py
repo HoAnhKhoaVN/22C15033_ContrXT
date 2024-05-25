@@ -50,7 +50,6 @@ if __name__ == "__main__":
 
     preprocessed_df = preprocessor.preprocess_dataframe(
         df,
-        'text',
         noun_phrase = noun_phrase,
     )
 
@@ -65,25 +64,16 @@ if __name__ == "__main__":
 
     # region SAVE FILE
     dirname = os.path.dirname(path)
-    basename = os.path.basename(path)
-
-    fd_name = os.path.basename(dirname)
+    fd_name = os.path.splitext(os.path.basename(path))[0]
     
     if args.noun_phrase:
-        fd_name += "__split_noun_phrase"
+        fd_name += "__split_noun_phrase.csv"
     else:
-        fd_name += "__word"
-    
-    out_fd = os.path.join(
-        dirname,
-        fd_name
-    )
-
-    os.makedirs(out_fd, exist_ok= True)
+        fd_name += "__word.csv"
     
     out_path = os.path.join(
-        out_fd,
-        basename
+        dirname,
+        fd_name
     )
     
     preprocessed_df.to_csv(
