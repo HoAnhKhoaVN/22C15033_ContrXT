@@ -243,9 +243,6 @@ class EnglishTextPreprocessor:
         self,
         text: str,
         noun_phrase : bool = False,
-        clean_text: bool = True,
-        remove_stopwords: bool = True,
-        lemmatize_words: bool = True
     ) -> list[str]:
         """
         Applies a full text preprocessing pipeline to a text string.
@@ -292,10 +289,7 @@ class EnglishTextPreprocessor:
         self,
         df: pd.DataFrame,
         text_column: str,
-        noun_phrase: bool = False,
-        clean_text: bool = True,
-        remove_stopwords: bool = True,
-        lemmatize_words: bool = True       
+        noun_phrase: bool = False,    
     ) -> pd.DataFrame:
         """
         Applies the full text preprocessing pipeline to a specified text column in a DataFrame.
@@ -319,9 +313,6 @@ class EnglishTextPreprocessor:
             new_text = self.preprocess_text(
                 text,
                 noun_phrase,
-                clean_text,
-                remove_stopwords,
-                lemmatize_words
             )
 
             preprocess_texts.append(new_text)
@@ -358,9 +349,6 @@ if __name__ == "__main__":
         train_df[:3],
         'text',
         noun_phrase = True,
-        clean_text= True,
-        remove_stopwords= True,
-        lemmatize_words = True
     )
 
     # endregion

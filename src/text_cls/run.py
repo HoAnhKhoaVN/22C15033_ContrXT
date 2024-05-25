@@ -52,9 +52,6 @@ if __name__ == "__main__":
         df,
         'text',
         noun_phrase = noun_phrase,
-        clean_text= True,
-        remove_stopwords= True,
-        lemmatize_words = True
     )
 
     print(preprocessed_df.head(5))
