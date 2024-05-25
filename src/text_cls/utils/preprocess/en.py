@@ -223,17 +223,20 @@ class EnglishTextPreprocessor:
         # Extracting noun phrases using TextBlob
         blob = TextBlob(text)
         noun_phrases = blob.noun_phrases
+        # print(noun_phrases)
 
         # Tokenizing the sentence by replacing spaces in noun phrases with underscores
-        processed_sentence = blob.string
+        processed_sentence = blob.string.replace(" ", "%20")
 
         # Creating a regular expression pattern for matching noun phrases
         for phrase in noun_phrases:
             # Replace spaces with underscores within each noun phrase
             underscored_phrase = '_'.join(phrase.split())
             # Use regular expression to replace the original noun phrase in the sentence with the underscored version
-            processed_sentence = re.sub(r'\b' + re.escape(phrase) + r'\b', underscored_phrase, processed_sentence)
+            pattern = re.escape(phrase.replace(" ", "%20"))
+            processed_sentence = re.sub(pattern, underscored_phrase, processed_sentence)
 
+        processed_sentence.replace("%20", "")
         return processed_sentence
     
     def preprocess_text(
@@ -254,34 +257,24 @@ class EnglishTextPreprocessor:
             A list of preprocessed words.
         """
         self.idx+=1
+        # print(f'Text: {text}')
         # print(f'{self.idx}')
         try:
+
             sents = self.split_sentences(text)
 
             res = []
 
             for s in sents:
-                # print(f'S BEFORE: {s}')
-
                 _s = self.spell_checking(s)
-
                 if noun_phrase:
                     _s = self.add_noun_phrase(_s)
-
-                if clean_text:
-                    _s = self.clean_text(_s)
-            
-
+                    _s = _s.replace("%20", " ")
+                _s = self.clean_text(_s)
                 words = self.tokenize_text(_s)
-
-                if remove_stopwords:
-                    words = self.remove_stopwords(words)
-
-                if lemmatize_words:
-                    words = self.lemmatize_words(words)
-
+                words = self.remove_stopwords(words)
+                words = self.lemmatize_words(words)
                 tmp_s = self.join_words(words)
-                # print(f'S AFTER: {tmp_s}')
 
                 if tmp_s.strip():
                     res.append(tmp_s)
@@ -291,6 +284,8 @@ class EnglishTextPreprocessor:
             print(f"Error: {e}")
             
         # print(res)
+
+
         return ". ".join(res)
     
     def preprocess_dataframe(
@@ -360,7 +355,7 @@ if __name__ == "__main__":
 
     # region PREPROCESS
     preprocessed_df = preprocessor.preprocess_dataframe(
-        train_df[:20],
+        train_df[:3],
         'text',
         noun_phrase = True,
         clean_text= True,
