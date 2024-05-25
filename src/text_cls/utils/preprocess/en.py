@@ -11,6 +11,37 @@ nltk.download('wordnet')
 nltk.download('omw-1.4')
 from textblob import TextBlob
 
+
+def is_valid_string(input_string: Text) -> bool:
+    """
+    Checks if the input string consists entirely of letters (uppercase or lowercase), 
+    numbers, hyphens, and spaces.
+
+    Args:
+        input_string (str): The string to be checked.
+
+    Returns:
+        bool: True if the string is valid, otherwise False.
+    """
+    # Define the regular expression pattern
+    pattern = r'^[a-zA-Z0-9\- ]+$'
+    
+    # Use re.fullmatch to check if the entire string matches the pattern
+    match = re.fullmatch(pattern, input_string)
+    
+    # Return True if there is a match, otherwise False
+    return match is not None
+
+
+def check_alphabet(
+    texts: List[Text]
+)-> List[Text]:
+    res = []
+    for text in texts:
+        if is_valid_string(text):
+            res.append(text)
+    return res
+
 class EnglishTextPreprocessor:
     """
     A class for preprocessing text data in English, including common cleaning steps, tokenization, stopword removal, and lemmatization.
@@ -205,7 +236,7 @@ class EnglishTextPreprocessor:
         corrected_sentence = TextBlob(text).correct()
     
         return corrected_sentence.string
-    
+        
     def add_noun_phrase(
         self,
         text
@@ -222,7 +253,10 @@ class EnglishTextPreprocessor:
 
         # Extracting noun phrases using TextBlob
         blob = TextBlob(text)
-        noun_phrases = blob.noun_phrases
+        print(f'blob.noun_phrases: {blob.noun_phrases}')
+        noun_phrases = check_alphabet(blob.noun_phrases)
+        print(f'noun_phrases :{noun_phrases}')
+        
         # print(noun_phrases)
 
         # Tokenizing the sentence by replacing spaces in noun phrases with underscores
@@ -256,13 +290,12 @@ class EnglishTextPreprocessor:
         self.idx+=1
         # print(f'Text: {text}')
         # print(f'{self.idx}')
-        try:
+        sents = self.split_sentences(text)
 
-            sents = self.split_sentences(text)
+        res = []
 
-            res = []
-
-            for s in sents:
+        for s in sents:
+            try:
                 _s = self.spell_checking(s)
                 if noun_phrase:
                     _s = self.add_noun_phrase(_s)
@@ -276,13 +309,11 @@ class EnglishTextPreprocessor:
                 if tmp_s.strip():
                     res.append(tmp_s)
 
-        except Exception as e:
-            print(f'{self.idx}')
-            print(f"Error: {e}")
+            except Exception as e:
+                print(f"Error: {e}")
+                print(f's: {s}')
             
         # print(res)
-
-
         return ". ".join(res)
     
     def preprocess_dataframe(
