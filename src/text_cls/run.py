@@ -79,7 +79,7 @@ if __name__ == "__main__":
         fd_name
     )
 
-    os.makedirs(out_fd)
+    os.makedirs(out_fd, exist_ok= True)
     
     out_path = os.path.join(
         out_fd,
