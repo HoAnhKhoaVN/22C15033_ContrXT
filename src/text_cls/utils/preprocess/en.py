@@ -128,13 +128,37 @@ class EnglishTextPreprocessor:
             >>> split_sentences("Dr. Smith said, 'Hello there!'")
             ['Dr', "Smith said, 'Hello there!'"]
         """
-        text = text = re.sub("\n"," ",text)
-        text = re.sub(r"[!:\.\?\-;]\s",r"__",text)
-        text = re.sub("[\t\n\r\x0b\x0c]", '__', text)
-        # text = re.sub(r"\"\"", '__', text)
-        text = re.sub(r'\s\s+', '__', text)
+        # print("###### ORIGINAL #######")
+        # print(text)
+
+        # # print("#### REMOVE ENTER ####")
+        # text = re.sub(r"\s",r" ",text)
+        text = re.sub("[\t\n\r\x0b\x0c]", r' ', text)
+
+        # print("#### SPLIT 1 ####")
+        text = re.sub(r"[!:\.\?\-;] ",r"__",text)
+        # print(text)
+
+        # # print("#### SPLIT 2 ####")
+        # text = re.sub("[\t\n\r\x0b\x0c]", '__', text)
+        # print(text)
+
+        # print("#### SPLIT 3 ####")
+        text = re.sub(r'\s\s+', r' ', text)
+        # print(text)
+
+        # print("#### FINAL ####")
         sents = text.split('__')
-        return sents
+
+        res = []
+        for sent in sents:
+            tmp = sent.strip()
+            if tmp:
+                res.append(tmp)
+        
+        for sent in res:
+            print(sent)
+        return res
 
     def clean_text(self, text: str) -> str:
         """
@@ -294,17 +318,19 @@ class EnglishTextPreprocessor:
 
         for s in sents:
             try:
-                # _s = self.spell_checking(s)
-                _s = self.add_noun_phrase(s)
-                _s = _s.replace("%20", " ")
-                _s = self.clean_text(_s)
-                words = self.tokenize_text(_s)
-                words = self.remove_stopwords(words)
-                words = self.lemmatize_words(words)
-                tmp_s = self.join_words(words)
 
-                if tmp_s.strip():
-                    res.append(tmp_s)
+                # _s = self.spell_checking(s)
+                if s.strip():
+                    _s = self.add_noun_phrase(s)
+                    _s = _s.replace("%20", " ")
+                    _s = self.clean_text(_s)
+                    words = self.tokenize_text(_s)
+                    words = self.remove_stopwords(words)
+                    words = self.lemmatize_words(words)
+                    tmp_s = self.join_words(words)
+
+                    if tmp_s.strip():
+                        res.append(tmp_s)
 
             except Exception as e:
                 print(f"Error: {e}")
