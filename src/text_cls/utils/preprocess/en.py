@@ -257,7 +257,7 @@ class EnglishTextPreprocessor:
             res = []
 
             for s in sents:
-                print(f'S BEFORE: {s}')
+                # print(f'S BEFORE: {s}')
 
                 _s = self.spell_checking(s)
 
@@ -277,7 +277,7 @@ class EnglishTextPreprocessor:
                     words = self.lemmatize_words(words)
 
                 tmp_s = self.join_words(words)
-                print(f'S AFTER: {tmp_s}')
+                # print(f'S AFTER: {tmp_s}')
 
                 if tmp_s.strip():
                     res.append(tmp_s)
@@ -286,7 +286,7 @@ class EnglishTextPreprocessor:
             print(f"Error: {e}")
             print(f'Text: {text}')
 
-        print(res)
+        # print(res)
         return ". ".join(res)
     
     def preprocess_dataframe(
@@ -344,7 +344,7 @@ class EnglishTextPreprocessor:
 if __name__ == "__main__":
     # region INIT
     preprocessor = EnglishTextPreprocessor()
-    train_df = pd.read_csv("src/text_cls/datasets/20newsgroups/train.csv")
+    train_df = pd.read_csv("src/text_cls/dataset/20newsgroups/train.csv")
     print(train_df.head(3))
     
     # endregion

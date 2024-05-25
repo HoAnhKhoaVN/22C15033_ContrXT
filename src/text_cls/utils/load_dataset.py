@@ -238,29 +238,38 @@ if __name__ == "__main__":
 
     # endregion
 
-    # region VNTC
-    loader = VNTCLoader()
-    train_df, test_df = loader.load_data()
-    print(train_df.head())
-    print(test_df.head())
+    # # region VNTC
+    # loader = VNTCLoader()
+    # train_df, test_df = loader.load_data()
+    # print(train_df.head())
+    # print(test_df.head())
 
-    root_path = os.path.dirname(VNTC_TRAIN_PATH)
-    train_df.to_csv(os.path.join(root_path, 'train.csv'))
-    test_df.to_csv(os.path.join(root_path, 'test.csv'))
-    # endregion
-
-    # # region Load VNTC CSV
-    # data_loader = MyDataLoader(
-    #     train_path = VNTC_TRAIN_CSV_PATH,
-    #     test_path=  VNTC_TEST_CSV_PATH
-    # )
-    # train_data = data_loader.get_train_data()
-    # print(train_data.head())
-
-    # test_data = data_loader.get_test_data()
-    # print(test_data.head())
-
-    # val_data = data_loader.get_val_data()
-    # print(val_data.head())
-
+    # root_path = os.path.dirname(VNTC_TRAIN_PATH)
+    # train_df.to_csv(os.path.join(root_path, 'train.csv'))
+    # test_df.to_csv(os.path.join(root_path, 'test.csv'))
     # # endregion
+
+    # region Load VNTC CSV
+    data_loader = MyDataLoader(
+        train_path = TWENTY_NEW_GROUP_TRAIN_PATH,
+        test_path=  TWENTY_NEW_GROUP_TEST_PATH
+    )
+    train_data = data_loader.get_train_data()
+    train_data.to_csv(
+        "src/text_cls/dataset/20newsgroups/full_data/train.csv",
+        index = False
+    )
+
+    test_data = data_loader.get_test_data()
+    test_data.to_csv(
+        "src/text_cls/dataset/20newsgroups/full_data/test.csv",
+        index = False
+    )
+
+    val_data = data_loader.get_val_data()
+    val_data.to_csv(
+        "src/text_cls/dataset/20newsgroups/full_data/val.csv",
+        index = False
+    )
+
+    # endregion

@@ -1,11 +1,12 @@
 
 preprocess:
   path:
-    train:
-    test:
-    val:
+    train: src/text_cls/dataset/20newsgroups/full_data/train.csv
+    test: src/text_cls/dataset/20newsgroups/full_data/test.csv
+    val: src/text_cls/dataset/20newsgroups/full_data/val.csv
   
   method:
+    noun_phrase: true
 
 tokenizer:
 embeding:
