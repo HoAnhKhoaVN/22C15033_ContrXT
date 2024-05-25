@@ -35,13 +35,15 @@ if __name__ == "__main__":
     # region preprocess
     # region INIT
     preprocessor = EnglishTextPreprocessor()
-    path = args['path']
+    path = args.path
     df = pd.read_csv(path)
+
+    print(df.head(5))
     
     # endregion
 
     # region PREPROCESS
-    if args["noun_phrase"]:
+    if args.noun_phrase:
         noun_phrase = True
     else:
         noun_phrase = False
@@ -54,6 +56,8 @@ if __name__ == "__main__":
         remove_stopwords= True,
         lemmatize_words = True
     )
+
+    print(preprocessed_df.head(5))
 
 
     
