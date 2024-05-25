@@ -156,8 +156,8 @@ class EnglishTextPreprocessor:
             if tmp:
                 res.append(tmp)
         
-        for sent in res:
-            print(sent)
+        # for sent in res:
+        #     print(sent)
         return res
 
     def clean_text(self, text: str) -> str:

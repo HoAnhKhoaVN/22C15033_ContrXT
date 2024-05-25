@@ -55,7 +55,7 @@ if __name__ == "__main__":
     preprocessor = EnglishTextPreprocessor()
     df = pd.read_csv(path)
 
-    print(df.head(5))
+    print(df.head())
     
     # endregion
 
@@ -70,7 +70,7 @@ if __name__ == "__main__":
         noun_phrase = noun_phrase,
     )
 
-    print(preprocessed_df.head(5))
+    print(preprocessed_df.head())
 
 
     
