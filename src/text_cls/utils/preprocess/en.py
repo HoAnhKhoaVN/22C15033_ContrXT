@@ -298,7 +298,6 @@ class EnglishTextPreprocessor:
     def preprocess_text(
         self,
         text: str,
-        noun_phrase : bool = False,
     ) -> list[str]:
         """
         Applies a full text preprocessing pipeline to a text string.
@@ -318,7 +317,6 @@ class EnglishTextPreprocessor:
 
         for s in sents:
             try:
-
                 # _s = self.spell_checking(s)
                 if s.strip():
                     _s = self.add_noun_phrase(s)
@@ -342,7 +340,6 @@ class EnglishTextPreprocessor:
     def preprocess_dataframe(
         self,
         df: pd.DataFrame,
-        noun_phrase: bool = False,    
     ) -> pd.DataFrame:
         """
         Applies the full text preprocessing pipeline to a specified text column in a DataFrame.
@@ -363,10 +360,7 @@ class EnglishTextPreprocessor:
         # Preprocess
         preprocess_texts = []
         for text in tqdm(df_processed[TEXT]):
-            new_text = self.preprocess_text(
-                text,
-                noun_phrase,
-            )
+            new_text = self.preprocess_text(text)
 
             preprocess_texts.append(new_text)
             

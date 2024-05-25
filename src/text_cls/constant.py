@@ -12,3 +12,6 @@ CONFIG_PATH = 'src/text_cls/config.yml'
 TEXT = 'text'
 ID = 'id'
 LABEL = 'label'
+
+EN = 'en'
+VI = 'vi'
