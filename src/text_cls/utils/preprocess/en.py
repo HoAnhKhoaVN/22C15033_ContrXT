@@ -294,10 +294,9 @@ class EnglishTextPreprocessor:
 
         for s in sents:
             try:
-                _s = self.spell_checking(s)
-                if noun_phrase:
-                    _s = self.add_noun_phrase(_s)
-                    _s = _s.replace("%20", " ")
+                # _s = self.spell_checking(s)
+                _s = self.add_noun_phrase(s)
+                _s = _s.replace("%20", " ")
                 _s = self.clean_text(_s)
                 words = self.tokenize_text(_s)
                 words = self.remove_stopwords(words)
