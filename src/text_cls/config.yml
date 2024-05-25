@@ -1,0 +1,16 @@
+
+preprocess:
+  path:
+    train:
+    test:
+    val:
+  
+  method:
+
+tokenizer:
+embeding:
+model:
+  name:
+  random_state:
+  checkpoint:
+  output:
