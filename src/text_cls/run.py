@@ -32,10 +32,27 @@ if __name__ == "__main__":
     # # endregion
 
     args = cli()
+
+    # region Prepare output
+    path = args.path
+    dirname = os.path.dirname(path)
+    fd_name = os.path.splitext(os.path.basename(path))[0]
+    
+    if args.noun_phrase:
+        fd_name += "__split_noun_phrase.csv"
+    else:
+        fd_name += "__word.csv"
+    
+    out_path = os.path.join(
+        dirname,
+        fd_name
+    )
+    print(f'out_path: {out_path}')
+    # endregion
+    
     # region preprocess
     # region INIT
     preprocessor = EnglishTextPreprocessor()
-    path = args.path
     df = pd.read_csv(path)
 
     print(df.head(5))
@@ -63,19 +80,6 @@ if __name__ == "__main__":
 
 
     # region SAVE FILE
-    dirname = os.path.dirname(path)
-    fd_name = os.path.splitext(os.path.basename(path))[0]
-    
-    if args.noun_phrase:
-        fd_name += "__split_noun_phrase.csv"
-    else:
-        fd_name += "__word.csv"
-    
-    out_path = os.path.join(
-        dirname,
-        fd_name
-    )
-    
     preprocessed_df.to_csv(
         out_path,
         index = False
