@@ -8,3 +8,4 @@ results/*
 *.taz
 *.tar.gz
 .venv/*
+*.xlsx
