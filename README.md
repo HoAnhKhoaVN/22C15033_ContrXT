@@ -53,3 +53,11 @@ sh scripts/text_cls/run_text_cls.sh
 ```sh
 conda activate khoaha_venv
 ```
+
+
+## Venv local
+
+1. Activate
+```sh
+source .venv/Scripts/activate
+```
