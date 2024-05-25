@@ -72,7 +72,7 @@ if __name__ == "__main__":
 
     fd_name = os.path.basename(dirname)
     
-    if args["noun_phrase"]:
+    if args.noun_phrase:
         fd_name += "__split_noun_phrase"
     else:
         fd_name += "__word"

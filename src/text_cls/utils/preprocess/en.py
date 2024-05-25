@@ -5,6 +5,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.stem import PorterStemmer
+from tqdm import tqdm
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
@@ -253,7 +254,7 @@ class EnglishTextPreprocessor:
             A list of preprocessed words.
         """
         self.idx+=1
-        print(f'{self.idx}')
+        # print(f'{self.idx}')
         try:
             sents = self.split_sentences(text)
 
@@ -286,9 +287,9 @@ class EnglishTextPreprocessor:
                     res.append(tmp_s)
 
         except Exception as e:
+            print(f'{self.idx}')
             print(f"Error: {e}")
-            print(f'Text: {text}')
-
+            
         # print(res)
         return ". ".join(res)
     
@@ -318,15 +319,20 @@ class EnglishTextPreprocessor:
         df_processed = self.remove_nan_rows(df_processed)
 
         # Preprocess
-        df_processed[text_column] = df_processed[text_column].apply(
-            self.preprocess_text,
-            args= (
+        preprocess_texts = []
+        for text in tqdm(df_processed[text_column]):
+            new_text = self.preprocess_text(
+                text,
                 noun_phrase,
                 clean_text,
                 remove_stopwords,
                 lemmatize_words
             )
-        )
+
+            preprocess_texts.append(new_text)
+            
+        df_processed[text_column] = preprocess_texts
+
         return df_processed
     
     def remove_nan_rows(
@@ -354,7 +360,7 @@ if __name__ == "__main__":
 
     # region PREPROCESS
     preprocessed_df = preprocessor.preprocess_dataframe(
-        train_df[:3],
+        train_df[:20],
         'text',
         noun_phrase = True,
         clean_text= True,
