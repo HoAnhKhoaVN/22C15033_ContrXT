@@ -298,6 +298,7 @@ class EnglishTextPreprocessor:
     def preprocess_text(
         self,
         text: str,
+        noun_phrase: bool,
     ) -> list[str]:
         """
         Applies a full text preprocessing pipeline to a text string.
@@ -319,14 +320,17 @@ class EnglishTextPreprocessor:
             try:
                 # _s = self.spell_checking(s)
                 if s.strip():
-                    _s = self.add_noun_phrase(s)
-                    _s = _s.replace("%20", " ")
-                    _s = self.clean_text(_s)
+                    if noun_phrase:
+                        _s = self.add_noun_phrase(s)
+                        _s = _s.replace("%20", " ")
+                        _s = self.clean_text(_s)
+                    else:
+                        _s = self.clean_text(s)
+                        
                     words = self.tokenize_text(_s)
                     words = self.remove_stopwords(words)
                     words = self.lemmatize_words(words)
                     tmp_s = self.join_words(words)
-
                     if tmp_s.strip():
                         res.append(tmp_s)
 
@@ -340,6 +344,7 @@ class EnglishTextPreprocessor:
     def preprocess_dataframe(
         self,
         df: pd.DataFrame,
+        noun_phrase: bool
     ) -> pd.DataFrame:
         """
         Applies the full text preprocessing pipeline to a specified text column in a DataFrame.
@@ -360,7 +365,7 @@ class EnglishTextPreprocessor:
         # Preprocess
         preprocess_texts = []
         for text in tqdm(df_processed[TEXT]):
-            new_text = self.preprocess_text(text)
+            new_text = self.preprocess_text(text, noun_phrase)
 
             preprocess_texts.append(new_text)
             

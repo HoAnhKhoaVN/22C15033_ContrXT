@@ -32,7 +32,10 @@ def cli():
 
     return args
 
-def eng_noun_phrase(path: Text):
+def eng_noun_phrase(
+    path: Text,
+    noun_phrase: bool
+    ):
     # region 1. Prepare output
     dirname = os.path.dirname(path)
     fd_name = os.path.splitext(os.path.basename(path))[0]
@@ -59,8 +62,9 @@ def eng_noun_phrase(path: Text):
 
     # region 3. PREPROCESS
 
-    preprocessed_df = preprocessor.preprocess_dataframe(df)
+    preprocessed_df = preprocessor.preprocess_dataframe(df, noun_phrase)
     print(preprocessed_df.head())    
+
     # endregion
 
     # region 4. SAVE FILE
@@ -106,14 +110,14 @@ if __name__ == "__main__":
 
     if args.lang == EN:
         if args.noun_phrase:
-            eng_noun_phrase(args.path)
+            eng_noun_phrase(args.path, True)
         else:
-            vi_word(args.path) # After run eng_noun_phrase with CSV file
+            eng_noun_phrase(args.path, False)
     elif args.lang == VI:
         if args.noun_phrase:
             vi_noun_phrase(args.path)
         else:
-            eng_word(args.path) # After run eng_noun_phrase with CSV file
+            vi_word(args.path) # After run eng_noun_phrase with CSV file
     else:
         print(f'Language only "{EN}" and "{VI}"')
 
