@@ -1,9 +1,12 @@
 import re
 from typing import List, Text
 import pandas as pd
+from tqdm import tqdm
 from underthesea import text_normalize
 from underthesea import word_tokenize
 from underthesea import sent_tokenize
+
+from src.text_cls.constant import LABEL, TEXT, VIET_STOP_WORD_PATH
 
 class VietnameseTextPreprocessor:
     """
@@ -33,10 +36,18 @@ class VietnameseTextPreprocessor:
     """
 
     def __init__(self):
-        pass
-        # self.stop_words = set(stopwords.words('english'))
-        # self.lemmatizer = WordNetLemmatizer()
-        # self.stemmer = PorterStemmer()
+        self.idx = 0
+        self.stop_words = self.load_viet_stop_word()
+        self.pattern = r'\b(?:' + '|'.join(re.escape(word) for word in self.stop_words) + r')\b'
+        
+    def load_viet_stop_word(self)-> List:
+        try:
+            with open(VIET_STOP_WORD_PATH, "r", encoding="utf-8") as f:
+                stopwords = list(set(f.read().splitlines()))
+        except FileNotFoundError:
+            raise FileNotFoundError(f"Stopwords file not found: {VIET_STOP_WORD_PATH}")
+
+        return stopwords
 
     def remove_punctuation(self, text: str) -> str:
         """
@@ -57,48 +68,39 @@ class VietnameseTextPreprocessor:
         """
         Splits a text string into a list of individual sentences.
 
-        This function uses a regular expression to identify sentence boundaries based
-        on punctuation and common abbreviations. It handles edge cases like
-        sentences ending in abbreviations or questions marks.
-
         Args:
-            text (str): The text string to split into sentences.
+            text: The input text to be split.
 
         Returns:
-            list: A list of strings, where each string is a single sentence.
+            A list of strings where each element represents a single sentence from the input text. 
 
-        Examples:
-            >>> split_sentences("This is a sentence. Is this another? It is!")
-            ['This is a sentence.', 'Is this another?', 'It is!']
-
-            >>> split_sentences("I love N.Y. It's a great city.")
-            ['I love N.Y.', "It's a great city."]
-
-            >>> split_sentences("Dr. Smith said, 'Hello there!'")
-            ['Dr', "Smith said, 'Hello there!'"]
+        Notes:
+            - Sentences are identified based on common sentence-ending punctuation (period, question mark, exclamation mark).
+            - Punctuation marks are included at the end of each sentence.
+            - The function handles multiple spaces or leading/trailing spaces around punctuation.
         """
-        # text = text = re.sub("\n"," ",text)
-        # text = re.sub(r"[!:\.\?\-;]\s",r"__",text)
-        # text = re.sub("[\t\n\r\x0b\x0c]", '__', text)
-        # # text = re.sub(r"\"\"", '__', text)
-        # text = re.sub(r'\s\s+', '__', text)
-        # sents = text.split('__')
         return sent_tokenize(text)
 
     def clean_text(self, text: str) -> str:
         """
-        Cleans a text string by removing special characters, converting to lowercase, and handling whitespace.
+        Removes non-Vietnamese letters (uppercase or lowercase) and spaces from the given text.
 
         Args:
-            text: The text string to clean.
+            text (str): The input text string.
 
         Returns:
-            The cleaned text string.
+            str: The modified text with non-Vietnamese letters and spaces removed.
         """
-        text = re.sub(r'[^a-zA-Z_\s]', '', text)  # Remove special characters
-        text = text.lower()  # Convert to lowercase
+
+        pattern = r'[^a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơưẠ-ỹ _]'  # Matches any characters not in the Vietnamese range, plus spaces.
+
+        text = re.sub(pattern, '', text)
+
+        text = text.lower()
+
         text = text.strip()  # Remove leading/trailing whitespace
-        text = re.sub(r'\s+', ' ', text)  # Replace multiple spaces with single space
+        
+        text = re.sub(r'\s+', ' ', text)  # Replace multipl
         return text
 
     def tokenize_text(
@@ -128,7 +130,7 @@ class VietnameseTextPreprocessor:
         """
         return text.lower()
 
-    def remove_stopwords(self, words: list[str]) -> list[str]:
+    def remove_stopwords(self, text: str) -> str:
         """
         Removes stopwords from a list of words.
 
@@ -138,7 +140,14 @@ class VietnameseTextPreprocessor:
         Returns:
             A list of words with stopwords removed.
         """
-        return [word for word in words if word not in self.stop_words]
+        # return [word for word in words if word not in self.stop_words]
+        # Use re.sub to replace stop words with an empty string
+        result = re.sub(self.pattern, '', text)
+        
+        # Remove extra spaces that might result from stop word removal
+        result = re.sub(r'\s+', ' ', result).strip()
+        
+        return result
     
     def join_words(
         self,
@@ -191,10 +200,8 @@ class VietnameseTextPreprocessor:
     def preprocess_text(
         self,
         text: str,
-        noun_phrase : bool = False,
-        clean_text: bool = True,
+        noun_phrase : bool = True,
         remove_stopwords: bool = True,
-        lemmatize_words: bool = True
     ) -> list[str]:
         """
         Applies a full text preprocessing pipeline to a text string.
@@ -205,47 +212,47 @@ class VietnameseTextPreprocessor:
         Returns:
             A list of preprocessed words.
         """
-        try:
-            sents = self.split_sentences(text)
+        self.idx+=1
+        sents = self.split_sentences(text)
+        res = []
+        for _s in sents:
+            try:
+                # print(f'S BEFORE: {s}')
+                
+                if remove_stopwords:
+                    _s = self.remove_stopwords(_s.lower())
+                    # print(f' #### REMOVE STOP WORD ####')
+                    # print(_s)
 
-            res = []
-
-            for s in sents:
-                print(f'S BEFORE: {s}')
-
-                _s = self.text_normalize(s)
+                _s = self.text_normalize(_s)
+                # print(f' #### TEXT NORMALIZE ####')
+                # print(_s)
 
                 if noun_phrase:
                     _s = self.word_tokenize(_s)
+                    # print(f' #### WORD TOKEN ####')
+                    # print(_s)
+                
+                _s = self.clean_text(_s)
+                # print(f' #### CLEAN TEXT ####')
+                # print(_s)
 
-                if clean_text:
-                    _s = self.clean_text(_s)
-            
+                # print(f'S AFTER: {_s}')
+                if _s.strip():
+                    res.append(_s)
+                
+                # break
 
-                words = self.tokenize_text(_s)
+            except Exception as e:
+                print(f"Error: {e}")
+                print(f's: {s}')
 
-                if remove_stopwords:
-                    words = self.remove_stopwords(words)
-
-                tmp_s = self.join_words(words)
-                print(f'S AFTER: {tmp_s}')
-
-                if tmp_s.strip():
-                    res.append(tmp_s)
-
-        except Exception as e:
-            print(f"Error: {e}")
-            print(f'Text: {text}')
-
-        print(res)
         return ". ".join(res)
     
     def preprocess_dataframe(
         self,
         df: pd.DataFrame,
-        text_column: str,
-        noun_phrase: bool = False,
-        clean_text: bool = True,
+        noun_phrase: bool = True,
         remove_stopwords: bool = True,    
     ) -> pd.DataFrame:
         """
@@ -265,14 +272,14 @@ class VietnameseTextPreprocessor:
         df_processed = self.remove_nan_rows(df_processed)
 
         # Preprocess
-        df_processed[text_column] = df_processed[text_column].apply(
-            self.preprocess_text,
-            args= (
-                noun_phrase,
-                clean_text,
-                remove_stopwords
-            )
-        )
+        preprocess_texts = []
+        for text in tqdm(df_processed[TEXT]):
+            new_text = self.preprocess_text(text, noun_phrase, remove_stopwords)
+
+            preprocess_texts.append(new_text)
+            
+        df_processed[TEXT] = preprocess_texts
+
         return df_processed
     
     def remove_nan_rows(
@@ -288,31 +295,31 @@ class VietnameseTextPreprocessor:
         Returns:
         pd.DataFrame: The DataFrame with NaN text rows removed.
         """
-        return df.dropna(subset=['text'])
+        return df.dropna(subset=[TEXT, LABEL])
 
 if __name__ == "__main__":
     # region INIT
     preprocessor = VietnameseTextPreprocessor()
-    train_df = pd.read_csv("src/text_cls/datasets/VNTC/train.csv")
-    print(train_df.head(3))
+    train_df = pd.read_csv("src/text_cls/dataset/VNTC/sample/sample.csv")
+
+    train_df
+    print(train_df.head())
     
     # endregion
 
     # region PREPROCESS
     preprocessed_df = preprocessor.preprocess_dataframe(
-        train_df[:3],
-        'text',
+        train_df,
         noun_phrase = True,
-        clean_text= True,
         remove_stopwords= True,
     )
 
     # endregion
 
     # region TO CSV
-    print(preprocessed_df)
+    print(preprocessed_df.head())
     preprocessed_df.to_csv(
-        path_or_buf= "preprocessed_df_en.csv",
+        path_or_buf= "preprocessed_df_vi.csv",
         index = False
     )
 

@@ -15,3 +15,6 @@ LABEL = 'label'
 
 EN = 'en'
 VI = 'vi'
+
+VIET_STOP_WORD_DASH_PATH = 'src/text_cls/asset/vietnamese-stopwords-dash.txt'
+VIET_STOP_WORD_PATH = 'src/text_cls/asset/vietnamese-stopwords.txt'

@@ -6,6 +6,8 @@ from src.text_cls.utils.preprocess.en import EnglishTextPreprocessor
 import pandas as pd
 import argparse
 
+from src.text_cls.utils.preprocess.vi import VietnameseTextPreprocessor
+
 
 def cli():
     parser = argparse.ArgumentParser(description="Công cụ dòng lệnh ví dụ")
@@ -26,6 +28,13 @@ def cli():
         help = "Split by noun phrase"
     )
 
+    parser.add_argument(
+        "-r",
+        "--remove_stop_words",
+        action="store_true",
+        help = "Remove stop word"
+    )
+
 
     # Phân tích các tham số đã cung cấp
     args = parser.parse_args()
@@ -44,7 +53,7 @@ def eng_noun_phrase(
         fd_name += "__split_noun_phrase.csv"
     else:
         fd_name += "__word.csv"
-    
+
     out_path = os.path.join(
         dirname,
         fd_name
@@ -75,21 +84,62 @@ def eng_noun_phrase(
 
     # endregion
 
-def vi_noun_phrase(path: Text)-> None:
+def vi_noun_phrase(
+    path: Text,
+    noun_phrase: bool = True,
+    remove_stopwords : bool = True
+    )-> None:
     """_summary_
 
     Args:
         path (Text): _description_
     """
-    pass
+    # region 1. Prepare output
+    dirname = os.path.dirname(path)
+    fd_name = os.path.splitext(os.path.basename(path))[0]
 
-def vi_word(path: Text)-> None:
-    """_summary_
+    if args.noun_phrase:
+        fd_name += "__noun_phrase"
+    else:
+        fd_name += "__word"
 
-    Args:
-        path (Text): _description_
-    """
-    pass
+    if args.remove_stop_words:
+        fd_name += '__remove_stop_words'
+    else:
+        fd_name += '__exist_stop_words'
+    
+    fd_name += '.csv'
+    
+    out_path = os.path.join(
+        dirname,
+        fd_name
+    )
+    print(f'out_path: {out_path}')
+    # endregion
+
+    # region 2. INIT Preprocess
+    preprocessor = VietnameseTextPreprocessor()
+    df = pd.read_csv(path)
+
+    print(df.head())
+    
+    # endregion
+
+    # region 3. PREPROCESS
+
+    preprocessed_df = preprocessor.preprocess_dataframe(df, noun_phrase, remove_stopwords)
+    print(preprocessed_df.head())    
+
+    # endregion
+
+    # region 4. SAVE FILE
+    preprocessed_df.to_csv(
+        out_path,
+        index = False
+    )
+
+    # endregion
+
 
 if __name__ == "__main__":
     # # region 1. Load YAML file
@@ -100,6 +150,8 @@ if __name__ == "__main__":
 
     args = cli()
 
+    print(args.remove_stop_words)
+
     if args.lang == EN:
         if args.noun_phrase:
             eng_noun_phrase(args.path, True)
@@ -107,8 +159,14 @@ if __name__ == "__main__":
             eng_noun_phrase(args.path, False)
     elif args.lang == VI:
         if args.noun_phrase:
-            vi_noun_phrase(args.path)
+            if args.remove_stop_words:
+                vi_noun_phrase(args.path, True, True)
+            else:
+                vi_noun_phrase(args.path, True, False)
         else:
-            vi_word(args.path) # After run eng_noun_phrase with CSV file
+            if args.remove_stop_words:
+                vi_noun_phrase(args.path, False, True)
+            else:
+                vi_noun_phrase(args.path, False, False)
     else:
         print(f'Language only "{EN}" and "{VI}"')
