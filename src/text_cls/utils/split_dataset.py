@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -50,7 +51,7 @@ class DataFrameSplitter:
 
 if __name__ == "__main__":
     splitter = DataFrameSplitter()
-    train_df = pd.read_csv("src/text_cls/dataset/20newsgroups/train.csv")
+    train_df = pd.read_csv("src/text_cls/dataset/20newsgroups/word/train__word.csv")
 
     df_train_time1, df_train_time2 = splitter.split_dataframe(train_df, random_state=2103)
 
@@ -58,8 +59,29 @@ if __name__ == "__main__":
     df_time2_train, df_time2_val = splitter.split_train_test(df_train_time2, test_size=0.3, random_state=2103)
 
     print("TIME 1")
-    print(df_time1_train)
-    print(df_time1_val)
+    df_time1_train.to_csv(
+        "src/text_cls/dataset/20newsgroups/split_data/time_1/word/train.csv",
+        index = False,
+    )
+    df_time1_val.to_csv(
+        "src/text_cls/dataset/20newsgroups/split_data/time_1/word/val.csv",
+        index = False,
+    )
+
+    os.system(
+        command= f'cp src/text_cls/dataset/20newsgroups/word/test__word.csv src/text_cls/dataset/20newsgroups/split_data/time_1/word/test.csv'
+    )
+
     print("TIME 2")
-    print(df_time2_train)
-    print(df_time2_val)
+    df_time2_train.to_csv(
+        "src/text_cls/dataset/20newsgroups/split_data/time_2/word/train.csv",
+        index = False,
+    )
+    df_time2_val.to_csv(
+        "src/text_cls/dataset/20newsgroups/split_data/time_2/word/val.csv",
+        index = False,
+    )
+
+    os.system(
+        command= f'cp src/text_cls/dataset/20newsgroups/word/test__word.csv src/text_cls/dataset/20newsgroups/split_data/time_2/word/test.csv'
+    )

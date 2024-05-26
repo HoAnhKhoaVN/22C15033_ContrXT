@@ -75,14 +75,6 @@ def eng_noun_phrase(
 
     # endregion
 
-def eng_word(path:Text)-> None:
-    """_summary_
-
-    Args:
-        path (Text): _description_
-    """
-    pass
-
 def vi_noun_phrase(path: Text)-> None:
     """_summary_
 
@@ -120,5 +112,3 @@ if __name__ == "__main__":
             vi_word(args.path) # After run eng_noun_phrase with CSV file
     else:
         print(f'Language only "{EN}" and "{VI}"')
-
-

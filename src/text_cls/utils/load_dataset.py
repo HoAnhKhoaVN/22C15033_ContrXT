@@ -251,24 +251,24 @@ if __name__ == "__main__":
 
     # region Load VNTC CSV
     data_loader = MyDataLoader(
-        train_path = TWENTY_NEW_GROUP_TRAIN_PATH,
-        test_path=  TWENTY_NEW_GROUP_TEST_PATH
+        train_path = "src/text_cls/dataset/20newsgroups/word/train__word.csv",
+        test_path=  "src/text_cls/dataset/20newsgroups/word/test__word.csv"
     )
     train_data = data_loader.get_train_data()
     train_data.to_csv(
-        "src/text_cls/dataset/20newsgroups/full_data/train.csv",
+        "src/text_cls/dataset/20newsgroups/full_data/word/train.csv",
         index = False
     )
 
     test_data = data_loader.get_test_data()
     test_data.to_csv(
-        "src/text_cls/dataset/20newsgroups/full_data/test.csv",
+        "src/text_cls/dataset/20newsgroups/full_data/word/test.csv",
         index = False
     )
 
     val_data = data_loader.get_val_data()
     val_data.to_csv(
-        "src/text_cls/dataset/20newsgroups/full_data/val.csv",
+        "src/text_cls/dataset/20newsgroups/full_data/word/val.csv",
         index = False
     )
 
