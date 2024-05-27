@@ -51,7 +51,7 @@ class DataFrameSplitter:
 
 if __name__ == "__main__":
     splitter = DataFrameSplitter()
-    train_df = pd.read_csv("src/text_cls/dataset/20newsgroups/word/train__word.csv")
+    train_df = pd.read_csv("src/text_cls/dataset/VNTC/original/word__remove_stop_words/train__word__remove_stop_words.csv")
 
     df_train_time1, df_train_time2 = splitter.split_dataframe(train_df, random_state=2103)
 
@@ -60,28 +60,28 @@ if __name__ == "__main__":
 
     print("TIME 1")
     df_time1_train.to_csv(
-        "src/text_cls/dataset/20newsgroups/split_data/time_1/word/train.csv",
+        "src/text_cls/dataset/VNTC/split_data/time_1/word__remove_stop_words/train.csv",
         index = False,
     )
     df_time1_val.to_csv(
-        "src/text_cls/dataset/20newsgroups/split_data/time_1/word/val.csv",
+        "src/text_cls/dataset/VNTC/split_data/time_1/word__remove_stop_words/val.csv",
         index = False,
     )
 
     os.system(
-        command= f'cp src/text_cls/dataset/20newsgroups/word/test__word.csv src/text_cls/dataset/20newsgroups/split_data/time_1/word/test.csv'
+        command= f'cp src/text_cls/dataset/VNTC/original/word__remove_stop_words/test__word__remove_stop_words.csv src/text_cls/dataset/VNTC/split_data/time_1/word__remove_stop_words/test.csv'
     )
 
     print("TIME 2")
     df_time2_train.to_csv(
-        "src/text_cls/dataset/20newsgroups/split_data/time_2/word/train.csv",
+        "src/text_cls/dataset/VNTC/split_data/time_2/word__remove_stop_words/train.csv",
         index = False,
     )
     df_time2_val.to_csv(
-        "src/text_cls/dataset/20newsgroups/split_data/time_2/word/val.csv",
+        "src/text_cls/dataset/VNTC/split_data/time_2/word__remove_stop_words/val.csv",
         index = False,
     )
 
     os.system(
-        command= f'cp src/text_cls/dataset/20newsgroups/word/test__word.csv src/text_cls/dataset/20newsgroups/split_data/time_2/word/test.csv'
+        command= f'cp src/text_cls/dataset/VNTC/original/word__remove_stop_words/test__word__remove_stop_words.csv src/text_cls/dataset/VNTC/split_data/time_2/word__remove_stop_words/test.csv'
     )

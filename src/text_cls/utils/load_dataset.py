@@ -90,7 +90,7 @@ class MyDataLoader:
                 random_state = self.random_state
             )
 
-            self.test = pd.read_csv(self.train_path)
+            self.test = pd.read_csv(self.test_path)
             
             print("Data loaded successfully.")
         except Exception as e:
@@ -251,24 +251,24 @@ if __name__ == "__main__":
 
     # region Load VNTC CSV
     data_loader = MyDataLoader(
-        train_path = "src/text_cls/dataset/20newsgroups/word/train__word.csv",
-        test_path=  "src/text_cls/dataset/20newsgroups/word/test__word.csv"
+        train_path = "src/text_cls/dataset/VNTC/original/word__remove_stop_words/train__word__remove_stop_words.csv",
+        test_path=  "src/text_cls/dataset/VNTC/original/word__remove_stop_words/test__word__remove_stop_words.csv"
     )
     train_data = data_loader.get_train_data()
     train_data.to_csv(
-        "src/text_cls/dataset/20newsgroups/full_data/word/train.csv",
+        "src/text_cls/dataset/VNTC/full_data/word__remove_stop_words/train.csv",
         index = False
     )
 
     test_data = data_loader.get_test_data()
     test_data.to_csv(
-        "src/text_cls/dataset/20newsgroups/full_data/word/test.csv",
+        "src/text_cls/dataset/VNTC/full_data/word__remove_stop_words/test.csv",
         index = False
     )
 
     val_data = data_loader.get_val_data()
     val_data.to_csv(
-        "src/text_cls/dataset/20newsgroups/full_data/word/val.csv",
+        "src/text_cls/dataset/VNTC/full_data/word__remove_stop_words/val.csv",
         index = False
     )
 
