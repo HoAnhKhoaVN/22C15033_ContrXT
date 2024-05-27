@@ -34,7 +34,11 @@ class DataFrameSplitter:
         return df_shuffled[:midpoint], df_shuffled[midpoint:]
 
     @staticmethod
-    def split_train_test(df: pd.DataFrame, test_size: float = 0.3, random_state: int = None) -> tuple[pd.DataFrame, pd.DataFrame]:
+    def split_train_test(
+        df: pd.DataFrame,
+        test_size: float = 0.3,
+        random_state: int = None
+    ) -> tuple[pd.DataFrame, pd.DataFrame]:
         """
         Splits a DataFrame into training and testing sets with a specified test size and random state.
 
@@ -46,7 +50,12 @@ class DataFrameSplitter:
         Returns:
             A tuple containing the training and testing DataFrames.
         """
-        return train_test_split(df, test_size=test_size, random_state=random_state)
+        return train_test_split(
+            df,
+            test_size=test_size,
+            random_state=random_state,
+            shuffle= False
+        )
 
 
 if __name__ == "__main__":

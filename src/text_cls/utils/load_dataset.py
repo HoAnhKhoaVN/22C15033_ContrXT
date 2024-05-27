@@ -1,9 +1,13 @@
 import os
-from typing import Text
+from typing import Text, Tuple
+import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import chardet
 from src.text_cls.constant import (
+    ID,
+    LABEL,
+    TEXT,
     TWENTY_NEW_GROUP_TRAIN_PATH,
     TWENTY_NEW_GROUP_TEST_PATH,
     VNTC_TRAIN_PATH,
@@ -72,6 +76,66 @@ class MyDataLoader:
         # Load the data from the CSV file
         self.load_data()
         
+    def train_val_split(
+        self,
+        data: np.ndarray,
+        target: np.ndarray,
+        test_size: float = 0.3,
+        random_state: int = 2103
+    )-> Tuple:
+        """_summary_
+
+        Args:
+            data (np.ndarray): _description_
+            target (np.ndarray): _description_
+            test_sizeLfloat (float, optional): _description_. Defaults to 0.3.
+
+        Ref: https://stackoverflow.com/questions/35472712/how-to-split-data-on-balanced-training-set-and-test-set-on-sklearn
+
+        Returns:
+            Tuple: _description_
+        """
+        # region set the seed to reproducible
+        # REF: https://stackoverflow.com/questions/22994423/difference-between-np-random-seed-and-np-random-randomstate
+        rng = np.random.RandomState(random_state)
+
+        # endregion
+        
+        classes = np.unique(target)
+        # can give test_size as fraction of input data size of number of samples
+        if test_size < 1:
+            n_test = np.round(len(target)*test_size)
+        else:
+            n_test = test_size
+        
+        n_train = max(0,len(target)-n_test)
+        n_train_per_class = max(1,int(np.floor(n_train/len(classes))))
+        n_test_per_class = max(1,int(np.floor(n_test/len(classes))))
+
+        ixs = []
+        for cl in classes:
+            if (n_train_per_class+n_test_per_class) > np.sum(target==cl):
+                # if data has too few samples for this class, do upsampling
+                # split the data to training and testing before sampling so data points won't be
+                #  shared among training and test data
+                splitix = int(np.ceil(n_train_per_class/(n_train_per_class+n_test_per_class)*np.sum(target==cl)))
+                ixs.append(np.r_[rng.choice(np.nonzero(target==cl)[0][:splitix], n_train_per_class),
+                    rng.choice(np.nonzero(target==cl)[0][splitix:], n_test_per_class)])
+            else:
+                ixs.append(rng.choice(np.nonzero(target==cl)[0], n_train_per_class+n_test_per_class,
+                    replace=False))
+
+        # take same num of samples from all classes
+        ix_train = np.concatenate([x[:n_train_per_class] for x in ixs])
+        ix_test = np.concatenate([x[n_train_per_class:(n_train_per_class+n_test_per_class)] for x in ixs])
+
+        X_train = data[ix_train]
+        X_test = data[ix_test]
+        y_train = target[ix_train]
+        y_test = target[ix_test]
+
+        return X_train, X_test, y_train, y_test, ix_train, ix_test
+
     def load_data(self):
         """
         Loads data from the CSV file and splits it into training and testing sets.
@@ -82,14 +146,39 @@ class MyDataLoader:
         try:
             # Read the CSV file into a DataFrame
             train = pd.read_csv(self.train_path)
-            
-            # Split the data into training and testing sets
-            self.train, self.val = train_test_split(
-                train,
-                test_size = 0.3,
-                random_state = self.random_state
+
+            X = np.array(train[TEXT].to_list())
+            y = np.array(train[LABEL].to_list())
+
+            X_train, X_test, y_train, y_test, ix_train, ix_test = self.train_val_split(
+                data= X,
+                target= y,
+                test_size= 0.3
             )
 
+            self.train = pd.DataFrame(
+                data = {
+                    ID : ix_train,
+                    TEXT : X_train,
+                    LABEL: y_train
+                }
+            )
+
+            self.val = pd.DataFrame(
+                data = {
+                    ID : ix_test,
+                    TEXT : X_test,
+                    LABEL: y_test
+                }
+            )
+
+            self.val.drop_duplicates(
+                subset=[TEXT],
+                inplace= True,
+                keep= 'first',
+                ignore_index= False
+            )
+           
             self.test = pd.read_csv(self.test_path)
             
             print("Data loaded successfully.")
@@ -251,24 +340,24 @@ if __name__ == "__main__":
 
     # region Load VNTC CSV
     data_loader = MyDataLoader(
-        train_path = "src/text_cls/dataset/VNTC/original/word__remove_stop_words/train__word__remove_stop_words.csv",
-        test_path=  "src/text_cls/dataset/VNTC/original/word__remove_stop_words/test__word__remove_stop_words.csv"
+        train_path = "src/text_cls/dataset/20newsgroups/noun_phrase/train__split_noun_phrase.csv",
+        test_path= "src/text_cls/dataset/20newsgroups/noun_phrase/test__split_noun_phrase.csv"
     )
     train_data = data_loader.get_train_data()
     train_data.to_csv(
-        "src/text_cls/dataset/VNTC/full_data/word__remove_stop_words/train.csv",
+        "src/text_cls/dataset/20newsgroups/full_data/noun_phrase/balance/train.csv",
         index = False
     )
 
     test_data = data_loader.get_test_data()
     test_data.to_csv(
-        "src/text_cls/dataset/VNTC/full_data/word__remove_stop_words/test.csv",
+        "src/text_cls/dataset/20newsgroups/full_data/noun_phrase/balance/test.csv",
         index = False
     )
 
     val_data = data_loader.get_val_data()
     val_data.to_csv(
-        "src/text_cls/dataset/VNTC/full_data/word__remove_stop_words/val.csv",
+        "src/text_cls/dataset/20newsgroups/full_data/noun_phrase/balance/val.csv",
         index = False
     )
 
