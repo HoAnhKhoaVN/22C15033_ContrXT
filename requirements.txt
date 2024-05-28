@@ -22,3 +22,9 @@ pyyaml
 underthesea
 seaborn
 stylecloud
+gensim
+pyldavis
+wordcloud
+spacy
+textstat
+matplotlib
