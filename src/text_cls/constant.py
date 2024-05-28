@@ -18,3 +18,5 @@ VI = 'vi'
 
 VIET_STOP_WORD_DASH_PATH = 'src/text_cls/asset/vietnamese-stopwords-dash.txt'
 VIET_STOP_WORD_PATH = 'src/text_cls/asset/vietnamese-stopwords.txt'
+
+EN_STOP_WORD = 'src/text_cls/asset/stop_word/en/stopwords-en.txt'
