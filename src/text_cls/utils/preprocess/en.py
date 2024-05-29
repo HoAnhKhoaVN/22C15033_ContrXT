@@ -13,6 +13,60 @@ nltk.download('wordnet')
 nltk.download('omw-1.4')
 from textblob import TextBlob
 
+_QUOTE_RE = re.compile(
+    r"(writes in|writes:|wrote:|says:|said:" r"|^In article|^Quoted from|^\||^>)"
+)
+
+CUSTOM_STOP_WORD = [
+    'it',
+    'm',
+    'he',
+    'have',
+    'as',
+    'can',
+    'will',
+    'haven',
+    'in',
+    'same',
+    'there',
+    'more',
+    'being',
+    'down',
+    'out',
+    'now',
+    'i',
+    're',
+    'at',
+    'don',
+    'do',
+    'here',
+    'an',
+    'why',
+    'ma',
+    'who',
+    't',
+    'y',
+    'few',
+    'are',
+    's',
+    'o',
+    'd',
+    'no',
+    'one',
+    "maxaxaxaxaxaxaxaxaxaxaxaxaxaxax",
+    'x',
+    'one',
+    'would',
+    'also',
+]
+
+CUSTOM_BIGRAM = [
+    'db db'
+]
+
+CUSTOM_TRIGRAM = [
+    'db db db'
+]
 
 def is_valid_string(input_string: Text) -> bool:
     """
@@ -33,7 +87,6 @@ def is_valid_string(input_string: Text) -> bool:
     
     # Return True if there is a match, otherwise False
     return match is not None
-
 
 def check_alphabet(
     texts: List[Text]
@@ -202,6 +255,60 @@ class EnglishTextPreprocessor:
         str: The text in lowercase.
         """
         return text.lower()
+
+    def strip_newsgroup_header(
+        self,
+        text: Text
+    )-> Text:
+        """
+        Given text in "news" format, strip the headers, by removing everything
+        before the first blank line.
+
+        Parameters
+        ----------
+        text : str
+            The text from which to remove the signature block.
+        """
+        _before, _blankline, after = text.partition("\n\n")
+        return after
+    
+    def strip_newsgroup_quoting(text):
+        """
+        Given text in "news" format, strip lines beginning with the quote
+        characters > or |, plus lines that often introduce a quoted section
+        (for example, because they contain the string 'writes:'.)
+
+        Parameters
+        ----------
+        text : str
+            The text from which to remove the signature block.
+        """
+        good_lines = [line for line in text.split("\n") if not _QUOTE_RE.search(line)]
+        return "\n".join(good_lines)
+
+    def strip_newsgroup_footer(text):
+        """
+        Given text in "news" format, attempt to remove a signature block.
+
+        As a rough heuristic, we assume that signatures are set apart by either
+        a blank line or a line made of hyphens, and that it is the last such line
+        in the file (disregarding blank lines at the end).
+
+        Parameters
+        ----------
+        text : str
+            The text from which to remove the signature block.
+        """
+        lines = text.strip().split("\n")
+        for line_num in range(len(lines) - 1, -1, -1):
+            line = lines[line_num]
+            if line.strip().strip("-") == "":
+                break
+
+        if line_num > 0:
+            return "\n".join(lines[:line_num])
+        else:
+            return text
 
     def remove_stopwords(self, words: list[str]) -> list[str]:
         """
