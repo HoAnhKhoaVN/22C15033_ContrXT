@@ -7,22 +7,31 @@ import seaborn as sns
 
 from src.text_cls.constant import TEXT
 
-def removal_box_plot(
-    df: pd.DataFrame,
-    col : Text = TEXT
-    ):
-    df.reset_index(inplace= True, drop=True,)
-    # IQR
+
+def before_remove_char_outlier(
+    df: pd.DataFrame
+)->None:
+    """_summary_
+
+    Args:
+        df (pd.DataFrame): _description_
+    """
     data = df[TEXT].str.len()
     print(f'Length data: {len(data)}')
     print(f'Mean: {data.mean()}')
     print(f'Min: {data.min()}')
     print(f'Max: {data.max()}')
     print(f'Std: {data.std()}')
-    # sns.boxplot(data)
-    # plt.title(f'Original Box Plot with character length')
-    # plt.savefig('boxplot_char.png')
-    
+    sns.boxplot(data)
+    plt.title(f'Original Box Plot with character length')
+    plt.savefig('boxplot_char.png')
+
+def removal_char_outlier(
+    df: pd.DataFrame,
+    ):
+    df.reset_index(inplace= True, drop=True,)
+    # IQR
+    data = df[TEXT].str.len()
     Q1 = np.percentile(data, 25, method='midpoint')
     Q3 = np.percentile(data, 75, method='midpoint')
     IQR = Q3 - Q1
@@ -66,5 +75,5 @@ if __name__ == "__main__":
     df = pd.read_csv(CSV_PATH)
     df.dropna(axis = 0 ,how = 'any', inplace = True, ignore_index= False)
 
-    df = removal_box_plot(df)
+    df = removal_char_outlier(df)
     df.to_csv('df_remove_outlier_char.csv', index = False)
