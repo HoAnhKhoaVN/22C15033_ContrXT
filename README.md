@@ -65,5 +65,9 @@ source .venv/Scripts/activate
 ```sh
 python src/text_cls/run.py -n -l vi -p src/text_cls/dataset/VNTC/original/train.csv
 
+python src/text_cls/run.py -n -l en -p src/text_cls/dataset/20newsgroups/orginal/train_part_1.csv
+
+python src/text_cls/run.py -n -l en -p src/text_cls/dataset/20newsgroups/orginal/test_part_1.csv -t
+
 python src/text_cls/run.py -n -r -l vi -p src/text_cls/dataset/VNTC/original/train.csv
 ```

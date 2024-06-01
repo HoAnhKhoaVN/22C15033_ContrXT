@@ -35,6 +35,12 @@ def cli():
         help = "Remove stop word"
     )
 
+    parser.add_argument(
+        "-t",
+        "--train",
+        action="store_true",
+        help = "Is train?"
+    )
 
     # Phân tích các tham số đã cung cấp
     args = parser.parse_args()
@@ -43,7 +49,8 @@ def cli():
 
 def eng_noun_phrase(
     path: Text,
-    noun_phrase: bool
+    noun_phrase: bool,
+    is_train: bool
     ):
     # region 1. Prepare output
     dirname = os.path.dirname(path)
@@ -71,7 +78,11 @@ def eng_noun_phrase(
 
     # region 3. PREPROCESS
 
-    preprocessed_df = preprocessor.preprocess_dataframe(df, noun_phrase)
+    preprocessed_df = preprocessor.preprocess_dataframe(
+        df = df,
+        noun_phrase= noun_phrase,
+        is_train= is_train
+    )
     print(preprocessed_df.head())    
 
     # endregion
@@ -150,13 +161,34 @@ if __name__ == "__main__":
 
     args = cli()
 
-    print(args.remove_stop_words)
-
     if args.lang == EN:
         if args.noun_phrase:
-            eng_noun_phrase(args.path, True)
+            if args.train:
+                eng_noun_phrase(
+                    path = args.path,
+                    noun_phrase= True,
+                    is_train= True
+                )
+            else:
+                eng_noun_phrase(
+                    path = args.path,
+                    noun_phrase= True,
+                    is_train= False
+                )
+                
         else:
-            eng_noun_phrase(args.path, False)
+            if args.train:
+                eng_noun_phrase(
+                    path = args.path,
+                    noun_phrase= False,
+                    is_train= True
+                )
+            else:
+                eng_noun_phrase(
+                    path = args.path,
+                    noun_phrase= False,
+                    is_train= False
+                )
     elif args.lang == VI:
         if args.noun_phrase:
             if args.remove_stop_words:
