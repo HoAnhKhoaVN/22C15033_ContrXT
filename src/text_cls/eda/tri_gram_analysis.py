@@ -1,3 +1,6 @@
+# python src/text_cls/eda/tri_gram_analysis.py -p src/text_cls/dataset/20newsgroups/noun_phrase/train__split_noun_phrase.csv -i tri_gram_train__split_noun_phrase.png
+
+import argparse
 import os
 from typing import Any, Text
 from matplotlib import pyplot as plt
@@ -31,7 +34,8 @@ def get_top_ngram(
     return words_freq[: topk]
 
 def tri_gram_analysis(
-    df: pd.DataFrame
+    df: pd.DataFrame,
+    img_path: Text,
 )-> None:
     """_summary_
 
@@ -54,18 +58,34 @@ def tri_gram_analysis(
     plt.xlabel('Count')
     plt.ylabel('Label')
 
-    img_path = os.path.join('tri_gram.png')
     plt.savefig(img_path)
     print(f'Save image at {img_path}')
     # endregion
 
+def cli():
+    parser = argparse.ArgumentParser(description="Công cụ dòng lệnh ví dụ")
+
+    # Thêm tham số vị trí (positional argument)
+    parser.add_argument("-p", '--path' ,help="Path CSV")
+
+    parser.add_argument("-i", '--img_path' ,help="Path image to save")
+    # Phân tích các tham số đã cung cấp
+    args = parser.parse_args()
+
+    return args
+
 if __name__ == '__main__':
-    # plt.rcParams["figure.figsize"] = [20, 10]
-    # plt.rcParams["figure.autolayout"] = True
+    plt.rcParams["figure.figsize"] = [20, 10]
+    plt.rcParams["figure.autolayout"] = True
 
-    CSV_PATH = "preprocess.csv"
+    args = cli()
 
-    df = pd.read_csv(CSV_PATH)
+    # CSV_PATH = "src/text_cls/dataset/20newsgroups/noun_phrase/train__split_noun_phrase.csv"
+
+    df = pd.read_csv(args.path)
     df.dropna(axis = 0 ,how = 'any', inplace = True, ignore_index= False)
 
-    tri_gram_analysis(df)
+    tri_gram_analysis(
+        df,
+        args.img_path
+    )
