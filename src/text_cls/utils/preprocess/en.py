@@ -59,11 +59,13 @@ CUSTOM_STOP_WORD = [
 ]
 
 CUSTOM_BIGRAM = [
-    'db db'
+    'db db',
+    'ax ax'
 ]
 
 CUSTOM_TRIGRAM = [
-    'db db db'
+    'db db db',
+    'ax ax ax'
 ]
 
 def is_valid_string(input_string: Text) -> bool:
