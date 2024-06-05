@@ -23,6 +23,7 @@ def draw_box_plot(
     print(f'Std: {data.std()}')
     sns.boxplot(data)
     plt.title(f'Box Plot với độ dài của từng mẫu dữ liệu trước khi lọc lại')
+    plt.ylabel("Độ dài ký tự")
     plt.savefig(img_path)
 
 def cli():
