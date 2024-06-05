@@ -53,11 +53,13 @@ CUSTOM_STOP_WORD = [
 ]
 
 CUSTOM_BIGRAM = [
-    'db db'
+    'db db',
+    'ax ax'
 ]
 
 CUSTOM_TRIGRAM = [
-    'db db db'
+    'db db db',
+    'ax ax ax'
 ]
 
 class PreprocessEnglish(object):
@@ -153,5 +155,5 @@ class PreprocessEnglish(object):
 if __name__ == "__main__":
     PreprocessEnglish(
         csv = 'src/text_cls/dataset/20newsgroups/noun_phrase/train__split_noun_phrase.csv',
-        out = 'preprocess.csv'
+        out = 'src/text_cls/dataset/20newsgroups/noun_phrase/train__split_noun_phrase__remove_stopword.csv'
     )()
