@@ -154,6 +154,6 @@ class PreprocessEnglish(object):
 
 if __name__ == "__main__":
     PreprocessEnglish(
-        csv = 'src/text_cls/dataset/20newsgroups/noun_phrase/train__split_noun_phrase.csv',
-        out = 'src/text_cls/dataset/20newsgroups/noun_phrase/train__split_noun_phrase__remove_stopword.csv'
+        csv = 'src/text_cls/dataset/20newsgroups/noun_phrase/test__split_noun_phrase.csv',
+        out = 'src/text_cls/dataset/20newsgroups/noun_phrase/test__split_noun_phrase__remove_stopword.csv'
     )()
