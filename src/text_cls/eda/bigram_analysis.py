@@ -1,4 +1,4 @@
-# python src/text_cls/eda/bigram_analysis.py -p src/text_cls/dataset/20newsgroups/noun_phrase/train__split_noun_phrase__remove_stopword.csv -i bigram_train__split_noun_phrase.png
+# python src/text_cls/eda/bigram_analysis.py -p src/text_cls/dataset/20newsgroups/orginal/train_part_1__split_noun_phrase.csv -i bigram_train__split_noun_phrase.png
 
 import argparse
 import os
