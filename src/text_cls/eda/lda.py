@@ -1,5 +1,6 @@
 # python src/text_cls/eda/lda.py -p src/text_cls/dataset/20newsgroups/noun_phrase/train__split_noun_phrase__remove_stopword.csv -l lda_train_en_bow.html -c corpus.txt -m bow
-
+# python src/text_cls/eda/lda.py -p src/text_cls/dataset/20newsgroups/noun_phrase/train__split_noun_phrase__remove_stopword.csv -l lda_train_en_tfidf.html -c corpus.txt -m tfidf
+# python src/text_cls/eda/lda.py -p src/text_cls/dataset/20newsgroups/noun_phrase/train__split_noun_phrase__remove_stopword.csv -l lda_train_en_count_vec.html -c corpus.txt -m count_vec
 # REFERENCE
 # https://github.com/clevyclev/Deep-Learning-Projects/blob/master/Latent%20Dirichlet%20Allocation%20-%20Bag%20of%20Words%20and%20TF-IDF/Latent_dirichlet_allocation.py#L301
 # https://www.kaggle.com/code/gibborathod/topic-modeling-lda-tf-idf#Latent-Dirichlet-Allocation
@@ -98,6 +99,8 @@ if __name__ == "__main__":
     '''
     bow_corpus = [dic.doc2bow(doc) for doc in corpus]
 
+    # print(f'bow_corpus: {bow_corpus}')
+
 
 
 # ## Step 3.2: TF-IDF on our document set ##
@@ -193,6 +196,20 @@ if __name__ == "__main__":
             passes= 10,
             workers= 2
         )
+    elif args.mode == 'count_vec':
+        count_vector = CountVectorizer()
+        count_vector.fit(raw_documents= corpus)
+        corpus_count_vector = count_vector.transform(corpus)
+        lda_model = gensim.models.LdaMulticore(
+            corpus_count_vector,
+            num_topics= n_label,
+            id2word=dic,
+            passes= 10,
+            workers= 2
+        )
+
+
+
     else:
         raise "Only mode is `bow` or `tfidf`"
     
