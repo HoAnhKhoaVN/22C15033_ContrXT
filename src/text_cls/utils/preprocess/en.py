@@ -61,12 +61,14 @@ CUSTOM_STOP_WORD = [
 
 CUSTOM_BIGRAM = [
     'db db',
-    'ax ax'
+    "'ax 'ax"
+    "ax ax"
 ]
 
 CUSTOM_TRIGRAM = [
     'db db db',
-    'ax ax ax'
+    'ax ax ax',
+    "'ax 'ax 'ax"
 ]
 
 def is_valid_string(input_string: Text) -> bool:
@@ -229,9 +231,6 @@ class EnglishTextPreprocessor:
         # print("#### SPLIT 3 ####")
         text = re.sub(r'\s\s+', r' ', text)
         # print(text)
-
-        text = re.sub(self.bi_pattern, '', text)
-        text = re.sub(self.tri_pattern, '', text)
 
         # print("#### FINAL ####")
         sents = text.split('__')
@@ -407,16 +406,6 @@ class EnglishTextPreprocessor:
         """
         # Create arrays of Boolean values indicating the outlier rows
         df[TEXT] = df[TEXT].str.split().map(lambda x: ' '.join(x[:upper]) if len(x)> upper else ' '.join(x))
-        # df.to_csv('df_after_trunc.csv', index = False)
-        # final_data = df[TEXT].str.split().map(lambda x: len(x))
-        # print(len(final_data))
-        # print(f'Mean: {final_data.mean()}')
-        # print(f'Min: {final_data.min()}')
-        # print(f'Max: {final_data.max()}')
-        # print(f'Std: {final_data.std()}')
-        # sns.boxplot(final_data)
-        # plt.title(f'Box Plot after remove outlier')
-        # plt.savefig('boxplot_word__remove_outlier.png')
         return df
 
     def preprocess_text(
@@ -449,7 +438,6 @@ class EnglishTextPreprocessor:
 
         for s in sents:
             try:
-                # _s = self.spell_checking(s)
                 s = s.strip()
                 if s:
                     if show_log:
@@ -483,40 +471,50 @@ class EnglishTextPreprocessor:
                         print(f'lemmatize_words: {words}')
 
                     tmp_s = self.join_words(words)
-
                     if show_log:
                         print(f'join_words: {words}')
+
+                    tmp_s = re.sub(
+                        pattern= r"[']",
+                        repl= ' ',
+                        string = tmp_s
+                    )
+
+                    if show_log:
+                        print('Remove quoue char:')
+                        print(tmp_s)
+
+
+                    tmp_s = re.sub(
+                        pattern= r" _([a-z]+)_ ",
+                        repl= r'\1',
+                        string = tmp_s
+                    )
+
+                    tmp_s = re.sub(r'\s+', ' ', tmp_s)
+                    tmp_s = re.sub(self.bi_pattern, '', tmp_s)
+                    if show_log:
+                        print(f'bigram')
+                        print(tmp_s)
+
+                    tmp_s = re.sub(self.tri_pattern, '', tmp_s)
+                    if show_log:
+                        print('tri gram')
+                        print(tmp_s)
+
+                    tmp_s=' '.join([w for w in word_tokenize(tmp_s) if len(w)>2])
 
                     if tmp_s.strip():
                         res.append(f'{tmp_s}.')
                         if show_log:
                             print(f'final: {tmp_s}')
+
+                    # break
             except Exception as e:
                 print(f"Error: {e}")
                 print(f's: {s}')
 
         final_text = " ".join(res)
-        final_text = re.sub(
-            pattern= r"[']",
-            repl= ' ',
-            string = final_text
-        )
-
-        if show_log:
-            print('Remove quoue char:')
-            print(final_text)
-
-
-        final_text = re.sub(
-            pattern= r" _([a-z]+)_ ",
-            repl= r'\1',
-            string = final_text
-        )
-
-        if show_log:
-            print('Remove _abc_:')
-            print(final_text)
-
         return final_text
     
     def preprocess_dataframe(
@@ -594,16 +592,16 @@ class EnglishTextPreprocessor:
 if __name__ == "__main__":
     # region INIT
     preprocessor = EnglishTextPreprocessor()
-    train_df = pd.read_csv("src/text_cls/dataset/20newsgroups/orginal/test_part_1.csv")
+    train_df = pd.read_csv("src/text_cls/dataset/20newsgroups/orginal/train_part_1.csv")
     print(train_df.head())
     
     # endregion
 
     # region PREPROCESS
     preprocessed_df = preprocessor.preprocess_dataframe(
-        train_df[:20],
+        train_df[144:145],
         noun_phrase = True,
-        show_log = False,
+        show_log = True,
         is_train= True
     )
 
