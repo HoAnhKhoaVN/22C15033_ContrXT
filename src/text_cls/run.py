@@ -1,3 +1,11 @@
+# python src/text_cls/run.py -n -l vi -p src/text_cls/dataset/VNTC/original/train.csv
+
+# python src/text_cls/run.py -n -l en -p src/text_cls/dataset/20newsgroups/orginal/test.csv
+
+# python src/text_cls/run.py -n -l en -p src/text_cls/dataset/20newsgroups/orginal/train.csv -t
+
+# python src/text_cls/run.py -n -r -l vi -p src/text_cls/dataset/VNTC/original/train.csv
+
 from typing import Text
 import yaml
 import os
@@ -71,7 +79,9 @@ def eng_noun_phrase(
     # region 2. INIT Preprocess
     preprocessor = EnglishTextPreprocessor()
     df = pd.read_csv(path)
-
+    if is_train:
+        df.drop(index = [144,1492, 1506, 1541, 2931, 3198, 4495, 4515, 4772, 8213, 8665, 9080, 10275], inplace = True)
+        df.reset_index(drop = True, inplace = True)
     print(df.head())
     
     # endregion
