@@ -1,3 +1,4 @@
+# python src/text_cls/utils/preprocess/en.py
 import re
 from typing import List, Text
 import numpy as np
@@ -128,6 +129,8 @@ class EnglishTextPreprocessor:
         self.stop_words= self.get_stop_word()
         self.lemmatizer = WordNetLemmatizer()
         self.stemmer = PorterStemmer()
+        self.bi_pattern = r'\b(?:' + '|'.join(re.escape(word) for word in CUSTOM_BIGRAM) + r')\b'
+        self.tri_pattern = r'\b(?:' + '|'.join(re.escape(word) for word in CUSTOM_TRIGRAM) + r')\b'
         self.idx = 0
 
     def get_stop_word(self):
@@ -226,6 +229,9 @@ class EnglishTextPreprocessor:
         # print("#### SPLIT 3 ####")
         text = re.sub(r'\s\s+', r' ', text)
         # print(text)
+
+        text = re.sub(self.bi_pattern, '', text)
+        text = re.sub(self.tri_pattern, '', text)
 
         # print("#### FINAL ####")
         sents = text.split('__')
@@ -485,11 +491,6 @@ class EnglishTextPreprocessor:
                         res.append(f'{tmp_s}.')
                         if show_log:
                             print(f'final: {tmp_s}')
-
-            
-
-            
-
             except Exception as e:
                 print(f"Error: {e}")
                 print(f's: {s}')
@@ -559,7 +560,7 @@ class EnglishTextPreprocessor:
         if is_train:
             # region word
             print(f'Train mode')
-            upper = self.find_upper(df)
+            upper = self.find_upper(df_processed)
             df_processed = self.removal_word_outlier(df = df_processed, upper= upper)
             print(df_processed.head(20))
 
@@ -603,7 +604,7 @@ if __name__ == "__main__":
         train_df[:20],
         noun_phrase = True,
         show_log = False,
-        is_train= False
+        is_train= True
     )
 
     # endregion
