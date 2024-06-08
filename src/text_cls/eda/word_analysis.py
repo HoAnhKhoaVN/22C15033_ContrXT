@@ -1,4 +1,4 @@
-# python src/text_cls/eda/word_analysis.py -p preprocess.csv -i box_plot_word_org.png
+# python src/text_cls/eda/word_analysis.py -p src/text_cls/dataset/20newsgroups/orginal/train__split_noun_phrase.csv -i box_plot_word_org.png
 import argparse
 from typing import Text
 from matplotlib import pyplot as plt
