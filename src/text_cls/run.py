@@ -58,7 +58,8 @@ def cli():
 def eng_noun_phrase(
     path: Text,
     noun_phrase: bool,
-    is_train: bool
+    is_train: bool,
+    remove_stop_word: bool
     ):
     # region 1. Prepare output
     dirname = os.path.dirname(path)
@@ -91,7 +92,8 @@ def eng_noun_phrase(
     preprocessed_df = preprocessor.preprocess_dataframe(
         df = df,
         noun_phrase= noun_phrase,
-        is_train= is_train
+        is_train= is_train,
+        remove_stop_word = remove_stop_word
     )
     print(preprocessed_df.head())    
 
@@ -174,17 +176,35 @@ if __name__ == "__main__":
     if args.lang == EN:
         if args.noun_phrase:
             if args.train:
-                eng_noun_phrase(
-                    path = args.path,
-                    noun_phrase= True,
-                    is_train= True
-                )
+                if args.remove_stop_words:
+                    eng_noun_phrase(
+                        path = args.path,
+                        noun_phrase= True,
+                        is_train= True,
+                        remove_stop_word = True,
+                    )
+                else:
+                    eng_noun_phrase(
+                        path = args.path,
+                        noun_phrase= True,
+                        is_train= True,
+                        remove_stop_word = False,
+                    )
             else:
-                eng_noun_phrase(
-                    path = args.path,
-                    noun_phrase= True,
-                    is_train= False
-                )
+                if args.remove_stop_words:
+                    eng_noun_phrase(
+                        path = args.path,
+                        noun_phrase= True,
+                        is_train= False,
+                        remove_stop_word = True,
+                    )
+                else:
+                    eng_noun_phrase(
+                        path = args.path,
+                        noun_phrase= True,
+                        is_train= False,
+                        remove_stop_word = False,
+                    )
                 
         else:
             if args.train:
