@@ -21,6 +21,7 @@ VIET_STOP_WORD_PATH = 'src/text_cls/asset/vietnamese-stopwords.txt'
 
 EN_STOP_WORD = 'src/text_cls/asset/stop_word/en/stopwords-en.txt'
 TEXT_CLS_CONTANST = 'src/text_cls/constant.py'
-MAX_WORD_LEN= 115
 
-MAX_WORD_LEN= 115
+MAX_WORD_LEN= 115 # noun_phrase
+
+MAX_WORD_LEN= 128 # word
