@@ -10,3 +10,4 @@ results/*
 .venv/*
 *.xlsx
 *.html
+*.plk
