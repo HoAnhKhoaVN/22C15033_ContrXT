@@ -412,7 +412,8 @@ class EnglishTextPreprocessor:
         self,
         text: str,
         noun_phrase: bool,
-        show_log: bool = False
+        show_log: bool = False,
+        remove_stop_word : bool = False
     ) -> list[str]:
         """
         Applies a full text preprocessing pipeline to a text string.
@@ -460,8 +461,8 @@ class EnglishTextPreprocessor:
                     words = self.tokenize_text(_s)
                     if show_log:
                         print(f'tokenize_text: {words}')
-
-                    words = self.remove_stopwords(words)
+                    if remove_stop_word:
+                        words = self.remove_stopwords(words)
 
                     if show_log:
                         print(f'remove_stopwords: {words}')
@@ -522,7 +523,8 @@ class EnglishTextPreprocessor:
         df: pd.DataFrame,
         noun_phrase: bool,
         show_log: bool = False,
-        is_train: bool = True
+        is_train: bool = True,
+        remove_stop_word: bool = True
     ) -> pd.DataFrame:
         """
         Applies the full text preprocessing pipeline to a specified text column in a DataFrame.
@@ -543,7 +545,7 @@ class EnglishTextPreprocessor:
         # Preprocess
         preprocess_texts = []
         for text in tqdm(df_processed[TEXT]):
-            new_text = self.preprocess_text(text, noun_phrase, show_log)
+            new_text = self.preprocess_text(text, noun_phrase, show_log, remove_stop_word)
             preprocess_texts.append(new_text)
             
         df_processed[TEXT] = preprocess_texts
