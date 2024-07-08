@@ -1,6 +1,19 @@
 # python src/text_cls/eda/character_analysis.py -p src/text_cls/dataset/20newsgroups/orginal/train__split_noun_phrase.csv -i box_plot_char_org.png
 
 # python src/text_cls/eda/character_analysis.py -p src/text_cls/dataset/20newsgroups/orginal/train__split_noun_phrase.csv  -i box_plot_char_remove_outlier.png -r -o src/text_cls/dataset/20newsgroups/orginal/train__split_noun_phrase__remove_outlier_char.csv
+
+
+# python src/text_cls/eda/character_analysis.py -p src/text_cls/dataset/20newsgroups/orginal/train__split_noun_phrase.csv -i box_plot_char_org.png
+
+
+# python src/text_cls/eda/character_analysis.py -p src/text_cls/dataset/20newsgroups/orginal/train__split_noun_phrase.csv -i box_plot_char_org.png
+
+
+# python src/text_cls/eda/character_analysis.py -p src/text_cls/dataset/20newsgroups/orginal/train__split_noun_phrase.csv -i box_plot_char_org.png
+
+
+# python src/text_cls/eda/character_analysis.py -p src/text_cls/dataset/20newsgroups/orginal/train__split_noun_phrase.csv -i box_plot_char_org.png
+
 import argparse
 from typing import Text
 from matplotlib import pyplot as plt
