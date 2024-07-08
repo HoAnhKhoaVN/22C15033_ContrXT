@@ -1,4 +1,8 @@
-# python src/text_cls/eda/bigram_analysis.py -p src/text_cls/dataset/20newsgroups/orginal/train_part_1__split_noun_phrase.csv -i bigram_train__split_noun_phrase.png
+# python src/text_cls/eda/bigram_analysis.py -p src/text_cls/dataset/20newsgroups/orginal/train__split_noun_phrase__remove_outlier_char.csv -i bigram_train__split_noun_phrase__remove_outlier_char.png
+
+# python src/text_cls/eda/bigram_analysis.py -p src/text_cls/dataset/20newsgroups/orginal/train__word.csv -i bigram_train__word.png
+
+# python src/text_cls/eda/bigram_analysis.py -p src/text_cls/dataset/20newsgroups/orginal/train__split_noun_phrase.csv -i bigram_train__split_noun_phrase.png
 
 import argparse
 import os
