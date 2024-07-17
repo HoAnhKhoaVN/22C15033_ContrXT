@@ -28,3 +28,4 @@ wordcloud
 spacy
 textstat
 matplotlib
+label-studio
