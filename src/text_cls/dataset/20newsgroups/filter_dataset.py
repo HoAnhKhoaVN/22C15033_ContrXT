@@ -13,10 +13,6 @@ def preprocess(text: str, subject=True):
     Returns a lemmatized and cleaned version of the text.
     """
 
-    # Remove anything before Subject:
-    if subject:
-        text = text[text.find('Subject:') + 9:]
-
     # Run regex
     removeEmail = re.compile(r'\S*@\S*\s?', re.IGNORECASE)
     text = removeEmail.sub(" ", text)
@@ -38,9 +34,9 @@ def preprocess(text: str, subject=True):
     #     }
     # )
 if __name__ == "__main__":
-    TRAIN_PATH = "D:/Desktop/xAI/exp/22C15033_ContrXT/src/text_cls/dataset/20newsgroups/orginal/train__preprocess_v3.csv"
+    TRAIN_PATH = "D:/Desktop/xAI/exp/22C15033_ContrXT/src/text_cls/dataset/20newsgroups/orginal/train__preprocess_v4_2.csv"
     df_train = pd.read_csv(TRAIN_PATH)
-    is_train = True
+    # is_train = True
     # df_train.dropna(axis = 0 ,how = 'any', inplace = True, ignore_index= False)
     # if is_train:
     #     df_train.drop(index = [144,1492, 1506, 1541, 2931, 3198, 4495, 4515, 4772, 8213, 8665, 9080, 10275], inplace = True)
@@ -58,16 +54,19 @@ if __name__ == "__main__":
     #         'label': df_train['label'],
     #     }
     # )
-    # df_train.to_csv(TRAIN_PATH, index= False)
+    # df_train.to_csv(
+    #     "D:/Desktop/xAI/exp/22C15033_ContrXT/src/text_cls/dataset/20newsgroups/orginal/train__preprocess_v4_1.csv",
+    #     index= False
+    # )
     print(df_train)
 
 
-    TEST_PATH = "D:/Desktop/xAI/exp/22C15033_ContrXT/src/text_cls/dataset/20newsgroups/orginal/test__preprocess_v3.csv"
-    df_test = pd.read_csv(TEST_PATH)
+    # TEST_PATH = "D:/Desktop/xAI/exp/22C15033_ContrXT/src/text_cls/dataset/20newsgroups/orginal/test_preproces_v4.csv"
+    # df_test = pd.read_csv(TEST_PATH)
 
-    # df_test.dropna(axis = 0 ,how = 'any', inplace = True, ignore_index= False)
-    # df_test.reset_index(drop = True, inplace = True)
+    # # df_test.dropna(axis = 0 ,how = 'any', inplace = True, ignore_index= False)
+    # # df_test.reset_index(drop = True, inplace = True)
 
-    # df_test[TEXT] = [preprocess(text )for text in tqdm(df_test[TEXT])]
-    # df_test.to_csv(TEST_PATH, index= False)
-    print(df_test)
+    # # df_test[TEXT] = [preprocess(text )for text in tqdm(df_test[TEXT])]
+    # # df_test.to_csv("D:/Desktop/xAI/exp/22C15033_ContrXT/src/text_cls/dataset/20newsgroups/orginal/test__preprocess_v4_1.csv", index= False)
+    # print(df_test)
