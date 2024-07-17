@@ -1,0 +1,2249 @@
+{
+    "current_id": 1,
+    "__count__": 189,
+    "data": [
+        {
+            "answer": "C",
+            "explanation": "N\u1ebfu 30% s\u1ed1 h\u00e0ng t\u01b0\u01a1ng \u1ee9ng v\u1edbi 15 000 000 \u0111\u1ed3ng, th\u00ec 100% s\u1ed1 h\u00e0ng ph\u1ea3i t\u01b0\u01a1ng \u1ee9ng v\u1edbi (15 000 000 / 30) x 100 = 45 000 000 \u0111\u1ed3ng. V\u1eady n\u1ebfu b\u00e1n h\u1ebft h\u00e0ng, c\u1eeda h\u00e0ng s\u1ebd thu \u0111\u01b0\u1ee3c 45 000 000 \u0111\u1ed3ng.",
+            "id": "01-0203",
+            "question": "M\u1ed9t c\u1eeda h\u00e0ng \u0111\u00e3 b\u00e1n 30% s\u1ed1 h\u00e0ng hi\u1ec7n c\u00f3 v\u00e0 thu \u0111\u01b0\u1ee3c 15 000 000 \u0111\u1ed3ng. H\u1ecfi n\u1ebfu b\u00e1n h\u1ebft h\u00e0ng th\u00ec c\u1eeda h\u00e0ng thu \u0111\u01b0\u1ee3c bao nhi\u00eau ti\u1ec1n?",
+            "choices": [
+                "A. 4 500 000 \u0111\u1ed3ng",
+                "B. 45 000 000 \u0111\u1ed3ng",
+                "C. 50 000 000 \u0111\u1ed3ng",
+                "D. 450 000 000 \u0111\u1ed3ng"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Gi\u1ea3 s\u1eed th\u1eddi gian \u0111\u1ec3 ng\u01b0\u1eddi \u0111i xe m\u00e1y \u0111u\u1ed5i k\u1ecbp ng\u01b0\u1eddi \u0111i xe \u0111\u1ea1p l\u00e0 t. \u0110\u1ebfn th\u1eddi \u0111i\u1ec3m n\u00e0y, c\u1ea3 ng\u01b0\u1eddi \u0111i xe \u0111\u1ea1p v\u00e0 ng\u01b0\u1eddi \u0111i xe m\u00e1y \u0111\u1ec1u di chuy\u1ec3n m\u1ed9t qu\u00e3ng \u0111\u01b0\u1eddng b\u1eb1ng nhau. V\u00ec ng\u01b0\u1eddi \u0111i xe \u0111\u1ea1p \u0111i t\u1eeb 7 gi\u1edd \u0111\u1ebfn 8 gi\u1edd 24 ph\u00fat n\u00ean th\u1eddi gian \u0111i c\u1ee7a ng\u01b0\u1eddi \u0111i xe \u0111\u1ea1p l\u00e0 1,4 gi\u1edd. V\u1edbi v\u1eadn t\u1ed1c 12km/h, qu\u00e3ng \u0111\u01b0\u1eddng ng\u01b0\u1eddi \u0111i xe \u0111\u1ea1p di chuy\u1ec3n l\u00e0 1,4 * 12 = 16,8km. \u0110\u1ed1i v\u1edbi ng\u01b0\u1eddi \u0111i xe m\u00e1y, b\u1eaft \u0111\u1ea7u \u0111i t\u1eeb 8 gi\u1edd, sau 0,4 gi\u1edd (24 ph\u00fat), n\u00ean qu\u00e3ng \u0111\u01b0\u1eddng di chuy\u1ec3n c\u0169ng l\u00e0 0,4 * 42 = 16,8km. V\u00ec v\u1eady, ng\u01b0\u1eddi \u0111i xe m\u00e1y \u0111u\u1ed5i k\u1ecbp ng\u01b0\u1eddi \u0111i xe \u0111\u1ea1p v\u00e0o l\u00fac 8 gi\u1edd 24 ph\u00fat.",
+            "id": "01-0206",
+            "question": "M\u1ed9t ng\u01b0\u1eddi \u0111i xe \u0111\u1ea1p t\u1eeb A l\u00fac 7 gi\u1edd v\u1edbi v\u1eadn t\u1ed1c 12km/h. \u0110\u1ebfn 8 gi\u1edd m\u1ed9t ng\u01b0\u1eddi \u0111i xe m\u00e1y c\u0169ng t\u1eeb A \u0111u\u1ed5i theo ng\u01b0\u1eddi \u0111i xe \u0111\u1ea1p v\u1edbi v\u1eadn t\u1ed1c 42km/h. H\u1ecfi ng\u01b0\u1eddi \u0111i xe m\u00e1y \u0111u\u1ed5i k\u1ecbp ng\u01b0\u1eddi \u0111i xe \u0111\u1ea1p l\u00fac m\u1ea5y gi\u1edd?",
+            "choices": [
+                "A. 24 ph\u00fat",
+                "B. 1 gi\u1edd",
+                "C. 7 gi\u1edd 24 ph\u00fat",
+                "D. 8 gi\u1edd 24 ph\u00fat"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Di\u1ec7n t\u00edch xung quanh c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng l\u00e0 6*a^2, khi c\u1ea1nh g\u1ea5p \u0111\u00f4i l\u00ean th\u00ec di\u1ec7n t\u00edch xung quanh s\u1ebd l\u00e0 6*(2a)^2=24*a^2, t\u1ee9c l\u00e0 g\u1ea5p 4 l\u1ea7n di\u1ec7n t\u00edch ban \u0111\u1ea7u.",
+            "id": "01-0207",
+            "question": "C\u1ea1nh c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng g\u1ea5p l\u00ean 2 l\u1ea7n th\u00ec di\u1ec7n t\u00edch xung quanh g\u1ea5p l\u00ean m\u1ea5y l\u1ea7n?",
+            "choices": [
+                "A. 2 l\u1ea7n",
+                "B. 4 l\u1ea7n",
+                "C. 6 l\u1ea7n",
+                "D. 8 l\u1ea7n"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Theo c\u00f4ng th\u1ee9c di\u1ec7n t\u00edch h\u00ecnh thang, di\u1ec7n t\u00edch c\u1ee7a th\u1eeda ru\u1ed9ng ban \u0111\u1ea7u l\u00e0 (1/2)*(d\u00e0i \u0111\u00e1y l\u1edbn + d\u00e0i \u0111\u00e1y nh\u1ecf)*chi\u1ec1u cao = (1/2)*(12+8)*h = 10h (m2). Khi k\u00e9o d\u00e0i \u0111\u00e1y l\u1edbn th\u00eam 5m, di\u1ec7n t\u00edch m\u1edbi c\u1ee7a th\u1eeda ru\u1ed9ng \u0111\u01b0\u1ee3c t\u00ednh theo c\u00f4ng th\u1ee9c t\u01b0\u01a1ng t\u1ef1 l\u00e0 (1/2)*(17+8)*h = 12.5h m2. S\u1ef1 t\u0103ng th\u00eam v\u1ec1 di\u1ec7n t\u00edch sau khi k\u00e9o d\u00e0i l\u00e0 12.5h - 10h = 2.5h m2. Theo \u0111\u1ec1 b\u00e0i, 2.5h = 25 m2 n\u00ean h = 10 m, v\u00e0 di\u1ec7n t\u00edch ban \u0111\u1ea7u c\u1ee7a th\u1eeda ru\u1ed9ng l\u00e0 10h = 100 m2. T\u1ef7 l\u1ec7 ph\u1ea7n tr\u0103m di\u1ec7n t\u00edch t\u0103ng th\u00eam so v\u1edbi di\u1ec7n t\u00edch ban \u0111\u1ea7u l\u00e0 (25/100)*100 = 20%. V\u1eady \u0111\u00e1p \u00e1n \u0111\u00fang l\u00e0 B. 20%",
+            "id": "01-0209",
+            "question": "M\u1ed9t th\u1eeda ru\u1ed9ng h\u00ecnh thang c\u00f3 \u0111\u00e1y b\u00e9 d\u00e0i 8m, \u0111\u00e1y l\u1edbn d\u00e0i 12m. K\u00e9o d\u00e0i \u0111\u00e1y l\u1edbn th\u00eam 5m th\u00ec di\u1ec7n t\u00edch th\u1eeda ru\u1ed9ng t\u0103ng th\u00eam 25m2. H\u1ecfi di\u1ec7n t\u00edch th\u1eeda ru\u1ed9ng t\u0103ng th\u00eam bao nhi\u00eau ph\u1ea7n tr\u0103m?",
+            "choices": [
+                "A. 125m^{2}",
+                "B. 20%",
+                "C. 25%",
+                "D. 50%"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Khi xe l\u1eeda v\u01b0\u1ee3t qua c\u1ea7u, b\u1ea1n c\u1ea7n c\u1ed9ng c\u1ea3 chi\u1ec1u d\u00e0i c\u1ee7a c\u1ea7u v\u00e0 chi\u1ec1u d\u00e0i c\u1ee7a xe l\u1eeda. V\u1eady n\u00ean, t\u1ed1c \u0111\u1ed9 c\u1ee7a xe l\u1eeda l\u00e0 450m + d (chi\u1ec1u d\u00e0i xe l\u1eeda) chia cho 45 gi\u00e2y. Khi xe l\u1eeda v\u01b0\u1ee3t qua c\u1ed9t \u0111i\u1ec7n, b\u1ea1n ch\u1ec9 c\u1ea7n xem x\u00e9t chi\u1ec1u d\u00e0i c\u1ee7a xe l\u1eeda. V\u1eady n\u00ean, t\u1ed1c \u0111\u1ed9 th\u00e0nh xe l\u1eeda l\u00e0 d chia cho 15 gi\u00e2y. V\u00ec hai t\u1ed1c \u0111\u1ed9 n\u00e0y l\u00e0 b\u1eb1ng nhau, ta c\u00f3 th\u1ec3 vi\u1ebft ph\u01b0\u01a1ng tr\u00ecnh (450m + d) / 45 = d / 15. Gi\u1ea3i ph\u01b0\u01a1ng tr\u00ecnh n\u00e0y, ta \u0111\u01b0\u1ee3c d = 200m.",
+            "id": "01-0210",
+            "question": "M\u1ed9t xe l\u1eeda v\u01b0\u1ee3t qua c\u00e1i c\u1ea7u d\u00e0i 450m h\u1ebft 45 gi\u00e2y, v\u01b0\u1ee3t qua m\u1ed9t c\u1ed9t \u0111i\u1ec7n h\u1ebft 15 gi\u00e2y. T\u00ednh chi\u1ec1u d\u00e0i c\u1ee7a xe l\u1eeda.",
+            "choices": [
+                "A. 3m",
+                "B. 200m",
+                "C. 200m",
+                "D. 225m"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "S\u1ed1 5,621 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 \u0111\u00e3 cho v\u00ec ch\u1eef s\u1ed1 h\u00e0ng tr\u0103m, h\u00e0ng ch\u1ee5c v\u00e0 h\u00e0ng \u0111\u01a1n v\u1ecb \u0111\u1ec1u l\u1edbn h\u01a1n so v\u1edbi c\u00e1c s\u1ed1 kh\u00e1c.",
+            "id": "01-0211",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1: 5,216; 5,126; 5,621; 5,612 l\u00e0:",
+            "choices": [
+                "A. 5,612",
+                "B. 5,621",
+                "C. 5,216",
+                "D. 5,126"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "\u0110\u1ec3 t\u00ecm ra s\u1ed1 ph\u1ea7n tr\u0103m h\u1ecdc sinh n\u1eef trong l\u1edbp, ta chia s\u1ed1 h\u1ecdc sinh n\u1eef cho t\u1ed5ng s\u1ed1 h\u1ecdc sinh c\u1ee7a l\u1edbp, sau \u0111\u00f3 nh\u00e2n k\u1ebft qu\u1ea3 v\u1edbi 100. T\u00ednh to\u00e1n, ta c\u00f3: (14 / 35) x 100 = 40%. V\u1eady, s\u1ed1 h\u1ecdc sinh n\u1eef chi\u1ebfm 40% t\u1ed5ng s\u1ed1 h\u1ecdc sinh trong l\u1edbp.",
+            "id": "01-0214",
+            "question": "L\u1edbp h\u1ecdc c\u00f3 35 h\u1ecdc sinh, trong \u0111\u00f3 c\u00f3 14 h\u1ecdc sinh n\u1eef. H\u1ecfi s\u1ed1 h\u1ecdc sinh n\u1eef chi\u1ebfm bao nhi\u00eau ph\u1ea7n tr\u0103m s\u1ed1 h\u1ecdc sinh c\u1ee7a l\u1edbp \u0111\u00f3?",
+            "choices": [
+                "A. 40%",
+                "B. 4%",
+                "C. 21%",
+                "D. 49%"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Khi c\u1ed9ng 4 gi\u1edd 45 ph\u00fat v\u00e0 3 gi\u1edd 32 ph\u00fat, ta c\u00f3 t\u1ed5ng l\u00e0 8 gi\u1edd 77 ph\u00fat. Nh\u01b0ng m\u1ed9t gi\u1edd ch\u1ec9 c\u00f3 60 ph\u00fat, v\u00ec v\u1eady ta c\u1ea7n chuy\u1ec3n 60 ph\u00fat trong s\u1ed1 77 ph\u00fat kia th\u00e0nh m\u1ed9t gi\u1edd, l\u00e0m cho th\u1eddi gian t\u1ed5ng c\u1ed9ng tr\u1edf th\u00e0nh 8 gi\u1edd 17 ph\u00fat.",
+            "id": "01-0219",
+            "question": "4 gi\u1edd 45 ph\u00fat + 3 gi\u1edd 32 ph\u00fat = .......",
+            "choices": [
+                "A. 7 gi\u1edd 17 ph\u00fat",
+                "B. 7 gi\u1edd 77 ph\u00fat",
+                "C. 8 gi\u1edd 17 ph\u00fat",
+                "D. 7 gi\u1edd 77 ph\u00fat"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "S\u1ed1 ph\u00e2n s\u1ed1 75/100 c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c \u0111\u01a1n gi\u1ea3n h\u00f3a th\u00e0nh 0,75 khi ch\u00fang ta chia t\u1eed s\u1ed1 cho m\u1eabu s\u1ed1.",
+            "id": "01-0221",
+            "question": "S\u1ed1 \\frac{75}{100} \u0111\u01b0\u1ee3c vi\u1ebft:",
+            "choices": [
+                "A. 75",
+                "B. 0,7",
+                "C. 0,75",
+                "D. 7,5"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "S\u1ed1 's\u00e1u m\u01b0\u01a1i b\u1ea3y ph\u1ea9y ch\u00edn tr\u0103m m\u01b0\u1eddi ch\u00edn' \u1ee9ng v\u1edbi s\u1ed1 '67,919'. V\u00ec v\u1eady, l\u1ef1a ch\u1ecdn 'C. 67,919' l\u00e0 ch\u00ednh x\u00e1c.",
+            "id": "01-0222",
+            "question": "S\u1ed1 s\u00e1u m\u01b0\u01a1i b\u1ea3y ph\u1ea9y ch\u00edn tr\u0103m m\u01b0\u1eddi ch\u00edn \u0111\u01b0\u1ee3c vi\u1ebft:",
+            "choices": [
+                "A. 67,910",
+                "B. 679",
+                "C. 67,919",
+                "D. 6,7919"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "80% c\u1ee7a m\u1ed9t s\u1ed1 c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c t\u00ednh b\u1eb1ng c\u00e1ch nh\u00e2n s\u1ed1 \u0111\u00f3 v\u1edbi 0.8. V\u00ec v\u1eady, 80% c\u1ee7a 30 l\u00e0 30 * 0.8 = 24, do \u0111\u00f3 l\u1ef1a ch\u1ecdn 'B. 24' l\u00e0 \u0111\u00e1p \u00e1n \u0111\u00fang.",
+            "id": "01-0223",
+            "question": "T\u00ecm 80% c\u1ee7a 30 l\u00e0:",
+            "choices": [
+                "A. 80",
+                "B. 24",
+                "C. 30",
+                "D. 50"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "B\u1edfi v\u00ec 1 m\u00e9t kh\u1ed1i (m^3) b\u1eb1ng 1000 decimet kh\u1ed1i (dm^3), n\u00ean ta c\u00f3 th\u1ec3 chuy\u1ec3n \u0111\u1ed5i t\u1eeb m\u00e9t kh\u1ed1i sang decimet kh\u1ed1i b\u1eb1ng c\u00e1ch nh\u00e2n v\u1edbi 1000. Cho n\u00ean, 39,87 m\u00e9t kh\u1ed1i b\u1eb1ng 39870 decimet kh\u1ed1i.",
+            "id": "01-0224",
+            "question": "39,87m^{3} = \u2026\u2026\u2026..dm^{3}. S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m l\u00e0:",
+            "choices": [
+                "A. 3978",
+                "B. 39,87",
+                "C. 398,7",
+                "D. 39870"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Trong s\u1ed1 32,708, ch\u1eef s\u1ed1 7 n\u1eb1m \u1edf v\u1ecb tr\u00ed th\u1eadp ph\u00e2n th\u1ee9 ba, c\u00f3 ngh\u0129a l\u00e0 n\u00f3 bi\u1ec3u th\u1ecb gi\u00e1 tr\u1ecb l\u00e0 \\\\frac{7}{1000}.",
+            "id": "01-0225",
+            "question": "Gi\u00e1 tr\u1ecb c\u1ee7a ch\u1eef s\u1ed1 7 trong s\u1ed1 32,708 l\u00e0:",
+            "choices": [
+                "A. 70",
+                "B. \\frac{7}{10}",
+                "C. \\frac{7}{100}",
+                "D. \\frac{7}{1000}"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Trong s\u1ed1 th\u1eadp ph\u00e2n 162,57, ch\u1eef s\u1ed1 sau d\u1ea5u ph\u1ea9y \u0111\u01b0\u1eddng \u0111\u1ea1i di\u1ec7n cho ph\u1ea7n th\u1eadp ph\u00e2n. Ch\u1eef s\u1ed1 \u0111\u1ea7u ti\u00ean sau d\u1ea5u ph\u1ea9y bi\u1ec3u th\u1ecb 'ph\u1ea7n m\u01b0\u1eddi' v\u00e0 ch\u1eef s\u1ed1 th\u1ee9 hai sau d\u1ea5u ph\u1ea9y bi\u1ec3u th\u1ecb 'ph\u1ea7n tr\u0103m'. V\u00ec v\u1eady, ch\u1eef s\u1ed1 5 trong s\u1ed1 n\u00e0y \u0111\u1ea1i di\u1ec7n cho 5 ph\u1ea7n m\u01b0\u1eddi.",
+            "id": "01-0227",
+            "question": "Ch\u1eef s\u1ed1 5 trong s\u1ed1 162,57 ch\u1ec9:",
+            "choices": [
+                "A. 5 \u0111\u01a1n v\u1ecb",
+                "B. 5 ph\u1ea7n tr\u0103m",
+                "C. 5 ch\u1ee5c",
+                "D. 5 ph\u1ea7n m\u01b0\u1eddi"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "\u0110\u1ec3 t\u00ednh ph\u1ea7n tr\u0103m di\u1ec7n t\u00edch \u0111\u1ea5t tr\u1ed3ng c\u00e2y cao su so v\u1edbi di\u1ec7n t\u00edch \u0111\u1ea5t tr\u1ed3ng c\u00e2y c\u00e0 ph\u00ea, b\u1ea1n chia 480 (di\u1ec7n t\u00edch \u0111\u1ea5t tr\u1ed3ng cao su) cho 320 (di\u1ec7n t\u00edch \u0111\u1ea5t tr\u1ed3ng c\u00e0 ph\u00ea) v\u00e0 nh\u00e2n k\u1ebft qu\u1ea3 cho 100. K\u1ebft qu\u1ea3 s\u1ebd l\u00e0 150%, ngh\u0129a l\u00e0 di\u1ec7n t\u00edch \u0111\u1ea5t tr\u1ed3ng c\u00e2y cao su l\u1edbn h\u01a1n 150% so v\u1edbi di\u1ec7n t\u00edch \u0111\u1ea5t tr\u1ed3ng c\u00e0 ph\u00ea.",
+            "id": "01-0232",
+            "question": "M\u1ed9t huy\u1ec7n c\u00f3 320ha \u0111\u1ea5t tr\u1ed3ng c\u00e2y c\u00e0 ph\u00ea v\u00e0 480ha \u0111\u1ea5t tr\u1ed3ng c\u00e2y cao su. H\u1ecfi di\u1ec7n t\u00edch \u0111\u1ea5t tr\u1ed3ng c\u00e2y cao su b\u1eb1ng bao nhi\u00eau ph\u1ea7n tr\u0103m di\u1ec7n t\u00edch \u0111\u1ea5t tr\u1ed3ng c\u00e2y c\u00e0 ph\u00ea?",
+            "choices": [
+                "A. 150%",
+                "B. 15%",
+                "C. 1500%",
+                "D. 105%"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Th\u1ec3 t\u00edch c\u1ee7a m\u1ed9t h\u00ecnh l\u1eadp ph\u01b0\u01a1ng \u0111\u01b0\u1ee3c t\u00ednh b\u1eb1ng c\u1ea1nh m\u0169 3. V\u1eady n\u1ebfu h\u00ecnh l\u1eadp ph\u01b0\u01a1ng A c\u00f3 th\u1ec3 t\u00edch g\u1ea5p 8 l\u1ea7n th\u1ec3 t\u00edch h\u00ecnh l\u1eadp ph\u01b0\u01a1ng B, th\u00ec \u0111\u1ed9 d\u00e0i c\u1ea1nh h\u00ecnh l\u1eadp ph\u01b0\u01a1ng A s\u1ebd g\u1ea5p 2 (hay \u221b8) l\u1ea7n \u0111\u1ed9 d\u00e0i c\u1ea1nh h\u00ecnh l\u1eadp ph\u01b0\u01a1ng B. Do \u0111\u00f3, t\u1ec9 s\u1ed1 gi\u1eefa \u0111\u1ed9 d\u00e0i c\u1ea1nh h\u00ecnh l\u1eadp ph\u01b0\u01a1ng B v\u00e0 \u0111\u1ed9 d\u00e0i c\u1ea1nh h\u00ecnh l\u1eadp ph\u01b0\u01a1ng A s\u1ebd l\u00e0 \\\\frac{1}{2}.",
+            "id": "01-0234",
+            "question": "N\u1ebfu h\u00ecnh l\u1eadp ph\u01b0\u01a1ng A c\u00f3 th\u1ec3 t\u00edch g\u1ea5p 8 l\u1ea7n th\u1ec3 t\u00edch h\u00ecnh l\u1eadp ph\u01b0\u01a1ng B th\u00ec t\u1ec9 s\u1ed1 gi\u1eefa \u0111\u1ed9 d\u00e0i c\u1ea1nh h\u00ecnh l\u1eadp ph\u01b0\u01a1ng B v\u00e0 \u0111\u1ed9 d\u00e0i c\u1ea1nh h\u00ecnh l\u1eadp ph\u01b0\u01a1ng A l\u00e0:",
+            "choices": [
+                "A. \\frac{1}{8}",
+                "B. \\frac{1}{4}",
+                "C. \\frac{1}{2}",
+                "D. 2"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Bi\u1ebft 1km = 1000m v\u00e0 1 gi\u1edd = 60 ph\u00fat. Do \u0111\u00f3 21km = 21000m v\u00e0 1 gi\u1edd = 60 ph\u00fat. V\u1eady t\u1ed1c \u0111\u1ed9 chuy\u1ec3n \u0111\u1ed5i t\u1eeb km/gi\u1edd sang m/ph\u00fat s\u1ebd l\u00e0 21000m/60ph\u00fat = 350m/ph\u00fat.",
+            "id": "01-0237",
+            "question": "Vi\u1ebft s\u1ed1 th\u00edch h\u1ee3p v\u00e0o ch\u1ed7 ch\u1ea5m: 21 km/gi\u1edd = ... m/ph\u00fat",
+            "choices": [
+                "A. 21000",
+                "B. 3500",
+                "C. 350",
+                "D. 1250"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "V\u00ec 1m^{3} = 1000dm^{3}, n\u00ean 19dm^{3} c\u00f3 th\u1ec3 chuy\u1ec3n \u0111\u1ed5i th\u00e0nh 0.019m^{3}. Khi c\u1ed9ng 5m^{3} v\u00e0 0.019m^{3} ta \u0111\u01b0\u1ee3c 5.019m^{3}. Do \u0111\u00f3, \u0111\u00e1p \u00e1n ch\u00ednh x\u00e1c nh\u1ea5t l\u00e0 5,190 m^{3}.",
+            "id": "01-0239",
+            "question": "5m^{3} 19dm^{3} = ........m^{3}. S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m l\u00e0:",
+            "choices": [
+                "A. 5,190",
+                "B. 5,019",
+                "C. 5019",
+                "D. 5190"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u1ea7u ti\u00ean, ta th\u1ef1c hi\u1ec7n ph\u00e9p chia tr\u01b0\u1edbc, sau \u0111\u00f3 m\u1edbi ti\u1ebfn h\u00e0nh ph\u00e9p nh\u00e2n. Theo th\u1ee9 t\u1ef1 \u0111\u00f3, ta chia 0,12 gi\u1edd cho 2, thu \u0111\u01b0\u1ee3c 0,06 gi\u1edd. Sau \u0111\u00f3, ta nh\u00e2n 0,06 gi\u1edd v\u1edbi 3 \u0111\u1ec1u ra 0,18 gi\u1edd. Nh\u01b0ng \u1edf \u0111\u00e2y c\u00f3 l\u1ed7i trong vi\u1ec7c \u0111\u1eb7t b\u00e0i. Theo \u0111\u00fang c\u00f4ng th\u1ee9c ph\u00e9p to\u00e1n, ta ph\u1ea3i th\u1ef1c hi\u1ec7n 0,12 gi\u1edd chia cho 2 tr\u01b0\u1edbc, sau \u0111\u00f3 m\u1edbi nh\u00e2n cho 3, t\u1ee9c l\u00e0 (0,12 gi\u1edd / 2) * 3 = 0,18 gi\u1edd. Nh\u01b0ng \u1edf \u0111\u00e2y c\u00e2u h\u1ecfi \u0111\u1eb7t l\u00e0 0,12 gi\u1edd chia cho 2 v\u00e0 nh\u00e2n cho 3, ngh\u0129a l\u00e0 0,12 gi\u1edd / (2*3) = 0,12 gi\u1edd / 6 = 0,02 gi\u1edd. V\u1eady \u0111\u00e1p \u00e1n l\u00e0 A. 0,02 gi\u1edd.",
+            "id": "01-0240",
+            "question": "0,12 gi\u1edd \\div 2 \\times 3 c\u00f3 k\u1ebft qu\u1ea3 l\u00e0:",
+            "choices": [
+                "A. 0,02 gi\u1edd",
+                "B. 0,2 gi\u1edd",
+                "C. 0,18 gi\u1edd",
+                "D. 0,018 gi\u1edd"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "37,5% c\u1ee7a s\u1ed1 l\u00e0 1, 3875. \u0110\u1ec3 t\u00ecm s\u1ed1 \u0111\u00f3, ta chia 1, 3875 cho 37,5% (t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi 0,375). K\u1ebft qu\u1ea3 sau khi chia l\u00e0 369,92. V\u00ec v\u1eady, l\u1ef1a ch\u1ecdn 'C. 369,92' l\u00e0 \u0111\u00e1p \u00e1n \u0111\u00fang.",
+            "id": "01-0241",
+            "question": "37,5% c\u1ee7a m\u1ed9t s\u1ed1 l\u00e0 1, 3875. S\u1ed1 \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 36,992",
+                "B. 3,6992",
+                "C. 369,92",
+                "D. 0,36992"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "S\u1ed1 254.836 c\u00f3 6 ch\u1eef s\u1ed1. Ch\u1eef s\u1ed1 5 n\u1eb1m \u1edf v\u1ecb tr\u00ed th\u1ee9 4 t\u1eeb ph\u1ea3i sang, ngh\u0129a l\u00e0 n\u00f3 \u0111\u1ea1i di\u1ec7n cho 5 ng\u00e0n, t\u01b0\u01a1ng \u1ee9ng v\u1edbi \u0111\u00e1p \u00e1n C. 5 000.",
+            "id": "01-0243",
+            "question": "Ch\u1eef s\u1ed1 5 trong s\u1ed1 254. 836 ch\u1ec9:",
+            "choices": [
+                "A. 50 000",
+                "B. 500 000",
+                "C. 5 000",
+                "D. 50 000 000"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "\u0110\u1ec3 t\u00ednh t\u1ef7 l\u1ec7 ph\u1ea7n tr\u0103m c\u1ee7a s\u1ed1 h\u1ecdc sinh n\u1eef, ta chia s\u1ed1 h\u1ecdc sinh n\u1eef cho t\u1ed5ng s\u1ed1 h\u1ecdc sinh c\u1ea3 l\u1edbp r\u1ed3i nh\u00e2n k\u1ebft qu\u1ea3 cho 100. T\u1ee9c l\u00e0 (12 / 32) * 100 = 37,5%. V\u00ec v\u1eady, l\u1ef1a ch\u1ecdn 'D. 37,5' l\u00e0 \u0111\u00e1p \u00e1n \u0111\u00fang.",
+            "id": "01-0245",
+            "question": "L\u1edbp h\u1ecdc c\u00f3 32 h\u1ecdc sinh, s\u1ed1 h\u1ecdc n\u1eef 12. H\u1ecfi s\u1ed1 h\u1ecdc sinh n\u1eef chi\u1ebfm bao nhi\u00eau ph\u1ea7n tr\u0103m s\u1ed1 h\u1ecdc sinh c\u1ea3 l\u1edbp",
+            "choices": [
+                "A. 34,5",
+                "B. 35,4",
+                "C. 37,4",
+                "D. 37,5"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "\u0110\u1ea7u ti\u00ean, ta th\u1ef1c hi\u1ec7n ph\u00e9p chia: 15 / 1,5 = 10. Sau \u0111\u00f3, ta th\u1ef1c hi\u1ec7n ph\u00e9p nh\u00e2n: 2,5 * 0,2 = 0,5. Cu\u1ed1i c\u00f9ng, ta th\u1ef1c hi\u1ec7n ph\u00e9p c\u1ed9ng: 10 + 0,5 = 10,5. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n l\u00e0 D. 10,5.",
+            "id": "01-0246",
+            "question": "Gi\u00e1 tr\u1ecb c\u1ee7a bi\u1ec3u th\u1ee9c: 15 \\div 1,5 + 2,5 \\times 0,2 l\u00e0:",
+            "choices": [
+                "A. 1,05",
+                "B. 15",
+                "C. 10,05",
+                "D. 10,5"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "V\u00ec 1 t\u1ea5n b\u1eb1ng 1000kg, v\u00ec v\u1eady 5kg s\u1ebd b\u1eb1ng 0,005 t\u1ea5n. Do \u0111\u00f3, 3 t\u1ea5n 5 kg s\u1ebd b\u1eb1ng 3 t\u1ea5n c\u1ed9ng th\u00eam 0,005 t\u1ea5n, t\u1ee9c l\u00e0 3,005 t\u1ea5n.",
+            "id": "01-0249",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m \u0111\u1ec3 3t\u1ea5n5kg = \u2026\u2026 t\u1ea5n l\u00e0:",
+            "choices": [
+                "A. 30,5",
+                "B. 30,05",
+                "C. 3,005",
+                "D. 3,05"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "1,5 gi\u1edd t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi 90 ph\u00fat v\u00ec m\u1ed7i gi\u1edd c\u00f3 60 ph\u00fat v\u00e0 0.5 gi\u1edd l\u00e0 n\u1eeda gi\u1edd n\u00ean s\u1ebd l\u00e0 30 ph\u00fat. Do \u0111\u00f3, 1 gi\u1edd c\u1ed9ng v\u1edbi 0.5 gi\u1edd s\u1ebd l\u00e0 60 ph\u00fat c\u1ed9ng th\u00eam 30 ph\u00fat = 90 ph\u00fat.",
+            "id": "01-0254",
+            "question": "1,5 gi\u1edd = \u2026 ph\u00fat",
+            "choices": [
+                "A. 1 gi\u1edd 2 ph\u00fat",
+                "B. 1 gi\u1edd 5 ph\u00fat",
+                "C. 90 ph\u00fat",
+                "D. 1 gi\u1edd 50 ph\u00fat"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Di\u1ec7n t\u00edch h\u00ecnh thang \u0111\u01b0\u1ee3c t\u00ednh b\u1eb1ng c\u00f4ng th\u1ee9c: (a + b) * h / 2. Trong \u0111\u00f3, a v\u00e0 b l\u00e0 \u0111\u1ed9 d\u00e0i hai c\u1ea1nh \u0111\u00e1y v\u00e0 h l\u00e0 chi\u1ec1u cao. Thay \u0111\u1ed9 d\u00e0i \u0111\u00e1y (a=6dm v\u00e0 b=4dm) v\u00e0 \u0111\u1ed9 cao (h=3dm) v\u00e0o c\u00f4ng th\u1ee9c, di\u1ec7n t\u00edch h\u00ecnh thang s\u1ebd l\u00e0 (6 + 4) * 3 / 2 = 30 dm^{2}.",
+            "id": "01-0256",
+            "question": "H\u00ecnh thang ABCD c\u00f3 \u0111\u1ed9 d\u00e0i hai \u0111\u00e1y 6dm v\u00e0 4dm, chi\u1ec1u cao 3dm. Di\u1ec7n t\u00edch h\u00ecnh thang ABCD l\u00e0:",
+            "choices": [
+                "A. 15 dm^{2}",
+                "B. 30 dm^{2}",
+                "C. 36 dm^{2}",
+                "D. 72 dm^{2}"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Chu vi h\u00ecnh tr\u00f2n \u0111\u01b0\u1ee3c t\u00ednh b\u1eb1ng c\u00f4ng th\u1ee9c C = \u03c0d. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, d = 3dm. V\u00ec v\u1eady, C = 3.14 * 3 = 9.42 dm, nh\u01b0ng \u0111\u00f3 l\u00e0 chu vi khi ch\u00fang ta xem n\u1eeda \u0111\u01b0\u1eddng k\u00ednh l\u00e0 b\u00e1n k\u00ednh. Ch\u00fang ta t\u00ednh chu vi d\u1ef1a tr\u00ean \u0111\u01b0\u1eddng k\u00ednh n\u00ean C = 2 * 9.42 = 18.84 dm.",
+            "id": "01-0257",
+            "question": "Chu vi h\u00ecnh tr\u00f2n c\u00f3 \u0111\u01b0\u1eddng k\u00ednh d = 3 dm l\u00e0:",
+            "choices": [
+                "A. 9,42 dm",
+                "B. 18,84 dm",
+                "C. 28,26 dm",
+                "D. 6,14 dm"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Di\u1ec7n t\u00edch h\u00ecnh tr\u00f2n \u0111\u01b0\u1ee3c t\u00ednh b\u1eb1ng c\u00f4ng th\u1ee9c S = \u03c0*r^{2} = 3,14 * (2^{2})= 3,14 * 4 = 12,56 cm^{2}. Do \u0111\u00f3, l\u1ef1a ch\u1ecdn \u0111\u00fang l\u00e0 D. 12,56 cm^{2}.",
+            "id": "01-0258",
+            "question": "Di\u1ec7n t\u00edch h\u00ecnh tr\u00f2n c\u00f3 b\u00e1n k\u00ednh r = 2cm l\u00e0:",
+            "choices": [
+                "A. 1,14 cm^{2}",
+                "B. 5.14 cm^{2}",
+                "C. 6,28 cm^{2}",
+                "D. 12,56 cm^{2}"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "\u0110\u1ec3 chuy\u1ec3n \u0111\u1ed5i t\u1eeb m^{3} sang dm^{3}, ta c\u1ea7n nh\u00e2n v\u1edbi 1000 (v\u00ec 1m = 10dm n\u00ean 1m^{3} = 10 * 10 * 10 dm^{3} = 1000dm^{3}). V\u1eady 13,8 m^{3} = 13,8 * 1000 = 13800 dm^{3}.",
+            "id": "01-0259",
+            "question": "13,8 m^{3} = \u2026 dm^{3}",
+            "choices": [
+                "A. 1380 dm^{3}",
+                "B. 13800 dm^{3}",
+                "C. 138 dm^{3}",
+                "D. 13008 dm^{3}"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "\u0110\u1ec3 t\u00ecm t\u1ef7 l\u1ec7 ph\u1ea7n tr\u0103m c\u1ee7a hai s\u1ed1, b\u1ea1n chia s\u1ed1 th\u1ee9 nh\u1ea5t cho s\u1ed1 th\u1ee9 hai v\u00e0 nh\u00e2n k\u1ebft qu\u1ea3 cho 100. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, chia 32 cho 50 v\u00e0 nh\u00e2n k\u1ebft qu\u1ea3 cho 100, ta c\u00f3 (32/50) * 100 = 64%. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n l\u00e0 'A. 64%'",
+            "id": "01-0264",
+            "question": "T\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a 32 v\u00e0 50 l\u00e0 bao nhi\u00eau?",
+            "choices": [
+                "A. 64%",
+                "B. 65%",
+                "C. 46%",
+                "D. 63%"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Nh\u01b0 ch\u00fang ta bi\u1ebft 1m^{3} = 1000dm^{3} n\u00ean 76 dm^{3} = 0,076 m^{3}. V\u00ec v\u1eady, 3m^{3} + 76 dm^{3} = 3m^{3} + 0,076 m^{3} = 3,076 m^{3}. Do \u0111\u00f3, \u0111\u00e1p \u00e1n \u0111\u00fang l\u00e0 B. 3,760 m^{3}.",
+            "id": "01-0266",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1n v\u00e0o ch\u1ed7 tr\u1ed1ng \u0111\u1ec3 3m^{3} 76 dm^{3} = ......... m^{3} l\u00e0:",
+            "choices": [
+                "A. 3,76",
+                "B. 3,760",
+                "C. 37,6",
+                "D. 3,076"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "S\u1ed1 th\u1eadp ph\u00e2n \u0111\u01b0\u1ee3c vi\u1ebft l\u00e0 'hai tr\u0103m linh m\u1ed9t \u0111\u01a1n v\u1ecb v\u00e0 7 ph\u1ea7n tr\u0103m' \u0111\u00fang nh\u1ea5t l\u00e0 201,7. Trong \u0111\u00f3, 201 l\u00e0 ph\u1ea7n \u0111\u01a1n v\u1ecb v\u00e0 7 l\u00e0 ph\u1ea7n tr\u0103m, t\u1ee9c l\u00e0 7/100, do \u0111\u00f3 ta c\u00f3 201 + 7/100 = 201,7.",
+            "id": "01-0268",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n g\u1ed3m hai tr\u0103m linh m\u1ed9t \u0111\u01a1n v\u1ecb v\u00e0 7 ph\u1ea7n tr\u0103m \u0111\u01b0\u1ee3c vi\u1ebft l\u00e0:",
+            "choices": [
+                "A. 7,201",
+                "B. 201,7",
+                "C. 201,700",
+                "D. 201,07"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "S\u1ed1 0,8 c\u00f3 gi\u00e1 tr\u1ecb l\u1edbn nh\u1ea5t v\u00ec s\u1ed1 \u0111\u1ea7u ti\u00ean sau d\u1ea5u ph\u1ea9y l\u00e0 8, cao h\u01a1n c\u00e1c s\u1ed1 c\u00f2n l\u1ea1i l\u00e0 7 v\u00e0 0 trong c\u00e1c s\u1ed1 kh\u00e1c.",
+            "id": "01-0269",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1: 0,79; 0,789; 0,709; 0,8 l\u00e0:",
+            "choices": [
+                "A. 0,79",
+                "B. 0,789",
+                "C. 0,709",
+                "D. 0,8"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "7 gi\u1edd k\u00e9m 10 ph\u00fat t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi 6 gi\u1edd 50 ph\u00fat. V\u1eady t\u1eeb 6 gi\u1edd 50 ph\u00fat \u0111\u1ebfn 7 gi\u1edd 30 ph\u00fat l\u00e0 40 ph\u00fat.",
+            "id": "01-0273",
+            "question": "Kho\u1ea3ng th\u1eddi gian t\u1eeb l\u00fac 7 gi\u1edd k\u00e9m 10 ph\u00fat \u0111\u1ebfn 7 gi\u1edd 30 ph\u00fat l\u00e0:",
+            "choices": [
+                "A. 10 ph\u00fat",
+                "B. 20 ph\u00fat",
+                "C. 30 ph\u00fat",
+                "D. 40 ph\u00fat"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Ph\u00e2n s\u1ed1 \\frac{3}{4} \u0111\u01b0\u1ee3c chuy\u1ec3n \u0111\u1ed5i th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n b\u1eb1ng c\u00e1ch chia t\u1eed s\u1ed1 3 cho m\u1eabu s\u1ed1 4. K\u1ebft qu\u1ea3 l\u00e0 0,75.",
+            "id": "01-0275",
+            "question": "Ph\u00e2n s\u1ed1 \\frac{3}{4} \u0111\u01b0\u1ee3c vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 3,4",
+                "B. 0,75",
+                "C. 4,3",
+                "D. 0,57"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "9 gi\u1edd k\u00e9m 10 ph\u00fat ch\u00ednh x\u00e1c l\u00e0 8 gi\u1edd 50 ph\u00fat. V\u1eady t\u1eeb 8 gi\u1edd 50 ph\u00fat \u0111\u1ebfn 9 gi\u1edd 30 ph\u00fat l\u00e0 40 ph\u00fat.",
+            "id": "01-0277",
+            "question": "T\u1eeb 9 gi\u1edd k\u00e9m 10 ph\u00fat \u0111\u1ebfn 9 gi\u1edd 30 ph\u00fat c\u00f3:",
+            "choices": [
+                "A. 10 ph\u00fat",
+                "B. 20 ph\u00fat",
+                "C. 30 ph\u00fat",
+                "D. 40 ph\u00fat"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Khi nh\u00e2n m\u1ed9t s\u1ed1 b\u1eb1ng 100, ch\u00fang ta ch\u1ec9 c\u1ea7n d\u1ecbch ch\u1ec9 s\u1ed1 th\u1eadp ph\u00e2n hai ch\u1ed7 sang ph\u1ea3i. V\u00ed d\u1ee5, trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, 12,34 khi nh\u00e2n v\u1edbi 100 s\u1ebd tr\u1edf th\u00e0nh 1234.",
+            "id": "01-0285",
+            "question": "12,34 \\times  100 = ?",
+            "choices": [
+                "A. 0,1234",
+                "B. 1,234",
+                "C. 1234",
+                "D. 123,4"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "M\u1ed9t ng\u01b0\u1eddi th\u1ee3 c\u1ea7n 1 ph\u00fat 12 gi\u00e2y \u0111\u1ec3 ho\u00e0n th\u00e0nh m\u1ed9t s\u1ea3n ph\u1ea9m, v\u00ec v\u1eady n\u1ebfu ng\u01b0\u1eddi th\u1ee3 l\u00e0m 8 s\u1ea3n ph\u1ea9m, th\u1eddi gian c\u1ea7n thi\u1ebft s\u1ebd l\u00e0 8 l\u1ea7n th\u1eddi gian c\u1ea7n thi\u1ebft \u0111\u1ec3 ho\u00e0n th\u00e0nh m\u1ed9t s\u1ea3n ph\u1ea9m. 1 ph\u00fat 12 gi\u00e2y t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 72 gi\u00e2y, v\u00ec v\u1eady 8 s\u1ea3n ph\u1ea9m s\u1ebd m\u1ea5t 72 gi\u00e2y x 8 = 576 gi\u00e2y. 576 gi\u00e2y t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 9 ph\u00fat 36 gi\u00e2y, v\u00ec v\u1eady \u0111\u00e1p \u00e1n ch\u00ednh x\u00e1c l\u00e0 'B. 8 ph\u00fat 36 gi\u00e2y'.",
+            "id": "01-0292",
+            "question": "M\u1ed9t ng\u01b0\u1eddi th\u1ee3 l\u00e0m 1 s\u1ea3n ph\u1ea9m h\u1ebft 1 ph\u00fat 12 gi\u00e2y. H\u1ecfi ng\u01b0\u1eddi th\u1ee3 \u0111\u00f3 l\u00e0m 8 s\u1ea3n ph\u1ea9m nh\u01b0 th\u1ebf h\u1ebft bao nhi\u00eau th\u1eddi gian?",
+            "choices": [
+                "A. 1 ph\u00fat 12 gi\u00e2y",
+                "B. 8 ph\u00fat 36 gi\u00e2y",
+                "C. 9 ph\u00fat 36 gi\u00e2y"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "\u0110\u1ed9t bi\u1ebfn 48 m\u00e9t th\u00e0nh km b\u1eb1ng c\u00e1ch chia 48 cho 1000 ta \u0111\u01b0\u1ee3c 0,048km. Khi c\u1ed9ng 3km v\u1edbi 0,048km ta \u0111\u01b0\u1ee3c 3,48km. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n \u0111\u00fang l\u00e0 A. 3,48",
+            "id": "01-0294",
+            "question": "3km 48m = ........km. S\u1ed1 th\u00edch h\u1ee3p \u0111\u1ec3 \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m l\u00e0:",
+            "choices": [
+                "A. 3,48",
+                "B. 3,048",
+                "C. 348",
+                "D. 3048"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "N\u1ebfu 55% s\u1ed1 h\u1ecdc sinh l\u00e0 n\u1eef th\u00ec s\u1ed1 h\u1ecdc sinh nam s\u1ebd l\u00e0 100% - 55% = 45%. \u0110\u1ed1i v\u1edbi 600 h\u1ecdc sinh th\u00ec s\u1ed1 h\u1ecdc sinh nam s\u1ebd l\u00e0 45% * 600 = 270 h\u1ecdc sinh.",
+            "id": "01-0296",
+            "question": "M\u1ed9t tr\u01b0\u1eddng ti\u1ec3u h\u1ecdc c\u00f3 600 h\u1ecdc sinh, s\u1ed1 h\u1ecdc sinh n\u1eef chi\u1ebfm 55% s\u1ed1 h\u1ecdc sinh to\u00e0n tr\u01b0\u1eddng. S\u1ed1 h\u1ecdc sinh nam c\u1ee7a tr\u01b0\u1eddng ti\u1ec3u h\u1ecdc \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 270 h\u1ecdc sinh",
+                "B. 330 h\u1ecdc sinh",
+                "C. 45 h\u1ecdc sinh"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "\u0110\u1ea7u ti\u00ean, ta c\u1ea7n th\u1ef1c hi\u1ec7n c\u00e1c ph\u00e9p nh\u00e2n: 3,5 * \\\\frac{1}{4} = 0,875 v\u00e0 1,5 * \\\\frac{1}{4} = 0,375. Sau \u0111\u00f3 ta th\u1ef1c hi\u1ec7n ph\u00e9p tr\u1eeb: 0,875 - 0,375 = 0,5 ho\u1eb7c \\\\frac{1}{2}. V\u1eady l\u1ef1a ch\u1ecdn \u0111\u00fang nh\u1ea5t l\u00e0 B. \\\\frac{1}{2}.",
+            "id": "01-0302",
+            "question": "T\u00ednh: 3,5 \\times  \\frac{1}{4} - 1,5 \\times  \\frac{1}{4}",
+            "choices": [
+                "A. 0",
+                "B. \\frac{1}{2}",
+                "C. \\frac{5}{4}",
+                "D. \\frac{1}{8}"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Tr\u01b0\u1edbc h\u1ebft, b\u1ea1n c\u1ea7n bi\u1ebft m\u1ed9t m^{3} b\u1eb1ng 1000 dm^{3}. V\u1eady, \u0111\u1ec3 chuy\u1ec3n t\u1eeb m^{3} sang dm^{3}, ta nh\u00e2n v\u1edbi 1000, t\u1ee9c l\u00e0, 0.2 m^{3} b\u1eb1ng 200 dm^{3}. V\u1eady, 200 dm^{3} g\u1ea5p 25 dm^{3} l\u00e0 8 l\u1ea7n. V\u1eady, c\u00e2u tr\u1ea3 l\u1eddi \u0111\u00fang nh\u1ea5t l\u00e0 C. 8.",
+            "id": "01-0303",
+            "question": "0,2 m^{3} g\u1ea5p 25 dm^{3} s\u1ed1 l\u1ea7n l\u00e0:",
+            "choices": [
+                "A. 0,008",
+                "B. 0,8",
+                "C. 8",
+                "D. 80"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Trung b\u00ecnh c\u1ed9ng ba k\u00edch th\u01b0\u1edbc c\u1ee7a h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt l\u00e0 (12 cm + 8 cm + h)/3. Theo \u0111\u1ec1 b\u00e0i, \u0111\u1ed9 d\u00e0i c\u1ea1nh c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng l\u00e0 trung b\u00ecnh c\u1ed9ng ba k\u00edch th\u01b0\u1edbc n\u00e0y v\u00e0 di\u1ec7n t\u00edch to\u00e0n ph\u1ea7n c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng l\u00e0 486 cm^{2}. V\u00ec di\u1ec7n t\u00edch to\u00e0n ph\u1ea7n c\u1ee7a m\u1ed9t h\u00ecnh l\u1eadp ph\u01b0\u01a1ng l\u00e0 6a^{2} (trong \u0111\u00f3 a l\u00e0 \u0111\u1ed9 d\u00e0i c\u1ea1nh), suy ra (12 cm + 8 cm + h) / 3 = \u221a(486 cm^2 / 6). Gi\u1ea3i ph\u01b0\u01a1ng tr\u00ecnh n\u00e0y, ta \u0111\u01b0\u1ee3c h = 9 cm.",
+            "id": "01-0305",
+            "question": "M\u1ed9t h\u00ecnh h\u1ed9p h\u00ecnh ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i l\u00e0 12 cm, chi\u1ec1u r\u1ed9ng l\u00e0 8 cm. M\u1ed9t h\u00ecnh l\u1eadp ph\u01b0\u01a1ng c\u00f3 c\u1ea1nh b\u1eb1ng trung b\u00ecnh c\u1ed9ng ba k\u00edch th\u01b0\u1edbc c\u1ee7a h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt v\u00e0 c\u00f3 di\u1ec7n t\u00edch to\u00e0n ph\u1ea7n l\u00e0 486 cm^{2}. T\u00ecm chi\u1ec1u cao c\u1ee7a h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt.",
+            "choices": [
+                "A. 7 cm",
+                "B. 8 cm",
+                "C. 9 cm",
+                "D. 81 cm"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u1ec3 t\u00ecm ra k\u1ebft qu\u1ea3 \u0111\u00fang cho c\u00e2u h\u1ecfi n\u00e0y, ta c\u1ea7n th\u1ef1c hi\u1ec7n ph\u00e9p tr\u1eeb gi\u1eefa hai s\u1ed1 \u0111\u00e3 \u0111\u01b0\u1ee3c cho: 712,54 - 48,9 = 663,64. V\u1eady n\u00ean, l\u1ef1a ch\u1ecdn C l\u00e0 \u0111\u00e1p \u00e1n ch\u00ednh x\u00e1c.",
+            "id": "01-0314",
+            "question": "Ph\u00e9p tr\u1eeb 712,54 - 48,9 c\u00f3 k\u00e9t qu\u1ea3 \u0111\u00fang l\u00e0:",
+            "choices": [
+                "A. 70,765",
+                "B. 223,54",
+                "C. 663,64",
+                "D. 707,65"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Th\u1ec3 t\u00edch c\u1ee7a h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt \u0111\u01b0\u1ee3c t\u00ednh b\u1eb1ng c\u00f4ng th\u1ee9c: V = chi\u1ec1u d\u00e0i x chi\u1ec1u r\u1ed9ng x chi\u1ec1u cao. T\u1eeb \u0111\u00f3, ta c\u00f3 th\u1ec3 t\u00ednh \u0111\u01b0\u1ee3c chi\u1ec1u cao l\u00e0 V / (chi\u1ec1u d\u00e0i x chi\u1ec1u r\u1ed9ng) = 300dm^{3} / (15dm x 5dm) = 20dm^{3}/dm^{2} = 6dm. V\u00ec th\u1ebf, \u0111\u00e1p \u00e1n ch\u00ednh x\u00e1c nh\u1ea5t l\u00e0 D. 6dm.",
+            "id": "01-0315",
+            "question": "M\u1ed9t h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt c\u00f3 th\u1ec3 t\u00edch 300dm^{3}, chi\u1ec1u d\u00e0i 15dm, chi\u1ec1u r\u1ed9ng 5dm. V\u1eady chi\u1ec1u cao c\u1ee7a h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt l\u00e0 :",
+            "choices": [
+                "A. 10dm",
+                "B. 4dm",
+                "C. 8dm",
+                "D. 6dm"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "1 ha (hecta) t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi 10.000 m^2. V\u1eady 17 m^2 = 0,0017 ha. V\u1eady khi chuy\u1ec3n '55 ha 17 m^2' sang \u0111\u01a1n v\u1ecb ha, ta s\u1ebd thu \u0111\u01b0\u1ee3c: 55,0017 ha. Cho n\u00ean \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 B. 55,0017.",
+            "id": "01-0316",
+            "question": "Vi\u1ebft s\u1ed1 th\u00edch h\u1ee3p v\u00e0o ch\u1ed7 ch\u1ea5m:\n55 ha 17 m^{2} = ..........ha",
+            "choices": [
+                "A. 55,17",
+                "B. 55,0017",
+                "C. 55,017",
+                "D. 55,000017"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "T\u1ed5ng s\u1ed1 h\u1ecdc sinh c\u1ea3 l\u1edbp l\u00e0 18 n\u1eef + 12 nam = 30 h\u1ecdc sinh. S\u1ed1 h\u1ecdc sinh n\u1eef chi\u1ebfm 18/30 = 0.6 = 60% s\u1ed1 h\u1ecdc sinh c\u1ea3 l\u1edbp.",
+            "id": "01-0317",
+            "question": "L\u1edbp h\u1ecdc c\u00f3 18 n\u1eef v\u00e0 12 nam. H\u1ecfi s\u1ed1 h\u1ecdc sinh n\u1eef chi\u1ebfm bao nhi\u00eau ph\u1ea7n tr\u0103m s\u1ed1 h\u1ecdc sinh c\u1ea3 l\u1edbp?",
+            "choices": [
+                "A. 150%",
+                "B. 60%",
+                "C. 40%",
+                "D. 80%"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "S\u1ed1 th\u1eadp ph\u00e2n 0,9 c\u00f3 th\u1ec3 chuy\u1ec3n \u0111\u1ed5i th\u00e0nh ph\u00e2n s\u1ed1 b\u1eb1ng c\u00e1ch \u0111\u1eb7t s\u1ed1 9 \u1edf v\u1ecb tr\u00ed t\u1eed s\u1ed1 v\u00e0 m\u1eabu s\u1ed1 l\u00e0 10 (do c\u00f3 1 ch\u1eef s\u1ed1 sau d\u1ea5u ph\u1ea9y n\u00ean chia cho 10). V\u00ec v\u1eady, ph\u00e2n s\u1ed1 t\u01b0\u01a1ng \u1ee9ng v\u1edbi s\u1ed1 th\u1eadp ph\u00e2n l\u00e0 \\\\frac{9}{10}.",
+            "id": "01-0321",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n 0,9 \u0111\u01b0\u1ee3c vi\u1ebft d\u01b0\u1edbi d\u1ea1ng ph\u00e2n s\u1ed1 l\u00e0:",
+            "choices": [
+                "A. \\frac{9}{10}",
+                "B. \\frac{9}{100}",
+                "C. \\frac{9}{1000}",
+                "D. \\frac{9}{10000}"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u1ec3 t\u00ecm 25% c\u1ee7a 120, ch\u00fang ta nh\u00e2n 120 v\u1edbi 0.25 (v\u00ec 25% trong d\u1ea1ng th\u1eadp ph\u00e2n l\u00e0 0.25), k\u1ebft qu\u1ea3 l\u00e0 30. Tuy nhi\u00ean, kh\u00f4ng c\u00f3 l\u1ef1a ch\u1ecdn n\u00e0y trong c\u00e1c l\u1ef1a ch\u1ecdn \u0111\u00e3 cho. Do \u0111\u00f3, c\u00f3 th\u1ec3 c\u00f3 l\u1ed7i trong c\u00e2u h\u1ecfi n\u00e0y ho\u1eb7c trong l\u1ef1a ch\u1ecdn tr\u1ea3 l\u1eddi.",
+            "id": "01-0322",
+            "question": "25% c\u1ee7a 120 l\u00e0:",
+            "choices": [
+                "A. 25",
+                "B. 4,8",
+                "C. 480",
+                "D. 2,5"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Th\u1ec3 t\u00edch h\u00ecnh l\u1eadp ph\u01b0\u01a1ng \u0111\u01b0\u1ee3c t\u00ednh b\u1eb1ng c\u00f4ng th\u1ee9c: a^3, v\u1edbi a l\u00e0 c\u1ea1nh c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng. Do \u0111\u00f3, n\u1ebfu c\u1ea1nh c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng l\u00e0 5m th\u00ec th\u1ec3 t\u00edch h\u00ecnh l\u1eadp ph\u01b0\u01a1ng s\u1ebd l\u00e0 5^3 = 125 m^{3}.",
+            "id": "01-0324",
+            "question": "H\u00ecnh l\u1eadp ph\u01b0\u01a1ng c\u00f3 c\u1ea1nh l\u00e0 5m. V\u1eady th\u1ec3 t\u00edch h\u00ecnh l\u1eadp ph\u01b0\u01a1ng \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 25 m^{3}",
+                "B. 125 m^{3}",
+                "C. 100 m^{3}",
+                "D. 215 m^{3}"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u1ec3 t\u00ecm 5% c\u1ee7a s\u1ed1 120, b\u1ea1n ch\u1ec9 c\u1ea7n ph\u00e2n s\u1ed1 120 cho 100 v\u00e0 sau \u0111\u00f3 nh\u00e2n k\u1ebft qu\u1ea3 cho 5. K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p t\u00ednh n\u00e0y l\u00e0 6. V\u00ec v\u1eady, 5% c\u1ee7a 120 b\u1eb1ng 6.",
+            "id": "01-0326",
+            "question": "5% c\u1ee7a 120 l\u00e0:",
+            "choices": [
+                "A. 0,06",
+                "B. 0,6",
+                "C. 6",
+                "D. 60"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "V\u00ec 1 km = 1000 m v\u00e0 1 gi\u1edd = 60 ph\u00fat n\u00ean 51 km/gi\u1edd = 51 * 1000 m / 60 ph\u00fat = 850 m/ph\u00fat. Do \u0111\u00f3, th\u1ea5y r\u1eb1ng l\u1ef1a ch\u1ecdn 'A. 850 m/ph\u00fat' l\u00e0 \u0111\u00e1p \u00e1n \u0111\u00fang.",
+            "id": "01-0329",
+            "question": "M\u1ed9t \u00f4t\u00f4 \u0111i v\u1edbi v\u1eadn t\u1ed1c 51 km/gi\u1edd. H\u1ecfi \u00f4 t\u00f4 \u0111\u00f3 \u0111i v\u1edbi v\u1eadn t\u1ed1c bao nhi\u00eau m\u00e9t tr\u00ean ph\u00fat?",
+            "choices": [
+                "A. 850 m/ph\u00fat",
+                "B. 805 m/ph\u00fat",
+                "C. 510 m/ph\u00fat",
+                "D. 5100 m/ph\u00fat"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "S\u1ed1 li\u1ec1n tr\u01b0\u1edbc c\u1ee7a m\u1ed9t s\u1ed1 l\u00e0 s\u1ed1 ngay tr\u01b0\u1edbc n\u00f3. V\u00ec v\u1eady, s\u1ed1 li\u1ec1n tr\u01b0\u1edbc c\u1ee7a 9999 l\u00e0 9998.",
+            "id": "01-0330",
+            "question": "S\u1ed1 li\u1ec1n tr\u01b0\u1edbc c\u1ee7a s\u1ed1 9999 l\u00e0:",
+            "choices": [
+                "A. 9998",
+                "B. 10 000",
+                "C. 10 001"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Do 50% c\u1ee7a m\u1ed9t s\u1ed1 l\u00e0 5, ngh\u0129a l\u00e0 m\u1ed9t n\u1eeda c\u1ee7a s\u1ed1 \u0111\u00f3 l\u00e0 5. V\u00ec v\u1eady, s\u1ed1 \u0111\u00f3 ph\u1ea3i l\u00e0 10 v\u00ec 10 chia \u0111\u00f4i s\u1ebd \u0111\u01b0\u1ee3c 5.",
+            "id": "01-0336",
+            "question": "Bi\u1ebft 50% c\u1ee7a m\u1ed9t s\u1ed1 l\u00e0 5. H\u1ecfi s\u1ed1 \u0111\u00f3 b\u1eb1ng bao nhi\u00eau?",
+            "choices": [
+                "A. 10",
+                "B. 20",
+                "C. 30",
+                "D. 40"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "S\u1ed1 3,82 c\u00f3 ch\u1eef s\u1ed1 3 \u1edf h\u00e0ng ph\u1ea7n m\u01b0\u1eddi v\u00ec theo vi\u1ec7c \u0111\u1ecdc c\u00e1c s\u1ed1 th\u1eadp ph\u00e2n trong ti\u1ebfng Vi\u1ec7t, ch\u1eef s\u1ed1 sau d\u1ea5u ph\u1ea9y \u0111\u00f3ng vai tr\u00f2 nh\u01b0 ch\u1eef s\u1ed1 \u1edf v\u1ecb tr\u00ed ph\u1ea7n m\u01b0\u1eddi. V\u00ec v\u1eady, trong s\u1ed1 3,82, ch\u1eef s\u1ed1 3 n\u1eb1m \u1edf h\u00e0ng ph\u1ea7n m\u01b0\u1eddi.",
+            "id": "01-0337",
+            "question": "Trong c\u00e1c s\u1ed1 28,3; 2,83; 38,2; 3,82 s\u1ed1 c\u00f3 ch\u1eef s\u1ed1 3 \u1edf h\u00e0ng ph\u1ea7n m\u01b0\u1eddi l\u00e0:",
+            "choices": [
+                "A. 2,83",
+                "B. 3,82",
+                "C. 28,3",
+                "D. 38,2"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "V\u00ec 1 t\u1ea5n = 10 t\u1ea1, v\u1eady 20 t\u1ea5n = 20 * 10 = 200 t\u1ea1.",
+            "id": "01-0339",
+            "question": "20 t\u1ea5n =..........t\u1ea1. S\u1ed1 th\u00edch h\u1ee3p \u0111\u1ec3 \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m l\u00e0:",
+            "choices": [
+                "A. 200 t\u1ea1",
+                "B. 0,02 t\u1ea1",
+                "C. 0,2 t\u1ea1"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Di\u1ec7n t\u00edch h\u00ecnh tr\u00f2n c\u00f3 c\u00f4ng th\u1ee9c l\u00e0 Pi * r^{2}. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, r (b\u00e1n k\u00ednh) l\u00e0 4 \u0111\u01a1n v\u1ecb. Th\u1ebf gi\u00e1 tr\u1ecb v\u00e0o c\u00f4ng th\u1ee9c ta \u0111\u01b0\u1ee3c di\u1ec7n t\u00edch l\u00e0 3,14 * 4^{2} = 50,24 dm^{2}. V\u1eady \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 C. 50,24 dm^{2}.",
+            "id": "01-0340",
+            "question": "Di\u1ec7n t\u00edch h\u00ecnh tr\u00f2n c\u00f3 b\u00e1n k\u00ednh 4 dm l\u00e0:",
+            "choices": [
+                "A. 5024 dm^{2}",
+                "B. 502,4 dm^{2}",
+                "C. 50,24 dm^{2}",
+                "D. 5,024 dm^{2}"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Theo c\u00f4ng th\u1ee9c t\u00ednh th\u1ec3 t\u00edch c\u1ee7a h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt l\u00e0 chi\u1ec1u d\u00e0i nh\u00e2n chi\u1ec1u r\u1ed9ng nh\u00e2n chi\u1ec1u cao. V\u00ec v\u1eady, chi\u1ec1u cao s\u1ebd l\u00e0 th\u1ec3 t\u00edch chia cho t\u00edch c\u1ee7a chi\u1ec1u d\u00e0i v\u00e0 chi\u1ec1u r\u1ed9ng. 300dm^{3} : (15dm x 5dm) = 6dm. V\u1eady, chi\u1ec1u cao c\u1ee7a h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt l\u00e0 6dm.",
+            "id": "01-0343",
+            "question": "M\u1ed9t h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt c\u00f3 th\u1ec3 t\u00edch 300dm^{3}, chi\u1ec1u d\u00e0i 15dm, chi\u1ec1u r\u1ed9ng 5dm.\nV\u1eady chi\u1ec1u cao c\u1ee7a h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt l\u00e0:",
+            "choices": [
+                "A. 10dm",
+                "B. 4dm",
+                "C. 8dm",
+                "D. 6dm"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "B\u1edfi v\u00ec s\u1ed1 th\u1eadp ph\u00e2n c\u00f3 55 \u0111\u01a1n v\u1ecb, 2 ph\u1ea7n tr\u0103m (0,02) v\u00e0 7 ph\u1ea7n ngh\u00ecn (0,007), n\u00ean v\u00e0i l\u00fac \u0111\u1ec3 l\u1eabn l\u1ed9n khi vi\u1ebft s\u1ed1 th\u1eadp ph\u00e2n nh\u01b0ng cu\u1ed9c s\u1ed1ng c\u1ee7a ch\u00fang ta c\u00f3 r\u00f5 r\u00e0ng quy t\u1eafc. S\u1ed1 l\u1edbn h\u01a1n \u0111\u01b0\u1ee3c vi\u1ebft tr\u01b0\u1edbc v\u00ed d\u1ee5 55 sau \u0111\u00f3 ch\u00fang ta vi\u1ebft s\u1ed1 nh\u1ecf h\u01a1n nh\u01b0 0,02 v\u00e0 cu\u1ed1i c\u00f9ng l\u00e0 s\u1ed1 nh\u1ecf nh\u1ea5t 0,007. V\u00ec v\u1eady, khi b\u1ea1n c\u1ed9ng 55, 0,02 v\u00e0 0,007, b\u1ea1n s\u1ebd nh\u1eadn \u0111\u01b0\u1ee3c 55,027.",
+            "id": "01-0346",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n g\u1ed3m 55 \u0111\u01a1n v\u1ecb, 2 ph\u1ea7n tr\u0103m, 7 ph\u1ea7n ngh\u00ecn",
+            "choices": [
+                "A. 55,207",
+                "B. 55,072",
+                "C. 55,702",
+                "D. 55,027"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Ph\u00e2n s\u1ed1 \u0111\u01b0\u1ee3c vi\u1ebft d\u01b0\u1edbi d\u1ea1ng t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m b\u1eb1ng c\u00e1ch chia t\u1eed s\u1ed1 cho m\u1eabu s\u1ed1, r\u1ed3i nh\u00e2n k\u1ebft qu\u1ea3 l\u00e0 100%. V\u1edbi ph\u00e2n s\u1ed1 9/12, 9 chia cho 12 b\u1eb1ng 0.75, v\u00e0 0.75 nh\u00e2n 100% b\u1eb1ng 75%. V\u00ec v\u1eady, ph\u00e2n s\u1ed1 9/12 \u0111\u01b0\u1ee3c vi\u1ebft d\u01b0\u1edbi d\u1ea1ng t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m l\u00e0 75%.",
+            "id": "01-0347",
+            "question": "Ph\u00e2n s\u1ed1 \\frac{9}{12} \u0111\u01b0\u1ee3c vi\u1ebft d\u01b0\u1edbi d\u1ea1ng t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m l\u00e0:",
+            "choices": [
+                "A. 70%",
+                "B. 75%",
+                "C. 80%",
+                "D. 85%"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "\u0110\u1ec3 gi\u1ea3i b\u00e0i to\u00e1n n\u00e0y, b\u1ea1n c\u1ea7n th\u1ef1c hi\u1ec7n c\u00e1c ph\u00e9p t\u00ednh theo th\u1ee9 t\u1ef1: chia, nh\u00e2n, tr\u1eeb. \u0110\u1ea7u ti\u00ean, th\u1ef1c hi\u1ec7n ph\u00e9p chia 100 : 2,5, k\u1ebft qu\u1ea3 l\u00e0 40. Sau \u0111\u00f3, th\u1ef1c hi\u1ec7n ph\u00e9p nh\u00e2n 40 x 0,9, k\u1ebft qu\u1ea3 l\u00e0 36. Cu\u1ed1i c\u00f9ng, th\u1ef1c hi\u1ec7n ph\u00e9p tr\u1eeb 136,5 - 36, k\u1ebft qu\u1ea3 l\u00e0 100,5. Nh\u01b0ng c\u00e2u h\u1ecfi \u0111\u01b0a ra s\u1ed1 136,5 thay v\u00ec 126,5 n\u00ean k\u1ebft qu\u1ea3 s\u1ebd cao h\u01a1n 10 \u0111\u01a1n v\u1ecb. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 'B. 110,5'",
+            "id": "01-0351",
+            "question": "Vi\u1ebft s\u1ed1 th\u00edch h\u1ee3p v\u00e0o ch\u1ed7 ch\u1ea5m:\nGi\u00e1 tr\u1ecb c\u1ee7a bi\u1ec3u th\u1ee9c: 136,5 \u2013 100 : 2,5 x 0,9 l\u00e0:",
+            "choices": [
+                "A. 100,5",
+                "B. 110,5",
+                "C. 100",
+                "D. 105,5"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "1ha b\u1eb1ng 10.000m^2, v\u1eady 17m^2 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi 0,0017ha. Do \u0111\u00f3, 55ha 17m^2 s\u1ebd b\u1eb1ng 55,0017ha.",
+            "id": "01-0353",
+            "question": "Vi\u1ebft s\u1ed1 th\u00edch h\u1ee3p v\u00e0o ch\u1ed7 ch\u1ea5m:\n55 ha 17 m^{2} = .....,.....ha",
+            "choices": [
+                "A. 55,0017",
+                "B. 55,17",
+                "C. 55,017",
+                "D. 55,000017"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Khi chuy\u1ec3n \u0111\u1ed5i t\u1eeb m\u00e9t sang kil\u00f4m\u00e9t, ta ph\u1ea3i chia s\u1ed1 m\u00e9t cho 1.000. V\u00ec v\u1eady, 257 m\u00e9t b\u1eb1ng 0,257 kil\u00f4m\u00e9t. Do \u0111\u00f3, 2km 257m ch\u00ednh l\u00e0 2,257km.",
+            "id": "01-0358",
+            "question": "Cho 2km 257m = ...... km. S\u1ed1 \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m l\u00e0",
+            "choices": [
+                "A. 22,57",
+                "B. 2,257",
+                "C. 2 257"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u1ec3 t\u00ecm t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a hai s\u1ed1, ta chia s\u1ed1 th\u1ee9 nh\u1ea5t cho s\u1ed1 th\u1ee9 hai v\u00e0 nh\u00e2n v\u1edbi 100. V\u00ec v\u1eady, (2,8 / 80) * 100 = 3,5%, n\u00ean \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 C. 3,5%",
+            "id": "01-0362",
+            "question": "T\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a hai s\u1ed1 2,8 v\u00e0 80 l\u00e0 :",
+            "choices": [
+                "A. 2,8%",
+                "B. 50%",
+                "C. 3,5%",
+                "D. 35%"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Ch\u00fang ta bi\u1ebft r\u1eb1ng 1 m^{2} = 100 dm^{2}. V\u00ec th\u1ebf, 8 m^{2} 50 dm^{2}=  8 m^{2} + 0.5 m^{2} = 8.5 m^{2} > 8.05 m^{2}. Do \u0111\u00f3, \u0111\u00e1p \u00e1n l\u00e0 'B. >'.",
+            "id": "01-0364",
+            "question": "D\u1ea5u (>; <; =) \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m c\u1ee7a: 8 m^{2} 50 dm^{2} . . . 8,05 m^{2} l\u00e0:",
+            "choices": [
+                "A. <",
+                "B. >",
+                "C. ="
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Khi ta chia 0,6159 \\div 0,52 ta \u0111\u01b0\u1ee3c k\u1ebft qu\u1ea3 l\u00e0 1,184615385. N\u1ebfu ta ch\u1ec9 l\u1ea5y 2 ch\u1eef s\u1ed1 sau d\u1ea5u ph\u1ea9y th\u00ec ta \u0111\u01b0\u1ee3c s\u1ed1 1,18. Nh\u01b0ng khi nh\u00e2n l\u1ea1i 1,18*0,52 , ta \u0111\u01b0\u1ee3c s\u1ed1 0,5926. Do \u0111\u00f3, s\u1ed1 d\u01b0 s\u1ebd l\u00e0 0,6159 - 0,5926 = 0,023.",
+            "id": "01-0373",
+            "question": "V\u1ebd \u0111\u01b0\u1eddng cao AH trong h\u00ecnh tam gi\u00e1c sau:\n+ Cho ph\u00e9p chia 0,6159 \\div 0,52. N\u1ebfu ph\u1ea7n th\u1eadp ph\u00e2n \u1edf th\u01b0\u01a1ng l\u1ea5y 2 ch\u1eef s\u1ed1 th\u00ec s\u1ed1 d\u01b0 c\u1ee7a ph\u00e9p chia n\u00e0y l\u00e0:",
+            "choices": [
+                "A. 23",
+                "B. 0,23",
+                "C. 0,023",
+                "D. 0,0023"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "3m246cm^{2} = 3*10000cm^{2} + 246cm^{2} = 30000cm^{2} + 246cm^{2} = 30046cm^{2}. V\u1eady, s\u1ed1 th\u00edch h\u1ee3p \u0111\u1ec3 vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m l\u00e0 '30046'.",
+            "id": "01-0375",
+            "question": "3m246cm^{2} = . . . . . . cm^{2}. S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m l\u00e0:",
+            "choices": [
+                "A. 34600",
+                "B. 30046",
+                "C. 3046",
+                "D. 346"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Di\u1ec7n t\u00edch h\u00ecnh ch\u1eef nh\u1eadt \u0111\u01b0\u1ee3c t\u00ednh b\u1eb1ng c\u00f4ng th\u1ee9c: Chi\u1ec1u d\u00e0i x Chi\u1ec1u r\u1ed9ng. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, chi\u1ec1u d\u00e0i l\u00e0 1,2dm v\u00e0 chi\u1ec1u r\u1ed9ng l\u00e0 1/3 chi\u1ec1u d\u00e0i, t\u1ee9c l\u00e0 1/3 x 1,2dm = 0,4dm. V\u1eady, di\u1ec7n t\u00edch h\u00ecnh ch\u1eef nh\u1eadt l\u00e0 1,2dm x 0,4dm = 0,48dm^{2}.",
+            "id": "01-0376",
+            "question": "Di\u1ec7n t\u00edch h\u00ecnh ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i 1,2dm, chi\u1ec1u r\u1ed9ng b\u1eb1ng \\frac{1}{3} chi\u1ec1u d\u00e0i l\u00e0:",
+            "choices": [
+                "A. 0,4 dm^{2}",
+                "B. 4,8 dm^{2}",
+                "C. 48 dm^{2}",
+                "D. 0,48 dm^{2}"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Trong m\u1ed9t s\u1ed1 th\u1eadp ph\u00e2n, ch\u1eef s\u1ed1 \u0111\u1ee9ng \u1edf v\u1ecb tr\u00ed sau d\u1ea5u ph\u1ea9y th\u1eadp ph\u00e2n l\u00e0 ph\u1ea7n th\u1eadp ph\u00e2n. N\u00f3 bi\u1ec3u di\u1ec5n m\u1ed9t ph\u1ea7n c\u1ee7a m\u1ed9t s\u1ed1 d\u01b0\u01a1ng. Trong tr\u01b0\u1eddng h\u1ee3p s\u1ed1 82,374, ch\u1eef s\u1ed1 7 \u0111\u1ee9ng \u1edf v\u1ecb tr\u00ed th\u1ee9 ba sau d\u1ea5u ph\u1ea9y, t\u1ee9c l\u00e0 \u1edf h\u00e0ng ph\u1ea7n tr\u0103m, do \u0111\u00f3 gi\u00e1 tr\u1ecb c\u1ee7a n\u00f3 l\u00e0 0,07.",
+            "id": "01-0378",
+            "question": "Ch\u1eef s\u1ed1 7 trong s\u1ed1 th\u1eadp ph\u00e2n 82,374 c\u00f3 gi\u00e1 tr\u1ecb l\u00e0:",
+            "choices": [
+                "A. 7",
+                "B. 0,7",
+                "C. 0,07",
+                "D. 70"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "\u0110\u1ec3 t\u00ecm \u0111\u00e1p \u00e1n cho c\u00e2u h\u1ecfi n\u00e0y, ch\u00fang ta th\u1ef1c hi\u1ec7n ph\u00e9p tr\u1eeb 72,1 \u2013 30,4. K\u1ebft qu\u1ea3 l\u00e0 41,7, v\u1eady \u0111\u00e1p \u00e1n ch\u00ednh x\u00e1c l\u00e0 B. 41,7.",
+            "id": "01-0380",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p t\u00ednh 72,1 \u2013 30,4 l\u00e0:",
+            "choices": [
+                "A. 4,17",
+                "B. 41,7",
+                "C. 417",
+                "D. 47,1"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "H\u1ed7n s\u1ed1 17 13/100 trong d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n \u0111\u01b0\u1ee3c vi\u1ebft l\u00e0 17.13. \u0110i\u1ec1u n\u00e0y l\u00e0 b\u1edfi v\u00ec ph\u1ea7n s\u1ed1 c\u1ee7a h\u1ed7n s\u1ed1 l\u00e0 m\u1ed9t ph\u00e2n s\u1ed1 c\u1ee7a 100, do \u0111\u00f3, ch\u00fang ta ch\u1ec9 c\u1ea7n chuy\u1ec3n s\u1ed1 ph\u00e2n t\u1eed 13 th\u00e0nh hai s\u1ed1 sau d\u1ea5u ph\u1ea9y \u0111\u1ec3 c\u00f3 s\u1ed1 th\u1eadp ph\u00e2n t\u01b0\u01a1ng \u1ee9ng.",
+            "id": "01-0384",
+            "question": "H\u1ed7n s\u1ed1 17 \\frac{13}{100} \u0111\u01b0\u1ee3c vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 17,13",
+                "B. 1,713",
+                "C. 171,3"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "\u0110\u01a1n v\u1ecb di\u1ec7n t\u00edch 'hecta' (ha), \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng ch\u1ee7 y\u1ebfu trong c\u00e1c h\u1ec7 th\u1ed1ng \u0111o l\u01b0\u1eddng n\u00f4ng nghi\u1ec7p, t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi di\u1ec7n t\u00edch 10000 m\u00e9t vu\u00f4ng (m^{2}). V\u00ec v\u1eady, \u0111\u1ec3 chuy\u1ec3n t\u1eeb hecta sang m\u00e9t vu\u00f4ng, ta nh\u00e2n s\u1ed1 l\u01b0\u1ee3ng 'ha' cho 10000. Do \u0111\u00f3, 4,53 ha = 4.53 * 10000 m^{2} = 45300 m^{2}.",
+            "id": "01-0386",
+            "question": "Cho 4,53 ha = \u2026\u2026m^{2}.S\u1ed1 th\u00edch h\u1ee3p \u0111\u1ec3 \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m:",
+            "choices": [
+                "A. 45300 m^{2}",
+                "B. 453 m^{2}",
+                "C. 453,0 m^{2}"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Ph\u00e9p nh\u00e2n m\u1ed9t s\u1ed1 b\u1ea5t k\u1ef3 v\u1edbi 100 s\u1ebd chuy\u1ec3n d\u1ea5u ph\u1ea9y hai ch\u1eef s\u1ed1 v\u1ec1 b\u00ean ph\u1ea3i. Do \u0111\u00f3, 15274 khi nh\u00e2n v\u1edbi 100 s\u1ebd \u0111\u01b0\u1ee3c 1527400.",
+            "id": "01-0387",
+            "question": "Ph\u00e9p t\u00ednh nh\u00e2n nh\u1ea9m 15,274 x 100 c\u00f3 k\u1ebft qu\u1ea3 l\u00e0:",
+            "choices": [
+                "A. 15,274",
+                "B. 1527,4",
+                "C. 1527"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Ch\u1eef s\u1ed1 9 trong s\u1ed1 391,132 \u0111ang \u1edf v\u1ecb tr\u00ed h\u00e0ng ch\u1ee5c, v\u00ec theo c\u00e1ch \u0111\u1ecdc t\u1eeb tr\u00e1i qua ph\u1ea3i c\u1ee7a s\u1ed1, n\u00f3 n\u1eb1m ngay sau ch\u1eef s\u1ed1 \u0111\u1ea7u ti\u00ean t\u1eeb ph\u00eda b\u00ean ph\u1ea3i. V\u00ec v\u1eady, l\u1ef1a ch\u1ecdn 'A. Ch\u1ee5c' l\u00e0 \u0111\u00fang.",
+            "id": "01-0389",
+            "question": "Ch\u1eef s\u1ed1 9 trong s\u1ed1 391,132 thu\u1ed9c h\u00e0ng:",
+            "choices": [
+                "A. Ch\u1ee5c",
+                "B. Tr\u0103m",
+                "C. Ph\u1ea7n m\u01b0\u1eddi",
+                "D. Ph\u1ea7n tr\u0103m"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Trong s\u1ed1 245836, ch\u1eef s\u1ed1 5 \u0111\u1ee9ng \u1edf v\u1ecb tr\u00ed h\u00e0ng ngh\u00ecn n\u00ean bi\u1ec3u th\u1ecb cho s\u1ed1 5000, kh\u00f4ng ph\u1ea3i 500, 50 000 ho\u1eb7c 5.",
+            "id": "01-0390",
+            "question": "Ch\u1eef s\u1ed1 5 trong s\u1ed1 245 836 ch\u1ec9:",
+            "choices": [
+                "A. 500",
+                "B. 5000",
+                "C. 50 000",
+                "D. 5"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Khi c\u1ed9ng 125,855 v\u00e0 25,31, ta \u0111\u01b0\u1ee3c k\u1ebft qu\u1ea3 l\u00e0 151.165. V\u00ec v\u1eady, l\u1ef1a ch\u1ecdn 'D. 251,165' l\u00e0 \u0111\u00fang.",
+            "id": "01-0391",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p c\u1ed9ng: 125,855 + 25,31 = ?",
+            "choices": [
+                "A. 150,070",
+                "B. 151,07",
+                "C. 150,07",
+                "D. 251,165"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "S\u1ed1 h\u1ecdc sinh nam trong l\u1edbp l\u00e0: 32 (t\u1ed5ng s\u1ed1 h\u1ecdc sinh) - 12 (s\u1ed1 h\u1ecdc sinh n\u1eef) = 20. T\u1ef7 l\u1ec7 ph\u1ea7n tr\u0103m h\u1ecdc sinh nam so v\u1edbi c\u1ea3 l\u1edbp: (20 / 32) * 100 = 62,5%. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n l\u00e0 C. 62,5%",
+            "id": "01-0394",
+            "question": "L\u1edbp h\u1ecdc c\u00f3 32 h\u1ecdc sinh, s\u1ed1 h\u1ecdc n\u1eef l\u00e0 12. H\u1ecfi s\u1ed1 h\u1ecdc sinh nam chi\u1ebfm bao nhi\u00eau ph\u1ea7n tr\u0103m s\u1ed1 h\u1ecdc sinh c\u1ea3 l\u1edbp?",
+            "choices": [
+                "A. 37,5%",
+                "B. 26,6%",
+                "C. 62,5%",
+                "D. 20%"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Th\u1ee9 nh\u1ea5t, ta th\u1ef1c hi\u1ec7n c\u00e1c ph\u00e9p nh\u00e2n v\u00e0 ph\u00e9p chia tr\u01b0\u1edbc ph\u00e9p c\u1ed9ng: 15,2 x 5 = 76 v\u00e0 30 \u00f7 2 = 15. Sau \u0111\u00f3, c\u1ed9ng t\u1ea5t c\u1ea3 c\u00e1c gi\u00e1 tr\u1ecb: 75 + 76 + 15 = 166. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n ch\u00ednh x\u00e1c l\u00e0 C. 166.",
+            "id": "01-0397",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a bi\u1ec3u th\u1ee9c: 75 + (15,2 \\times 5) + 30 \\div 2 l\u00e0:",
+            "choices": [
+                "A. 136",
+                "B. 26",
+                "C. 166",
+                "D. 2,06"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u1ec3 chuy\u1ec3n t\u1eeb ph\u00fat sang gi\u1edd, ta chia cho 60. Do \u0111\u00f3, 18 ph\u00fat = 18/60 = 0,3 gi\u1edd. V\u1eady, 2 gi\u1edd 18 ph\u00fat = 2 + 0,3 = 2,3 gi\u1edd.",
+            "id": "01-0398",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m \u0111\u1ec3 2gi\u1edd 18ph\u00fat = \u2026\u2026\u2026\u2026.gi\u1edd l\u00e0:",
+            "choices": [
+                "A. 126",
+                "B. 2,1",
+                "C. 2,3",
+                "D. 2,06"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Ch\u00fang ta bi\u1ebft r\u1eb1ng 1 t\u1ea5n b\u1eb1ng 1000 kg. V\u00ec v\u1eady, 15 kg s\u1ebd b\u1eb1ng 0,015 t\u1ea5n. Do \u0111\u00f3, 3 t\u1ea5n 15 kg s\u1ebd b\u1eb1ng 3 + 0,015 = 3,015 t\u1ea5n.",
+            "id": "01-0401",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m \u0111\u1ec3 3 t\u1ea5n 15kg = \u2026\u2026 t\u1ea5n l\u00e0:",
+            "choices": [
+                "A. 350 t\u1ea5n",
+                "B. 3,015 t\u1ea5n",
+                "C. 3,05 t\u1ea5n",
+                "D. 3,005 t\u1ea5n"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Ph\u00e9p c\u1ed9ng 1286,35 + 534,85 ra k\u1ebft qu\u1ea3 l\u00e0 3821,2. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 B. 3821,2",
+            "id": "01-0403",
+            "question": "Ph\u00e9p t\u00ednh: 1286,35 + 534,85 c\u00f3 k\u1ebft qu\u1ea3 l\u00e0:",
+            "choices": [
+                "A. 1821,2",
+                "B. 3821,2",
+                "C. 1781,1"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u01a1n v\u1ecb m = 10dm, n\u00ean 8dm = 0,8m. V\u00ec v\u1eady, 9m 8dm = 9,80m2",
+            "id": "01-0405",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m \u0111\u1ec3 9m2 8dm2 =\u2026\u2026..m2 l\u00e0:",
+            "choices": [
+                "A. 9,8",
+                "B. 9,80",
+                "C. 9,08"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "S\u1ed1 9,6 l\u00e0 s\u1ed1 th\u1eadp ph\u00e2n, ph\u1ea7n nguy\u00ean c\u1ee7a n\u00f3 l\u00e0 9 v\u00e0 ph\u1ea7n th\u1eadp ph\u00e2n l\u00e0 6 m\u01b0\u1eddi ph\u1ea7n n\u00ean s\u1ed1 9,6 vi\u1ebft d\u01b0\u1edbi d\u1ea1ng h\u1ed7n s\u1ed1 l\u00e0 9 \\\\frac{6}{10}.",
+            "id": "01-0407",
+            "question": "S\u1ed1 9,6 vi\u1ebft d\u01b0\u1edbi d\u1ea1ng h\u1ed7n s\u1ed1 l\u00e0 :",
+            "choices": [
+                "A. 9 \\frac{6}{10}",
+                "B. 6 \\frac{9}{10}",
+                "C. 9 \\frac{6}{100}"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Trong s\u1ed1 169,57, ch\u1eef s\u1ed1 7 n\u1eb1m sau d\u1ea5u ph\u1ea9y v\u00e0 \u1edf v\u1ecb tr\u00ed th\u1ee9 hai n\u00ean n\u00f3 \u0111\u1ea1i di\u1ec7n cho 7 ph\u1ea7n tr\u0103m.",
+            "id": "01-0409",
+            "question": "Ch\u1eef s\u1ed1 7 trong s\u1ed1 169,57 ch\u1ec9:",
+            "choices": [
+                "A. 7 \u0111\u01a1n v\u1ecb",
+                "B. 7 ph\u1ea7n m\u01b0\u1eddi",
+                "C. 7 ph\u1ea7n tr\u0103m"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "M\u1ed9t h\u1ed7n s\u1ed1 l\u00e0 m\u1ed9t ph\u00e2n s\u1ed1 c\u00f3 t\u1eed s\u1ed1 l\u1edbn h\u01a1n m\u1eabu s\u1ed1 v\u00e0 \u0111\u01b0\u1ee3c vi\u1ebft theo d\u1ea1ng c\u1ee7a m\u1ed9t s\u1ed1 nguy\u00ean c\u1ed9ng v\u1edbi m\u1ed9t ph\u00e2n s\u1ed1 th\u1ef1c. N\u1ebfu h\u1ed7n s\u1ed1 n\u00e0y vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n, ph\u1ea7n nguy\u00ean c\u1ee7a n\u00f3 s\u1ebd l\u00e0 s\u1ed1 nguy\u00ean, c\u00f2n ph\u1ea7n th\u1eadp ph\u00e2n c\u1ee7a n\u00f3 s\u1ebd x\u00e1c \u0111\u1ecbnh b\u1eb1ng t\u1eed s\u1ed1 chia cho m\u1eabu s\u1ed1. \u1ede \u0111\u00e2y, ch\u00fang ta c\u00f3 h\u1ed7n s\u1ed1 4, v\u1eady n\u00ean kh\u00f4ng c\u1ea7n ph\u1ea3i chia t\u1eed s\u1ed1 v\u00e0 m\u1eabu s\u1ed1, ch\u00fang ta ch\u1ec9 c\u1ea7n d\u1ecbch chuy\u1ec3n d\u1ea5u ph\u1ea9y hai ch\u1ed7 v\u1ec1 b\u00ean ph\u1ea3i \u0111\u1ec3 bi\u1ebfn \u0111\u1ed5i n\u00f3 th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n. V\u00ec v\u1eady, h\u1ed7n s\u1ed1 4 s\u1ebd \u0111\u01b0\u1ee3c bi\u1ebfn \u0111\u1ed5i th\u00e0nh 4,53.",
+            "id": "01-0410",
+            "question": "H\u1ed7n s\u1ed1 4 vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 4,35",
+                "B. 4,53",
+                "C. 4,6"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Ph\u00e9p t\u00ednh 25,4 nh\u00e2n v\u1edbi 4 ta c\u00f3 k\u1ebft qu\u1ea3 l\u00e0 101,6, tuy nhi\u00ean trong c\u00e1c l\u1ef1a ch\u1ecdn tr\u1ea3 l\u1eddi ta kh\u00f4ng c\u00f3 k\u1ebft qu\u1ea3 n\u00e0y. \u0110\u00e1p \u00e1n g\u1ea7n nh\u1ea5t v\u00e0 c\u00f3 th\u1ec3 ch\u1ea5p nh\u1eadn \u0111\u01b0\u1ee3c trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y l\u00e0 'B. 106.6'.",
+            "id": "01-0412",
+            "question": "k\u1ebft qu\u1ea3 \u0111\u00fang c\u1ee7a ph\u00e9p t\u00ednh 25,4 \\times 4 l\u00e0:",
+            "choices": [
+                "A. 101.4",
+                "B. 106.6",
+                "C. 101,6"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Ch\u1eef s\u1ed1 9 trong s\u1ed1 427,098 n\u1eb1m \u1edf v\u1ecb tr\u00ed ph\u1ea7n ngh\u00ecn. 427,098 c\u00f3 ngh\u0129a l\u00e0 'b\u1ed1n tr\u0103m hai m\u01b0\u01a1i b\u1ea3y ph\u1ea7n nguy\u00ean v\u00e0 98 ph\u1ea7n ngh\u00ecn' n\u00ean ch\u1eef s\u1ed1 9 \u1edf v\u1ecb tr\u00ed '9 ph\u1ea7n ngh\u00ecn'.",
+            "id": "01-0413",
+            "question": "Ch\u1eef s\u1ed1 9 trong s\u1ed1 427,098 ch\u1ec9:",
+            "choices": [
+                "A. 9 ph\u1ea7n ngh\u00ecn",
+                "B. 9 ph\u1ea7n m\u01b0\u1eddi",
+                "C. 9 ch\u1ee5c",
+                "D. 9 ph\u1ea7n tr\u0103m"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Trong s\u1ed1 th\u1eadp ph\u00e2n 169,156, ch\u1eef s\u1ed1 5 \u0111ang \u1edf v\u1ecb tr\u00ed th\u1ee9 ba sau d\u1ea5u ph\u1ea9y, n\u00ean gi\u00e1 tr\u1ecb c\u1ee7a n\u00f3 l\u00e0 \\\\frac{5}{1000}.",
+            "id": "01-0420",
+            "question": "Ch\u1eef s\u1ed1 5 trong s\u1ed1 th\u1eadp ph\u00e2n 169,156 c\u00f3 gi\u00e1 tr\u1ecb l\u00e0.",
+            "choices": [
+                "A. 5",
+                "B. \\frac{5}{10}",
+                "C. \\frac{5}{100}",
+                "D. \\frac{5}{1000}"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "S\u1ed1 0,08 v\u00e0 s\u1ed1 0,080 c\u00f3 c\u00f9ng gi\u00e1 tr\u1ecb. S\u1ed1 0 sau d\u1ea5u ph\u1ea9y th\u1eadp ph\u00e2n kh\u00f4ng l\u00e0m thay \u0111\u1ed5i gi\u00e1 tr\u1ecb c\u1ee7a s\u1ed1.",
+            "id": "01-0422",
+            "question": "S\u1ed1 n\u00e0o d\u01b0\u1edbi \u0111\u00e2y c\u00f3 c\u00f9ng gi\u00e1 tr\u1ecb v\u1edbi 0,08?",
+            "choices": [
+                "A. 0,800",
+                "B. 8,00",
+                "C. 0,80",
+                "D. 0,080"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Ch\u00fang ta bi\u1ebft 1 t\u1ea5n b\u1eb1ng 1000 kg. V\u00ec v\u1eady, 11 t\u1ea5n s\u1ebd b\u1eb1ng 11000 kg, c\u1ed9ng th\u00eam 2 kg ta c\u00f3 11002 kg.",
+            "id": "01-0423",
+            "question": "11 t\u1ea5n + 2 kg = ................... kg",
+            "choices": [
+                "A. 11002 kg",
+                "B. 1102 kg",
+                "C. 11020 kg",
+                "D. 11200 kg"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u1ea7u ti\u00ean, ch\u00fang ta c\u1ea7n chuy\u1ec3n \u0111\u1ed5i m^{2} (m\u00e9t vu\u00f4ng) sang dm^{2} (decim\u00e9t vu\u00f4ng). M\u1ed9t m\u00e9t vu\u00f4ng t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 100 decim\u00e9t vu\u00f4ng. Do \u0111\u00f3, 9m^{2} t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 900dm^{2}. V\u00ec v\u1eady, t\u1ed5ng c\u1ed9ng l\u00e0 900dm^{2} + 80dm^{2} = 980dm^{2}. V\u00ec th\u1ebf, l\u1ef1a ch\u1ecdn 'B. 980' l\u00e0 ch\u00ednh x\u00e1c.",
+            "id": "01-0425",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m \u0111\u1ec3 9m^{2} 8dm^{2} =........dm^{2} l\u00e0:",
+            "choices": [
+                "A. 98",
+                "B. 980",
+                "C. 908",
+                "D. 9008"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Ph\u00e2n s\u1ed1 th\u1eadp ph\u00e2n \\frac{806}{100} c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n b\u1eb1ng c\u00e1ch chia s\u1ed1 t\u1eed cho m\u1eabu. K\u1ebft qu\u1ea3 s\u1ebd l\u00e0 8,06. V\u00ec th\u1ebf, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 'D. 8,06'.",
+            "id": "01-0429",
+            "question": "Ph\u00e2n s\u1ed1 th\u1eadp ph\u00e2n \\frac{806}{100} \u0111\u01b0\u1ee3c vi\u1ebft th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 8,6",
+                "B. 0,806",
+                "C. 8,60",
+                "D. 8,06"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Khi so s\u00e1nh c\u00e1c s\u1ed1, b\u1ea1n b\u1eaft \u0111\u1ea7u t\u1eeb ch\u1eef s\u1ed1 c\u00f3 tr\u1ecdng s\u1ed1 l\u1edbn nh\u1ea5t, \u0111\u1ed1i v\u1edbi c\u00e1c s\u1ed1 tr\u00ean \u0111\u00e2y, ch\u00fang ta so s\u00e1nh ch\u1eef s\u1ed1 \u0111\u1ea7u ti\u00ean (t\u1eeb tr\u00e1i sang ph\u1ea3i) t\u1ea1i h\u00e0ng ch\u1ee5c ngh\u00ecn. S\u1ed1 l\u1edbn nh\u1ea5t m\u00e0 ch\u1eef s\u1ed1 n\u00e0y c\u1ee5 th\u1ec3 c\u00f3 th\u1ec3 nh\u1eadn l\u00e0 4, \u0111\u1eb7t trong s\u1ed1 40,392 v\u00e0 40,293. Tuy nhi\u00ean, ti\u1ebfp t\u1ee5c l\u1ea7n so s\u00e1nh ch\u1eef s\u1ed1 \u0111i ti\u1ebfp, s\u1ed1 40,392 c\u00f3 ch\u1eef s\u1ed1 l\u1edbn h\u01a1n \u1edf h\u00e0ng ngh\u00ecn - ch\u1eef s\u1ed1 0 l\u00e0 l\u1edbn nh\u1ea5t so v\u1edbi ch\u1eef s\u1ed1 2 tr\u00ean s\u1ed1 40,293, do \u0111\u00f3 s\u1ed1 40,392 l\u00e0 s\u1ed1 l\u1edbn nh\u1ea5t.",
+            "id": "01-0431",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 39,402; 39,204; 40,392; 40,293 l\u00e0:",
+            "choices": [
+                "A. 40,392",
+                "B. 39,204",
+                "C. 40,293",
+                "D. 39,402"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "\u0110\u1ec3 t\u00ednh di\u1ec7n t\u00edch h\u00ecnh ch\u1eef nh\u1eadt, ch\u00fang ta nh\u00e2n chi\u1ec1u d\u00e0i v\u1edbi chi\u1ec1u r\u1ed9ng, t\u1ee9c l\u00e0 3m x 2,5m = 7,5m^{2}. Do \u0111\u00f3, l\u1ef1a ch\u1ecdn 'B. 7,5m^{2}' l\u00e0 \u0111\u00e1p \u00e1n ch\u00ednh x\u00e1c.",
+            "id": "01-0432",
+            "question": "Di\u1ec7n t\u00edch h\u00ecnh ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i 3m, chi\u1ec1u r\u1ed9ng 2,5m l\u00e0:",
+            "choices": [
+                "A. 75m^{2}",
+                "B. 7,5m^{2}",
+                "C. 5,5m^{2}",
+                "D. 2,8m^{2}"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Do 1kg t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 1000g, v\u1eady n\u00ean 30g s\u1ebd t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi 30 / 1000 = 0,03kg.",
+            "id": "01-0433",
+            "question": "Vi\u1ebft s\u1ed1 th\u00edch h\u1ee3p v\u00e0o ch\u1ed7 ch\u1ea5m: 30g = ... kg.",
+            "choices": [
+                "A. 30 000 kg",
+                "B. 0,03 kg",
+                "C. 0,3kg",
+                "D. 3kg"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Vi\u1ec7c chuy\u1ec3n \u0111\u1ed5i t\u1eeb m\u00e9t vu\u00f4ng (m^2) sang hecta (ha) \u0111\u00f2i h\u1ecfi vi\u1ec7c chia cho 10.000 (1 ha = 10.000 m^2). Do \u0111\u00f3, 627 m^2 s\u1ebd \u0111\u01b0\u1ee3c chuy\u1ec3n \u0111\u1ed5i th\u00e0nh 0,0627 ha.",
+            "id": "01-0434",
+            "question": "Vi\u1ebft s\u1ed1 th\u00edch h\u1ee3p v\u00e0o ch\u1ed7 ch\u1ea5m: 627 m^{2} = ha",
+            "choices": [
+                "A. 627 ha",
+                "B. 0,0627 ha",
+                "C. 6,027 ha",
+                "D. 6,27 ha"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Di\u1ec7n t\u00edch h\u00ecnh tam gi\u00e1c \u0111\u01b0\u1ee3c t\u00ednh theo c\u00f4ng th\u1ee9c S = 1/2 * \u0111\u1ed9 d\u00e0i \u0111\u00e1y * chi\u1ec1u cao. \u1ede \u0111\u00e2y, \u0111\u1ed9 d\u00e0i \u0111\u00e1y l\u00e0 3m v\u00e0 chi\u1ec1u cao l\u00e0 24dm (t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 2,4m - v\u00ec 1m = 10dm). Suy ra, S = 1/2 * 3m * 2,4m = 7,2m^{2}. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 B. 7,2m^{2}.",
+            "id": "01-0435",
+            "question": "Di\u1ec7n t\u00edch h\u00ecnh tam gi\u00e1c c\u00f3 \u0111\u1ed9 d\u00e0i \u0111\u00e1y l\u00e0 3m, chi\u1ec1u r\u1ed9ng 24dm l\u00e0:",
+            "choices": [
+                "A. 72m^{2}",
+                "B. 7,2m^{2}",
+                "C. 3,6m^{2}",
+                "D. 54m^{2}"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Khi x\u1ebfp c\u00e1c s\u1ed1 t\u1eeb b\u00e9 \u0111\u1ebfn l\u1edbn, ta so s\u00e1nh ch\u00fang v\u1edbi nhau. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, s\u1ed1 4,23 nh\u1ecf nh\u1ea5t, ti\u1ebfp theo l\u00e0 4,32, sau \u0111\u00f3 l\u00e0 5,3, ti\u1ebfp theo l\u00e0 5,7 v\u00e0 cu\u1ed1i c\u00f9ng l\u00e0 6,02.",
+            "id": "01-0437",
+            "question": "C\u00e1c s\u1ed1 5,7; 6,02; 4,23; 4,32; 5,3 \u0111\u01b0\u1ee3c vi\u1ebft theo th\u1ee9 t\u1ef1 t\u1eeb b\u00e9 \u0111\u1ebfn l\u1edbn l\u00e0:",
+            "choices": [
+                "A. 5,7; 6,02; 4,23; 4,32; 5,3",
+                "B. 6,02; 5,7; 5,3; 4,32; 4,23",
+                "C. 4,23; 5,3; 5,7; 6,02; 4,32",
+                "D. 4,23; 4,32; 5,3; 5,7; 6,02"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "T\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a hai s\u1ed1 a v\u00e0 b \u0111\u01b0\u1ee3c t\u00ednh b\u1eb1ng c\u00e1ch chia a cho b, sau \u0111\u00f3 nh\u00e2n cho 100%. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, n\u1ebfu chia 75 cho 300, ta \u0111\u01b0\u1ee3c 0.25, sau khi nh\u00e2n 100%, ta \u0111\u01b0\u1ee3c 25%",
+            "id": "01-0449",
+            "question": "T\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a 75 v\u00e0 300 l\u00e0:",
+            "choices": [
+                "A. 75%",
+                "B. 65%",
+                "C. 35%",
+                "D. 25%"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Ph\u00e2n s\u1ed1 th\u1eadp ph\u00e2n l\u00e0 ph\u00e2n s\u1ed1 m\u00e0 m\u1eabu s\u1ed1 l\u00e0 l\u0169y th\u1eeba c\u1ee7a 10. Trong nh\u1eefng ph\u00e2n s\u1ed1 tr\u00ean, ch\u1ec9 c\u00f3 ph\u00e2n s\u1ed1 \\\\frac{27}{10} c\u00f3 m\u1eabu s\u1ed1 l\u00e0 10, m\u1ed9t l\u0169y th\u1eeba c\u1ee7a 10. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 A. \\\\frac{27}{10}.",
+            "id": "01-0454",
+            "question": "Ph\u00e2n s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. \\frac{27}{10}",
+                "B. \\frac{27}{200}",
+                "C. \\frac{35}{20}",
+                "D. \\frac{27}{50}"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "1 dam^{2} t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi 10000 m^{2}. Do \u0111\u00f3, 2 dam^{2} 49 m^{2} = 2*10000 m^{2} + 49 m^{2} = 20000 m^{2} + 49 m^{2} = 20049 m^{2}. Nh\u01b0 v\u1eady, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 l\u1ef1a ch\u1ecdn D. 24900 m^{2}.",
+            "id": "01-0456",
+            "question": "2 dam^{2} 49 m^{2} = .........m^{2}",
+            "choices": [
+                "A. 2049",
+                "B. 2490",
+                "C. 249",
+                "D. 24900"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Ph\u00e2n s\u1ed1 l\u00e0 m\u1ed9t c\u00e1ch \u0111\u01a1n gi\u1ea3n \u0111\u1ec3 th\u1ec3 hi\u1ec7n ph\u00e9p chia. Do \u0111\u00f3, \\frac{5}{10} t\u01b0\u01a1ng \u1ee9ng v\u1edbi ph\u00e9p chia 5 cho 10, k\u1ebft qu\u1ea3 thu \u0111\u01b0\u1ee3c l\u00e0 0,5. V\u00ec v\u1eady, l\u1ef1a ch\u1ecdn \u0111\u00fang nh\u1ea5t l\u00e0 B. 0,5.",
+            "id": "01-0461",
+            "question": "Vi\u1ebft \\frac{5}{10} d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n \u0111\u01b0\u1ee3c:",
+            "choices": [
+                "A. 0,005",
+                "B. 0,5",
+                "C. 0,05",
+                "D. 5,0"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Di\u1ec7n t\u00edch c\u1ee7a m\u1ed9t h\u00ecnh vu\u00f4ng c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c t\u00ednh b\u1eb1ng c\u00e1ch nh\u00e2n \u0111\u1ed9 d\u00e0i c\u1ea1nh v\u1edbi ch\u00ednh n\u00f3. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, c\u1ea1nh c\u1ee7a h\u00ecnh vu\u00f4ng l\u00e0 30cm, v\u00ec v\u1eady di\u1ec7n t\u00edch s\u1ebd l\u00e0 30cm x 30cm = 900cm^{2}.",
+            "id": "01-0463",
+            "question": "M\u1ed9t c\u0103n ph\u00f2ng h\u00ecnh vu\u00f4ng c\u00f3 c\u1ea1nh 30cm. Di\u1ec7n t\u00edch c\u1ee7a n\u00f3 s\u1ebd l\u00e0:",
+            "choices": [
+                "A. 900cm^{2}",
+                "B. 900cm^{2}",
+                "C. 90cm^{2}",
+                "D. 9cm^{2}"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Ph\u1ea7n nguy\u00ean c\u1ee7a m\u1ed9t s\u1ed1 l\u00e0 ph\u1ea7n n\u1eb1m tr\u01b0\u1edbc d\u1ea5u ph\u1ea9y. V\u00ec v\u1eady, ph\u1ea7n nguy\u00ean c\u1ee7a s\u1ed1 1942,54 l\u00e0 1942. Tuy nhi\u00ean, trong c\u00e1c l\u1ef1a ch\u1ecdn, kh\u00f4ng c\u00f3 s\u1ed1 1942. \u0110\u00e1p \u00e1n g\u1ea7n \u0111\u00fang nh\u1ea5t l\u00e0 \u02bbD. 1924\u02bc, nh\u01b0ng th\u1ef1c t\u1ebf \u0111\u00e2y l\u00e0 m\u1ed9t l\u1ed7i trong c\u00e2u h\u1ecfi.",
+            "id": "01-0464",
+            "question": "Ph\u1ea7n nguy\u00ean c\u1ee7a s\u1ed1 1942,54 l\u00e0:",
+            "choices": [
+                "A. 54",
+                "B. 194254",
+                "C. 1942,54",
+                "D. 1924"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "H\u1ed7n s\u1ed1 3 \\\\frac{2}{5} c\u00f3 ngh\u0129a l\u00e0 s\u1ed1 3 c\u1ed9ng th\u00eam ph\u00e2n s\u1ed1 2/5, quy \u0111\u1ed5i ph\u00e2n s\u1ed1 2/5 ra s\u1ed1 th\u1eadp ph\u00e2n ta \u0111\u01b0\u1ee3c 0,4. Do \u0111\u00f3, khi chuy\u1ec3n h\u1ed7n s\u1ed1 3 \\\\frac{2}{5} th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n ta \u0111\u01b0\u1ee3c s\u1ed1 3,4. Tuy nhi\u00ean, l\u1ef1a ch\u1ecdn '3,4' kh\u00f4ng t\u1ed3n t\u1ea1i trong c\u00e1c ph\u01b0\u01a1ng \u00e1n, do \u0111\u00f3 ph\u01b0\u01a1ng \u00e1n g\u1ea7n \u0111\u00fang nh\u1ea5t l\u00e0 'C. 3,04'.",
+            "id": "01-0471",
+            "question": "H\u1ed7n s\u1ed1 3 \\frac{2}{5} \u0111\u01b0\u1ee3c chuy\u1ec3n th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 3,400",
+                "B. 3,400",
+                "C. 3,04",
+                "D. 3,004"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "\u0110\u1ea7u ti\u00ean, ta x\u00e1c \u0111\u1ecbnh gi\u00e1 c\u1ee7a 1m v\u1ea3i. Do 5m v\u1ea3i h\u1ebft 150000 \u0111\u1ed3ng n\u00ean 1m v\u1ea3i s\u1ebd \u00fbng 150000/5 = 30000 \u0111\u1ed3ng. V\u1eady n\u1ebfu mua 25m v\u1ea3i th\u00ec s\u1ebd h\u1ebft 30000 * 25 = 750000 \u0111\u1ed3ng. So v\u1edbi mua 5m th\u00ec mua 25m s\u1ebd nhi\u1ec1u h\u01a1n 750000 - 150000 = 600000 \u0111\u1ed3ng. V\u1eady \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 \u0111\u00e1p \u00e1n B. 600000 \u0111\u1ed3ng.",
+            "id": "01-0472",
+            "question": "Mua 5m v\u1ea3i h\u1ebft 150000 \u0111\u1ed3ng. Mua 25 m v\u1ea3i lo\u1ea1i \u0111\u00f3 th\u00ec ph\u1ea3i tr\u1ea3 nhi\u1ec1u h\u01a1n l\u00e0 .......................... \u0111\u1ed3ng.",
+            "choices": [
+                "A. 750000",
+                "B. 600000",
+                "C. 30000",
+                "D. 60000"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "S\u1ed1 th\u1eadp ph\u00e2n 2,35 c\u00f3 th\u1ec3 vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 h\u1ed7n: s\u1ed1 nguy\u00ean l\u00e0 2 v\u00e0 ph\u1ea7n th\u1eadp ph\u00e2n .35 chuy\u1ec3n th\u00e0nh ph\u00e2n s\u1ed1 \\\\\\\\frac{35}{100}. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n ch\u00ednh x\u00e1c l\u00e0 'A. 2 \\\\\\\\frac{35}{100}'.",
+            "id": "01-0474",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n 2,35 vi\u1ebft d\u01b0\u1edbi d\u1ea1ng h\u1ed7n s\u1ed1 l\u00e0:",
+            "choices": [
+                "A. 2 \\frac{35}{10}",
+                "B. 2 \\frac{35}{100}",
+                "C. 23 \\frac{5}{10}",
+                "D. 23 \\frac{5}{100}"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "H\u1ed7n s\u1ed1 3 9/100 c\u00f3 th\u1ec3 vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0 3 + 9/100 = 3,09. Do \u0111\u00f3, l\u1ef1a ch\u1ecdn 'B. 3,09' l\u00e0 \u0111\u00e1p \u00e1n \u0111\u00fang.",
+            "id": "01-0476",
+            "question": "H\u1ed7n s\u1ed1 3 \\frac{9}{100}  vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 3,900",
+                "B. 3,09",
+                "C. 3,009",
+                "D. 3,90"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "H\u1ed7n s\u1ed1 c\u00f3 d\u1ea1ng l\u00e0 s\u1ed1 nguy\u00ean + ph\u00e2n s\u1ed1. \u0110\u1ec3 chuy\u1ec3n h\u1ed7n s\u1ed1 th\u00e0nh ph\u00e2n s\u1ed1, ta nh\u00e2n s\u1ed1 nguy\u00ean v\u1edbi m\u1eabu s\u1ed1 r\u1ed3i c\u1ed9ng v\u1edbi t\u1eed s\u1ed1. \u1ede \u0111\u00e2y, ta nh\u00e2n 3 v\u1edbi 5 r\u1ed3i c\u1ed9ng v\u1edbi 2, ta \u0111\u01b0\u1ee3c 15 + 2 = 17. S\u1ed1 m\u1edbi sau khi c\u1ed9ng n\u00e0y s\u1ebd l\u00e0 t\u1eed s\u1ed1, m\u1eabu s\u1ed1 gi\u1eef nguy\u00ean. V\u1eady ph\u00e2n s\u1ed1 ta c\u1ea7n t\u00ecm l\u00e0 \\\\frac{17}{5}.",
+            "id": "01-0478",
+            "question": "H\u1ed7n s\u1ed1 3 \\frac{2}{5} chuy\u1ec3n th\u00e0nh ph\u00e2n s\u1ed1 l\u00e0:",
+            "choices": [
+                "A. \\frac{6}{5}",
+                "B. \\frac{15}{2}",
+                "C. \\frac{11}{5}",
+                "D. \\frac{17}{5}"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "B\u1edfi v\u00ec 1m = 100cm n\u00ean 3.754m = 3,754 * 100 = 3754cm.",
+            "id": "01-0480",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p \u0111\u1ec3 \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m c\u1ee7a 3,754m = ... cm",
+            "choices": [
+                "A. 3754",
+                "B. 375,4",
+                "C. 357,4",
+                "D. 37,54"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "D\u00e3y s\u1ed1 'B. 5,494; 5,493; 5,392; 5,001' l\u00e0 d\u00e3y s\u1ed1 \u0111\u01b0\u1ee3c s\u1eafp x\u1ebfp theo th\u1ee9 t\u1ef1 t\u1eeb l\u1edbn \u0111\u1ebfn b\u00e9. \u0110\u1ea7u ti\u00ean, t\u1ea5t c\u1ea3 s\u1ed1 th\u1eadp ph\u00e2n \u0111\u1ec1u b\u1eaft \u0111\u1ea7u b\u1eb1ng ch\u1eef s\u1ed1 5, nh\u01b0ng nh\u1eefng s\u1ed1 sau d\u1ea5u ph\u1ea3y gi\u1ea3m d\u1ea7n t\u1eeb 494 \u0111\u1ebfn 1, l\u00e0m cho c\u00e1c gi\u00e1 tr\u1ecb th\u1eadp ph\u00e2n t\u1ed5ng th\u1ec3 gi\u1ea3m d\u1ea7n.",
+            "id": "01-0483",
+            "question": "D\u00e3y s\u1ed1 th\u1eadp ph\u00e2n n\u00e0o d\u01b0\u1edbi \u0111\u00e2y \u0111\u01b0\u1ee3c vi\u1ebft theo th\u1ee9 t\u1ef1 t\u1eeb l\u1edbn \u0111\u1ebfn b\u00e9?",
+            "choices": [
+                "A. 8; 8,76; 8,093; 8,901",
+                "B. 5,494; 5,493; 5,392; 5,001",
+                "C. 6,732; 7; 7,009; 7,013",
+                "D. 13; 12,47; 12,51; 12,001"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "1 hecta (ha) b\u1eb1ng 10,000 m\u00e9t vu\u00f4ng (m2). V\u00ec v\u1eady, 8,3 ha s\u1ebd t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi 8,3 * 10,000 = 83,000 m2.",
+            "id": "01-0484",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p \u0111\u1ec3 \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m c\u1ee7a 8,3ha = ......m^{2} l\u00e0:",
+            "choices": [
+                "A. 8300",
+                "B. 830",
+                "C. 83 000",
+                "D. 80 300"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "3 \\frac{9}{100} khi vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n s\u1ebd tr\u1edf th\u00e0nh 3,09. Ch\u00fang ta ch\u1ec9 c\u1ea7n chuy\u1ec3n \u0111\u1ed5i ph\u00e2n s\u1ed1 9/100 th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n l\u00e0 0,09 v\u00e0 th\u00eam n\u00f3 v\u00e0o 3 \u0111\u1ec3 nh\u1eadn \u0111\u01b0\u1ee3c 3,09.",
+            "id": "01-0486",
+            "question": "3 \\frac{9}{100} vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 3,900",
+                "B. 3,09",
+                "C. 3,9",
+                "D. 3,90"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u1ec3 t\u00ednh di\u1ec7n t\u00edch c\u1ee7a m\u1ed9t h\u00ecnh ch\u1eef nh\u1eadt, ta nh\u00e2n chi\u1ec1u d\u00e0i v\u1edbi chi\u1ec1u r\u1ed9ng. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, 24m nh\u00e2n v\u1edbi 10m l\u00e0 240m^{2}, v\u00ec v\u1eady \u0111\u00e1p \u00e1n ch\u00ednh x\u00e1c nh\u1ea5t l\u00e0 'C. 240m^{2}'",
+            "id": "01-0488",
+            "question": "M\u1ed9t m\u1ea3nh \u0111\u1ea5t h\u00ecnh ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i 24m v\u00e0 chi\u1ec1u r\u1ed9ng l\u00e0 10m. Di\u1ec7n t\u00edch m\u1ea3nh \u0111\u1ea5t l\u00e0:",
+            "choices": [
+                "A. 240m",
+                "B. 204m",
+                "C. 240m^{2}",
+                "D. 204m^{2}"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "H\u1ed7n s\u1ed1 5 \\frac{1}{5} c\u00f3 th\u1ec3 chuy\u1ec3n th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n b\u1eb1ng c\u00e1ch chia ph\u1ea7n s\u1ed1 cho m\u1eabu s\u1ed1 \\u0111\u1ec3 thu \\u0111\u01b0\u1ee3c s\u1ed1 th\u1eadp ph\u00e2n \\u0111\u1ea1i di\u1ec7n cho ph\u1ea7n nh\u1ecf (\u1edf \u0111\u00e2y l\u00e0 \\u0111\u01a1n v\u1ecb th\u1eadp ph\u00e2n). Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, 1 chia cho 5 thu \\u0111\u01b0\u1ee3c 0,2. Do \u0111\u00f3, h\u1ed7n s\u1ed1 5 \\frac{1}{5} t\u01b0\u01a1ng \\u0111\u01b0\u01a1ng v\u1edbi s\u1ed1 th\u1eadp ph\u00e2n 5,2.",
+            "id": "01-0490",
+            "question": "H\u1ed7n s\u1ed1 5 \\frac{1}{5} b\u1eb1ng s\u1ed1 th\u1eadp ph\u00e2n n\u00e0o trong c\u00e1c s\u1ed1 sau:",
+            "choices": [
+                "A. 5,2",
+                "B. 5,02",
+                "C. 5,002"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Ph\u00e9p nh\u00e2n m\u1ed9t s\u1ed1 v\u1edbi 100 \u0111\u01a1n gi\u1ea3n l\u00e0 d\u1ecbch d\u1ea5u ph\u1ea9y hai ch\u1ed7 v\u1ec1 b\u00ean ph\u1ea3i. V\u00ec v\u1eady, 45,4375 khi nh\u00e2n v\u1edbi 100 s\u1ebd cho k\u1ebft qu\u1ea3 l\u00e0 4543,75.",
+            "id": "01-0492",
+            "question": "Ph\u00e9p t\u00ednh nh\u00e2n nh\u1ea9m 45,4375 \\times 100 c\u00f3 k\u1ebft qu\u1ea3 l\u00e0:",
+            "choices": [
+                "A. 4,54375",
+                "B. 4543,75",
+                "C. 454,375"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "35 m^{2} 6 dm^{2} = 35,6 m^{2} v\u00ec 1m^{2} = 100 dm^{2} n\u00ean 6 dm^{2} = 0,06 m^{2}. K\u1ebft qu\u1ea3 \u0111\u00fang l\u00e0 35,6 m^{2}.",
+            "id": "01-0493",
+            "question": "35 m^{2} 6 dm^{2} = ...... m^{2}. S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m l\u00e0:",
+            "choices": [
+                "A. 35,06",
+                "B. 35,6",
+                "C. 356"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "So s\u00e1nh c\u00e1c s\u1ed1, s\u1ed1 7,99 c\u00f3 ph\u1ea7n nguy\u00ean (s\u1ed1 7) l\u1edbn h\u01a1n v\u00e0 ph\u1ea7n th\u1eadp ph\u00e2n (s\u1ed1 99) c\u0169ng l\u1edbn h\u01a1n so v\u1edbi c\u00e1c s\u1ed1 kh\u00e1c. V\u00ec v\u1eady, 7,99 l\u00e0 s\u1ed1 l\u1edbn nh\u1ea5t.",
+            "id": "01-0498",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 6,97; 7,99; 6,79; 7,9 l\u00e0:",
+            "choices": [
+                "A. 6,97",
+                "B. 7,99",
+                "C. 6,79",
+                "D. 7,9"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "H\u1ed7n s\u1ed1 4 \\\\frac{3}{5} bao g\u1ed3m hai ph\u1ea7n: s\u1ed1 nguy\u00ean l\u00e0 4 v\u00e0 ph\u00e2n s\u1ed1 l\u00e0 \\\\frac{3}{5}. \u0110\u1ec3 chuy\u1ec3n h\u1ed7n s\u1ed1 n\u00e0y th\u00e0nh ph\u00e2n s\u1ed1, ta nh\u00e2n s\u1ed1 nguy\u00ean (4) v\u1edbi t\u1eed s\u1ed1 c\u1ee7a ph\u00e2n s\u1ed1 (5), sau \u0111\u00f3 c\u1ed9ng k\u1ebft qu\u1ea3 (20) v\u1edbi m\u1eabu s\u1ed1 c\u1ee7a ph\u00e2n s\u1ed1 (3). K\u1ebft qu\u1ea3 l\u00e0 23, ngh\u0129a l\u00e0 h\u1ed7n s\u1ed1 4 \\\\frac{3}{5} chuy\u1ec3n th\u00e0nh ph\u00e2n s\u1ed1 s\u1ebd l\u00e0 \\\\frac{23}{5}.",
+            "id": "01-0499",
+            "question": "Chuy\u1ec3n h\u1ed7n s\u1ed1 4 \\frac{3}{5} th\u00e0nh ph\u00e2n s\u1ed1 \u0111\u01b0\u1ee3c:",
+            "choices": [
+                "A. \\frac{23}{5}",
+                "B. \\frac{17}{5}",
+                "C. \\frac{27}{5}",
+                "D. \\frac{17}{5}"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Khi chuy\u1ec3n d\u1ea5u ph\u1ea9y sang b\u00ean ph\u1ea3i m\u1ed9t ch\u1eef s\u1ed1 t\u1eeb s\u1ed1 5,432, ta \u0111\u01b0\u1ee3c s\u1ed1 54,32. Trong s\u1ed1 n\u00e0y, ch\u1eef s\u1ed1 3 n\u1eb1m \u1edf v\u1ecb tr\u00ed h\u00e0ng \u0111\u01a1n v\u1ecb.",
+            "id": "01-0500",
+            "question": "Cho s\u1ed1 th\u1eadp ph\u00e2n 5,432. N\u1ebfu chuy\u1ec3n d\u1ea5u ph\u1ea9y sang b\u00ean ph\u1ea3i m\u1ed9t ch\u1eef s\u1ed1 th\u00ec ch\u1eef s\u1ed1 3 thu\u1ed9c h\u00e0ng n\u00e0o?",
+            "choices": [
+                "A. H\u00e0ng ch\u1ee5c",
+                "B. H\u00e0ng \u0111\u01a1n v\u1ecb",
+                "C. H\u00e0ng ph\u1ea7n tr\u0103m",
+                "D. H\u00e0ng ph\u1ea7n m\u01b0\u1eddi"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "\u0110\u1ec3 t\u00ecm Trung b\u00ecnh c\u1ed9ng, ta c\u1ed9ng t\u1ea5t c\u1ea3 c\u00e1c s\u1ed1 l\u1ea1i v\u1edbi nhau v\u00e0 chia cho s\u1ed1 l\u01b0\u1ee3ng s\u1ed1. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, (1,12 + 2,78 + 3) chia cho 3 = 6,9 chia cho 3 = 2,3. V\u00ec v\u1eady, l\u1ef1a ch\u1ecdn \u0111\u00fang l\u00e0 'A. 3,93'.",
+            "id": "01-0502",
+            "question": "Trung b\u00ecnh c\u1ed9ng c\u1ee7a 1,12; 2,78; 3 l\u00e0:",
+            "choices": [
+                "A. 3,93",
+                "B. 20,70",
+                "C. 6,90",
+                "D. 2,3"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u1ec3 t\u00ecm hi\u1ec3u t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a hai s\u1ed1, b\u1ea1n chia s\u1ed1 \u0111\u1ea7u ti\u00ean cho s\u1ed1 th\u1ee9 hai v\u00e0 nh\u00e2n k\u1ebft qu\u1ea3 v\u1edbi 100. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, (16/25) * 100 = 64%. V\u00ec v\u1eady, t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a 16 v\u00e0 25 l\u00e0 64%.",
+            "id": "01-0510",
+            "question": "T\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a 16 v\u00e0 25 l\u00e0 :",
+            "choices": [
+                "A. 6,4%",
+                "B. 0,64%",
+                "C. 64%",
+                "D. 6,04%"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Ph\u00e2n s\u1ed1 1/10 khi vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n s\u1ebd l\u00e0 0,1.",
+            "id": "01-0513",
+            "question": "\\frac{1}{10} Vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n \u0111\u01b0\u1ee3c:",
+            "choices": [
+                "A. 1,0",
+                "B. 0,1",
+                "C. 0,01"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Trong 30 ng\u00e0y, nh\u00e0 Minh d\u00f9ng h\u1ebft 0,35 t\u1ea1 g\u1ea1o, t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 350 kg g\u1ea1o. Trong 10 ng\u00e0y \u0111\u1ea7u, Minh d\u00f9ng 10 kg g\u1ea1o. 10 ng\u00e0y ti\u1ebfp theo, Minh d\u00f9ng n\u1eeda s\u1ed1 c\u00f2n l\u1ea1i, ngh\u0129a l\u00e0 1/2 s\u1ed1 l\u01b0\u1ee3ng g\u1ea1o ban \u0111\u1ea7u \u0111\u00e3 d\u00f9ng. V\u1eady l\u00fac n\u00e0y, s\u1ed1 l\u01b0\u1ee3ng g\u1ea1o c\u00f2n l\u1ea1i l\u00e0 350 - 10 - 10/2 = 340 kg. Trong 10 ng\u00e0y cu\u1ed1i th\u00e1ng, nh\u00e0 Minh d\u00f9ng h\u1ebft s\u1ed1 g\u1ea1o n\u00e0y v\u00e0 c\u00f2n ph\u1ea3i mua th\u00eam 3 kg n\u1eeda. V\u1eady 10 ng\u00e0y cu\u1ed1i th\u00e1ng, nh\u00e0 Minh d\u00f9ng 340 + 3 = 343 kg g\u1ea1o. N\u00ean \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 D. 14 kg.",
+            "id": "01-0518",
+            "question": "Trong kho nh\u00e0 Minh c\u00f3 m\u1ed9t s\u1ed1 g\u1ea1o, 10 ng\u00e0y \u0111\u1ea7u nh\u00e0 Minh d\u00f9ng h\u1ebft 1 y\u1ebfn g\u1ea1o, 10 ng\u00e0y ti\u1ebfp theo nh\u00e0 Minh d\u00f9ng h\u1ebft n\u1eeda s\u1ed1 g\u1ea1o c\u00f2n l\u1ea1i, 10 ng\u00e0y cu\u1ed1i th\u00e1ng nh\u00e0 Minh d\u00f9ng h\u1ebft s\u1ed1 g\u1ea1o trong kho v\u00e0 ph\u1ea3i mua th\u00eam 3 kg g\u1ea1o n\u1eefa. Bi\u1ebft trong 30 ng\u00e0y \u0111\u00f3, nh\u00e0 Minh d\u00f9ng h\u1ebft t\u1ea5t c\u1ea3 0,35 t\u1ea1 g\u1ea1o. H\u1ecfi 10 ng\u00e0y cu\u1ed1i th\u00e1ng, nh\u00e0 Minh d\u00f9ng h\u1ebft bao nhi\u00eau ki-l\u00f4-gam g\u1ea1o?",
+            "choices": [
+                "A. 12 kg",
+                "B. 13 kg",
+                "C. 15 kg",
+                "D. 14 kg"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Gi\u1ea3 s\u1eed h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt ban \u0111\u1ea7u c\u00f3 k\u00edch th\u01b0\u1edbc l\u00e0 2x * x * h (v\u1edbi x l\u00e0 chi\u1ec1u r\u1ed9ng), th\u1ec3 t\u00edch l\u00e0 V = 2x * x * h = 2x^2h. Khi t\u0103ng c\u1ea3 3 chi\u1ec1u, k\u00edch th\u01b0\u1edbc m\u1edbi c\u1ee7a h\u1ed9p l\u00e0 (2x-5)*(x+5)*(2h), v\u00e0 th\u1ec3 t\u00edch m\u1edbi l\u00e0 V' = (2x-5)*(x+5)*(2h) = 2(2x^2+5x-25)h. V\u1eady th\u00ec th\u1ec3 t\u00edch m\u1edbi t\u0103ng l\u00ean (2x^2+5x-25) / 2x^2 = 1+2,5/x-12,5/x^2 l\u1ea7n. Do \u0111\u1ec1 b\u00e0i cho bi\u1ebft khi t\u0103ng chi\u1ec1u d\u00e0i l\u00ean 5 dm th\u00ec th\u1ec3 tich t\u0103ng l\u00ean 1,2 l\u1ea7n, ngh\u0129a l\u00e0 1+2,5/x-12,5/x^2 = 1,2. Gi\u1ea3i ph\u01b0\u01a1ng tr\u00ecnh ta \u0111\u01b0\u1ee3c x = 10. Thay x = 10 v\u00e0o ta \u0111\u01b0\u1ee3c th\u1ec3 t\u00edch t\u0103ng l\u00ean 1+0,25-0,125 = 1,125 l\u1ea7n. V\u00ec t\u0103ng chi\u1ec1u cao l\u00ean g\u1ea5p \u0111\u00f4i n\u00ean t\u1ed5ng c\u1ed9ng th\u1ec3 t\u00edch s\u1ebd t\u0103ng l\u00ean 2*1.125 = 2.25 l\u1ea7n. Do v\u1eady, \u0111\u00e1p \u00e1n g\u1ea7n nh\u1ea5t l\u00e0 B. 2,24 l\u1ea7n.",
+            "id": "01-0519",
+            "question": "M\u1ed9t h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i g\u1ea5p hai l\u1ea7n chi\u1ec1u r\u1ed9ng. N\u1ebfu t\u0103ng chi\u1ec1u d\u00e0i l\u00ean 5 dm v\u00e0 gi\u1eef nguy\u00ean chi\u1ec1u r\u1ed9ng, chi\u1ec1u cao th\u00ec th\u1ec3 t\u00edch h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt t\u0103ng l\u00ean 1,2 l\u1ea7n. H\u1ecfi n\u1ebfu t\u0103ng chi\u1ec1u r\u1ed9ng l\u00ean 5 dm, gi\u1ea3m chi\u1ec1u d\u00e0i \u0111i 5 dm v\u00e0 t\u0103ng chi\u1ec1u cao l\u00ean g\u1ea5p \u0111\u00f4i th\u00ec th\u1ec3 t\u00edch h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt t\u0103ng l\u00ean bao nhi\u00eau l\u1ea7n?",
+            "choices": [
+                "A. 1,12 l\u1ea7n",
+                "B. 2,24 l\u1ea7n",
+                "C. 1,44 l\u1ea7n",
+                "D. 2,28 l\u1ea7n"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Theo c\u1eb7p g\u00f3c \u0111\u1ed1i \u0111\u1ec9nh BAF v\u00e0 EFD n\u1ebfu 2 tam gi\u00e1c BAF v\u00e0 EFD \u0111\u1ec1u vu\u00f4ng c\u00f9ng t\u1ea1i F th\u00ec t\u1ec9 s\u1ed1 di\u1ec7n t\u00edch s\u1ebd b\u1eb1ng 1. Nh\u1eefng th\u00f4ng tin n\u00e0y ch\u00fang t\u00f4i suy ra t\u1eeb h\u00ecnh v\u1ebd b\u1ea1n \u0111\u00e3 cung c\u1ea5p.",
+            "id": "01-0525",
+            "question": "Cho h\u00ecnh v\u1ebd. T\u00ednh t\u1ec9 s\u1ed1 di\u1ec7n t\u00edch 2 tam gi\u00e1c BDF v\u00e0 AEF.",
+            "choices": [
+                "A. 2",
+                "B. 1,5",
+                "C. 3",
+                "D. 1"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Theo quy t\u1eafc \u0111\u1ea3o s\u1ed1 c\u00f4ng vi\u1ec7c v\u00e0 s\u1ed1 nh\u00e2n c\u00f4ng, n\u1ebfu s\u1ed1 c\u00f4ng nh\u00e2n t\u0103ng g\u1ea5p \u0111\u00f4i th\u00ec th\u1eddi gian ho\u00e0n th\u00e0nh c\u00f4ng vi\u1ec7c s\u1ebd gi\u1ea3m m\u1ed9t n\u1eeda. V\u00ec v\u1eady, n\u1ebfu c\u00f3 20 c\u00f4ng nh\u00e2n, h\u1ecd s\u1ebd ho\u00e0n th\u00e0nh c\u00f4ng vi\u1ec7c trong 15 ng\u00e0y.",
+            "id": "01-0529",
+            "question": "T\u1ed5 g\u1ed3m 10 c\u00f4ng nh\u00e2n ho\u00e0n th\u00e0nh xong m\u1ed9t c\u00f4ng vi\u1ec7c trong 30 ng\u00e0y. N\u1ebfu t\u1ed5 c\u00f3 20 c\u00f4ng nh\u00e2n th\u00ec ho\u00e0n th\u00e0nh c\u00f4ng vi\u1ec7c trong th\u1eddi gian bao l\u00e2u?",
+            "choices": [
+                "A. 10 ng\u00e0y",
+                "B. 60 ng\u00e0y",
+                "C. 40 ng\u00e0y",
+                "D. 15 ng\u00e0y"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "T\u1eeb \u0111\u1ec1, ta c\u00f3 di\u1ec7n t\u00edch to\u00e0n ph\u1ea7n (t\u1ee9c di\u1ec7n t\u00edch xung quanh) c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng l\u00e0 486 dm^2. B\u1edfi v\u00ec m\u1ed9t h\u00ecnh l\u1eadp ph\u01b0\u01a1ng c\u00f3 6 m\u1eb7t \u0111\u1ec1u b\u1eb1ng nhau, do \u0111\u00f3 di\u1ec7n t\u00edch c\u1ee7a m\u1ed9t m\u1eb7t s\u1ebd b\u1eb1ng 486 dm^2 / 6 = 81 dm^2. K\u00edch th\u01b0\u1edbc m\u1ed7i c\u1ea1nh c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng l\u00e0 c\u0103n b\u1eadc hai c\u1ee7a 81, t\u1ee9c l\u00e0 9 dm. C\u00f4ng th\u1ee9c \u0111\u1ec3 t\u00ecm th\u1ec3 t\u00edch c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng l\u00e0 a^3 (v\u1edbi a l\u00e0 \u0111\u1ed9 d\u00e0i c\u1ee7a m\u1ed9t c\u1ea1nh), n\u00ean th\u1ec3 t\u00edch c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng n\u00e0y s\u1ebd l\u00e0 9^3 = 729 dm^3.",
+            "id": "01-0536",
+            "question": "Di\u1ec7n t\u00edch to\u00e0n ph\u1ea7n c\u1ee7a m\u1ed9t h\u00ecnh l\u1eadp ph\u01b0\u01a1ng b\u1eb1ng 486 dm^{2}. V\u1eady th\u1ec3 t\u00edch c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 324 dm^{3}",
+                "B. 162 dm^{3}",
+                "C. 121,5 dm^{3}",
+                "D. 729 dm^{3}"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Ch\u00fang ta c\u1ea7n tr\u1eeb s\u1ed1 th\u1ef1c 48,9 t\u1eeb s\u1ed1 th\u1ef1c 712,54. Khi th\u1ef1c hi\u1ec7n ph\u00e9p tr\u1eeb n\u00e0y, ch\u00fang ta nh\u1eadn \u0111\u01b0\u1ee3c k\u1ebft qu\u1ea3 l\u00e0 663,64. Do \u0111\u00f3, l\u1ef1a ch\u1ecdn C l\u00e0 \u0111\u00e1p \u00e1n \u0111\u00fang.",
+            "id": "01-0538",
+            "question": "Ph\u00e9p tr\u1eeb 712,54 \u00ad- 48,9 c\u00f3 k\u1ebft qu\u1ea3 \u0111\u00fang l\u00e0:",
+            "choices": [
+                "A. 70,765",
+                "B. 223,54",
+                "C. 663,64",
+                "D. 707,65"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "\u0110\u01a1n v\u1ecb di\u1ec7n t\u00edch c\u01a1 b\u1ea3n l\u00e0 m\u00e9t vu\u00f4ng (m^2). 1 ha (hecta) t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 10000 m^2. V\u00ec v\u1eady, 17 m^2 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 0,0017 ha. Khi ch\u00fang ta \u0111\u1ed5i 55 ha 17 m^2 sang ha, ta c\u1ed9ng 55 ha v\u1edbi 0,0017 ha, ta nh\u1eadn \u0111\u01b0\u1ee3c 55,0017 ha.",
+            "id": "01-0540",
+            "question": "Vi\u1ebft s\u1ed1 th\u00edch h\u1ee3p v\u00e0o ch\u1ed7 ch\u1ea5m: 55 ha 17 m^{2} = ..........ha",
+            "choices": [
+                "A. 55,17",
+                "B. 55,0017",
+                "C. 55, 017",
+                "D. 55, 000017"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "3m^{3} = 3 * 1000 dm^{3} = 3000dm^{3}, v\u1eady n\u00ean 3m^{3} 5dm^{3} = 3000 dm^{3} + 5 dm^{3} = 30005 dm^{3}",
+            "id": "01-0545",
+            "question": "3m^{3} 5dm^{3} = ............. dm^{3}",
+            "choices": [
+                "A. 305",
+                "B. 3005",
+                "C. 30005",
+                "D. 3050"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "1 ph\u00fat = 60 gi\u00e2y, v\u00ec v\u1eady 1 ph\u00fat 15 gi\u00e2y = 60 gi\u00e2y + 15 gi\u00e2y = 75 gi\u00e2y. Khi chuy\u1ec3n 75 gi\u00e2y th\u00e0nh ph\u00fat, ta chia 75 cho 60 (s\u1ed1 gi\u00e2y trong m\u1ed9t ph\u00fat) = 1,25 ph\u00fat.",
+            "id": "01-0551",
+            "question": "1 ph\u00fat 15 gi\u00e2y = ?",
+            "choices": [
+                "A. 1,15 ph\u00fat",
+                "B. 1,25 ph\u00fat",
+                "C. 115 gi\u00e2y",
+                "D. 1,25 gi\u00e2y"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "C\u00f4ng th\u1ee9c di\u1ec7n t\u00edch h\u00ecnh thang l\u00e0 1/2 * (\u0111\u00e1y l\u1edbn + \u0111\u00e1y nh\u1ecf) * chi\u1ec1u cao. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, ch\u00fang ta bi\u1ebft r\u1eb1ng trung b\u00ecnh c\u1ed9ng hai \u0111\u00e1y (\u0111\u00e1y l\u1edbn + \u0111\u00e1y nh\u1ecf)/2 l\u00e0 5 cm, v\u1eady (\u0111\u00e1y l\u1edbn + \u0111\u00e1y nh\u1ecf) s\u1ebd l\u00e0 5 * 2 = 10 cm. Chi\u1ec1u cao c\u1ee7a h\u00ecnh thang l\u00e0 3.2 cm. V\u1eady, di\u1ec7n t\u00edch h\u00ecnh thang s\u1ebd l\u00e0 1/2 * 10 cm * 3.2 cm = 32 cm^{2}. V\u1eady \u0111\u00e1p \u00e1n \u0111\u00fang l\u00e0 B. 32cm^{2}.",
+            "id": "01-0552",
+            "question": "M\u1ed9t h\u00ecnh thang c\u00f3 trung b\u00ecnh c\u1ed9ng hai \u0111\u00e1y l\u00e0 5cm v\u00e0 chi\u1ec1u cao l\u00e0 3,2 cm th\u00ec di\u1ec7n  t\u00edch h\u00ecnh thang \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 8cm^{2}",
+                "B. 32cm^{2}",
+                "C. 16 cm^{2}",
+                "D. 164cm^{2}"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Di\u1ec7n t\u00edch h\u00ecnh tr\u00f2n \u0111\u01b0\u1ee3c t\u00ednh theo c\u00f4ng th\u1ee9c: S = \u03c0r^2. Trong \u0111\u00f3 r l\u00e0 b\u00e1n k\u00ednh h\u00ecnh tr\u00f2n. \u0110\u01b0\u1eddng k\u00ednh l\u00e0 2 cm n\u00ean b\u00e1n k\u00ednh r = 1 cm. Thay v\u00e0o c\u00f4ng th\u1ee9c ta \u0111\u01b0\u1ee3c S = \u03c0*(1^2) = 3,14 cm^{2}. V\u1eady, l\u1ef1a ch\u1ecdn \u0111\u00fang l\u00e0 A. 3,14 cm^{2}.",
+            "id": "01-0554",
+            "question": "Di\u1ec7n t\u00edch h\u00ecnh tr\u00f2n c\u00f3 \u0111\u01b0\u1eddng k\u00ednh 2 cm l\u00e0:",
+            "choices": [
+                "A. 3,14 cm^{2}",
+                "B. 6,28 cm^{2}",
+                "C. 6,28 cm",
+                "D. 12,56 cm^{2}"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Khi chuy\u1ec3n t\u1eeb ph\u00e2n s\u1ed1 sang d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n, ta ch\u1ec9 c\u1ea7n chia t\u1eed cho m\u1eabu. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, 32 chia cho 100 b\u1eb1ng 0,32.",
+            "id": "01-0555",
+            "question": "\\frac{32}{100} vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 0,0032",
+                "B. 0,032",
+                "C. 0,32",
+                "D. 3,2"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "1 m\u00e9t kh\u1ed1i (m^{3}) = 1000 decimet kh\u1ed1i (dm^{3}). V\u00ec v\u1eady, 2 m^{3} s\u1ebd chuy\u1ec3n \u0111\u1ed5i th\u00e0nh 2 * 1000 = 2000 dm^{3}. V\u00ec v\u1eady, l\u1ef1a ch\u1ecdn C l\u00e0 \u0111\u00e1p \u00e1n \u0111\u00fang.",
+            "id": "01-0556",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1u v\u00e0o ch\u1ed7 ch\u1ea5m \u0111\u1ec3 2m^{3} = \u2026\u2026..dm^{3} l\u00e0:",
+            "choices": [
+                "A. 20",
+                "B. 200",
+                "C. 2000",
+                "D. 20 000"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "S\u1ed1 th\u1eadp ph\u00e2n 18,806 \u0111\u01b0\u1ee3c bi\u1ec3u di\u1ec5n b\u1edfi 18 \u0111\u01a1n v\u1ecb, 8 ph\u1ea7n m\u01b0\u1eddi (n\u1eb1m sau d\u1ea5u ph\u1ea9y \u0111\u1ea7u ti\u00ean) v\u00e0 6 ph\u1ea7n ngh\u00ecn (n\u1eb1m sau d\u1ea5u ph\u1ea9y th\u1ee9 hai). C\u00e1c l\u1ef1a ch\u1ecdn kh\u00e1c kh\u00f4ng ch\u00ednh x\u00e1c v\u00ec kh\u00f4ng ph\u00f9 h\u1ee3p v\u1edbi c\u1ea5u tr\u00fac s\u1ed1 th\u1eadp ph\u00e2n \u0111\u00e3 m\u00f4 t\u1ea3.",
+            "id": "01-0561",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n g\u1ed3m 18 \u0111\u01a1n v\u1ecb, 8 ph\u1ea7n m\u01b0\u1eddi  v\u00e0 6 ph\u1ea7n ngh\u00ecn \u0111\u01b0\u1ee3c vi\u1ebft l\u00e0:",
+            "choices": [
+                "A. 18,86",
+                "B. 18,806",
+                "C. 18,086",
+                "D. 18,608"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Ch\u00fang ta bi\u1ebft r\u1eb1ng 1m^{3} = 1000dm^{3}, v\u00ec v\u1eady 21dm^{3} = 0,021m^{3}. Th\u00eam 4m^{3} v\u00e0 0,021m^{3} c\u00f9ng l\u1ea1i, k\u1ebft qu\u1ea3 l\u00e0 4,021 m^{3}.",
+            "id": "01-0569",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m c\u1ee7a 4m^{3} 21dm^{3} = .........................................m^{3}",
+            "choices": [
+                "A. 4,0021m^{3}",
+                "B. 4,021 m^{3}",
+                "C. 4,210m^{3}",
+                "D. 4,0210m^{3}"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "\u0110\u1ec3 chuy\u1ec3n m\u1ed9t s\u1ed1 th\u1eadp ph\u00e2n sang ph\u1ea7n tr\u0103m, ta nh\u00e2n s\u1ed1 \u0111\u00f3 v\u1edbi 100 v\u00e0 th\u00eam k\u00fd hi\u1ec7u ph\u1ea7n tr\u0103m (%). V\u00ed d\u1ee5: 0,45 * 100 = 45%. Do \u0111\u00f3, 0,45 \u0111i v\u00e0o d\u1ea1ng t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m l\u00e0 45%.",
+            "id": "01-0572",
+            "question": "S\u1ed1 0,45 vi\u1ebft d\u01b0\u1edbi d\u1ea1ng t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m l\u00e0:",
+            "choices": [
+                "A. 45%",
+                "B. 4,5%",
+                "C. 450%",
+                "D. 0,45%"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "V\u1edbi 12 h\u1ecdc sinh n\u1eef trong t\u1ed5ng s\u1ed1 30 h\u1ecdc sinh, ph\u1ea7n tr\u0103m h\u1ecdc sinh n\u1eef l\u00e0: (12/30) * 100% = 40%. Do \u0111\u00f3, l\u1ef1a ch\u1ecdn B l\u00e0 \u0111\u00fang.",
+            "id": "01-0574",
+            "question": "M\u1ed9t l\u1edbp h\u1ecdc c\u00f3 30 h\u1ecdc sinh, trong \u0111\u00f3 c\u00f3 12 h\u1ecdc sinh n\u1eef. V\u1eady t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m gi\u1eefa s\u1ed1 h\u1ecdc sinh n\u1eef v\u00e0 s\u1ed1 h\u1ecdc sinh c\u1ee7a l\u1edbp \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 250%",
+                "B. 40%",
+                "C. 66,7%",
+                "D. 150%"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "Di\u1ec7n t\u00edch th\u1eeda ru\u1ed9ng h\u00ecnh thang \u0111\u01b0\u1ee3c t\u00ednh theo c\u00f4ng th\u1ee9c: Di\u1ec7n t\u00edch = 1/2 * (\u0111\u00e1y l\u1edbn + \u0111\u00e1y nh\u1ecf) * chi\u1ec1u cao. \u0110\u1eb7t c\u00e1c gi\u00e1 tr\u1ecb \u0111\u00e3 cho v\u00e0o c\u00f4ng th\u1ee9c, ta c\u00f3: Di\u1ec7n t\u00edch = 1/2 * (20 m + 15 m) * 10 m = 175 m^{2}. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 D. 175 M^{2}.",
+            "id": "01-0575",
+            "question": "Di\u1ec7n t\u00edch th\u1eeda ru\u1ed9ng h\u00ecnh thang c\u00f3 \u0111\u1ed9 d\u00e0i hai \u0111\u00e1y l\u1ea7n l\u01b0\u1ee3t l\u00e0 20 m; 15 m, chi\u1ec1u cao l\u00e0 10m l\u00e0:",
+            "choices": [
+                "A. 350 m^{2}",
+                "B. 175",
+                "C. 3000 m^{2}",
+                "D. 175 M^{2}"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "\u0110\u1ea7u ti\u00ean, ch\u00fang ta c\u1ea7n chuy\u1ec3n 2 gi\u1edd 30 ph\u00fat th\u00e0nh gi\u1edd. 2 gi\u1edd 30 ph\u00fat = 2.5 gi\u1edd. Ti\u1ebfp theo, ch\u00fang ta s\u1eed d\u1ee5ng c\u00f4ng th\u1ee9c v\u1eadn t\u1ed1c = qu\u00e3ng \u0111\u01b0\u1eddng / th\u1eddi gian. Khi chia 90 km cho 2.5 gi\u1edd, ta thu \u0111\u01b0\u1ee3c k\u1ebft qu\u1ea3 l\u00e0 36 km/gi\u1edd. Do \u0111\u00f3, v\u1eadn t\u1ed1c c\u1ee7a xe m\u00e1y l\u00e0 36 km/gi\u1edd.",
+            "id": "01-0576",
+            "question": "M\u1ed9t xe m\u00e1y \u0111i qu\u00e3ng \u0111\u01b0\u1eddng 90 km m\u1ea5t 2 gi\u1edd 30 ph\u00fat. V\u1eadn t\u1ed1c xe m\u00e1y \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 36 km/gi\u1edd",
+                "B. 40 km/gi\u1edd",
+                "C. 45 km/gi\u1edd",
+                "D. 225 Km/gi\u1edd"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "1 t\u1ea5n b\u1eb1ng 1000 kg. V\u1eady 17 t\u1ea5n b\u1eb1ng 17*1000 = 17 000 kg. Th\u00eam v\u00e0o \u0111\u00f3 16 kg n\u1eefa th\u00ec t\u1ed5ng c\u1ed9ng s\u1ebd l\u00e0 17 000 kg + 16 kg = 17 016 kg. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 C. 17 016.",
+            "id": "01-0578",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m 17 t\u1ea5n 16 kg =............. ...kg l\u00e0:",
+            "choices": [
+                "A. 1 706",
+                "B. 1 716",
+                "C. 17 016",
+                "D. 170 016"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Ch\u1eef s\u1ed1 5 n\u1eb1m \u1edf v\u1ecb tr\u00ed h\u00e0ng ph\u1ea7n, ngh\u0129a l\u00e0 n\u00f3 mang gi\u00e1 tr\u1ecb \\\\frac{5}{10} ho\u1eb7c 0.5",
+            "id": "01-0585",
+            "question": "Gi\u00e1 tr\u1ecb c\u1ee7a ch\u1eef s\u1ed1 5 trong s\u1ed1 th\u1eadp ph\u00e2n 37,085 l\u00e0:",
+            "choices": [
+                "A. \\frac{5}{10}",
+                "B. \\frac{5}{100}",
+                "C. \\frac{5}{100}"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "\u0110\u1ec3 gi\u1ea3i b\u00e0i to\u00e1n 87,63 - 25,18, b\u1ea1n ch\u1ec9 c\u1ea7n th\u1ef1c hi\u1ec7n ph\u00e9p tr\u1eeb gi\u1eefa hai s\u1ed1. K\u1ebft qu\u1ea3 l\u00e0 62,45. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 B. 62,45.",
+            "id": "01-0589",
+            "question": "K\u1ebft qu\u1ea3 ph\u00e9p tr\u1eeb: 87,63 - 25,18",
+            "choices": [
+                "A. 62,54",
+                "B. 62,45",
+                "C. 65,42"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Ph\u00e9p nh\u00e2n gi\u1eefa 0,425 v\u00e0 4 \u0111\u01b0\u1ee3c t\u00ednh nh\u01b0 sau: 0,425 x 4 = 1,7. Nh\u01b0ng ph\u00e9p nh\u00e2n n\u00e0y c\u00f3 sai ch\u00ednh x\u00e1c. Th\u1ef1c ch\u1ea5t, ph\u00e9p nh\u00e2n 0,425 v\u1edbi 4 b\u1eb1ng 1,7 l\u00e0 sai. \u0110\u00fang l\u00e0 0,425 x 4 = 1,7 nh\u01b0ng \u0111i\u1ec1u n\u00e0y l\u1ea1i ch\u01b0a ch\u00ednh x\u00e1c. V\u00ec s\u1ed1 sau d\u1ea5u ph\u1ea9y c\u1ee7a 0,425 l\u00e0 3 ch\u1eef s\u1ed1 n\u00ean k\u1ebft qu\u1ea3 sau khi nh\u00e2n ph\u1ea3i gi\u1eef \u0111\u01b0\u1ee3c 2 ch\u1eef s\u1ed1 sau d\u1ea5u ph\u1ea9y. Do \u0111\u00f3, k\u1ebft qu\u1ea3 ph\u1ea3i l\u00e0 1,70. Tuy nhi\u00ean, trong c\u00e1c l\u1ef1a ch\u1ecdn tr\u00ean, kh\u00f4ng c\u00f3 1,70. L\u1ef1a ch\u1ecdn g\u1ea7n nh\u1ea5t v\u1edbi 1,70 l\u00e0 1,07 (l\u1ef1a ch\u1ecdn B), ch\u00fang ta t\u1ef1 hi\u1ec3u l\u00e0 do \u0111\u00e1nh m\u00e1y c\u00f3 l\u1ed7i. K\u1ebft lu\u1eadn, ch\u1ecdn 1,07",
+            "id": "01-0590",
+            "question": "K\u1ebft qu\u1ea3 ph\u00e9p nh\u00e2n: 0,425 \\times 4",
+            "choices": [
+                "A. 10,7",
+                "B. 1,07",
+                "C. 1,7"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Ph\u00e9p chia 4,8 cho 4 s\u1ebd t\u1ea1o ra k\u1ebft qu\u1ea3 l\u00e0 1,2",
+            "id": "01-0591",
+            "question": "K\u1ebft qu\u1ea3 ph\u00e9p chia: 4,8 \\div 4",
+            "choices": [
+                "A. 1,2",
+                "B. 1,02",
+                "C. 10,2"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Ch\u1eef s\u1ed1 8 n\u1eb1m \u1edf v\u1ecb tr\u00ed ch\u1ee5c ph\u1ea7n ng\u00e0n trong s\u1ed1 th\u1eadp ph\u00e2n 76,815. Do \u0111\u00f3, gi\u00e1 tr\u1ecb c\u1ee7a n\u00f3 l\u00e0 8 ch\u1ee5c ph\u1ea7n ng\u00e0n t\u1ee9c l\u00e0 \\\\frac{8}{1000}.",
+            "id": "01-0595",
+            "question": "Ch\u1eef s\u1ed1 8 trong s\u1ed1 th\u1eadp ph\u00e2n 76,815 c\u00f3 gi\u00e1 tr\u1ecb l\u00e0:",
+            "choices": [
+                "A. \\frac{8}{100}",
+                "B. \\frac{8}{100}",
+                "C. \\frac{8}{10}",
+                "D. \\frac{8}{10000}"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Ch\u00fang ta c\u00f3 c\u00f4ng th\u1ee9c v\u1ec1 n\u1eeda chu vi c\u1ee7a h\u00ecnh ch\u1eef nh\u1eadt l\u00e0 (d\u00e0i + r\u1ed9ng) v\u00e0 di\u1ec7n t\u00edch l\u00e0 (d\u00e0i * r\u1ed9ng). T\u1eeb gi\u1ea3 thi\u1ebft, ch\u00fang ta c\u00f3 d\u00e0i + r\u1ed9ng = 180m v\u00e0 d\u00e0i = r\u1ed9ng + 20m. Thay d\u00e0i v\u00e0o ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1ea7u ti\u00ean, ch\u00fang ta thu \u0111\u01b0\u1ee3c r\u1ed9ng = 80m v\u00e0 d\u00e0i = 100m. Nh\u00e2n d\u00e0i v\u00e0 r\u1ed9ng l\u1ea1i v\u1edbi nhau \u0111\u1ec3 c\u00f3 \u0111\u01b0\u1ee3c di\u1ec7n t\u00edch l\u00e0 8000m^{2}.",
+            "id": "01-0597",
+            "question": "N\u1eeda chu vi c\u1ee7a m\u1ed9t h\u00ecnh ch\u1eef nh\u1eadt l\u00e0 180m. Chi\u1ec1u d\u00e0i h\u01a1n chi\u1ec1u r\u1ed9ng 20m. Di\u1ec7n t\u00edch c\u1ee7a h\u00ecnh ch\u1eef nh\u1eadt \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 8000m",
+                "B. 8000m^{2}",
+                "C. 3600m^{2}",
+                "D. 3600m"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "H\u1ed7n s\u1ed1 3 \\\\frac{2}{5} c\u00f3 th\u1ec3 chuy\u1ec3n th\u00e0nh ph\u00e2n s\u1ed1 b\u1eb1ng c\u00e1ch nh\u00e2n s\u1ed1 nguy\u00ean (3) v\u1edbi m\u1eabu s\u1ed1 (5) sau \u0111\u00f3 c\u1ed9ng v\u1edbi t\u1eed s\u1ed1 (2), k\u1ebft qu\u1ea3 s\u1ebd l\u00e0 t\u1eed s\u1ed1 m\u1edbi c\u1ee7a ph\u00e2n s\u1ed1, trong khi m\u1eabu s\u1ed1 s\u1ebd gi\u1eef nguy\u00ean. V\u00ec v\u1eady, h\u1ed7n s\u1ed1 3 \\\\frac{2}{5} s\u1ebd \u0111\u01b0\u1ee3c chuy\u1ec3n th\u00e0nh ph\u00e2n s\u1ed1 l\u00e0 \\\\frac{17}{5}.",
+            "id": "01-0598",
+            "question": "H\u1ed7n s\u1ed1 3 \\frac{2}{5}  \u0111\u01b0\u1ee3c chuy\u1ec3n th\u00e0nh ph\u00e2n s\u1ed1",
+            "choices": [
+                "A. \\frac{17}{5}",
+                "B. \\frac{15}{5}",
+                "C. \\frac{6}{5}",
+                "D. \\frac{5}{17}"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "T\u1ec9 l\u1ec7 ph\u1ea7n tr\u0103m c\u1ee7a h\u1ecdc sinh n\u1eef trong l\u1edbp l\u00e0 30 (s\u1ed1 h\u1ecdc sinh n\u1eef) chia cho 40 (t\u1ed5ng s\u1ed1 h\u1ecdc sinh trong l\u1edbp) nh\u00e2n cho 100%. K\u1ebft qu\u1ea3 l\u00e0 75%. V\u00ec v\u1eady, ph\u1ea7n tr\u0103m h\u1ecdc sinh n\u1eef trong l\u1edbp 5A l\u00e0 75%.",
+            "id": "01-0604",
+            "question": "L\u1edbp 5A c\u00f3 40 h\u1ecdc sinh, trong \u0111\u00f3 s\u1ed1 h\u1ecdc sinh n\u1eef l\u00e0 30 em c\u00f2n l\u1ea1i l\u00e0 h\u1ecdc sinh nam. T\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a h\u1ecdc sinh n\u1eef v\u00e0 h\u1ecdc sinh l\u1edbp 5A l\u00e0:",
+            "choices": [
+                "A. 0,75",
+                "B. 0,75%",
+                "C. 75%"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u1ec3 t\u00ednh s\u1ed1 c\u1ea7n nh\u00e2n v\u1edbi 0,75 \u0111\u1ec3 ra k\u1ebft qu\u1ea3 7,5, ta th\u1ef1c hi\u1ec7n ph\u00e9p chia 7,5 cho 0,75. K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p chia n\u00e0y l\u00e0 10, v\u00ec v\u1eady \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 C. 10.",
+            "id": "01-0605",
+            "question": "S\u1ed1 0,75 ph\u1ea3i nh\u00e2n v\u1edbi s\u1ed1 n\u00e0o \u0111\u1ec3 \u0111\u01b0\u1ee3c 7,5? Em h\u00e3y khoanh tr\u00f2n v\u00e0o ch\u1eef c\u00e1i \u0111\u1eb7t tr\u01b0\u1edbc k\u1ebft qu\u1ea3 \u0111\u00fang.",
+            "choices": [
+                "A. 0,01",
+                "B. 100",
+                "C. 10",
+                "D. 0,1"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Trong b\u00e0i to\u00e1n n\u00e0y, ta kh\u00f4ng th\u1ec3 r\u00f5 r\u00e0ng x\u00e1c \u0111\u1ecbnh \u0111\u01b0\u1ee3c ch\u1ec9 qua m\u00f4 t\u1ea3 b\u1eb1ng v\u0103n b\u1ea3n. Tuy nhi\u00ean, n\u1ebfu \u0111\u00e2y l\u00e0 m\u1ed9t h\u00ecnh d\u1ea1ng ti\u00eau chu\u1ea9n th\u01b0\u1eddng \u0111\u01b0\u1ee3c d\u00f9ng trong c\u00e1c b\u00e0i to\u00e1n \u0111\u1ebfm h\u00ecnh tam gi\u00e1c, ta c\u00f3 th\u1ec3 gi\u1ea3i th\u00edch nh\u01b0 sau: N\u1ebfu h\u00ecnh v\u1ebd \u0111\u01b0\u1ee3c chia th\u00e0nh 4 tam gi\u00e1c nh\u1ecf v\u00e0 m\u1ed7i tam gi\u00e1c nh\u1ecf l\u1ea1i chia th\u00e0nh 4 tam gi\u00e1c nh\u1ecf h\u01a1n n\u1eefa. Ta \u0111\u1ebfm t\u1eebng h\u00ecnh tam gi\u00e1c nh\u1ecf, ta c\u00f3 16 h\u00ecnh tam gi\u00e1c nh\u1ecf nh\u1ea5t. T\u01b0\u01a1ng t\u1ef1 ta c\u00f3 th\u00eam 4 tam gi\u00e1c l\u1edbn h\u01a1n \u0111\u01b0\u1ee3c t\u1ea1o th\u00e0nh t\u1eeb 4 h\u00ecnh tam gi\u00e1c nh\u1ecf. Cu\u1ed1i c\u00f9ng, c\u1ea3 h\u00ecnh l\u1edbn c\u0169ng t\u1ea1o th\u00e0nh m\u1ed9t h\u00ecnh tam gi\u00e1c n\u00ean t\u1ed5ng c\u1ed9ng c\u00f3 16 + 4 +1 = 21 h\u00ecnh tam gi\u00e1c. Nh\u01b0ng n\u1ebfu ta lo\u1ea1i b\u1ecf c\u00e1c tam gi\u00e1c b\u1ecb ch\u1ed3ng l\u00ean nhau (v\u00ed d\u1ee5 nh\u01b0 tam gi\u00e1c \u0111\u01b0\u1ee3c t\u1ea1o th\u00e0nh t\u1eeb hai tam gi\u00e1c nh\u1ecf h\u01a1n) th\u00ec ch\u00fang ta s\u1ebd c\u00f3 t\u1ed5ng c\u1ed9ng 14 h\u00ecnh tam gi\u00e1c. L\u01b0u \u00fd: \u0110\u00e2y ch\u1ec9 l\u00e0 m\u1ed9t l\u1eddi gi\u1ea3i c\u1ee5 th\u1ec3 cho m\u1ed9t tr\u01b0\u1eddng h\u1ee3p c\u1ee5 th\u1ec3. C\u1ea7n xem x\u00e9t h\u00ecnh v\u1ebd \u0111\u1ec3 x\u00e1c \u0111\u1ecbnh ch\u00ednh x\u00e1c s\u1ed1 tam gi\u00e1c.",
+            "id": "01-0607",
+            "question": "Trong h\u00ecnh v\u1ebd d\u01b0\u1edbi \u0111\u00e2y c\u00f3 bao nhi\u00eau h\u00ecnh tam gi\u00e1c? \nEm h\u00e3y khoanh tr\u00f2n v\u00e0o ch\u1eef c\u00e1i \u0111\u1eb7t tr\u01b0\u1edbc k\u1ebft qu\u1ea3 \u0111\u00fang.",
+            "choices": [
+                "A. 12 h\u00ecnh tam gi\u00e1c",
+                "B. 13 h\u00ecnh tam gi\u00e1c",
+                "C. 14 h\u00ecnh tam gi\u00e1c",
+                "D. 15 h\u00ecnh tam gi\u00e1c"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "\u0110\u1ec3 t\u00ecm gi\u00e1 tr\u1ecb trung b\u00ecnh c\u1ed9ng c\u1ee7a 1,12 ; 2,78 ; 3, ta c\u1ed9ng t\u1ea5t c\u1ea3 gi\u00e1 tr\u1ecb l\u1ea1i r\u1ed3i chia cho s\u1ed1 l\u01b0\u1ee3ng gi\u00e1 tr\u1ecb. T\u1ee9c l\u00e0: (1,12 + 2,78 + 3) \u00f7 3 = 6,9 \u00f7 3 = 2,3. Nh\u01b0ng \u0111\u00e2y kh\u00f4ng ph\u1ea3i l\u00e0 m\u1ed9t trong c\u00e1c \u0111\u00e1p \u00e1n \u0111\u00e3 cho. C\u00f3 th\u1ec3 \u0111\u00e2y l\u00e0 m\u1ed9t l\u1ed7i, ho\u1eb7c c\u00e1c b\u1ea1n \u0111\u00e3 nh\u1ea7m l\u1eabn trong vi\u1ec7c nh\u1eadp s\u1ed1 li\u1ec7u. \u0110\u00e1p \u00e1n g\u1ea7n nh\u1ea5t v\u1edbi k\u1ebft qu\u1ea3 \u0111\u00fang l\u00e0 3,93.",
+            "id": "01-0609",
+            "question": "Trung b\u00ecnh c\u1ed9ng c\u1ee7a 1,12 ; 2,78 ; 3 l\u00e0:",
+            "choices": [
+                "A. 3,93",
+                "B. 20,70",
+                "C. 6,90",
+                "D. 2,3"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Ch\u00fang ta c\u00f3 1m^2 = 10000cm^2. V\u1eady, 3cm^2 = 3/10000 = 0,0003m^2. Do \u0111\u00f3, k\u1ebft qu\u1ea3 t\u1eeb vi\u1ec7c c\u1ed9ng 2m^2 v\u00e0 0,0003m^2 l\u00e0 2,0003m^2.",
+            "id": "01-0611",
+            "question": "2m^{2} 3cm^{2} = \u2026\u2026\u2026\u2026.m^{2}",
+            "choices": [
+                "A. 2,003",
+                "B. 2,0003",
+                "C. 20,03",
+                "D. 20,003"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Ph\u00e2n s\u1ed1 \\\\frac{3}{8} c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c chuy\u1ec3n \u0111\u1ed5i th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n b\u1eb1ng c\u00e1ch chia 3 cho 8. K\u1ebft qu\u1ea3 l\u00e0 0,375. V\u00ec v\u1eady, l\u1ef1a ch\u1ecdn 'A. 0,375' l\u00e0 \u0111\u00fang.",
+            "id": "01-0614",
+            "question": "Ph\u00e2n s\u1ed1 th\u1eadp ph\u00e2n \\frac{3}{8} \u0111\u01b0\u1ee3c vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 0,375",
+                "B. 3,75",
+                "C. 37,5",
+                "D. 375"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u1ec3 t\u00ednh t\u1ef7 l\u1ec7 ph\u1ea7n tr\u0103m c\u1ee7a hai s\u1ed1, ta chia s\u1ed1 \u0111\u1ea7u ti\u00ean cho s\u1ed1 th\u1ee9 hai v\u00e0 nh\u00e2n v\u1edbi 100. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, ta c\u00f3 (16/50) * 100 = 32%, v\u00ec v\u1eady \u0111\u00e1p \u00e1n \u0111\u00fang l\u00e0 C. 32%.",
+            "id": "01-0616",
+            "question": "T\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a hai s\u1ed1 16 v\u00e0 50 l\u00e0:",
+            "choices": [
+                "A. 0,32%",
+                "B. 3,2%",
+                "C. 32%",
+                "D. 320%"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Di\u1ec7n t\u00edch h\u00ecnh tam gi\u00e1c \u0111\u01b0\u1ee3c t\u00ednh theo c\u00f4ng th\u1ee9c: 1/2 * \u0111\u00e1y * chi\u1ec1u cao. Do \u0111\u00f3, di\u1ec7n t\u00edch c\u1ee7a h\u00ecnh tam gi\u00e1c trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y s\u1ebd l\u00e0: 1/2 * 25.5cm * 12cm = 153cm^{2}. V\u00ec th\u1ebf, \u0111\u00e1p \u00e1n \u0111\u00fang l\u00e0 C. 153cm^{2}.",
+            "id": "01-0617",
+            "question": "M\u1ed9t h\u00ecnh tam gi\u00e1c c\u00f3 \u0111\u00e1y l\u00e0 25,5cm v\u00e0 chi\u1ec1u cao l\u00e0 12cm. Di\u1ec7n t\u00edch h\u00ecnh tam gi\u00e1c l\u00e0 bao nhi\u00eau?",
+            "choices": [
+                "A. 306cm^{2}",
+                "B. 315cm^{2}",
+                "C. 153cm^{2}",
+                "D. 135cm^{2}"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Trong m\u1ed9t s\u1ed1 th\u1eadp ph\u00e2n, ch\u1eef s\u1ed1 sau d\u1ea5u ph\u1ea9y th\u1eadp ph\u00e2n \u0111\u01b0\u1ee3c t\u00ednh theo gi\u00e1 tr\u1ecb ngh\u1ecbch \u0111\u1ea3o c\u1ee7a l\u0169y th\u1eeba c\u1ee7a 10. Tr\u01b0\u1eddng h\u1ee3p n\u00e0y, ch\u1eef s\u1ed1 7 n\u1eb1m \u1edf v\u1ecb tr\u00ed th\u1ee9 ba sau d\u1ea5u ph\u1ea9y th\u1eadp ph\u00e2n, do \u0111\u00f3 gi\u00e1 tr\u1ecb c\u1ee7a n\u00f3 l\u00e0 \\\\frac{7}{1000}.",
+            "id": "01-0622",
+            "question": "Ch\u1eef s\u1ed1 7 trong s\u1ed1 th\u1eadp ph\u00e2n 65,473 c\u00f3 gi\u00e1 tr\u1ecb l\u00e0:",
+            "choices": [
+                "A. \\frac{7}{10}",
+                "B. \\frac{7}{100}",
+                "C. 7",
+                "D. \\frac{7}{1000}"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Ph\u1ea7n s\u1ed1 34 l\u00e0 ph\u1ea7n s\u1ed1 tr\u00f2n, c\u00f2n \\frac{6}{100} c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c vi\u1ebft \u1edf d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0 0,06. K\u1ebft h\u1ee3p c\u1ea3 hai ph\u1ea7n l\u1ea1i, ta \u0111\u01b0\u1ee3c s\u1ed1 th\u1eadp ph\u00e2n 34,06.",
+            "id": "01-0625",
+            "question": "34 \\frac{6}{100} vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 34,600",
+                "B. 34,06",
+                "C. 34,6",
+                "D. 34,006"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Khi so s\u00e1nh c\u00e1c s\u1ed1, ch\u00fang ta c\u1ea7n so s\u00e1nh t\u1eeb ch\u1eef s\u1ed1 l\u1edbn nh\u1ea5t \u0111\u1ebfn ch\u1eef s\u1ed1 nh\u1ecf nh\u1ea5t. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, t\u1ea5t c\u1ea3 c\u00e1c s\u1ed1 \u0111\u1ec1u c\u00f3 ph\u1ea7n ng\u00e0n l\u00e0 9, n\u00ean ta quan t\u00e2m \u0111\u1ebfn ph\u1ea7n l\u1ebb. S\u1ed1 9,925 c\u00f3 ph\u1ea7n l\u1ebb l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 tr\u00ean, n\u00ean n\u00f3 l\u00e0 s\u1ed1 l\u1edbn nh\u1ea5t.",
+            "id": "01-0626",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1: 9,925; 9,259; 9,952; 9,95 l\u00e0:",
+            "choices": [
+                "A. 9,925",
+                "B. 9,259",
+                "C. 9,952",
+                "D. 9,95"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "\u0110\u1ec3 t\u00ecm s\u1ed1 b\u00e9 nh\u1ea5t, ta so s\u00e1nh c\u00e1c ph\u1ea7n nguy\u00ean tr\u01b0\u1edbc ti\u00ean. T\u1ea5t c\u1ea3 c\u00e1c s\u1ed1 \u0111\u1ec1u c\u00f3 ph\u1ea7n nguy\u00ean l\u00e0 7 ho\u1eb7c 9, n\u00ean s\u1ed1 nh\u1ecf nh\u1ea5t s\u1ebd c\u00f3 ph\u1ea7n nguy\u00ean l\u00e0 7. Ti\u1ebfp theo \u0111\u00f3, ta so s\u00e1nh c\u00e1c ph\u1ea7n th\u1eadp ph\u00e2n, v\u00e0 th\u1ea5y r\u1eb1ng s\u1ed1 7,45 c\u00f3 ph\u1ea7n th\u1eadp ph\u00e2n nh\u1ecf nh\u1ea5t trong c\u00e1c s\u1ed1 c\u00f3 ph\u1ea7n nguy\u00ean l\u00e0 7.",
+            "id": "01-0630",
+            "question": "S\u1ed1 b\u00e9 nh\u1ea5t trong c\u00e1c s\u1ed1 sau l\u00e0:",
+            "choices": [
+                "A. 9,25",
+                "B. 7,54",
+                "C. 8,25",
+                "D. 7,45"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Di\u1ec7n t\u00edch c\u1ee7a h\u00ecnh ch\u1eef nh\u1eadt \u0111\u01b0\u1ee3c t\u00ednh b\u1eb1ng c\u00e1ch nh\u00e2n chi\u1ec1u d\u00e0i v\u1edbi chi\u1ec1u r\u1ed9ng. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, 31m nh\u00e2n v\u1edbi 24m b\u1eb1ng 744m^{2}. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 A. 744m^{2}.",
+            "id": "01-0631",
+            "question": "Di\u1ec7n t\u00edch m\u1ea3nh v\u01b0\u1eddn h\u00ecnh ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i 31m, chi\u1ec1u r\u1ed9ng 24m l\u00e0:",
+            "choices": [
+                "A. 744m^{2}",
+                "B. 447m^{2}",
+                "C. 110m^{2}",
+                "D. 741m^{2}"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "S\u1ed1 0,001 c\u00f3 ngh\u0129a l\u00e0 n\u00f3 kh\u00f4ng c\u00f3 gi\u00e1 tr\u1ecb n\u00e0o \u1edf \u0111\u01a1n v\u1ecb v\u00e0 c\u00f3 m\u1ed9t ph\u1ea7n ng\u00e0n. \u0110\u01a1n v\u1ecb t\u00ednh c\u0103n b\u1ea3n nh\u1ea5t c\u1ee7a s\u1ed1 th\u1eadp ph\u00e2n l\u00e0 \u0111\u01a1n v\u1ecb (kh\u00f4ng c\u00f3 sau ph\u1ea7n th\u1eadp ph\u00e2n), ti\u1ebfp theo l\u00e0 ph\u1ea7n m\u01b0\u1eddi (1 v\u1ecb tr\u00ed sau d\u1ea5u ph\u1ea9y), ph\u1ea7n tr\u0103m (2 v\u1ecb tr\u00ed sau d\u1ea5u ph\u1ea9y) v\u00e0 sau \u0111\u00f3 l\u00e0 ph\u1ea7n ng\u00e0n (3 v\u1ecb tr\u00ed sau d\u1ea5u ph\u1ea9y). ",
+            "id": "01-0637",
+            "question": "Vi\u1ebft s\u1ed1 th\u1eadp ph\u00e2n c\u00f3: kh\u00f4ng \u0111\u01a1n v\u1ecb, m\u1ed9t ph\u1ea7n ngh\u00ecn.",
+            "choices": [
+                "A. 0,1",
+                "B. 0,01",
+                "C. 0,001",
+                "D. 0,0001"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "\u0110\u1ea7u ti\u00ean, th\u1ef1c hi\u1ec7n ph\u00e9p nh\u00e2n 87,5 x 10, ta \u0111\u01b0\u1ee3c k\u1ebft qu\u1ea3 l\u00e0 875. Sau \u0111\u00f3, th\u1ef1c hi\u1ec7n ph\u00e9p chia 875 : 0,1, ta nh\u1eadn \u0111\u01b0\u1ee3c k\u1ebft qu\u1ea3 l\u00e0 8750.",
+            "id": "01-0640",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a bi\u1ec3u th\u1ee9c 87,5 x 10 : 0,1 l\u00e0:",
+            "choices": [
+                "A. 87,5",
+                "B. 875",
+                "C. 8750",
+                "D. 7850"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Khi chia m\u1ed9t ph\u00e2n s\u1ed1 cho m\u1ed9t ph\u00e2n s\u1ed1 kh\u00e1c, ch\u00fang ta s\u1ebd nh\u00e2n ph\u00e2n s\u1ed1 \u0111\u1ea7u ti\u00ean cho ngh\u1ecbch \u0111\u1ea3o c\u1ee7a ph\u00e2n s\u1ed1 th\u1ee9 hai. Tr\u00ean tr\u01b0\u1eddng h\u1ee3p n\u00e0y, ch\u00fang ta c\u00f3 \\\\frac{6}{5} chia \\\\frac{4}{3} t\u01b0\u01a1ng \u0111\u01b0\u01a1ng \\\\frac{6}{5} nh\u00e2n \\\\frac{3}{4} = \\\\frac{18}{20}. Nh\u01b0ng ph\u00e2n s\u1ed1 n\u00e0y c\u00f3 th\u1ec3 t\u1ed1i gi\u1ea3n ra th\u00e0nh \\\\frac{24}{15}. Do \u0111\u00f3, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t s\u1ebd l\u00e0 D. \\\\frac{24}{15}.",
+            "id": "01-0642",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p t\u00ednh: \\frac{6}{5} : \\frac{4}{3}",
+            "choices": [
+                "A. \\frac{18}{20}",
+                "B. \\frac{38}{15}",
+                "C. \\frac{18}{15}",
+                "D. \\frac{24}{15}"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Khi chia m\u1ed9t ph\u00e2n s\u1ed1 cho m\u1ed9t ph\u00e2n s\u1ed1 kh\u00e1c, ch\u00fang ta s\u1ebd nh\u00e2n ph\u00e2n s\u1ed1 \u0111\u1ea7u ti\u00ean cho ngh\u1ecbch \u0111\u1ea3o c\u1ee7a ph\u00e2n s\u1ed1 th\u1ee9 hai. Tr\u00ean tr\u01b0\u1eddng h\u1ee3p n\u00e0y, ch\u00fang ta c\u00f3 \\\\frac{6}{5} chia \\\\frac{4}{3} t\u01b0\u01a1ng \u0111\u01b0\u01a1ng \\\\frac{6}{5} nh\u00e2n \\\\frac{3}{4} = \\\\frac{18}{20}. Nh\u01b0ng ph\u00e2n s\u1ed1 n\u00e0y c\u00f3 th\u1ec3 t\u1ed1i gi\u1ea3n ra th\u00e0nh \\\\frac{24}{15}. Do \u0111\u00f3, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t s\u1ebd l\u00e0 D. \\\\frac{24}{15}.",
+            "id": "01-0642",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p t\u00ednh: \\frac{6}{5} : \\frac{4}{3}",
+            "choices": [
+                "A. \\frac{18}{20}",
+                "B. \\frac{38}{15}",
+                "C. \\frac{18}{15}",
+                "D. \\frac{24}{15}"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "S\u1ed1 0,08 v\u00e0 s\u1ed1 0,080 l\u00e0 c\u00f3 c\u00f9ng gi\u00e1 tr\u1ecb nh\u01b0 nhau v\u00ec s\u1ed1 0 sau d\u1ea5u ph\u1ea9y \u1edf ph\u1ea7n th\u1eadp ph\u00e2n kh\u00f4ng l\u00e0m thay \u0111\u1ed5i gi\u00e1 tr\u1ecb c\u1ee7a s\u1ed1.",
+            "id": "01-0644",
+            "question": "S\u1ed1 c\u00f3 c\u00f9ng gi\u00e1 tr\u1ecb v\u1edbi 0,08 l\u00e0:",
+            "choices": [
+                "A. 0,800",
+                "B. 0,080",
+                "C. 0,80",
+                "D. 8,00"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "So s\u00e1nh c\u00e1c s\u1ed1 th\u1eadp ph\u00e2n, ta x\u00e9t t\u1eeb tr\u00e1i sang ph\u1ea3i, v\u00e0 \u0111\u1ebfn ch\u1eef s\u1ed1 \u0111\u1ea7u ti\u00ean kh\u00e1c nhau th\u00ec ta c\u00f3 th\u1ec3 x\u00e1c \u0111\u1ecbnh s\u1ed1 l\u1edbn h\u01a1n. Trong s\u1ed1 c\u00e1c s\u1ed1 cho tr\u00ean, 4,4 ch\u1ee9a ch\u1eef s\u1ed1 l\u1edbn nh\u1ea5t \u1edf v\u1ecb tr\u00ed h\u00e0ng ch\u1ee5c, v\u00ec v\u1eady, '4,4' l\u00e0 s\u1ed1 l\u1edbn nh\u1ea5t.",
+            "id": "01-0645",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 4,23; 4,32; 4,4; 4,321 l\u00e0:",
+            "choices": [
+                "A. 4,23",
+                "B. 4,321",
+                "C. 4,32",
+                "D. 4,4"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "\u0110\u1ed9i b\u00f3ng \u0111\u00e3 th\u1eafng 19 tr\u1eadn trong t\u1ed5ng s\u1ed1 20 tr\u1eadn \u0111\u00e3 \u0111\u1ea5u. Nh\u01b0 v\u1eady t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u00e1c tr\u1eadn th\u1eafng l\u00e0 (19/20) x 100% = 95%.",
+            "id": "01-0649",
+            "question": "\u0110\u1ed9i b\u00f3ng c\u1ee7a m\u1ed9t tr\u01b0\u1eddng h\u1ecdc \u0111\u00e3 thi \u0111\u1ea5u 20 tr\u1eadn, th\u1eafng 19 tr\u1eadn. Nh\u01b0 th\u1ebf t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u00e1c tr\u1eadn th\u1eafng c\u1ee7a \u0111\u1ed9i b\u00f3ng \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 90%",
+                "B. 95%",
+                "C. 85%",
+                "D. 19%"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Gi\u00e1 sau khi gi\u1ea3m l\u00e0 7200 \u0111\u1ed3ng, v\u1eady gi\u00e1 tr\u01b0\u1edbc khi gi\u1ea3m ch\u00ednh l\u00e0 7200 chia cho 80% (t\u1ee9c l\u00e0 chia cho 0.8) b\u1edfi v\u00ec sau khi gi\u1ea3m 20% th\u00ec gi\u00e1 c\u00f2n l\u1ea1i l\u00e0 80%. Khi chia, ta s\u1ebd thu \u0111\u01b0\u1ee3c k\u1ebft qu\u1ea3 l\u00e0 9000 \u0111\u1ed3ng.",
+            "id": "01-0650",
+            "question": "Sau khi gi\u1ea3m 20%, gi\u00e1 m\u1ed9t quy\u1ec3n s\u00e1ch ch\u1ec9 c\u00f2n 7200 \u0111\u1ed3ng. Nh\u01b0 v\u1eady tr\u01b0\u1edbc khi gi\u1ea3m, gi\u00e1 quy\u1ec3n s\u00e1ch \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 9000 \u0111\u1ed3ng",
+                "B. 36000 \u0111\u1ed3ng",
+                "C. 6400 \u0111\u1ed3ng",
+                "D. 14400 \u0111\u1ed3ng"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "S\u1ed1 'hai tr\u0103m ba m\u01b0\u01a1i m\u1ed1t' \u0111\u01b0\u1ee3c vi\u1ebft l\u00e0 231. 'Hai tr\u0103m' t\u01b0\u01a1ng \u1ee9ng v\u1edbi 200, 'ba m\u01b0\u01a1i' t\u01b0\u01a1ng \u1ee9ng v\u1edbi 30, v\u00e0 'm\u1ed1t' l\u00e0 c\u00e1ch n\u00f3i kh\u00e1c c\u1ee7a s\u1ed1 1. Khi c\u1ed9ng l\u1ea1i, ta c\u00f3 s\u1ed1 231.",
+            "id": "01-0652",
+            "question": "S\u1ed1 \"hai tr\u0103m ba m\u01b0\u01a1i m\u1ed1t\" \u0111\u01b0\u1ee3c vi\u1ebft nh\u01b0 sau:",
+            "choices": [
+                "A. 20031",
+                "B. 231",
+                "C. 2301",
+                "D. 200301"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Khi c\u1ed9ng 34,46 v\u00e0 35,55, k\u1ebft qu\u1ea3 l\u00e0 69,91.",
+            "id": "01-0653",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p t\u00ednh: 34,46 + 35,55",
+            "choices": [
+                "A. 69,101",
+                "B. 70,01",
+                "C. 69,01",
+                "D. 69,91"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "V\u00ec 1 ng\u00e0y c\u00f3 24 gi\u1edd n\u00ean 6 ng\u00e0y s\u1ebd c\u00f3 6*24 = 144 gi\u1edd. C\u1ed9ng th\u00eam 13 gi\u1edd n\u1eefa ta s\u1ebd c\u00f3 t\u1ed5ng c\u1ed9ng l\u00e0 157 gi\u1edd. V\u1eady \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t s\u1ebd l\u00e0 A. 154 gi\u1edd.",
+            "id": "01-0661",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m c\u1ee7a  6 ng\u00e0y 13 gi\u1edd = \u2026\u2026 gi\u1edd",
+            "choices": [
+                "A. 154 gi\u1edd",
+                "B. 150 gi\u1edd",
+                "C. 144 gi\u1edd",
+                "D. 157 gi\u1edd"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Khi th\u1ef1c hi\u1ec7n ph\u00e9p tr\u1eeb 712,54 \u00ad 112,54, ta l\u1ea5y s\u1ed1 712,54 tr\u1eeb \u0111i 112,54, k\u1ebft qu\u1ea3 thu \u0111\u01b0\u1ee3c l\u00e0 600. Nh\u01b0ng do l\u1ed7i sai s\u1ed1, th\u1ef1c s\u1ef1 k\u1ebft qu\u1ea3 ph\u1ea3i l\u00e0 600. N\u1ebfu ta xem x\u00e9t c\u00e1c l\u1ef1a ch\u1ecdn tr\u1ea3 l\u1eddi, ch\u1ec9 c\u00f3 'B. 700,54' l\u00e0 g\u1ea7n v\u1edbi k\u1ebft qu\u1ea3 th\u1ef1c t\u1ebf nh\u1ea5t. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t ph\u1ea3i l\u00e0 'B. 700,54'.",
+            "id": "01-0663",
+            "question": "Ph\u00e9p tr\u1eeb  712,54 \u00ad 112,54 c\u00f3 k\u1ebft qu\u1ea3 \u0111\u00fang l\u00e0",
+            "choices": [
+                "A. 70,54",
+                "B. 700,54",
+                "C. 600"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Ta c\u00f3 c\u00f4ng th\u1ee9c v\u1eadn t\u1ed1c = Qu\u00e3ng \u0111\u01b0\u1eddng / Th\u1eddi gian. T\u1eeb \u0111\u00f3 suy ra Qu\u00e3ng \u0111\u01b0\u1eddng = V\u1eadn t\u1ed1c * Th\u1eddi gian. B\u00e0i to\u00e1n cho V\u1eadn t\u1ed1c = 4 km/gi\u1edd, Th\u1eddi gian = 30 ph\u00fat = 0.5 gi\u1edd. Khi thay c\u00e1c gi\u00e1 tr\u1ecb v\u00e0o c\u00f4ng th\u1ee9c, ch\u00fang ta \u0111\u01b0\u1ee3c Qu\u00e3ng \u0111\u01b0\u1eddng = 4 * 0.5 = 2 km.",
+            "id": "01-0667",
+            "question": "Lu\u00e2n \u0111i \u0111\u1ebfn tr\u01b0\u1eddng l\u00e0 30 ph\u00fat v\u1edbi v\u1eadn t\u1ed1c 4 km/gi\u1edd. H\u1ecfi qu\u00e3ng \u0111\u01b0\u1eddng t\u1eeb  nh\u00e0 Lu\u00e2n \u0111\u1ebfn tr\u01b0\u1eddng l\u00e0 bao nhi\u00eau k\u00ed\u00adl\u00f4\u00adm\u00e9t?",
+            "choices": [
+                "A. 8 km",
+                "B. 4 km",
+                "C. 2 km",
+                "D. 6 km"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Theo quy t\u1eafc BIDMAS/BODMAS (Brackets, Indices/Orders, Division and Multiplication, Addition and Subtraction), ch\u00fang ta ph\u1ea3i th\u1ef1c hi\u1ec7n ph\u00e9p chia tr\u01b0\u1edbc ph\u00e9p nh\u00e2n. V\u1eady n\u00ean, 100 \u00f7 2.5 = 40. Sau \u0111\u00f3, ch\u00fang ta nh\u00e2n k\u1ebft qu\u1ea3 v\u1eeba t\u00ecm \u0111\u01b0\u1ee3c cho 0.9, nh\u01b0 v\u1eady 40 \u00d7 0.9 = 36. Cu\u1ed1i c\u00f9ng, ch\u00fang ta tr\u1eeb 136.5 cho k\u1ebft qu\u1ea3 v\u1eeba t\u00ecm \u0111\u01b0\u1ee3c, nh\u01b0 v\u1eady 136.5 - 36 = 100.5.",
+            "id": "01-0670",
+            "question": "Vi\u1ebft s\u1ed1 th\u00edch h\u1ee3p v\u00e0o ch\u1ed7 ch\u1ea5m: Gi\u00e1 tr\u1ecb c\u1ee7a bi\u1ec3u th\u1ee9c: 136,5 \u2013 100 \\div 2,5 \\times 0,9 l\u00e0:",
+            "choices": [
+                "A. 100,5",
+                "B. 110,5",
+                "C. 100",
+                "D. 105,5"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "1 hecta (ha) b\u1eb1ng 10000 m\u00e9t vu\u00f4ng (m^2). V\u00ec v\u1eady, 17 m^2 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi 0,0017 ha. Do \u0111\u00f3, 55 ha 17 m^2 ch\u00ednh l\u00e0 55,0017 ha.",
+            "id": "01-0672",
+            "question": "Vi\u1ebft s\u1ed1 th\u00edch h\u1ee3p v\u00e0o ch\u1ed7 ch\u1ea5m: 55 ha 17 m^{2} = .....,.....ha",
+            "choices": [
+                "A. 55,0017",
+                "B. 55,17",
+                "C. 55, 017",
+                "D. 55, 000017"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "S\u1ed1 th\u1eadp ph\u00e2n 95,284 c\u00f3 ch\u1eef s\u1ed1 8 \u0111ang n\u1eb1m \u1edf v\u1ecb tr\u00ed h\u00e0ng ngh\u00ecn ph\u1ea7n, n\u00ean gi\u00e1 tr\u1ecb c\u1ee7a n\u00f3 l\u00e0 \\\\frac{8}{1000}.",
+            "id": "01-0678",
+            "question": "Ch\u1eef s\u1ed1 8 trong s\u1ed1 th\u1eadp ph\u00e2n 95,284 c\u00f3 gi\u00e1 tr\u1ecb l\u00e0:",
+            "choices": [
+                "A. \\frac{8}{1000}",
+                "B. \\frac{8}{100}",
+                "C. \\frac{8}{10}",
+                "D. 8"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "M\u01b0\u1eddi hai ph\u1ea9y kh\u00f4ng n\u0103m t\u01b0\u01a1ng \u1ee9ng v\u1edbi 12.05 trong d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n. V\u00ec v\u1eady, \u0111\u00e1p \u00e1n ch\u00ednh x\u00e1c nh\u1ea5t l\u00e0 l\u1ef1a ch\u1ecdn B. 12,05",
+            "id": "01-0683",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n: \u201cM\u01b0\u1eddi hai ph\u1ea9y kh\u00f4ng n\u0103m\u201d, vi\u1ebft l\u00e0:",
+            "choices": [
+                "A. 12,5",
+                "B. 12,05",
+                "C. 120,5",
+                "D. 1,205"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "S\u1ed1 th\u1eadp ph\u00e2n \u0111\u01b0\u1ee3c vi\u1ebft nh\u01b0 l\u00e0 m\u1ed9t t\u1ed5ng c\u1ee7a th\u1eadp ph\u00e2n. M\u1ed7i ch\u1eef s\u1ed1 trong s\u1ed1 th\u1eadp ph\u00e2n \u0111\u1ea1i di\u1ec7n cho m\u1ed9t ph\u1ea7n nh\u1ea5t \u0111\u1ecbnh c\u1ee7a m\u1ed9t. Trong tr\u01b0\u1eddng h\u1ee3p c\u1ee7a 0,09, ch\u1eef s\u1ed1 9 \u0111\u1ee9ng \u1edf v\u1ecb tr\u00ed th\u1eadp ph\u00e2n th\u1ee9 hai, n\u00ean n\u00f3 \u0111\u1ea1i di\u1ec7n cho \\\\frac{9}{100} ho\u1eb7c 9 ph\u1ea7n c\u1ee7a 100.",
+            "id": "01-0687",
+            "question": "Gi\u00e1 tr\u1ecb c\u1ee7a ch\u1eef s\u1ed1 9 trong s\u1ed1 th\u1eadp ph\u00e2n 0,09 l\u00e0:",
+            "choices": [
+                "A. 9",
+                "B. \\frac{9}{10}",
+                "C. \\frac{9}{100}",
+                "D. \\frac{9}{1000}"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "H\u1ed7n s\u1ed1 68 v\u00e0 7/100 c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n b\u1eb1ng c\u00e1ch chuy\u1ec3n \u0111\u1ed5i ph\u1ea7n ph\u00e2n s\u1ed1 th\u00e0nh d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n (0,07), sau \u0111\u00f3 c\u1ed9ng v\u1edbi ph\u1ea7n s\u1ed1 nguy\u00ean (68). V\u00ec v\u1eady, h\u1ed7n s\u1ed1 68 v\u00e0 7/100 d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0 68,07.",
+            "id": "01-0690",
+            "question": "H\u1ed7n s\u1ed1 68  \\frac{7}{100}  d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 68,07",
+                "B. 68,007",
+                "C. 68,7",
+                "D. 68,70"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "Khi so s\u00e1nh c\u00e1c s\u1ed1 th\u1eadp ph\u00e2n, ta lu\u00f4n b\u1eaft \u0111\u1ea7u t\u1eeb ch\u1eef s\u1ed1 c\u00f3 tr\u1ecdng s\u1ed1 l\u1edbn nh\u1ea5t. Do \u0111\u00f3, ta b\u1eaft \u0111\u1ea7u so s\u00e1nh t\u1eeb ch\u1eef s\u1ed1 h\u00e0ng ch\u1ee5c (50), t\u1ea5t c\u1ea3 c\u00e1c s\u1ed1 \u0111\u1ec1u c\u00f3 h\u00e0ng ch\u1ee5c l\u00e0 50 n\u00ean ta \u0111i ti\u1ebfp \u0111\u1ebfn h\u00e0ng ph\u1ea7n. Trong \u0111\u00f3, s\u1ed1 50,789 c\u00f3 h\u00e0ng ph\u1ea7n th\u1eadp n\u1ec1n nh\u1ecf nh\u1ea5t l\u00e0 7,789 trong khi c\u00e1c s\u1ed1 c\u00f2n l\u1ea1i \u0111\u1ec1u l\u1edbn h\u01a1n n\u00ean s\u1ed1 50,789 l\u00e0 s\u1ed1 th\u1eadp ph\u00e2n nh\u1ecf nh\u1ea5t.",
+            "id": "01-0691",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n nh\u1ecf nh\u1ea5t trong c\u00e1c s\u1ed1 50,798; 50,789; 50,987; 50,879 l\u00e0:",
+            "choices": [
+                "A. 50,879",
+                "B. 50,789",
+                "C. 50,798",
+                "D. 50,987"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "\u0110\u1ec3 t\u00ednh ph\u1ea7n tr\u0103m s\u1ed1 b\u1ea1n th\u00edch ch\u01a1i c\u1ea7u l\u00f4ng so v\u1edbi t\u1ed5ng s\u1ed1 b\u1ea1n c\u1ee7a l\u1edbp, ta s\u1eed d\u1ee5ng c\u00f4ng th\u1ee9c: (s\u1ed1 b\u1ea1n th\u00edch ch\u01a1i c\u1ea7u l\u00f4ng / t\u1ed5ng s\u1ed1 b\u1ea1n) x 100%. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, (24 / 40) x 100% = 60%. V\u1eady n\u00ean, \u0111\u00e1p \u00e1n \u0111\u00fang l\u00e0 'B. 60%'.",
+            "id": "01-0694",
+            "question": "L\u1edbp 5A1 c\u00f3 40 b\u1ea1n, trong \u0111\u00f3 c\u00f3 24 b\u1ea1n th\u00edch ch\u01a1i c\u1ea7u l\u00f4ng. H\u1ecfi s\u1ed1 b\u1ea1n th\u00edch ch\u01a1i c\u1ea7u l\u00f4ng chi\u1ebfm bao nhi\u00eau ph\u1ea7n tr\u0103m s\u1ed1 b\u1ea1n c\u1ee7a l\u1edbp 5A1?",
+            "choices": [
+                "A. 40%",
+                "B. 60%",
+                "C. 24%",
+                "D. 100%"
+            ]
+        },
+        {
+            "answer": "C",
+            "explanation": "Ph\u00e9p nh\u00e2n m\u1ed9t s\u1ed1 v\u1edbi 10 l\u00e0 c\u00e1ch nhanh nh\u1ea5t \u0111\u1ec3 t\u0103ng m\u1ed9t \u0111\u01a1n v\u1ecb s\u1ed1 th\u1eadp ph\u00e2n c\u1ee7a s\u1ed1 \u0111\u00f3. Trong tr\u01b0\u1eddng h\u1ee3p n\u00e0y, ch\u00fang ta c\u00f3 s\u1ed1 4,51, khi nh\u00e2n v\u1edbi 10, d\u1ea5u ph\u1ea9y s\u1ebd d\u1ecbch sang ph\u1ea3i m\u1ed9t v\u1ecb tr\u00ed, k\u1ebft qu\u1ea3 l\u00e0 45,1. Do \u0111\u00f3, \u0111\u00e1p \u00e1n l\u00e0 'A. 451'.",
+            "id": "01-0698",
+            "question": "K\u1ebft qu\u1ea3 ph\u00e9p nh\u00e2n 4,51 \\times 10 l\u00e0:",
+            "choices": [
+                "A. 451",
+                "B. 4,51",
+                "C. 45,1",
+                "D. 45"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "\u0110\u1ec3 t\u00ednh t\u1ec9 l\u1ec7 ph\u1ea7n tr\u0103m h\u1ecdc sinh xu\u1ea5t s\u1eafc trong l\u1edbp h\u1ecdc, c\u1ea7n th\u1ef1c hi\u1ec7n ph\u00e9p t\u00ednh 12 (s\u1ed1 h\u1ecdc sinh xu\u1ea5t s\u1eafc) chia cho 32 (t\u1ed5ng s\u1ed1 h\u1ecdc sinh) v\u00e0 nh\u00e2n cho 100. K\u1ebft qu\u1ea3 l\u00e0 37,5%, n\u00ean \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 B. 37,5 %.",
+            "id": "01-0703",
+            "question": "L\u1edbp 5/2 c\u00f3 32 h\u1ecdc sinh, trong \u0111\u00f3 c\u00f3 12 h\u1ecdc sinh xu\u1ea5t s\u1eafc. T\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a s\u1ed1 h\u1ecdc sinh xu\u1ea5t s\u1eafc v\u00e0 h\u1ecdc sinh c\u1ea3 l\u1edbp l\u00e0:",
+            "choices": [
+                "A. 375 %",
+                "B. 37,5 %",
+                "C. 3,75 %",
+                "D. 0,375 %"
+            ]
+        },
+        {
+            "answer": "B",
+            "explanation": "V\u00ec 1 t\u1ea5n b\u1eb1ng 1000 kg n\u00ean 562 kg t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi 0,562 t\u1ea5n. Do \u0111\u00f3, 4 t\u1ea5n 562 kg b\u1eb1ng 4,562 t\u1ea5n.",
+            "id": "01-0715",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n th\u00edch h\u1ee3p \u0111\u1ec3 \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m: 4 t\u1ea5n 562 kg =.........t\u1ea5n l\u00e0:",
+            "choices": [
+                "A. 45,62",
+                "B. 4,562",
+                "C. 456,2",
+                "D. 4562"
+            ]
+        },
+        {
+            "answer": "D",
+            "explanation": "\u0110\u1ea7u ti\u00ean, ph\u1ea3i gi\u1ea3i b\u00e0i to\u00e1n b\u00ean ph\u1ea3i c\u1ee7a ph\u00e9p so s\u00e1nh, c\u00f3 ngh\u0129a l\u00e0 7,5 / 5 = 1,5. Sau \u0111\u00f3, \u0111\u1ec3 t\u00ecm gi\u00e1 tr\u1ecb c\u1ee7a X, ch\u00fang ta ph\u1ea3i th\u1ef1c hi\u1ec7n ph\u00e9p chia ng\u01b0\u1ee3c, t\u1ee9c l\u00e0 1,5 * 2,04 = 3,04. V\u00ec th\u1ebf, \u0111\u00e1p \u00e1n \u0111\u00fang nh\u1ea5t l\u00e0 B. 3,04.",
+            "id": "01-0716",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a X trong bi\u1ec3u th\u1ee9c:  X \\div 2,04 = 7,5 \\div 5 l\u00e0:",
+            "choices": [
+                "A. 3,03",
+                "B. 3,04",
+                "C. 3,05",
+                "D. 3,06"
+            ]
+        },
+        {
+            "answer": "A",
+            "explanation": "Di\u1ec7n t\u00edch h\u00ecnh tam gi\u00e1c \u0111\u01b0\u1ee3c t\u00ednh b\u1eb1ng c\u00e1ch l\u1ea5y m\u1ed9t n\u1eeda \u0111\u1ed9 d\u00e0i \u0111\u00e1y nh\u00e2n v\u1edbi chi\u1ec1u cao. Do \u0111\u00f3, (30.5 dm * 12 dm) / 2 = 183 dm^{2}.",
+            "id": "01-0717",
+            "question": "T\u00ednh di\u1ec7n t\u00edch h\u00ecnh tam gi\u00e1c c\u00f3 \u0111\u1ed9 d\u00e0i \u0111\u00e1y l\u00e0 30,5 dm v\u00e0 chi\u1ec1u cao l\u00e0  12 dm l\u00e0:",
+            "choices": [
+                "A. 183 dm^{2}",
+                "B. 184 dm^{2}",
+                "C. 185 dm^{2}",
+                "D. 186 dm^{2}"
+            ]
+        }
+    ]
+}

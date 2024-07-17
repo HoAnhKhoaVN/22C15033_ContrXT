@@ -1,0 +1,2021 @@
+{
+    "current_id": 0,
+    "__count__": 200,
+    "data": [
+        {
+            "id": "01-0001",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p t\u00ednh 2,75 \\times 0,99 + 2,75 \\div 100 b\u1eb1ng:",
+            "choices": [
+                "A. 0,275",
+                "B. 2,75",
+                "C. 27,5",
+                "D. 275"
+            ],
+            "answer": "B"
+        },
+        {
+            "id": "01-0002",
+            "question": "M\u1ed9t b\u1ec3 b\u00f3ng c\u00f3 360 qu\u1ea3 b\u00f3ng xanh v\u00e0 v\u00e0ng. Bi\u1ebft s\u1ed1 b\u00f3ng xanh chi\u1ebfm \\frac{3}{5} t\u1ed5ng s\u1ed1 b\u00f3ng. S\u1ed1 qu\u1ea3 b\u00f3ng v\u00e0ng trong b\u1ec3 \u0111\u00f3 l\u00e0",
+            "choices": [
+                "A. 225 qu\u1ea3",
+                "B. 135 qu\u1ea3",
+                "C. 144 qu\u1ea3",
+                "D. 216 qu\u1ea3"
+            ],
+            "answer": "C"
+        },
+        {
+            "id": "01-0003",
+            "question": "M\u1ed9t b\u1ec3 h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i 1 m, chi\u1ec1u r\u1ed9ng 5 dm, chi\u1ec1u cao 6 dm. Bi\u1ebft m\u1ef1c n\u01b0\u1edbc trong b\u1ec3 cao b\u1eb1ng  \\frac{3}{5}  chi\u1ec1u cao c\u1ee7a b\u1ec3. L\u01b0\u1ee3ng n\u01b0\u1edbc trong b\u1ec3 k\u00ednh \u0111\u00f3 l\u00e0",
+            "choices": [
+                "A. 200dm^{3}",
+                "B. 300dm^{3}",
+                "C. 200m^{3}",
+                "D. 30dm^{3}"
+            ],
+            "answer": "A"
+        },
+        {
+            "id": "01-0004",
+            "question": "Bi\u1ec3u \u0111\u1ed3 c\u1ed9t d\u01b0\u1edbi \u0111\u00e2y cho bi\u1ebft s\u1ed1 l\u01b0\u1ee3ng h\u1ecdc sinh kh\u1ed1i 6 tham gia c\u00e2u l\u1ea1c b\u1ed9 ngh\u1ec7 thu\u1eadt trong h\u00e8 2023 c\u1ee7a tr\u01b0\u1eddng Nguy\u1ec5n T\u1ea5t Th\u00e0nh. T\u1ec9 l\u1ec7 ph\u1ea7n tr\u0103m c\u1ee7a h\u1ecdc sinh Guitar so v\u1edbi t\u1ed5ng s\u1ed1 h\u1ecdc sinh tham gia c\u00e2u l\u1ea1c b\u1ed9 ngh\u1ec7 thu\u1eadt h\u00e8 2023 c\u1ee7a tr\u01b0\u1eddng Nguy\u1ec5n T\u1ea5t Th\u00e0nh l\u00e0",
+            "choices": [
+                "A. 25%",
+                "B. 30%",
+                "C. 12,5%",
+                "D. 75%"
+            ],
+            "answer": "A"
+        },
+        {
+            "id": "01-0005",
+            "question": "\\frac{7}{5} + \\frac{5}{11}",
+            "choices": [
+                "A. \\frac{12}{11}",
+                "B. \\frac{13}{11}",
+                "C. \\frac{13}{11}"
+            ],
+            "answer": "A"
+        },
+        {
+            "id": "01-0006",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p t\u00ednh 9,03 \\div 2,1 l\u00e0",
+            "choices": [
+                "A. 3,4",
+                "B. 4,3",
+                "C. 2,4"
+            ],
+            "answer": "B"
+        },
+        {
+            "id": "01-0007",
+            "question": "M\u1ed9t h\u00ecnh l\u1eadp ph\u01b0\u01a1ng c\u00f3 c\u1ea1nh 2dm th\u00ec di\u1ec7n t\u00edch to\u00e0n ph\u1ea7n l\u00e0:",
+            "choices": [
+                "A. 16 dm^{2}",
+                "B. 24 dm^{2}",
+                "C. 8 dm^{2}"
+            ],
+            "answer": "B"
+        },
+        {
+            "id": "01-0008",
+            "question": "H\u00ecnh tr\u00f2n c\u00f3 b\u00e1n k\u00ednh 2,5cm, chu vi h\u00ecnh tr\u00f2n l\u00e0:",
+            "choices": [
+                "A. 10,5 cm",
+                "B. 15,7 cm",
+                "C. 17,5 cm"
+            ],
+            "answer": "B"
+        },
+        {
+            "id": "01-0009",
+            "question": "S\u1ed1 n\u00e0o d\u01b0\u1edbi \u0111\u00e2y c\u00f3 ch\u1eef s\u1ed1 9 \u1edf h\u00e0ng ph\u1ea7n tr\u0103m?",
+            "choices": [
+                "A. 321,89",
+                "B. 931,28",
+                "C. 321,98",
+                "D. 931,82"
+            ],
+            "answer": "A"
+        },
+        {
+            "id": "01-0010",
+            "question": "\u0110i\u1ec1n s\u1ed1 th\u00edch h\u1ee3p v\u00e0o ch\u1ed7 tr\u1ed1ng:  20dm^{2}   23cm^{2}  =\u2026. m^{2}",
+            "choices": [
+                "A. 20,23",
+                "B. 20,0023",
+                "C. 0,2023",
+                "D. 2023"
+            ],
+            "answer": "C"
+        },
+        {
+            "id": "01-0011",
+            "question": "A= 2\\frac{3}{10}  - 75% - \\frac{1}{4}  + 0,7. T\u00ecm A",
+            "choices": [
+                "A. 2,25",
+                "B. 2",
+                "C. 3,25",
+                "D. 3"
+            ],
+            "answer": "B"
+        },
+        {
+            "id": "01-0012",
+            "question": "M\u1ed9t th\u01b0 vi\u1ec7n c\u00f3 1000 quy\u1ec3n s\u00e1ch. Sau m\u1ed7i n\u0103m, s\u1ed1 s\u00e1ch t\u0103ng th\u00eam 10%. Sau 2 n\u0103m th\u01b0 vi\u1ec7n c\u00f3 bao nhi\u1ec1u quy\u1ec3n s\u00e1ch?",
+            "choices": [
+                "A. 1100 quy\u1ec3n",
+                "B. 1210 quy\u1ec3n",
+                "C. 2310 quy\u1ec3n",
+                "D. 2310 quy\u1ec3n"
+            ],
+            "answer": "B"
+        },
+        {
+            "id": "01-0014",
+            "question": "Nh\u00e0 Nam g\u1ea7n b\u1ebfn xe. Th\u1eddi gian Nam \u0111i t\u1eeb nh\u00e0 \u0111\u1ebfn b\u1ebfn xe m\u1ea5t 5 ph\u00fat. Th\u1eddi gian c\u1ee7a m\u1ed9t chuy\u1ebfn t\u00e0u l\u00e0 20 ph\u00fat. Th\u1eddi gian t\u1eeb \u0111i\u1ec3m d\u1eebng chuy\u1ebfn t\u00e0u \u0111\u1ebfn tr\u01b0\u1eddng m\u1ea5t 5 ph\u00fat. Th\u1eddi gian Nam ph\u1ea3i \u0111\u1ebfn tr\u01b0\u1eddng l\u00e0 7 gi\u1edd 30 ph\u00fat. C\u00e1c chuy\u1ebfn t\u00e0u b\u1eaft \u0111\u1ea7u t\u1eeb 6 gi\u1edd v\u00e0 c\u1ee9 10 ph\u00fat c\u00f3 m\u1ed9t chuy\u1ebfn. T\u00ednh th\u1eddi gian mu\u1ed9n nh\u1ea5t Nam c\u00f3 th\u1ec3 \u0111i?",
+            "choices": [
+                "A. 6 gi\u1edd 55 ph\u00fat",
+                "B. 7 gi\u1edd",
+                "C. 7 gi\u1edd 5 ph\u00fat",
+                "D. 7 gi\u1edd 10 ph\u00fat"
+            ],
+            "answer": "A"
+        },
+        {
+            "id": "01-0015",
+            "question": "C\u1ea1nh c\u1ee7a m\u1ed9t h\u00ecnh l\u1eadp ph\u01b0\u01a1ng l\u00e0 8 cm. N\u1ebfu t\u0103ng c\u1ea1nh h\u00ecnh l\u1eadp ph\u01b0\u01a1ng l\u00ean 3 l\u1ea7n th\u00ec di\u1ec7n t\u00edch to\u00e0n ph\u1ea7n t\u0103ng l\u00ean bao nhi\u00eau l\u1ea7n?",
+            "choices": [
+                "A. 7 l\u1ea7n",
+                "B. 8 l\u1ea7n",
+                "C. 9 l\u1ea7n",
+                "D. 10 l\u1ea7n"
+            ],
+            "answer": "C"
+        },
+        {
+            "id": "01-0016",
+            "question": "M\u1ed9t b\u1ec3 n\u01b0\u1edbc h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i 60 cm, chi\u1ec1u r\u1ed9ng 40 cm. Trong b\u1ec3 c\u00f3 96 l\u00edt n\u01b0\u1edbc. T\u00ednh chi\u1ec1u cao c\u1ee7a m\u1ef1c n\u01b0\u1edbc.",
+            "choices": [
+                "A. 4 cm",
+                "B. 4 dm",
+                "C. 6 cm",
+                "D. 6 dm"
+            ],
+            "answer": "B"
+        },
+        {
+            "id": "01-0017",
+            "question": "Kh\u1ed1i 1 quy\u00ean g\u00f3p 134 quy\u1ec3n, kh\u1ed1i 2 quy\u00ean g\u00f3p 98 quy\u1ec3n, kh\u1ed1i 3 quy\u00ean g\u00f3p 87 quy\u1ec3n, kh\u1ed1i 4 quy\u00ean g\u00f3p 81 quy\u1ec3n. Kh\u1ed1i 5 quy\u00ean g\u00f3p nhi\u1ec1u h\u01a1n trung b\u00ecnh c\u1ea3 n\u0103m kh\u1ed1i 20 quy\u1ec3n. T\u00ednh s\u1ed1 quy\u1ec3n kh\u1ed1i 5 quy\u00ean g\u00f3p.",
+            "choices": [
+                "A. 105 quy\u1ec3n",
+                "B. 110 quy\u1ec3n",
+                "C. 125 quy\u1ec3n",
+                "D. 120 quy\u1ec3n"
+            ],
+            "answer": "C"
+        },
+        {
+            "id": "01-0018",
+            "question": "T\u00edch sau c\u00f3 t\u1eadn c\u00f9ng bao nhi\u00eau ch\u1eef s\u1ed1 0?\n23 \\times 24  \\times 25  \\times 26  \\times 27  \\times 28  \\times 29  \\times 30  \\times 31  \\times 32",
+            "choices": [
+                "A. 4 ch\u1eef s\u1ed1 0",
+                "B. 1 ch\u1eef s\u1ed1 0",
+                "C. 3 ch\u1eef s\u1ed1 0",
+                "D. 2 ch\u1eef s\u1ed1 0"
+            ],
+            "answer": "C"
+        },
+        {
+            "id": "01-0019",
+            "question": "Qu\u00e3ng \u0111\u01b0\u1eddng AB d\u00e0i 180km. M\u1ed9t \u00f4 t\u00f4 \u0111i \\frac{1}{6} qu\u00e3ng \u0111\u01b0\u1eddng AB h\u1ebft 35 ph\u00fat, tr\u00ean qu\u00e3ng \u0111\u01b0\u1eddng c\u00f2n l\u1ea1i \u00f4 t\u00f4 \u0111i v\u1edbi v\u1eadn t\u1ed1c 40km/gi\u1edd. H\u1ecfi \u00f4 t\u00f4 \u0111i h\u1ebft qu\u00e3ng \u0111\u01b0\u1eddng AB trong bao l\u00e2u?",
+            "choices": [
+                "A. 4 gi\u1edd 20 ph\u00fat",
+                "B. 3 gi\u1edd 45 ph\u00fat",
+                "C. 1 gi\u1edd 10 ph\u00fat",
+                "D. 45 ph\u00fat"
+            ],
+            "answer": "A"
+        },
+        {
+            "id": "01-0020",
+            "question": "M\u1ed9t h\u00ecnh b\u00ecnh h\u00e0nh c\u00f3 \u0111\u1ed9 d\u00e0i \u0111\u00e1y b\u1eb1ng 24cm, chi\u1ec1u cao b\u1eb1ng  \\frac{3}{8}  \u0111\u1ed9 d\u00e0i \u0111\u00e1y. Di\u1ec7n t\u00edch c\u1ee7a h\u00ecnh b\u00ecnh h\u00e0nh \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 216cm^{2}",
+                "B. 108cm^{2}",
+                "C. 9cm^{2}",
+                "D. 216cm"
+            ],
+            "answer": "A"
+        },
+        {
+            "id": "01-0021",
+            "question": "S\u1ed1 \u0111o th\u1ec3 t\u00edch n\u00e0o l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 \u0111o d\u01b0\u1edbi \u0111\u00e2y?",
+            "choices": [
+                "A. 6,407m^{3}",
+                "B. 6047l",
+                "C. 6 \\frac{4}{7} m^{3}",
+                "D. 6 470 000cm^{3}"
+            ],
+            "answer": "D"
+        },
+        {
+            "id": "01-0022",
+            "question": "Hi\u1ec7u s\u1ed1 tu\u1ed5i c\u1ee7a b\u1ed1 v\u00e0 con l\u00e0 30 tu\u1ed5i. Tu\u1ed5i con b\u1eb1ng \\frac{1}{4}\n tu\u1ed5i b\u1ed1. Tu\u1ed5i b\u1ed1 l\u00e0:",
+            "choices": [
+                "A. 6 tu\u1ed5i",
+                "B. 10 tu\u1ed5i",
+                "C. 24 tu\u1ed5i",
+                "D. 40 tu\u1ed5i"
+            ]
+        },
+        {
+            "id": "01-0023",
+            "question": "M\u1ed9t h\u00ecnh thang c\u00f3 \u0111\u00e1y l\u1edbn a, \u0111\u00e1y b\u00e9 l\u00e0 b, chi\u1ec1u cao l\u00e0 h (a, b, h c\u00f9ng \u0111\u01a1n v\u1ecb \u0111o) th\u00ec c\u00f4ng th\u1ee9c t\u00ednh di\u1ec7n t\u00edch S c\u1ee7a h\u00ecnh thang \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. S= \\frac{a+b \\times h}{2}",
+                "B. S= \\frac{(a+B) \\times h}{2}",
+                "C. S= (a+B) \\times 2 \\times h",
+                "D. S= \\frac{a \\times h}{2}"
+            ]
+        },
+        {
+            "id": "01-0024",
+            "question": "H\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt c\u00f3 ...... m\u1eb7t, ...... c\u1ea1nh, ... \u0111\u1ec9nh. S\u1ed1 th\u00edch h\u1ee3p l\u1ea7n l\u01b0\u1ee3t \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m l\u00e0:",
+            "choices": [
+                "A. 6; 12; 8",
+                "B. 8; 12; 6",
+                "C. 6; 8; 12",
+                "D. 12; 6; 8"
+            ]
+        },
+        {
+            "id": "01-0025",
+            "question": "Bi\u1ebft 1m^{3} n\u01b0\u1edbc b\u1eb1ng 1000l n\u01b0\u1edbc v\u00e0 m\u1ed7i chai n\u01b0\u1edbc ch\u1ee9a 0,75dm^{3} n\u01b0\u1edbc. H\u1ecfi m\u1ed9t b\u1ec3 ch\u1ee9a 2250l n\u01b0\u1edbc c\u00f3 th\u1ec3 \u0111\u00f3ng v\u00e0o bao nhi\u00eau chai n\u01b0\u1edbc n\u00f3i tr\u00ean?",
+            "choices": [
+                "A. 300 chai",
+                "B. 3000l",
+                "C. 30 000 chai",
+                "D. 3000 chai"
+            ]
+        },
+        {
+            "id": "01-0026",
+            "question": "Cho ba ch\u1eef s\u1ed1 2; 3; 5. C\u00f3 bao nhi\u00eau s\u1ed1 t\u1ef1 nhi\u00ean c\u00f3 ba ch\u1eef s\u1ed1 chia h\u1ebft cho 5 \u0111\u01b0\u1ee3c t\u1ea1o th\u00e0nh t\u1eeb ba ch\u1eef s\u1ed1 tr\u00ean?",
+            "choices": [
+                "A. 9 s\u1ed1",
+                "B. 7 s\u1ed1",
+                "C. 2 s\u1ed1",
+                "D. 6 s\u1ed1"
+            ]
+        },
+        {
+            "id": "01-0027",
+            "question": "Di\u1ec7n t\u00edch h\u00ecnh tam gi\u00e1c c\u00f3 \u0111\u1ed9 d\u00e0i \u0111\u00e1y 4,7dm v\u00e0 chi\u1ec1u cao 35cm l\u00e0:",
+            "choices": [
+                "A. 16,45cm^{2}",
+                "B. 8,225dm^{2}",
+                "C. 82,25dm^{2}",
+                "D. 82,25cm^{2}"
+            ]
+        },
+        {
+            "id": "01-0028",
+            "question": "T\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a 9 v\u00e0 20 l\u00e0:",
+            "choices": [
+                "A. 0,45%",
+                "B. 45%",
+                "C. 4,5%",
+                "D. 45"
+            ]
+        },
+        {
+            "id": "01-0029",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t c\u00f3 b\u1ed1n ch\u1eef s\u1ed1 kh\u00e1c nhau v\u00e0 chia h\u1ebft cho 9 l\u00e0:",
+            "choices": [
+                "A. 9870",
+                "B. 9876",
+                "C. 9873",
+                "D. 9999"
+            ]
+        },
+        {
+            "id": "01-0030",
+            "question": "Tr\u01b0\u1eddng h\u1ee3p n\u00e0o d\u01b0\u1edbi \u0111\u00e2y l\u00e0m di\u1ec7n t\u00edch h\u00ecnh ch\u1eef nh\u1eadt gi\u1ea3m \u0111i 40%?",
+            "choices": [
+                "A. Gi\u1ea3m chi\u1ec1u r\u1ed9ng \u0111i 15%, gi\u1ea3m chi\u1ec1u d\u00e0i \u0111i 25%",
+                "B. Gi\u1ea3m chi\u1ec1u r\u1ed9ng \u0111i 25%, gi\u1ea3m chi\u1ec1u d\u00e0i \u0111i 15%",
+                "C. Gi\u1ea3m chi\u1ec1u r\u1ed9ng \u0111i 40%, gi\u1eef nguy\u00ean chi\u1ec1u d\u00e0i",
+                "D. C\u00f9ng gi\u1ea3m chi\u1ec1u d\u00e0i v\u00e0 chi\u1ec1u r\u1ed9ng \u0111i 20%"
+            ]
+        },
+        {
+            "id": "01-0031",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m \u0111\u1ec3 56g = ......kg l\u00e0:",
+            "choices": [
+                "A. 5,6",
+                "B. 56 000",
+                "C. 0,056",
+                "D. 0,56"
+            ]
+        },
+        {
+            "id": "01-0032",
+            "question": "N\u1ebfu g\u1ea5p b\u00e1n k\u00ednh c\u1ee7a h\u00ecnh tr\u00f2n l\u00ean 3,5 l\u1ea7n th\u00ec chu vi h\u00ecnh tr\u00f2n \u0111\u00f3 g\u1ea5p l\u00ean s\u1ed1 l\u1ea7n l\u00e0:",
+            "choices": [
+                "A. 3,5 l\u1ea7n",
+                "B. 12,25 l\u1ea7n",
+                "C. 14 l\u1ea7n",
+                "D. 7 l\u1ea7n"
+            ]
+        },
+        {
+            "id": "01-0033",
+            "question": "Ch\u1eef s\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m \u0111\u1ec3 32,...8 < 32,18 l\u00e0:",
+            "choices": [
+                "A. 8",
+                "B. 4",
+                "C. 9",
+                "D. 0"
+            ]
+        },
+        {
+            "id": "01-0034",
+            "question": "Cho m\u1ed9t s\u1ed1 t\u1ef1 nhi\u00ean g\u1ed3m c\u00e1c s\u1ed1 t\u1ef1 nhi\u00ean li\u00ean ti\u1ebfp t\u1eeb 1 \u0111\u1ebfn 2021 \u0111\u01b0\u1ee3c vi\u1ebft theo th\u1ee9 t\u1ef1 li\u1ec1n nhau nh\u01b0 sau:\n1 2 3 4 5 6 7 8 9 10 11 12 13 ... 2019 2020 2021. T\u00ednh t\u1ed5ng c\u1ee7a t\u1ea5t c\u1ea3 c\u00e1c ch\u1eef s\u1ed1 \u0111\u00f3.",
+            "choices": [
+                "A. 27 851",
+                "B. 27 850",
+                "C. 28 149",
+                "D. 28 150"
+            ]
+        },
+        {
+            "id": "01-0035",
+            "question": "Tu\u1ed5i trung b\u00ecnh c\u1ee7a c\u00f4 gi\u00e1o v\u00e0 29 h\u1ecdc sinh l\u00e0 12 tu\u1ed5i. Bi\u1ebft tu\u1ed5i c\u1ee7a c\u00f4 gi\u00e1o nhi\u1ec1u h\u01a1n tu\u1ed5i trung b\u00ecnh c\u1ee7a 29 h\u1ecdc sinh l\u00e0 30 tu\u1ed5i. T\u00ednh tu\u1ed5i c\u1ee7a c\u00f4 gi\u00e1o.",
+            "choices": [
+                "A. 41 tu\u1ed5i",
+                "B. 33 tu\u1ed5i",
+                "C. 36 tu\u1ed5i",
+                "D. 30 tu\u1ed5i"
+            ]
+        },
+        {
+            "id": "01-0036",
+            "question": "Th\u1ec3 t\u00edch c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng c\u00f3 \u0111\u1ed9 d\u00e0i c\u1ea1nh b\u1eb1ng 2,6dm l\u00e0:",
+            "choices": [
+                "A. 6,76dm^{3}",
+                "B. 40,56dm^{3}",
+                "C. 17 576dm^{3}",
+                "D. 17,576dm^{3}"
+            ]
+        },
+        {
+            "id": "01-0037",
+            "question": "M\u1ed9t m\u1ea3nh \u0111\u1ea5t h\u00ecnh ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i b\u1eb1ng 560m, chi\u1ec1u r\u1ed9ng b\u1eb1ng 250m. T\u00ednh chu vi c\u1ee7a m\u1ea3nh \u0111\u1ea5t \u0111\u00f3 tr\u00ean b\u1ea3n \u0111\u1ed3 t\u1ec9 l\u1ec7 1 \\div 1000.",
+            "choices": [
+                "A. 0,81m",
+                "B. 0,162m",
+                "C. 162cm",
+                "D. 81cm"
+            ]
+        },
+        {
+            "id": "01-0038",
+            "question": "Ph\u00e2n s\u1ed1 \\frac{25}{8} vi\u1ebft d\u01b0\u1edbi d\u1ea1ng ph\u00e2n s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 3,125",
+                "B. \\frac{31250}{10000}",
+                "C. 312,5%",
+                "D. \\frac{100}{32}"
+            ]
+        },
+        {
+            "id": "01-0039",
+            "question": "Khi d\u1ecbch chuy\u1ec3n d\u1ea5u ph\u1ea9y c\u1ee7a s\u1ed1 th\u1eadp ph\u00e2n sang b\u00ean tr\u00e1i m\u1ed9t ch\u1eef s\u1ed1, s\u1ed1 \u0111\u00f3 thay \u0111\u1ed5i th\u1ebf n\u00e0o?",
+            "choices": [
+                "A. G\u1ea5p 100 l\u1ea7n",
+                "B. G\u1ea5p 10 l\u1ea7n",
+                "C. Gi\u1ea3m 100 l\u1ea7n",
+                "D. Gi\u1ea3m 10 l\u1ea7n"
+            ]
+        },
+        {
+            "id": "01-0040",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n g\u1ed3m 3 \u0111\u01a1n v\u1ecb, 4 ph\u1ea7n m\u01b0\u1eddi, 6 ph\u1ea7n ngh\u00ecn l\u00e0:",
+            "choices": [
+                "A. 3,046",
+                "B. 0,346",
+                "C. 3,406",
+                "D. 3,46"
+            ]
+        },
+        {
+            "id": "01-0041",
+            "question": "T\u00ecm x, bi\u1ebft 4 x x = 7 gi\u1edd 40 ph\u00fat.",
+            "choices": [
+                "A. X = 155 ph\u00fat",
+                "B. X = 29 gi\u1edd 40 ph\u00fat",
+                "C. X = 1 gi\u1edd 55 ph\u00fat",
+                "D. X = 1 gi\u1edd 15 ph\u00fat"
+            ]
+        },
+        {
+            "id": "01-0042",
+            "question": "M\u1ed9t ng\u01b0\u1eddi th\u1ee3 may 5 c\u00e1i qu\u1ea7n h\u1ebft 4 gi\u1edd v\u00e0 may 5 c\u00e1i \u00e1o h\u1ebft 3 gi\u1edd 20 ph\u00fat. Th\u1eddi gian trung b\u00ecnh \u0111\u1ec3 may m\u1ed7i b\u1ed9 qu\u1ea7n \u00e1o nh\u01b0 v\u1eady l\u00e0:",
+            "choices": [
+                "A. 44 ph\u00fat",
+                "B. 7 gi\u1edd 20 ph\u00fat",
+                "C. 1 gi\u1edd 28 ph\u00fat",
+                "D. 1 gi\u1edd 4 ph\u00fat"
+            ]
+        },
+        {
+            "id": "01-0043",
+            "question": "\u0110\u1ed5i  50 326m^{2}  = \u2026.... ha \u2026\u2026.  m^{2} , ta \u0111\u01b0\u1ee3c k\u1ebft qu\u1ea3 l\u00e0:",
+            "choices": [
+                "A. 503ha 26m^{2}",
+                "B. 5ha 326m^{2}",
+                "C. 5ha 3260m^{2}",
+                "D. 50ha 326m^{2}"
+            ]
+        },
+        {
+            "id": "01-0044",
+            "question": "S\u1ed5 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m \u0111\u1ec3 276 ph\u00fat = \u2026\u2026. gi\u1edd l\u00e0:",
+            "choices": [
+                "A. 4,06",
+                "B. 16 560",
+                "C. 2,36",
+                "D. 4,6"
+            ]
+        },
+        {
+            "id": "01-0045",
+            "question": "D\u00e3y s\u1ed1 th\u1eadp ph\u00e2n n\u00e0o d\u01b0\u1edbi \u0111\u00e2y \u0111\u01b0\u1ee3c s\u1eafp x\u1ebfp theo th\u1ee9 t\u1ef1 t\u0103ng d\u1ea7n?",
+            "choices": [
+                "A. 9,697; 9,769; 9,796; 9,976",
+                "B. 8,697; 8,769; 8,976; 8,967",
+                "C. 13,097; 13,079; 13,907; 13,709",
+                "D. 45,326; 45,336; 43,999; 46,73"
+            ]
+        },
+        {
+            "id": "01-0046",
+            "question": "M\u1ed9t h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i, chi\u1ec1u r\u1ed9ng, chi\u1ec1u cao l\u1ea7n l\u01b0\u1ee3t l\u00e0 4,5cm; 3,5cm; 2,8cm. Di\u1ec7n t\u00edch xung quanh c\u1ee7a h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 76,3cm^{2}",
+                "B. 44,8cm^{2}",
+                "C. 31,5cm^{2}",
+                "D. 22,4cm^{2}"
+            ]
+        },
+        {
+            "id": "01-0047",
+            "question": "Ph\u00e2n s\u1ed1 \\frac{18}{7} b\u1eb1ng h\u1ed7n s\u1ed1 n\u00e0o d\u01b0\u1edbi \u0111\u00e2y?",
+            "choices": [
+                "A. 2\\frac{4}{7}",
+                "B. 2\\frac{1}{7}",
+                "C. 2\\frac{3}{7}",
+                "D. 2\\frac{2}{7}"
+            ]
+        },
+        {
+            "id": "01-0048",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m \u0111\u1ec3 \\frac{2}{5} km = ......m l\u00e0:",
+            "choices": [
+                "A. 40",
+                "B. 400",
+                "C. 0,4",
+                "D. 25"
+            ]
+        },
+        {
+            "id": "01-0049",
+            "question": "250% b\u1eb1ng:",
+            "choices": [
+                "A. \\frac{25}{1000}",
+                "B. \\frac{25}{100}",
+                "C. 2\\frac{1}{20}",
+                "D. 2\\frac{1}{2}"
+            ]
+        },
+        {
+            "id": "01-0050",
+            "question": "Bi\u1ebft \\frac{2}{5} chi\u1ec1u d\u00e0i c\u1ee7a m\u1ed9t m\u1ea3nh \u0111\u1ea5t h\u00ecnh ch\u1eef nh\u1eadt l\u00e0 10m, chi\u1ec1u d\u00e0i h\u01a1n chi\u1ec1u r\u1ed9ng 7m. Di\u1ec7n t\u00edch c\u1ee7a h\u00ecnh ch\u1eef nh\u1eadt \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 450m^{2}",
+                "B. 44m^{2}",
+                "C. 800m^{2}",
+                "D. 28m^{2}"
+            ]
+        },
+        {
+            "id": "01-0051",
+            "question": "Bi\u1ebft 12 ng\u01b0\u1eddi l\u00e0m xong m\u1ed9t c\u00f4ng vi\u1ec7c trong 8 ng\u00e0y. H\u1ecfi mu\u1ed1n l\u00e0m xong c\u00f4ng vi\u1ec7c \u0111\u00f3 trong 4 ng\u00e0y c\u1ea7n bao nhi\u00eau ng\u01b0\u1eddi? (m\u1ee9c l\u00e0m c\u1ee7a m\u1ed7i ng\u01b0\u1eddi nh\u01b0 nhau)",
+            "choices": [
+                "A. 24 ng\u00e0y",
+                "B. 6 ng\u00e0y",
+                "C. 6 ng\u01b0\u1eddi",
+                "D. 24 ng\u01b0\u1eddi"
+            ]
+        },
+        {
+            "id": "01-0052",
+            "question": "Ph\u00e1t bi\u1ec3u n\u00e0o d\u01b0\u1edbi \u0111\u00e2y sai?",
+            "choices": [
+                "A. M\u1ecdi ph\u00e2n s\u1ed1 c\u00f3 t\u1eed s\u1ed1 b\u1eb1ng m\u1eabu s\u1ed1 \u0111\u1ec1u vi\u1ebft \u0111\u01b0\u1ee3c d\u01b0\u1edbi d\u1ea1ng s\u1ed1 t\u1ef1 nhi\u00ean",
+                "B. M\u1ecdi ph\u00e2n s\u1ed1 c\u00f3 m\u1eabu s\u1ed1 b\u1eb1ng 1 \u0111\u1ec1u vi\u1ebft \u0111\u01b0\u1ee3c d\u01b0\u1edbi d\u1ea1ng s\u1ed1 t\u1ef1 nhi\u00ean",
+                "C. M\u1ecdi ph\u00e2n s\u1ed1 c\u00f3 t\u1eed s\u1ed1 b\u1eb1ng 1 \u0111\u1ec1u vi\u1ebft \u0111\u01b0\u1ee3c d\u01b0\u1edbi d\u1ea1ng s\u1ed1 t\u1ef1 nhi\u00ean",
+                "D. Ph\u00e2n s\u1ed1 c\u00f3 t\u1eed s\u1ed1 b\u1eb1ng 0 c\u00f3 gi\u00e1 tr\u1ecb b\u1eb1ng 0"
+            ]
+        },
+        {
+            "id": "01-0053",
+            "question": "M\u1ed9t v\u1eadn \u0111\u1ed9ng vi\u00ean ch\u1ea1y \u0111\u01b0\u1ee3c 576m trong 1 ph\u00fat 36 gi\u00e2y. V\u1eadn t\u1ed1c ch\u1ea1y c\u1ee7a v\u1eadn \u0111\u1ed9ng vi\u00ean \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 6m",
+                "B. 6m/ph\u00fat",
+                "C. 6m/gi\u00e2y",
+                "D. 6km/gi\u1edd"
+            ]
+        },
+        {
+            "id": "01-0054",
+            "question": "Mua 12 chi\u1ebfc b\u00fat ch\u00ec ph\u1ea3i tr\u1ea3 54 000 \u0111\u1ed3ng. Mua 5 chi\u1ebfc b\u00fat ch\u00ec nh\u01b0 v\u1eady ph\u1ea3i tr\u1ea3 s\u1ed1 ti\u1ec1n l\u00e0:",
+            "choices": [
+                "A. 22 500 \u0111\u1ed3ng",
+                "B. 20 500 \u0111\u1ed3ng",
+                "C. 27 000 \u0111\u1ed3ng",
+                "D. 45 000 \u0111\u1ed3ng"
+            ]
+        },
+        {
+            "id": "01-0055",
+            "question": "M\u1ed9t b\u1ec3 n\u01b0\u1edbc d\u1ea1ng h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i b\u1eb1ng 2,4m, chi\u1ec1u r\u1ed9ng b\u1eb1ng 1,5m, chi\u1ec1u cao b\u1eb1ng 1,2m. Khi b\u1ec3 ch\u1ee9a \u0111\u1ea7y n\u01b0\u1edbc, ng\u01b0\u1eddi ta th\u00e1o ra 1,5m^{3} n\u01b0\u1edbC. H\u1ecfi sau khi th\u00e1o, trong b\u1ec3 c\u00f2n l\u1ea1i bao nhi\u00eau m\u00e9t kh\u1ed1i n\u01b0\u1edbc?",
+            "choices": [
+                "A. 2,82dm^{3}",
+                "B. 2,82m^{3}",
+                "C. 4,32 m^{3}",
+                "D. 5,82 m^{3}"
+            ]
+        },
+        {
+            "id": "01-0056",
+            "question": "N\u0103m nay m\u1eb9 h\u01a1n con 28 tu\u1ed5i. H\u1ecfi 10 n\u0103m n\u1eefa m\u1eb9 h\u01a1n con bao nhi\u00eau tu\u1ed5i?",
+            "choices": [
+                "A. 48 tu\u1ed5i",
+                "B. 28 tu\u1ed5i",
+                "C. 18 tu\u1ed5i",
+                "D. 38 tu\u1ed5i"
+            ]
+        },
+        {
+            "id": "01-0057",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n 0,36 vi\u1ebft th\u00e0nh ph\u00e2n s\u1ed1 t\u1ed1i gi\u1ea3n l\u00e0:",
+            "choices": [
+                "A. \\frac{18}{5}",
+                "B. \\frac{18}{50}",
+                "C. \\frac{9}{25}",
+                "D. \\frac{9}{20}"
+            ]
+        },
+        {
+            "id": "01-0058",
+            "question": "Ch\u1eef s\u1ed1 9 trong s\u1ed1 th\u1eadp ph\u00e2n 17,209 c\u00f3 gi\u00e1 tr\u1ecb l\u00e0:",
+            "choices": [
+                "A. \\frac{9}{10}",
+                "B. \\frac{9}{100}",
+                "C. \\frac{9}{1000}",
+                "D. 900"
+            ]
+        },
+        {
+            "id": "01-0059",
+            "question": "M\u1ed9t h\u1ed3 n\u01b0\u1edbc th\u1ec3 t\u00edch l\u00e0 2,5m^{3}. V\u1eady s\u1ed1 l\u00edt n\u01b0\u1edbc \u0111\u01b0\u1ee3c ch\u1ee9a \u0111\u1ea7y trong h\u1ed3 l\u00e0:",
+            "choices": [
+                "A. 25 l\u00edt",
+                "B. 2 500 l\u00edt",
+                "C. 250 l\u00edt",
+                "D. 2 005 l\u00edt"
+            ]
+        },
+        {
+            "id": "01-0060",
+            "question": "Ph\u00e2n s\u1ed1 \\frac{4}{5} \u0111\u01b0\u1ee3c vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 4,5",
+                "B. 0,8",
+                "C. 5,4",
+                "D. 0,45"
+            ]
+        },
+        {
+            "id": "01-0061",
+            "question": "Ch\u1ecdn s\u1ed1 th\u1eadp ph\u00e2n th\u00edch h\u1ee3p 7km 504m = \u2026 hm",
+            "choices": [
+                "A. 750,4",
+                "B. 75,04",
+                "C. 7,504",
+                "D. 0,7504"
+            ]
+        },
+        {
+            "id": "01-0062",
+            "question": "Kho\u1ea3ng th\u1eddi gian t\u1eeb l\u00fac 7 gi\u1edd k\u00e9m 20 \u0111\u1ebfn 7 gi\u1edd 30 ph\u00fat l\u00e0:",
+            "choices": [
+                "A. 20 ph\u00fat",
+                "B. 30 ph\u00fat",
+                "C. 40 ph\u00fat",
+                "D. 50 ph\u00fat"
+            ]
+        },
+        {
+            "id": "01-0063",
+            "question": "\u0110\u1ed9i b\u00f3ng c\u1ee7a m\u1ed9t tr\u01b0\u1eddng h\u1ecdc \u0111\u00e3 thi \u0111\u1ea5u 20 tr\u1eadn, th\u1eafng 18 tr\u1eadn. Nh\u01b0 th\u1ebf t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u00e1c tr\u1eadn th\u1eafng c\u1ee7a \u0111\u1ed9i l\u00e0:",
+            "choices": [
+                "A. 19%",
+                "B. 85%",
+                "C. 90%",
+                "D. 95%"
+            ]
+        },
+        {
+            "id": "01-0064",
+            "question": "M\u1ed9t mi\u1ebfng b\u00eca h\u00ecnh thang c\u00f3 \u0111\u00e1y l\u1edbn l\u00e0 6cm, \u0111\u00e1y b\u00e9 4cm, \u0111\u01b0\u1eddng cao 5 cm. Di\u1ec7n t\u00edch mi\u1ebfng b\u00eca l\u00e0:",
+            "choices": [
+                "A. 22 cm^{2}",
+                "B. 25 cm^{2}",
+                "C. 44 cm^{2}",
+                "D. 60 cm^{2}"
+            ]
+        },
+        {
+            "id": "01-0065",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n g\u1ed3m s\u00e1u ph\u1ea7n tr\u0103m, n\u0103m ph\u1ea7n m\u01b0\u1eddi, b\u1ea3y ph\u1ea7n ngh\u00ecn l\u00e0:",
+            "choices": [
+                "A. 0,567",
+                "B. 0,657",
+                "C. 657",
+                "D. 0,756"
+            ]
+        },
+        {
+            "id": "01-0066",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m c\u1ee7a 426 gi\u00e2y = \u2026 ph\u00fat l\u00e0:",
+            "choices": [
+                "A. 7,01",
+                "B. 70,1",
+                "C. 42,6",
+                "D. 7,1"
+            ]
+        },
+        {
+            "id": "01-0067",
+            "question": "M\u1ed9t h\u00ecnh thang c\u00f3 \u0111\u00e1y b\u00e9 a, \u0111\u00e1y l\u1edbn l\u00e0 b, chi\u1ec1u cao l\u00e0 h (a, b, h c\u00f9ng \u0111\u01a1n v\u1ecb \u0111o) th\u00ec c\u00f4ng th\u1ee9c t\u00ednh di\u1ec7n t\u00edch S c\u1ee7a h\u00ecnh thang \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. S= \\frac{(a + b) \\times h}{2}",
+                "B. S= \\frac{a \\times h}{2 + b }",
+                "C. S= \\frac{a + b \\times h}{2}",
+                "D. S= \\frac{a \\times h}{2}"
+            ]
+        },
+        {
+            "id": "01-0068",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m c\u1ee7a 780g = \u2026 kg l\u00e0:",
+            "choices": [
+                "A. 0,078",
+                "B. 7,8",
+                "C. 7800",
+                "D. 0,78"
+            ]
+        },
+        {
+            "id": "01-0069",
+            "question": "M\u1ed9t xe \u00f4 t\u00f4 c\u1ee9 ch\u1ea1y qu\u00e3ng \u0111\u01b0\u1eddng d\u00e0i 70km th\u00ec ti\u00eau th\u1ee5 h\u1ebft 10 l\u00edt x\u0103ng. H\u1ecfi n\u1ebfu \u00f4 t\u00f4 \u0111i qu\u00e3ng \u0111\u01b0\u1eddng d\u00e0i 280km th\u00ec ti\u00eau th\u1ee5 h\u1ebft bao nhi\u00eau l\u00edt x\u0103ng? (m\u1ee9c ti\u00eau hao x\u0103ng tr\u00ean 1km nh\u01b0 nhau)",
+            "choices": [
+                "A. 400 l\u00edt",
+                "B. 40 l\u00edt",
+                "C. 2,5 l\u00edt",
+                "D. 250 l\u00edt"
+            ]
+        },
+        {
+            "id": "01-0070",
+            "question": "M\u1ed9t \u0111o\u00e0n t\u00e0u b\u0103ng qua m\u1ed9t c\u1ed9t \u0111i\u1ec7n h\u1ebft 8 gi\u00e2y. C\u0169ng v\u1edbi t\u1ed1c \u0111\u1ed9 \u0111\u00f3, \u0111o\u00e0n t\u00e0u b\u0103ng qua m\u1ed9t \u0111\u01b0\u1eddng h\u1ea7m d\u00e0i 260m h\u1ebft 1 ph\u00fat. V\u1eadn t\u1ed1c c\u1ee7a \u0111o\u00e0n t\u00e0u \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 5 m/ph\u00fat",
+                "B. 50 m/ph\u00fat",
+                "C. 18 km/gi\u1edd",
+                "D. 50 m/ph\u00fat"
+            ]
+        },
+        {
+            "id": "01-0071",
+            "question": "M\u1ed9t m\u00e1y bay bay v\u1edbi v\u1eadn t\u1ed1c 650 km/gi\u1edd. T\u00ednh qu\u00e3ng \u0111\u01b0\u1eddng m\u00e1y bay bay \u0111\u01b0\u1ee3c trong 2,4 gi\u1edd.",
+            "choices": [
+                "A. 1560 km",
+                "B. 1410 km",
+                "C. 1480 km",
+                "D. 1620 km"
+            ]
+        },
+        {
+            "id": "01-0072",
+            "question": "T\u00ecm s\u1ed1 t\u1ef1 nhi\u00ean x \u0111\u1ec3 \\frac{25}{x} = \\frac{5}{6}",
+            "choices": [
+                "A. 30",
+                "B. 27",
+                "C. 24",
+                "D. 18"
+            ]
+        },
+        {
+            "id": "01-0073",
+            "question": "Hai v\u00f2i n\u01b0\u1edbc c\u00f9ng ch\u1ea3y v\u00e0o m\u1ed9t b\u1ec3 kh\u00f4ng ch\u1ee9a n\u01b0\u1edbc th\u00ec sau 6 gi\u1edd \u0111\u1ea7y b\u1ec3. N\u1ebfu v\u00f2i th\u1ee9 nh\u1ea5t ch\u1ea3y trong 2 gi\u1edd, v\u00f2i th\u1ee9 hai ch\u1ea3y trong 3 gi\u1edd th\u00ec \u0111\u01b0\u1ee3c \\frac{2}{5} b\u1ec3. H\u1ecfi v\u00f2i th\u1ee9 nh\u1ea5t ch\u1ea3y m\u1ed9t m\u00ecnh trong bao l\u00e2u th\u00ec \u0111\u1ea7y b\u1ec3?",
+            "choices": [
+                "A. 11 gi\u1edd",
+                "B. 15 gi\u1edd",
+                "C. 12 gi\u1edd",
+                "D. 10 gi\u1edd"
+            ]
+        },
+        {
+            "id": "01-0074",
+            "question": "M\u1eb9 h\u01a1n con 36 tu\u1ed5i, tu\u1ed5i m\u1eb9 g\u1ea5p 4 l\u1ea7n tu\u1ed5i con. Tu\u1ed5i con hi\u1ec7n nay l\u00e0:",
+            "choices": [
+                "A. 9 tu\u1ed5i",
+                "B. 48 tu\u1ed5i",
+                "C. 4 tu\u1ed5i",
+                "D. 12 tu\u1ed5i"
+            ]
+        },
+        {
+            "id": "01-0075",
+            "question": "T\u1ed5ng c\u1ee7a hai s\u1ed1 l\u00e0 2020. T\u00ecm hai s\u1ed1 \u0111\u00f3 bi\u1ebft r\u1eb1ng gi\u1eefa ch\u00fang c\u00f3 5 s\u1ed1 ch\u1eb5n li\u00ean ti\u1ebfp.",
+            "choices": [
+                "A. 1005 v\u00e0 1015",
+                "B. 1007,5 v\u00e0 1012,5",
+                "C. 1007 v\u00e0 1013",
+                "D. 1003,5 v\u00e0 1016,5"
+            ]
+        },
+        {
+            "id": "01-0076",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p t\u00ednh 12,3 + 24,05 \\times 2,5 l\u00e0:",
+            "choices": [
+                "A. 73,55",
+                "B. 90,875",
+                "C. 60,248",
+                "D. 72,425"
+            ]
+        },
+        {
+            "id": "01-0077",
+            "question": "Th\u1ec3 t\u00edch c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng c\u00f3 c\u1ea1nh b\u1eb1ng 5cm l\u00e0:",
+            "choices": [
+                "A. 125 cm^{2}",
+                "B. 150 cm^{3]",
+                "C. 25 cm^{3}",
+                "D. 125 cm^{3}"
+            ]
+        },
+        {
+            "id": "01-0078",
+            "question": "Ch\u1ecb chia \u0111\u00e0o cho c\u00e1c em, n\u1ebfu chia cho m\u1ed7i em 3 qu\u1ea3 th\u00ec th\u1eeba 2 qu\u1ea3, n\u1ebfu chia cho m\u1ed7i em 4 qu\u1ea3 th\u00ec thi\u1ebfu 2 qu\u1ea3. H\u1ecfi c\u00f3 t\u1ea5t c\u1ea3 bao nhi\u00eau qu\u1ea3 \u0111\u00e0o?",
+            "choices": [
+                "A. 4",
+                "B. 14",
+                "C. 38",
+                "D. 26"
+            ]
+        },
+        {
+            "id": "01-0079",
+            "question": "Hi\u1ec7u c\u1ee7a hai s\u1ed1 l\u00e0 129, bi\u1ebft r\u1eb1ng n\u1ebfu l\u1ea5y s\u1ed1 b\u00e9 c\u1ed9ng v\u1edbi s\u1ed1 l\u1edbn r\u1ed3i c\u1ed9ng v\u1edbi t\u1ed5ng hai s\u1ed1 th\u00ec \u0111\u01b0\u1ee3c k\u1ebft qu\u1ea3 l\u00e0 2020. V\u1eady s\u1ed1 l\u1edbn l\u00e0:",
+            "choices": [
+                "A. 569,5",
+                "B. 440,5",
+                "C. 1074,5",
+                "D. 945,5"
+            ]
+        },
+        {
+            "id": "01-0080",
+            "question": "Bi\u1ebft 52% c\u1ee7a m\u1ed9t s\u1ed1 l\u00e0 507. V\u1eady 64% c\u1ee7a s\u1ed1 \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 975",
+                "B. 624",
+                "C. 263,64",
+                "D. 168,7296"
+            ]
+        },
+        {
+            "id": "01-0081",
+            "question": "Ph\u00e2n s\u1ed1 n\u00e0o d\u01b0\u1edbi \u0111\u00e2y c\u00f3 th\u1ec3 vi\u1ebft th\u00e0nh ph\u00e2n s\u1ed1 th\u1eadp ph\u00e2n:",
+            "choices": [
+                "A. \\frac{3}{8}",
+                "B. \\frac{4}{7}",
+                "C. \\frac{5}{9}",
+                "D. \\frac{1}{3}"
+            ]
+        },
+        {
+            "id": "01-0082",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p t\u00ednh 5 : 1000 = \u2026 l\u00e0:",
+            "choices": [
+                "A. 0,0005",
+                "B. 5000",
+                "C. 0,005",
+                "D. 0,05"
+            ]
+        },
+        {
+            "id": "01-0083",
+            "question": "Th\u01b0\u01a1ng c\u1ee7a \\frac{2}{5} v\u00e0  \\frac{3}{4} l\u00e0:",
+            "choices": [
+                "A. \\frac{15}{8}",
+                "B. \\frac{6}{20}",
+                "C. \\frac{8}{16}",
+                "D. \\frac{3}{10}"
+            ]
+        },
+        {
+            "id": "01-0084",
+            "question": "\u0110\u1ec3 v\u1ebd h\u00ecnh tr\u00f2n, ta s\u1eed d\u1ee5ng d\u1ee5ng c\u1ee5:",
+            "choices": [
+                "A. Th\u01b0\u1edbc k\u1ebb",
+                "B. \u00ca-ke",
+                "C. Com-pa",
+                "D. Th\u01b0\u1edbc d\u00e2y"
+            ]
+        },
+        {
+            "id": "01-0085",
+            "question": "B\u1ed1n n\u0103m li\u00ean ti\u1ebfp c\u00f3 t\u1ea5t c\u1ea3 bao nhi\u00eau ng\u00e0y:",
+            "choices": [
+                "A. 366 ng\u00e0y",
+                "B. 1461 ng\u00e0y",
+                "C. 365 ng\u00e0y",
+                "D. 1462 ng\u00e0y"
+            ]
+        },
+        {
+            "id": "01-0086",
+            "question": "L\u1edbp 5M c\u00f3 32 h\u1ecdc sinh. S\u1ed1 h\u1ecdc sinh n\u1eef b\u1eb1ng  \\frac{3}{5} s\u1ed1 h\u1ecdc sinh nam. S\u1ed1 h\u1ecdc sinh nam c\u1ee7a l\u1edbp 5M l\u00e0:",
+            "choices": [
+                "A. 4 h\u1ecdc sinh",
+                "B. 32 h\u1ecdc sinh",
+                "C. 12 h\u1ecdc sinh",
+                "D. 20 h\u1ecdc sinh"
+            ]
+        },
+        {
+            "id": "01-0087",
+            "question": "T\u00ecm X, bi\u1ebft x \\times 2,5 =1,3",
+            "choices": [
+                "A. X= 52",
+                "B. X= 5,2",
+                "C. X= 3,25",
+                "D. X= 0,52"
+            ]
+        },
+        {
+            "id": "01-0088",
+            "question": "Ph\u00e9p chia 68,37 cho 8,3 c\u00f3 th\u01b0\u01a1ng l\u00e0 8,23. S\u1ed1 d\u01b0 c\u1ee7a ph\u00e9p chia \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 6,1",
+                "B. 0,061",
+                "C. 0,61",
+                "D. 0,0061"
+            ]
+        },
+        {
+            "id": "01-0089",
+            "question": "D\u00e3y ph\u00e2n s\u1ed1 n\u00e0o d\u01b0\u1edbi \u0111\u01b0\u1ee3c vi\u1ebft theo th\u1ee9 t\u1ef1 t\u0103ng d\u1ea7n:",
+            "choices": [
+                "A. \\frac{2}{3}; \\frac{7}{12}; \\frac{3}{4}; \\frac{5}{6}",
+                "B. \\frac{5}{6}; \\frac{3}{4}; \\frac{2}{3}; \\frac{7}{12}",
+                "C. \\frac{7}{12}; \\frac{2}{3}; \\frac{3}{4}; \\frac{5}{6}",
+                "D. \\frac{7}{12}; \\frac{3}{4}; \\frac{2}{3}; \\frac{5}{6}"
+            ]
+        },
+        {
+            "id": "01-0090",
+            "question": "M\u1ed9t xe t\u1ea3i ch\u1ec9 c\u00f3 th\u1ec3 ch\u1edf \u0111\u01b0\u1ee3c 300 bao g\u1ea1o, m\u1ed7i bao 50kg. N\u1ebfu ch\u1ea5t l\u00ean xe t\u1ea3i \u0111\u00f3 lo\u1ea1i g\u1ea1o 75kg th\u00ec xe ch\u1edf \u0111\u01b0\u1ee3c nhi\u1ec1u nh\u1ea5t bao nhi\u00eau bao g\u1ea1o:",
+            "choices": [
+                "A. 60",
+                "B. 200",
+                "C. 450",
+                "D. 40"
+            ]
+        },
+        {
+            "id": "01-0091",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 4,74; 7,04; 7,4; 7,47 l\u00e0:",
+            "choices": [
+                "A. 4,74",
+                "B. 7,04",
+                "C. 7,47",
+                "D. 7,4"
+            ]
+        },
+        {
+            "id": "01-0092",
+            "question": "Ph\u00e1t bi\u1ec3u n\u00e0o d\u01b0\u1edbi \u0111\u00e2y sai:",
+            "choices": [
+                "A. H\u00ecnh thoi c\u00f3 b\u1ed1n c\u1ea1nh b\u1eb1ng nhau",
+                "B. H\u00ecnh thoi c\u00f3 b\u1ed1n g\u00f3c vu\u00f4ng v\u00e0 b\u1ed1n \u0111\u01b0\u1eddng ch\u00e9o",
+                "C. H\u00ecnh thoi c\u00f3 hai \u0111\u01b0\u1eddng ch\u00e9o vu\u00f4ng g\u00f3c v\u1edbi nhau, c\u1eaft nhau t\u1ea1i trung \u0111i\u1ec3m m\u1ed7i \u0111\u01b0\u1eddng",
+                "D. H\u00ecnh thoi c\u00f3 hai c\u1eb7p c\u1ea1nh \u0111\u1ed1i di\u1ec7n song song v\u00e0 b\u1eb1ng nhau"
+            ]
+        },
+        {
+            "id": "01-0093",
+            "question": "Gi\u00e1 tr\u1ecb c\u1ee7a bi\u1ec3u th\u1ee9c \n \\frac{1}{2} +  \\frac{1}{6} +  \\frac{1}{12} +  \\frac{1}{20} +  \\frac{1}{30} +  \\frac{1}{42} +  \\frac{1}{56} l\u00e0:",
+            "choices": [
+                "A. \\frac{7}{178}",
+                "B. \\frac{9}{8}",
+                "C. \\frac{7}{8}",
+                "D. \\frac{3}{8}"
+            ]
+        },
+        {
+            "id": "01-0094",
+            "question": "H\u1ed7n s\u1ed1 17\\frac{5}{9} chuy\u1ec3n th\u00e0nh ph\u00e2n s\u1ed1 n\u00e0o d\u01b0\u1edbi \u0111\u00e2y?",
+            "choices": [
+                "A. \\frac{175}{9}",
+                "B. \\frac{159}{9}",
+                "C. \\frac{158}{9}",
+                "D. \\frac{153}{9}"
+            ]
+        },
+        {
+            "id": "01-0095",
+            "question": "M\u1ed9t h\u00ecnh l\u1eadp ph\u01b0\u01a1ng c\u00f3 di\u1ec7n t\u00edch xung quanh l\u00e0 676cm2. Di\u1ec7n t\u00edch to\u00e0n ph\u1ea7n c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 1014cm^{2}",
+                "B. 169cm^{2}",
+                "C. 156cm^{2}",
+                "D. 78cm^{2}"
+            ]
+        },
+        {
+            "id": "01-0096",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m c\u1ee7a 8,3ha = \u2026 m^{2} l\u00e0:",
+            "choices": [
+                "A. 8300",
+                "B. 830",
+                "C. 80300",
+                "D. 83000"
+            ]
+        },
+        {
+            "id": "01-0097",
+            "question": "\u0110\u01b0\u1eddng k\u00ednh c\u1ee7a h\u00ecnh tr\u00f2n c\u00f3 chu vi 204,1 cm l\u00e0:",
+            "choices": [
+                "A. 65cm",
+                "B. 32,5cm",
+                "C. 130cm",
+                "D. 6,5cm"
+            ]
+        },
+        {
+            "id": "01-0098",
+            "question": "S\u1ed1 hai m\u01b0\u01a1i m\u1ed1t tri\u1ec7u kh\u00f4ng tr\u0103m t\u00e1m m\u01b0\u01a1i t\u01b0 ngh\u00ecn n\u0103m tr\u0103m linh hai vi\u1ebft l\u00e0:",
+            "choices": [
+                "A. 21 084 520",
+                "B. 210 845 002",
+                "C. 21 084 502",
+                "D. 2 184 502"
+            ]
+        },
+        {
+            "id": "01-0099",
+            "question": "\\frac{2}{5} b\u1eb1ng:",
+            "choices": [
+                "A. 25%",
+                "B. 60%",
+                "C. 0,4%",
+                "D. 40%"
+            ]
+        },
+        {
+            "id": "01-0100",
+            "question": "Gi\u00e1 hoa th\u00e1ng 5 t\u0103ng 10% so v\u1edbi gi\u00e1 hoa th\u00e1ng 4. Gi\u00e1 hoa th\u00e1ng 6 t\u0103ng 10% so v\u1edbi gi\u00e1 hoa th\u00e1ng 5. H\u1ecfi gi\u00e1 hoa th\u00e1ng 6 t\u0103ng bao nhi\u00eau ph\u1ea7n tr\u0103m so v\u1edbi gi\u00e1 hoa th\u00e1ng 4:",
+            "choices": [
+                "A. 20%",
+                "B. 21%",
+                "C. 120%",
+                "D. 10%"
+            ]
+        },
+        {
+            "id": "01-0101",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m c\u1ee7a 3dm 9mm = \u2026 dm l\u00e0:",
+            "choices": [
+                "A. 3,9",
+                "B. 3,09",
+                "C. 0,039",
+                "D. 309"
+            ]
+        },
+        {
+            "id": "01-0102",
+            "question": "M\u1ed9t th\u1eeda ru\u1ed9ng h\u00ecnh ch\u1eef nh\u1eadt c\u00f3 chu vi l\u00e0 126m, chi\u1ec1u d\u00e0i h\u01a1n chi\u1ec1u r\u1ed9ng 13m. V\u1ee5 m\u00f9a v\u1eeba qua, c\u1ee9 100m^2 th\u1eeda ru\u1ed9ng cho thu ho\u1ea1ch 70kg th\u00f3C. H\u1ecfi c\u1ea3 th\u1eeda ru\u1ed9ng thu ho\u1ea1ch \u0111\u01b0\u1ee3c bao nhi\u00eau t\u1ea1 th\u00f3c:",
+            "choices": [
+                "A. 66500 t\u1ea1",
+                "B. 66,5 t\u1ea1",
+                "C. 6,65 t\u1ea1",
+                "D. 665 t\u1ea1"
+            ]
+        },
+        {
+            "id": "01-0103",
+            "question": "Gi\u00e1 ti\u1ec1n c\u1ee7a m\u1ed9t chi\u1ebfc b\u00fat ch\u00ec l\u00e0 4000 \u0111\u1ed3ng. N\u1ebfu gi\u1ea3m \\frac{1}{10}\n gi\u00e1 b\u00e1n th\u00ec ph\u1ea3i tr\u1ea3 bao nhi\u00eau ti\u1ec1n \u0111\u1ec3 mua chi\u1ebfc b\u00fat ch\u00ec \u0111\u00f3:",
+            "choices": [
+                "A. 3600 \u0111\u1ed3ng",
+                "B. 40000 \u0111\u1ed3ng",
+                "C. 4400 \u0111\u1ed3ng",
+                "D. 400 \u0111\u1ed3ng"
+            ]
+        },
+        {
+            "id": "01-0104",
+            "question": "S\u1ed1 \u0111o th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m c\u1ee7a \\frac{1}{10}m^{3} = \u2026  l\u00e0:",
+            "choices": [
+                "A. 10 000 cm^{3}",
+                "B. 100 000 cm^{3}",
+                "C. 10 dm^{3}",
+                "D. 1 000 000 cm^{3}"
+            ]
+        },
+        {
+            "id": "01-0105",
+            "question": "Ch\u1eef s\u1ed1 5 trong s\u1ed1 th\u1eadp ph\u00e2n 7,256 thu\u1ed9c h\u00e0ng n\u00e0o?",
+            "choices": [
+                "A. H\u00e0ng \u0111\u01a1n v\u1ecb",
+                "B. H\u00e0ng ph\u1ea7n m\u01b0\u1eddi",
+                "C. H\u00e0ng ph\u1ea7n tr\u0103m",
+                "D. H\u00e0ng ph\u1ea7n ngh\u00ecn"
+            ]
+        },
+        {
+            "id": "01-0106",
+            "question": "S\u1ed1 ti\u1ebfp theo c\u1ee7a d\u00e3y s\u1ed1: 4,13; 4,12; 4,11; 4,10; \u2026\u2026 l\u00e0:",
+            "choices": [
+                "A. 4,09",
+                "B. 4,9",
+                "C. 4,19",
+                "D. 4,90"
+            ]
+        },
+        {
+            "id": "01-0107",
+            "question": "H\u00ecnh tam gi\u00e1c c\u00f3 \u0111\u1ed9 d\u00e0i \u0111\u00e1y l\u00e0 24 cm, chi\u1ec1u cao l\u00e0 6 cm. Di\u1ec7n t\u00edch tam gi\u00e1c l\u00e0:",
+            "choices": [
+                "A. 144 cm^{2}",
+                "B. 30 cm^{2}",
+                "C. 72 cm^{2}",
+                "D. 60 cm^{2}"
+            ]
+        },
+        {
+            "id": "01-0108",
+            "question": "S\u1ed1 li\u1ec7u th\u1ed1ng k\u00ea x\u1ebfp lo\u1ea1i h\u1ecdc l\u1ef1c c\u1ee7a h\u1ecdc sinh Tr\u01b0\u1eddng Nguy\u1ec5n T\u1ea5t Th\u00e0nh trong 4 n\u0103m \u0111\u01b0\u1ee3c cho trong b\u1ea3ng d\u01b0\u1edbi \u0111\u00e2y. Bi\u1ebft r\u1eb1ng h\u1ecdc l\u1ef1c c\u1ee7a h\u1ecdc sinh \u0111\u01b0\u1ee3c chia l\u00e0m ba lo\u1ea1i: Gi\u1ecfi, Kh\u00e1 v\u00e0 Trung b\u00ecnh. H\u1ecfi n\u0103m h\u1ecdc n\u00e0o t\u1ec9 l\u1ec7 h\u1ecdc sinh x\u1ebfp lo\u1ea1i Trung b\u00ecnh c\u1ee7a tr\u01b0\u1eddng l\u00e0 cao nh\u1ea5t?",
+            "choices": [
+                "A. N\u0103m h\u1ecdc 2014 \u2013 2015",
+                "B. N\u0103m h\u1ecdc 2015 \u2013 2016",
+                "C. N\u0103m h\u1ecdc 2016 \u2013 2017",
+                "D. N\u0103m h\u1ecdc 2017 \u2013 2018"
+            ]
+        },
+        {
+            "id": "01-0109",
+            "question": "\u0110\u1ed9i t\u00ecnh nguy\u1ec7n tr\u01b0\u1eddng Nguy\u1ec5n T\u1ea5t Th\u00e0nh l\u00e0m t\u1eeb thi\u1ec7n t\u1ea1i m\u1ed9t tr\u01b0\u1eddng h\u1ecdc c\u1ee7a t\u1ec9nh H\u00e0 Giang. Theo k\u1ebf ho\u1ea1ch, \u0111\u1ed9i s\u1ebd d\u1ecdn c\u1ecf \u1edf m\u1ed9t m\u1ea3nh \u0111\u1ea5t h\u00ecnh ch\u1eef nh\u1eadt d\u00e0i 220m, r\u1ed9ng 130m trong khu\u00f4n vi\u00ean c\u1ee7a tr\u01b0\u1eddng. \u0110\u1ed9i \u0111\u00e3 d\u1ecdn \u0111\u01b0\u1ee3c c\u1ecf v\u1edbi di\u1ec7n t\u00edch 1,2 h\u00e9c-ta (ha). H\u1ecfi di\u1ec7n t\u00edch ph\u1ea7n \u0111\u1ea5t c\u00f2n l\u1ea1i ch\u01b0a \u0111\u01b0\u1ee3c d\u1ecdn c\u1ecf?",
+            "choices": [
+                "A. 16,6 ha",
+                "B. 12,6 ha",
+                "C. 1,66 ha",
+                "D. 28,6 ha"
+            ]
+        },
+        {
+            "id": "01-0110",
+            "question": "H\u01b0\u1edfng \u1ee9ng d\u1ef1 \u00e1n \u201c\u00c1o \u1ea5m cho h\u1ecdc sinh v\u00f9ng kh\u00f3 kh\u0103n \u1edf t\u1ec9nh H\u00e0 Giang\u201d c\u1ee7a tr\u01b0\u1eddng Nguy\u1ec5n T\u1ea5t Th\u00e0nh, l\u1edbp 6A ph\u00e2n c\u00f4ng c\u00e1c b\u1ea1n t\u1ef1 l\u00e0m b\u1eefa s\u00e1ng \u0111\u1ec3 c\u1ea3 l\u1edbp c\u00f9ng \u0103n, ti\u1ebft ki\u1ec7m ti\u1ec1n \u0111\u1ec3 th\u1ef1c hi\u1ec7n d\u1ef1 \u00e1n. \u0110\u1ebfn l\u01b0\u1ee3t nh\u00f3m c\u1ee7a b\u1ea1n An l\u00e0m b\u00e1nh m\u00ec k\u1eb9p, An c\u00f9ng nh\u00f3m tr\u1ed9n th\u1ecbt xay v\u1edbi khoai t\u00e2y nghi\u1ec1n v\u1edbi t\u1ec9 l\u1ec7 3:2 \u0111\u1ec3 l\u00e0m 4 kil\u00f4gam nh\u00e2n b\u00e1nh. H\u1ecfi nh\u00f3m c\u1ee7a An \u0111\u00e3 d\u00f9ng bao nhi\u00eau kil\u00f4gam th\u1ecbt xay?",
+            "choices": [
+                "A. 2,4 kg",
+                "B. 2,5 kg",
+                "C. 1,6 kg",
+                "D. 1,5 kg"
+            ]
+        },
+        {
+            "id": "01-0111",
+            "question": "Vi\u1ebft li\u00ean ti\u1ebfp c\u00e2u \u201cTR\u01af\u1edcNG NGUY\u1ec4N T\u1ea4T TH\u00c0NH\u201d 20 l\u1ea7n. H\u1ecfi \u00e2m \u00ca cu\u1ed1i c\u00f9ng \u0111\u1ee9ng \u1edf v\u1ecb tr\u00ed th\u1ee9 m\u1ea5y?",
+            "choices": [
+                "A. 400",
+                "B. 325",
+                "C. 350",
+                "D. 391"
+            ]
+        },
+        {
+            "id": "01-0112",
+            "question": "K\u1ebft qu\u1ea3 ph\u00e9p t\u00ednh 27% \\times 45,6 + 23% \\times 45,6 b\u1eb1ng:",
+            "choices": [
+                "A. 23,8",
+                "B. 22,8",
+                "C. 24,8",
+                "D. 21,8"
+            ]
+        },
+        {
+            "id": "01-0113",
+            "question": "B\u1ea1n H\u00e0 l\u1ea5y \\frac{2}{5} s\u1ed1 kh\u1ea9u trang trong h\u1ed9p c\u1ee7a m\u00ecnh t\u1eb7ng cho b\u1ea1n An th\u00ec trong h\u1ed9p c\u00f2n l\u1ea1i 12 chi\u1ebfc kh\u1ea9u trang. S\u1ed1 kh\u1ea9u trang trong h\u1ed9p c\u1ee7a b\u1ea1n H\u00e0 l\u00fac \u0111\u1ea7u l\u00e0:",
+            "choices": [
+                "A. 30",
+                "B. 35",
+                "C. 40",
+                "D. 20"
+            ]
+        },
+        {
+            "id": "01-0114",
+            "question": "B\u1ea1n H\u00f2a \u0111i h\u1ecdc b\u1eb1ng xe \u0111\u1ea1p v\u1edbi v\u1eadn t\u1ed1c v = 12 km/gi\u1edd, b\u1ea1n H\u00f2a \u0111i t\u1eeb nh\u00e0 l\u00fac 6 gi\u1edd 35 ph\u00fat s\u00e1ng v\u00e0 \u0111\u1ebfn tr\u01b0\u1eddng l\u00fac 7 gi\u1edd s\u00e1ng c\u00f9ng ng\u00e0y. Qu\u00e3ng \u0111\u01b0\u1eddng t\u1eeb nh\u00e0 b\u1ea1n H\u00f2a \u0111\u1ebfn tr\u01b0\u1eddng b\u1eb1ng:",
+            "choices": [
+                "A. 5 km",
+                "B. 4 km",
+                "C. 3 km",
+                "D. 6 km"
+            ]
+        },
+        {
+            "id": "01-0115",
+            "question": "M\u1ed9t h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt c\u00f3 th\u1ec3 t\u00edch b\u1eb1ng 336 cm^{3} v\u00e0 di\u1ec7n t\u00edch m\u1eb7t \u0111\u00e1y b\u1eb1ng 48 cm^{2}. Chi\u1ec1u cao c\u1ee7a h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt b\u1eb1ng:",
+            "choices": [
+                "A. 5 cm",
+                "B. 6 cm",
+                "C. 7 cm",
+                "D. 8 cm"
+            ]
+        },
+        {
+            "id": "01-0116",
+            "question": "T\u00ecm 1 s\u1ed1 th\u1eadp ph\u00e2n c\u00f3 4 \u0111\u01a1n v\u1ecb, 3 ph\u1ea7n m\u01b0\u1eddi, 5 ph\u1ea7n ngh\u00ecn. Ch\u1ecdn \u0111\u00e1p \u00e1n \u0111\u00fang:",
+            "choices": [
+                "A. 4,503",
+                "B. 4,35",
+                "C. 4,53",
+                "D. 4,305"
+            ]
+        },
+        {
+            "id": "01-0117",
+            "question": "S\u1ed1 \u201cBa m\u01b0\u01a1i s\u00e1u ph\u1ea9y n\u0103m m\u01b0\u01a1i l\u0103m\" vi\u1ebft l\u00e0:",
+            "choices": [
+                "A. 306,55",
+                "B. 36,55",
+                "C. 36,505",
+                "D. 306,505"
+            ]
+        },
+        {
+            "id": "01-0118",
+            "question": "Ch\u1eef s\u1ed1 4 trong s\u1ed1 th\u1eadp ph\u00e2n 18,524 thu\u1ed9c h\u00e0ng n\u00e0o ?",
+            "choices": [
+                "A. H\u00e0ng \u0111\u01a1n v\u1ecb",
+                "B. H\u00e0ng ph\u1ea7n m\u01b0\u1eddi",
+                "C. H\u00e0ng ph\u1ea7n tr\u0103m",
+                "D. H\u00e0ng ph\u1ea7n ngh\u00ecn"
+            ]
+        },
+        {
+            "id": "01-0119",
+            "question": "Hi\u1ec7u c\u1ee7a 35,7 v\u00e0 2,46 l\u00e0:",
+            "choices": [
+                "A. 32,36",
+                "B. 1,11",
+                "C. 33,24",
+                "D. 33,34"
+            ]
+        },
+        {
+            "id": "01-0120",
+            "question": "Th\u01b0\u01a1ng c\u1ee7a 64,64 v\u00e0 1,6 l\u00e0:",
+            "choices": [
+                "A. 404",
+                "B. 40,4",
+                "C. 44",
+                "D. 4,4"
+            ]
+        },
+        {
+            "id": "01-0121",
+            "question": "1 t\u1ea5n 25 kg vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0 :",
+            "choices": [
+                "A. 1,25 t\u1ea5n",
+                "B. 12,5 t\u1ea1",
+                "C. 1,025 t\u1ea5n",
+                "D. 102,5 t\u1ea1"
+            ]
+        },
+        {
+            "id": "01-0122",
+            "question": "S\u1ed1 ti\u1ebfp theo c\u1ee7a d\u00e3y s\u1ed1: 5,13;  5,12; 5,11; 5,10;......  l\u00e0:",
+            "choices": [
+                "A. 5,09",
+                "B. 5,9",
+                "C. 5,19",
+                "D. 5,90"
+            ]
+        },
+        {
+            "id": "01-0123",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n g\u1ed3m 15 \u0111\u01a1n v\u1ecb, 4 ph\u1ea7n m\u01b0\u1eddi, 6 ph\u1ea7n ngh\u00ecn \u0111\u01b0\u1ee3c vi\u1ebft l\u00e0:",
+            "choices": [
+                "A. 1,546",
+                "B. 15,46",
+                "C. 15,406",
+                "D. 154,06"
+            ]
+        },
+        {
+            "id": "01-0125",
+            "question": "H\u1ed7n s\u1ed1 8 \\frac{25}{10} b\u1eb1ng s\u1ed1 th\u1eadp ph\u00e2n n\u00e0o trong c\u00e1c s\u1ed1 sau:",
+            "choices": [
+                "A. 8,25",
+                "B. 82,5",
+                "C. 8,205",
+                "D. 8,025"
+            ]
+        },
+        {
+            "id": "01-0126",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 5,798; 5,897; 5,978; 5,879 l\u00e0:",
+            "choices": [
+                "A. 5,978",
+                "B. 5,798",
+                "C. 5,897",
+                "D. 5,879"
+            ]
+        },
+        {
+            "id": "01-0127",
+            "question": "6t\u1ea5n 15kg = ...............kg",
+            "choices": [
+                "A. 615",
+                "B. 60015",
+                "C. 6015",
+                "D. 6,15"
+            ]
+        },
+        {
+            "id": "01-0128",
+            "question": "25m^{2} 7dm^{2} = ...........m^{2}. S\u1ed1 th\u00edch h\u1ee3p vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m l\u00e0:",
+            "choices": [
+                "A. 25,7",
+                "B. 2,57",
+                "C. 25,07",
+                "D. 257"
+            ]
+        },
+        {
+            "id": "01-0129",
+            "question": "Ph\u00e9p nh\u00e2n nh\u1ea9m 34,245 \\times 100 c\u00f3 k\u1ebft qu\u1ea3 l\u00e0:",
+            "choices": [
+                "A. 342,45",
+                "B. 3,4245",
+                "C. 34245",
+                "D. 3424,5"
+            ]
+        },
+        {
+            "id": "01-0130",
+            "question": "T\u00ecm s\u1ed1 t\u1ef1 nhi\u00ean x, bi\u1ebft: 86,76 < x < 87,43",
+            "choices": [
+                "A. 84",
+                "B. 86",
+                "C. 85",
+                "D. 87"
+            ]
+        },
+        {
+            "id": "01-0131",
+            "question": "\\frac{1}{4} ha l\u00e0:",
+            "choices": [
+                "A. 500 m^{2}",
+                "B. 1000 m^{2}",
+                "C. 1500 m^{2}",
+                "D. 2500 m^{2}"
+            ]
+        },
+        {
+            "id": "01-0132",
+            "question": "20% c\u1ee7a 520 l\u00e0:",
+            "choices": [
+                "A. 401",
+                "B. 140",
+                "C. 410",
+                "D. 104"
+            ]
+        },
+        {
+            "id": "01-0133",
+            "question": "M\u1eb9 mua 15 quy\u1ec3n v\u1edf h\u1ebft 45000 \u0111\u1ed3ng. H\u1ecfi mua 20 quy\u1ec3n v\u1edf nh\u01b0 th\u1ebf h\u1ebft ... \u0111\u1ed3ng.",
+            "choices": [
+                "A. 50 000",
+                "B. 60 000",
+                "C. 70 000",
+                "D. 80 000"
+            ]
+        },
+        {
+            "id": "01-0134",
+            "question": "H\u1ed7n s\u1ed1 5 \\frac{1}{5} chuy\u1ec3n th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 5,02",
+                "B. 5,15",
+                "C. 5,2",
+                "D. 5, 26"
+            ]
+        },
+        {
+            "id": "01-0135",
+            "question": "Gi\u00e1 tr\u1ecb c\u1ee7a ch\u1eef s\u1ed1 5 trong s\u1ed1 63,539 l\u00e0:",
+            "choices": [
+                "A. 500",
+                "B. \\frac{5}{10}",
+                "C. \\frac{5}{100}",
+                "D. \\frac{5}{1000}"
+            ]
+        },
+        {
+            "id": "01-0136",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1: 9,85; 9,58; 98,5; 8,95 l\u00e0:",
+            "choices": [
+                "A. 9,85",
+                "B. 9,58",
+                "C. 98,5",
+                "D. 8,95"
+            ]
+        },
+        {
+            "id": "01-0137",
+            "question": "Ph\u00e2n s\u1ed1 B. \\frac{45}{100} vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 0,45",
+                "B. 4,5",
+                "C. 0,045",
+                "D. 450"
+            ]
+        },
+        {
+            "id": "01-0138",
+            "question": "Gi\u00e1 tr\u1ecb c\u1ee7a bi\u1ec3u th\u1ee9c: 8,98 + 1,02 \\times 12 l\u00e0:",
+            "choices": [
+                "A. 22, 22",
+                "B. 12, 24",
+                "C. 10, 00",
+                "D. 21, 22"
+            ]
+        },
+        {
+            "id": "01-0139",
+            "question": "Trong h\u1ed9p c\u00f3 30 vi\u00ean bi, trong \u0111\u00f3 c\u00f3 15 vi\u00ean bi xanh. T\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a s\u1ed1 bi xanh v\u00e0 s\u1ed1 bi trong h\u1ed9p l\u00e0 bao nhi\u00eau ?",
+            "choices": [
+                "A. 10%",
+                "B. 30%",
+                "C. 50%",
+                "D. 70%"
+            ]
+        },
+        {
+            "id": "01-0140",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n g\u1ed3m: B\u1ea3y \u0111\u01a1n v\u1ecb; s\u00e1u ph\u1ea7n m\u01b0\u1eddi; hai ph\u1ea7n ngh\u00ecn.",
+            "choices": [
+                "A. 7,602",
+                "B. 7,620",
+                "C. 7,062",
+                "D. 7,026"
+            ]
+        },
+        {
+            "id": "01-0141",
+            "question": "S\u1ed1 g\u1ed3m: Ba m\u01b0\u01a1i hai \u0111\u01a1n v\u1ecb, 5 ph\u1ea7n tr\u0103m c\u1ee7a m\u00e9t vi\u1ebft l\u00e0:",
+            "choices": [
+                "A. 32,5m",
+                "B. 32 \\frac{5}{10}m",
+                "C. 32,05m",
+                "D. 32,05"
+            ]
+        },
+        {
+            "id": "01-0142",
+            "question": "\u0110o chi\u1ec1u d\u00e0i m\u1ed9t s\u1ee3i d\u00e2y \u0111\u01b0\u1ee3c 25dm v\u00e0 52mm. H\u00e3y vi\u1ebft s\u1ed1 \u0111o \u0111\u1ed9 d\u00e0i c\u1ee7a s\u1ee3i d\u00e2y d\u01b0\u1edbi d\u1ea1ng s\u1ed1 \u0111o c\u00f3 \u0111\u01a1n v\u1ecb l\u00e0 x\u0103ng ti m\u00e9t?",
+            "choices": [
+                "A. 25052cm",
+                "B. 250,52cm",
+                "C. 255,2cm",
+                "D. 0,2552cm"
+            ]
+        },
+        {
+            "id": "01-0143",
+            "question": "S\u1ed1 \u0111o 2 \\frac{3}{4} kg vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 2,34 kg",
+                "B. 2,75 kg",
+                "C. 27,5 kg",
+                "D. 23,4 kg"
+            ]
+        },
+        {
+            "id": "01-0144",
+            "question": "Ph\u00e2n s\u1ed1 c\u00f3 c\u00f9ng gi\u00e1 tr\u1ecb v\u1edbi 0,02 l\u00e0:",
+            "choices": [
+                "A. \\frac{2}{10}",
+                "B. \\frac{2}{1000}",
+                "C. \\frac{3}{100}",
+                "D. \\frac{1}{50}"
+            ]
+        },
+        {
+            "id": "01-0145",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p \u0111\u1ec3 vi\u1ebft v\u00e0o ch\u1ed7 ch\u1ea5m c\u1ee7a 30dm25cm2 = .........m2 l\u00e0:",
+            "choices": [
+                "A. 30,05",
+                "B. 3,05",
+                "C. 0,3005",
+                "D. 3,005"
+            ]
+        },
+        {
+            "id": "01-0146",
+            "question": "S\u1ed1 d\u01b0 c\u1ee7a ph\u00e9p chia 23,5 \\div 9 (ch\u1ec9 l\u1ea5y hai ch\u1eef s\u1ed1 ph\u1ea7n TP c\u1ee7a th\u01b0\u01a1ng) l\u00e0:",
+            "choices": [
+                "A. 0,1",
+                "B. 0,3",
+                "C. 1",
+                "D. 0,01"
+            ]
+        },
+        {
+            "id": "01-0147",
+            "question": "S\u1ed1 chia x trong ph\u00e9p chia c\u00f3 d\u01b0: 1,05 \\div x = 0,02 (d\u01b0 0,01) l\u00e0:",
+            "choices": [
+                "A. 5,2",
+                "B. 5,02",
+                "C. 2,05",
+                "D. 5,002"
+            ]
+        },
+        {
+            "id": "01-0148",
+            "question": "T\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u1ee7a 5 v\u00e0 15 l\u00e0:",
+            "choices": [
+                "A. 40%",
+                "B. 4%",
+                "C. 400%",
+                "D. 0,04%"
+            ]
+        },
+        {
+            "id": "01-0149",
+            "question": "T\u1ed5ng c\u1ee7a 2 s\u1ed1 b\u1eb1ng 0,25. Th\u01b0\u01a1ng c\u1ee7a s\u1ed1 b\u00e9 v\u00e0 s\u1ed1 l\u1edbn c\u0169ng b\u1eb1ng 0,25. S\u1ed1 l\u1edbn  l\u00e0:",
+            "choices": [
+                "A. 0,02",
+                "B. 2",
+                "C. 0,2",
+                "D. 20"
+            ]
+        },
+        {
+            "id": "01-0150",
+            "question": "S\u1ed1 b\u00e9 nh\u1ea5t trong c\u00e1c s\u1ed1: 3,055; 3,050; 3,005; 3,505 l\u00e0:",
+            "choices": [
+                "A. 3,505",
+                "B. 3,050",
+                "C. 3,005",
+                "D. 3,055"
+            ]
+        },
+        {
+            "id": "01-0151",
+            "question": "Trung b\u00ecnh m\u1ed9t ng\u01b0\u1eddi th\u1ee3 l\u00e0m m\u1ed9t s\u1ea3n ph\u1ea9m h\u1ebft 1gi\u1edd 30 ph\u00fat. Ng\u01b0\u1eddi \u0111\u00f3 l\u00e0m 5 s\u1ea3n ph\u1ea9m m\u1ea5t bao l\u00e2u?",
+            "choices": [
+                "A. 7 gi\u1edd 30 ph\u00fat",
+                "B. 7 gi\u1edd 50 ph\u00fat",
+                "C. 6 Gi\u1edd 50 ph\u00fat",
+                "D. 6 gi\u1edd 15 ph\u00fat"
+            ]
+        },
+        {
+            "id": "01-0152",
+            "question": "C\u00f3 bao nhi\u00eau s\u1ed1 th\u1eadp ph\u00e2n \u1edf gi\u1eefa 0,5 v\u00e0 0,6:",
+            "choices": [
+                "A. Kh\u00f4ng c\u00f3 s\u1ed1 n\u00e0o",
+                "B. 1 s\u1ed1",
+                "C. 9 s\u1ed1",
+                "D. R\u1ea5t nhi\u1ec1u"
+            ]
+        },
+        {
+            "id": "01-0153",
+            "question": "H\u1ed7n s\u1ed1 3 \\frac{9}{100} vi\u1ebft th\u00e0nh s\u1ed1 th\u1eadp ph\u00e2n l\u00e0:",
+            "choices": [
+                "A. 3,90",
+                "B. 3,09",
+                "C. 3,9100",
+                "D. 3,109"
+            ]
+        },
+        {
+            "id": "01-0154",
+            "question": "T\u00ecm m\u1ed9t s\u1ed1 bi\u1ebft 20% c\u1ee7a n\u00f3 l\u00e0 16. S\u1ed1 \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 0,8",
+                "B. 8",
+                "C. 80",
+                "D. 800"
+            ]
+        },
+        {
+            "id": "01-0155",
+            "question": "234,024 \u0111\u1ecdc l\u00e0:",
+            "choices": [
+                "A. Hai tr\u0103m ba m\u01b0\u01a1i b\u1ed1n ph\u1ea9y hai m\u01b0\u01a1i b\u1ed1n",
+                "B. Hai tr\u0103m ba m\u01b0\u01a1i b\u1ed1n ph\u1ea9y kh\u00f4ng tr\u0103m hai m\u01b0\u01a1i b\u1ed1n",
+                "C. Hai tr\u0103m ba m\u01b0\u01a1i b\u1ed1n ph\u1ea9y hai b\u1ed1n ph\u1ea7n tr\u0103m",
+                "D. Hai tr\u0103m ba m\u01b0\u01a1i b\u1ed1n ph\u1ea9y hai b\u1ed1n ph\u1ea7n ngh\u00ecn"
+            ]
+        },
+        {
+            "id": "01-0156",
+            "question": "Vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n: 52 \u0111\u01a1n v\u1ecb v\u00e0 4 ph\u1ea7n tr\u0103m:",
+            "choices": [
+                "A. 52,4",
+                "B. 52,40",
+                "C. 52,04",
+                "D. 52,004"
+            ]
+        },
+        {
+            "id": "01-0157",
+            "question": "Vi\u1ebft s\u1ed1 th\u1eadp ph\u00e2n th\u00edch h\u1ee3p v\u00e0o ch\u1ed7 ch\u1ea5m: 24,01< \u2026 < 24,12",
+            "choices": [
+                "A. 24,4",
+                "B. 24,3",
+                "C. 24,2",
+                "D. 24,1"
+            ]
+        },
+        {
+            "id": "01-0158",
+            "question": "25m^{3} 5dm^{3} = \u2026 m^{3}",
+            "choices": [
+                "A. 25,5",
+                "B. 25,05",
+                "C. 25,005",
+                "D. 25,0005"
+            ]
+        },
+        {
+            "id": "01-0159",
+            "question": "1,2 gi\u1edd = \u2026 gi\u1edd \u2026 ph\u00fat",
+            "choices": [
+                "A. 1gi\u1edd 2 ph\u00fat",
+                "B. 1 gi\u1edd 12 ph\u00fat",
+                "C. 1 gi\u1edd 20 ph\u00fat",
+                "D. 1gi\u1edd 25 ph\u00fat"
+            ]
+        },
+        {
+            "id": "01-0160",
+            "question": "M\u1ed9t khu \u0111\u1ea5t h\u00ecnh thang c\u00f3 \u0111\u00e1y l\u1edbn l\u00e0 180 m, \u0111\u00e1y b\u00e9 b\u1eb1ng \u0111\u00e1y l\u1edbn, chi\u1ec1u cao b\u1eb1ng \u0111\u00e1y b\u00e9.H\u1ecfi di\u1ec7n t\u00edch khu \u0111\u1ea5t \u0111\u00f3 l\u00e0 bao nhi\u00eau h\u00e9c-ta?",
+            "choices": [
+                "A. 0,15 ha",
+                "B. 1,5 ha",
+                "C. 15 ha",
+                "D. 150 ha"
+            ]
+        },
+        {
+            "id": "01-0161",
+            "question": "S\u1ed1 th\u00edch h\u1ee3p \u0111i\u1ec1n v\u00e0o ch\u1ed7 ch\u1ea5m 2,022 : 0,01 = \u2026 l\u00e0 :",
+            "choices": [
+                "A. 2022",
+                "B. 2,022",
+                "C. 0,2022",
+                "D. 202,2"
+            ]
+        },
+        {
+            "id": "01-0162",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a bi\u1ec3u th\u1ee9c: \\frac{1}{7} \\times \\frac{2}{3} \\div \\frac{1}{5} l\u00e0",
+            "choices": [
+                "A. \\frac{5}{21}",
+                "B. \\frac{10}{21}",
+                "C. \\frac{2}{105}",
+                "D. \\frac{15}{14}"
+            ]
+        },
+        {
+            "id": "01-0163",
+            "question": "T\u00ecm x, bi\u1ebft : 10,2 \\div x = 0,6 + 11,4",
+            "choices": [
+                "A. X = 0,085",
+                "B. X = 8,05",
+                "C. X = 0,85",
+                "D. X = 80,50"
+            ]
+        },
+        {
+            "id": "01-0164",
+            "question": "Di\u1ec7n t\u00edch h\u00ecnh tam gi\u00e1c c\u00f3 \u0111\u00e1y 27cm, chi\u1ec1u cao 16cm l\u00e0 :",
+            "choices": [
+                "A. 216cm^{2}",
+                "B. 234cm^{2}",
+                "C. 321cm^{2}",
+                "D. 345cm^{2}"
+            ]
+        },
+        {
+            "id": "01-0165",
+            "question": "B\u1ea1n Hoa g\u1ea5p 1 c\u00e1i thuy\u1ec1n trong 3 ph\u00fat 27 gi\u00e2y. H\u1ecfi Hoa g\u1ea5p 3 c\u00e1i thuy\u1ec1n trong th\u1eddi gian bao l\u00e2u?",
+            "choices": [
+                "A. 1 ph\u00fat 9 gi\u00e2y",
+                "B. 9 ph\u00fat 21 gi\u00e2y",
+                "C. 10 ph\u00fat 9 gi\u00e2y",
+                "D. 10 ph\u00fat 21 gi\u00e2y"
+            ]
+        },
+        {
+            "id": "01-0166",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n g\u1ed3m n\u0103m \u0111\u01a1n v\u1ecb, m\u1ed9t ph\u1ea7n m\u01b0\u1eddi, ba ph\u1ea7n ngh\u00ecn \u0111\u01b0\u1ee3c vi\u1ebft l\u00e0:",
+            "choices": [
+                "A. 50,13",
+                "B. 5,103",
+                "C. 50,013",
+                "D. 50,103"
+            ]
+        },
+        {
+            "id": "01-0167",
+            "question": "M\u1ed9t \u0111\u1ed9i b\u00f3ng \u0111\u00e3 thi \u0111\u1ea5u 20 tr\u1eadn, th\u1eafng 12 tr\u1eadn. Nh\u01b0  v\u1eady t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m c\u00e1c tr\u1eadn th\u1eafng c\u1ee7a \u0111\u1ed9i l\u00e0:",
+            "choices": [
+                "A. 12 %",
+                "B. 32 %",
+                "C. 40 %",
+                "D. 60 %"
+            ]
+        },
+        {
+            "id": "01-0168",
+            "question": "T\u1ea5m logo tr\u01b0\u1eddng Ti\u1ec3u h\u1ecdc L\u00ea Ng\u1ecdc H\u00e2n may tr\u00ean \u00e1o \u0111\u1ed3ng ph\u1ee5c c\u00f3 d\u1ea1ng h\u00ecnh tr\u00f2n v\u1edbi \u0111\u01b0\u1eddng k\u00ednh l\u00e0 6cm. Di\u1ec7n t\u00edch c\u1ee7a t\u1ea5m logo \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 18,84cm^{2}",
+                "B. 37,68cm^{2}",
+                "C. 28,26 cm^{2}",
+                "D. 113,04cm^{2}"
+            ]
+        },
+        {
+            "id": "01-0169",
+            "question": "M\u1ed9t c\u1ea1nh c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng g\u1ea5p l\u00ean 3 l\u1ea7n th\u00ec th\u1ec3 t\u00edch c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng m\u1edbi \u0111\u00f3 t\u0103ng l\u00ean bao nhi\u00eau l\u1ea7n?",
+            "choices": [
+                "A. 12 l\u1ea7n",
+                "B. 27 l\u1ea7n",
+                "C. 9 l\u1ea7n",
+                "D. 8 l\u1ea7n"
+            ]
+        },
+        {
+            "id": "01-0170",
+            "question": "Kho\u1ea3ng th\u1eddi gian t\u1eeb l\u00fac 6 gi\u1edd k\u00e9m 15 ph\u00fat s\u00e1ng \u0111\u1ebfn 6 gi\u1edd 35 ph\u00fat s\u00e1ng l\u00e0:",
+            "choices": [
+                "A. 50 ph\u00fat",
+                "B. 80 ph\u00fat",
+                "C. 1 gi\u1edd 20 ph\u00fat"
+            ]
+        },
+        {
+            "id": "01-0171",
+            "question": "M\u1ed9t h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i 5dm, chi\u1ec1u r\u1ed9ng 4dm, chi\u1ec1u cao  6dm. V\u1eady di\u1ec7n t\u00edch xung quanh c\u1ee7a h\u00ecnh \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 100dm^{2}",
+                "B. 148dm^{2}",
+                "C. 120dm^{2}",
+                "D. 108dm^{2}"
+            ]
+        },
+        {
+            "id": "01-0172",
+            "question": "M\u1ed9t h\u00ecnh thang c\u00f3 \u0111\u00e1y l\u1edbn 18cm, \u0111\u00e1y b\u00e9 b\u1eb1ng    \u0111\u00e1y l\u1edbn  v\u00e0 chi\u1ec1u cao  12cm. Di\u1ec7n t\u00edch c\u1ee7a h\u00ecnh thang \u0111\u00f3 l\u00e0:",
+            "choices": [
+                "A. 1,44cm^{2}",
+                "B. 576cm^{2}",
+                "C. 144cm^{2}",
+                "D. 288cm^{2}"
+            ]
+        },
+        {
+            "id": "01-0173",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 5,798; 5,897; 5,978; 5,789 l\u00e0:",
+            "choices": [
+                "A. 5,789",
+                "B. 5,798",
+                "C. 5,897",
+                "D. 5,978"
+            ]
+        },
+        {
+            "id": "01-0174",
+            "question": "Ch\u1eef s\u1ed1 7 trong s\u1ed1 234, 078 c\u00f3 gi\u00e1 tr\u1ecb l\u00e0 :",
+            "choices": [
+                "A. 9",
+                "B. \\frac{9}{10}",
+                "C. \\frac{9}{100}",
+                "D. \\frac{9}{1000}"
+            ]
+        },
+        {
+            "id": "01-0175",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1: 5,079; 5,79; 5,709; 5,789 l\u00e0:",
+            "choices": [
+                "A. 5,079",
+                "B. 5,79",
+                "C. 5,709",
+                "D. 5,789"
+            ]
+        },
+        {
+            "id": "01-0176",
+            "question": "Th\u1ec3 t\u00edch c\u1ee7a h\u00ecnh l\u1eadp ph\u01b0\u01a1ng c\u00f3 c\u1ea1nh 5dm l\u00e0:",
+            "choices": [
+                "A. 125",
+                "B. 125dm",
+                "C. 125dm^{2}",
+                "D. 125dm^{3}"
+            ]
+        },
+        {
+            "id": "01-0177",
+            "question": "Kho\u1ea3ng th\u1eddi gian t\u1eeb 8 gi\u1edd k\u00e9m 15 ph\u00fat \u0111\u1ebfn 8 gi\u1edd 25 ph\u00fat l\u00e0:",
+            "choices": [
+                "A. 35 ph\u00fat",
+                "B. 40 ph\u00fat",
+                "C. 45 ph\u00fat",
+                "D. 50 ph\u00fat"
+            ]
+        },
+        {
+            "id": "01-0178",
+            "question": "M\u1ed9t l\u1edbp h\u1ecdc c\u00f3 21 n\u1eef v\u00e0 14 nam. H\u1ecfi s\u1ed1 h\u1ecdc sinh nam chi\u1ebfm bao nhi\u00eau ph\u1ea7n tr\u0103m s\u1ed1 h\u1ecdc sinh c\u1ea3 l\u1edbp?",
+            "choices": [
+                "A. 40%",
+                "B. 60%",
+                "C. 66%",
+                "D. 150%"
+            ]
+        },
+        {
+            "id": "01-0179",
+            "question": "Gi\u00e1 tr\u1ecb c\u1ee7a ch\u1eef s\u1ed1 9 trong s\u1ed1 : 28,953 l\u00e0:",
+            "choices": [
+                "A. 9",
+                "B. \\frac{9}{10}",
+                "C. \\frac{9}{100}",
+                "D. \\frac{9}{1000}"
+            ]
+        },
+        {
+            "id": "01-0180",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p t\u00ednh 212,6 + 133,2 l\u00e0:",
+            "choices": [
+                "A. 462,7",
+                "B. 345,8",
+                "C. 246,7",
+                "D. 4267"
+            ]
+        },
+        {
+            "id": "01-0181",
+            "question": "K\u1ebft qu\u1ea3 c\u1ee7a ph\u00e9p t\u00ednh 345,6 \\div 3 l\u00e0:",
+            "choices": [
+                "A. 1,152",
+                "B. 11,52",
+                "C. 115,2",
+                "D. 1152"
+            ]
+        },
+        {
+            "id": "01-0182",
+            "question": "Vi\u1ebft th\u00e0nh t\u1ec9 s\u1ed1 % c\u1ee7a 0,88 l\u00e0:",
+            "choices": [
+                "A. 8,8%",
+                "B. 880%",
+                "C. 0,88%",
+                "D. 88%"
+            ]
+        },
+        {
+            "id": "01-0183",
+            "question": "Th\u1ec3 t\u00edch c\u1ee7a h\u00ecnh h\u1ed9p ch\u1eef nh\u1eadt c\u00f3 chi\u1ec1u d\u00e0i 2cm, chi\u1ec1u r\u1ed9ng 2,5cm, chi\u1ec1u cao 4cm l\u00e0:",
+            "choices": [
+                "A. 30cm^{2}",
+                "B. 20 cm^{3}",
+                "C. 40 cm^{3}",
+                "D. 40cm^{2}"
+            ]
+        },
+        {
+            "id": "01-0184",
+            "question": "S\u1ed1 l\u1edbn nh\u1ea5t trong c\u00e1c s\u1ed1 8,920; 8,45; 8,95; 8,405 l\u00e0:",
+            "choices": [
+                "A. 8,920",
+                "B. 8,45",
+                "C. 8,95",
+                "D. 8,405"
+            ]
+        },
+        {
+            "id": "01-0185",
+            "question": "K\u1ebft qu\u1ea3 ph\u00e9p nh\u00e2n 5,07 \\times 100 l\u00e0:",
+            "choices": [
+                "A. 507",
+                "B. 0,507",
+                "C. 5,07",
+                "D. 0,0507"
+            ]
+        },
+        {
+            "id": "01-0186",
+            "question": "K\u1ebft qu\u1ea3 ph\u00e9p chia 314 \\div 0,5 l\u00e0:",
+            "choices": [
+                "A. 628",
+                "B. 6,28",
+                "C. 62,8",
+                "D. 0,628"
+            ]
+        },
+        {
+            "id": "01-0187",
+            "question": "5840g = \u2026.kg",
+            "choices": [
+                "A. 58,4kg",
+                "B. 5,84kg",
+                "C. 0,584kg",
+                "D. 0,0584kg"
+            ]
+        },
+        {
+            "id": "01-0188",
+            "question": "6,028 m^{3}  = .......dm^{3}",
+            "choices": [
+                "A. 602,8",
+                "B. 6208",
+                "C. 6028",
+                "D. 60,28"
+            ]
+        },
+        {
+            "id": "01-0189",
+            "question": "Di\u1ec7n t\u00edch to\u00e0n ph\u1ea7n h\u00ecnh l\u1eadp ph\u01b0\u01a1ng c\u00f3 c\u1ea1nh 5 cm l\u00e0:",
+            "choices": [
+                "A. 150 cm^{3}",
+                "B. 150 cm^{2}",
+                "C. 150 cm^{3}",
+                "D. 25 cm^{2}"
+            ]
+        },
+        {
+            "id": "01-0190",
+            "question": "Chu vi h\u00ecnh tr\u00f2n c\u00f3 b\u00e1n k\u00ednh 2,5 cm l\u00e0?",
+            "choices": [
+                "A. 7,85cm",
+                "B. 157 cm",
+                "C. 19,625cm",
+                "D. 15,7 cm"
+            ]
+        },
+        {
+            "id": "01-0191",
+            "question": "Ph\u00e2n s\u1ed1 \\frac{2}{5} vi\u1ebft d\u01b0\u1edbi d\u1ea1ng s\u1ed1 th\u1eadp ph\u00e2n n\u00e0o?",
+            "choices": [
+                "A. 2,5",
+                "B. 5,2",
+                "C. 0,4",
+                "D. 4,0"
+            ]
+        },
+        {
+            "id": "01-0192",
+            "question": "S\u1ed1 th\u1eadp ph\u00e2n g\u1ed3m c\u00f3 3 tr\u0103m, 4 \u0111\u01a1n v\u1ecb, 5 ph\u1ea7n m\u01b0\u1eddi v\u00e0 6 ph\u1ea7n ngh\u00ecn \u0111\u01b0\u1ee3c vi\u1ebft l\u00e0:",
+            "choices": [
+                "A. 34, 56",
+                "B. 304, 56",
+                "C. 304, 506",
+                "D. 34, 506"
+            ]
+        },
+        {
+            "id": "01-0193",
+            "question": "Trong s\u1ed1 th\u1eadp ph\u00e2n 956,82 ch\u1eef s\u1ed1 2 thu\u1ed9c h\u00e0ng n\u00e0o?",
+            "choices": [
+                "A. H\u00e0ng \u0111\u01a1n v\u1ecb",
+                "B. H\u00e0ng ch\u1ee5c",
+                "C. H\u00e0ng ph\u1ea7n m\u01b0\u1eddi",
+                "D. H\u00e0ng ph\u1ea7n tr\u0103m"
+            ]
+        },
+        {
+            "id": "01-0194",
+            "question": "S\u1ed1 0,45 vi\u1ebft d\u01b0\u1edbi d\u1ea1ng t\u1ec9 s\u1ed1 ph\u1ea7n tr\u0103m n\u00e0o?",
+            "choices": [
+                "A. 45%",
+                "B. 4,5%",
+                "C. 450%",
+                "D. 0,45%"
+            ]
+        },
+        {
+            "id": "01-0195",
+            "question": "Th\u1ec3 t\u00edch c\u1ee7a m\u1ed9t h\u00ecnh l\u1eadp ph\u00ad\u01b0\u01a1ng c\u00f3 c\u1ea1nh 5 dm l\u00e0 bao nhi\u00eau?",
+            "choices": [
+                "A. 125 dm^{3}",
+                "B. 100 dm^{2}",
+                "C. 100 dm^{3}",
+                "D. 125 dm^{2}"
+            ]
+        },
+        {
+            "id": "01-0196",
+            "question": "Di\u1ec7n t\u00edch h\u00ecnh tr\u00f2n c\u00f3 b\u00e1n k\u00ednh b\u1eb1ng 10cm l\u00e0 bao nhi\u00eau?",
+            "choices": [
+                "A. 31,4 cm^{2}",
+                "B. 62,8 cm^{2}",
+                "C. 314 cm^{2}",
+                "D. 125,6cm^{2}"
+            ]
+        },
+        {
+            "id": "01-0197",
+            "question": "Ch\u1ecdn c\u00e1ch t\u00ednh \u0111\u00fang di\u1ec7n t\u00edch h\u00ecnh thang c\u00f3 \u0111\u00e1y l\u1edbn l\u00e0 25 cm, \u0111\u00e1y nh\u1ecf 21 cm v\u00e0 chi\u1ec1u cao 8 cm n\u00e0o sau \u0111\u00e2y?",
+            "choices": [
+                "A. (25 x 21 ) 8 \\div 2",
+                "B. (25 + 21) 8 \\div 2",
+                "C. (25 + 21) : 8 \\times 2",
+                "D. (25 x 21) : 8 \\times 2"
+            ]
+        },
+        {
+            "id": "01-0198",
+            "question": "M\u1ed9t xe m\u00e1y \u0111i qu\u00e3ng \u0111\u01b0\u1eddng 90 km m\u1ea5t 2 gi\u1edd 30 ph\u00fat. H\u1ecfi xe m\u00e1y \u0111\u00f3 \u0111i v\u1edbi v\u1eadn t\u1ed1c n\u00e0o?",
+            "choices": [
+                "A. 36 km/gi\u1edd",
+                "B. 40 km/gi\u1edd",
+                "C. 45 km/gi\u1edd",
+                "D. 225 km/gi\u1edd"
+            ]
+        },
+        {
+            "id": "01-0199",
+            "question": "46,75 + 24,48 =?",
+            "choices": [
+                "A. 712,3",
+                "B. 71,23",
+                "C. 70,23",
+                "D. 7123"
+            ]
+        },
+        {
+            "id": "01-0200",
+            "question": "26,4 \\div 2,2 =?",
+            "choices": [
+                "A. 1,2",
+                "B. 12",
+                "C. 58,08",
+                "D. 120"
+            ]
+        },
+        {
+            "id": "01-0201",
+            "question": "40,8 \\div 12 \u2013 2,03 =?",
+            "choices": [
+                "A. 1,27",
+                "B. 12,7",
+                "C. 13,7",
+                "D. 1,37"
+            ]
+        },
+        {
+            "id": "01-0202",
+            "question": "\u0110\u1ec3 t\u00ecm m\u1ed9t s\u1ed1 bi\u1ebft 30% c\u1ee7a s\u1ed1 \u0111\u00f3 l\u00e0 180 ta l\u00e0m nh\u01b0 sau:",
+            "choices": [
+                "A. L\u1ea5y 180 nh\u00e2n v\u1edbi 30",
+                "B. L\u1ea5y 180 chia cho 30",
+                "C. L\u1ea5y 180 chia cho 30 \u0111\u01b0\u1ee3c bao nhi\u00eau nh\u00e2n v\u1edbi 100",
+                "D. L\u1ea5y 180 nh\u00e2n v\u1edbi 30 \u0111\u01b0\u1ee3c bao nhi\u00eau chia cho 100"
+            ]
+        }
+    ]
+}
