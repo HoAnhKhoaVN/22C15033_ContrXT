@@ -123,6 +123,140 @@ Thanx
 (CompuServe:)[\s\(\) \tA-Za-z0-9:!#$%&\*\+,./:;<=>?@^_`{|}~\-\[\]\{\}]*
 (Phishnet:)[\s\(\) \tA-Za-z0-9:!#$%&\*\+,./:;<=>?@^_`{|}~\-\[\]\{\}]*
 (Summary:)[\s\(\) \tA-Za-z0-9:!#$%&\*\+,./:;<=>?@^_`{|}~\-\[\]\{\}]*
+^--\n
+^-- \n
+^--*\n
+^---\n
+^----\n
+^-----\n
+^------\n
+^----------------------------------------------------------------------\n
+Archive-name:
+/ hpcc01:rec.motorcycles /  (John Stafford) / 11:06 am  Apr  1, 1993 /
+Let me see, ""unless you have an accident, you won't need more"", hmmmmmmm.
+^==*\n
+^  --*\n
+-Eric
+DoD
+- David
+-Tim May
+[deleted]
+Dave.
+Thanks\s*\n
+Adam Shostack
+-Bryan
+From article  by  
+reply to
+[stuff deleted]
+Kristen
+Karl R. Schimmel
+End of part
+thanks\n
+Thanks in advance.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Nanci
+Kent
+--Cliff
+jamie
+Serdar Argic
+Hasta luego
+- Erwin
+-John Neuharth
+Tom Nguen
+Mick Mueck 
+luigi
+Burkhard Neidecker-Lutz
+Joerg Haber
+Stephen
+
+Stephen
+
+    _/_/_/_/  _/_/_/_/   _/       _/    * Atheist
+   _/        _/    _/   _/ _/ _/ _/     * Libertarian
+  _/_/_/_/  _/_/_/_/   _/   _/  _/      * Pro-individuality
+       _/  _/     _/  _/       _/       * Pro-responsibility
+_/_/_/_/  _/      _/ _/       _/ Jr.    * and all that jazz...
+
+Mike
+
+Vesselin
+
+Gerard.
+
+Link Hudson
+
+Jouni
+
+Rob Lansdale
+
+Jae
+
+Cathy
+
+Andy Byler
+
+jason
+
+^\d+,
+
+Jack Waters II
+DoD#1919
+
+David B. Lewis   
+ ""Just the FAQs, ma'am."" -- Joe Friday 
+Duke.
+- Thomas
+jerry
+Dani Eder
+ brian
+ Sean
+ John
+tont
+marc
+euclid
+Kent
+Stephen
+Gary
+James Kiefer
+Ken
+Mike
+Doug
+Naomi
+KOZ
+Greg.
+Stefan
+dave
+-Joe Betts
+George
+Nigel
+Todd
+Grant
+jsh
+Dave
+--Craig
+ Mike Smith
+Van Kelly
+Charles Campbell
+Rob
+-Billy
+Naftaly
+--rich
+Stuart
+Greg Greene
+Larry Overacker
+Nancy M
+
+
+Tới 617
+stuff deleted
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+Shalom,                                  Len Howard
+Bill Guilford
+Sam
+David Bull
+insert deletion
+Mike Ruff\n
+
 Followup-To
 Supersedes:
 Archive-name:
@@ -144,6 +278,10 @@ Followup-To:
 Greetings,
 Cheers
 Thank
+
+[ Article crossposted from comp.windows.ms ]
+[ Author was Kevin Routh ]
+[ Posted on 19 Apr 1993 12:35:55 GMT ]
 
 
 godiva.nectar.cs.cmu.edu:/usr0/anon/pub/firearms/politics/rkba/Congress
