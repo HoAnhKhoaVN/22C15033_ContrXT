@@ -64,6 +64,22 @@ def remove_row_outlier(
     outlier_indices = np.where(data > upper)[0]
     df_no_outliers = df.drop(labels=outlier_indices)
     return df_no_outliers
+
+def removal_word_outlier(
+    df: pd.DataFrame,
+    upper: int
+)-> pd.DataFrame:
+    """_summary_
+
+    Args:
+        df (pd.DataFrame): _description_
+
+    Returns:
+        pd.DataFrame: _description_
+    """
+    # Create arrays of Boolean values indicating the outlier rows
+    df[TEXT] = df[TEXT].str.split().map(lambda x: ' '.join(x[:upper]) if len(x)> upper else ' '.join(x))
+    return df
     
 def cli():
     parser = argparse.ArgumentParser(description="CLI: ")
@@ -78,6 +94,12 @@ def cli():
         "--remove",
         action="store_true",
         help = "Is remove outliers row?"
+    )
+
+    parser.add_argument(
+        "-u",
+        "--upper",
+        help = "Max length"
     )
     # Phân tích các tham số đã cung cấp
     args = parser.parse_args()
@@ -95,15 +117,27 @@ if __name__ == "__main__":
         f'{fn}__remove_word_outlier.png'
     )
     if args.remove:
-        upper = find_upper(df)
-        new_df = remove_row_outlier(df, upper)
+        if not args.upper:
+            upper = find_upper(df)
+            new_df = remove_row_outlier(df, upper)
 
-        
-        out_csv = os.path.join(root, f'{fn}__remove_word_outlier.{ext}')
-        new_df.to_csv(
-            path_or_buf= out_csv,
-            index = False
-        )
-        draw_box_plot(new_df, img_path)
+            
+            out_csv = os.path.join(root, f'{fn}__remove_word_outlier.{ext}')
+            new_df.to_csv(
+                path_or_buf= out_csv,
+                index = False
+            )
+            draw_box_plot(new_df, img_path)
+        else:
+            upper = int(args.upper)
+            new_df = removal_word_outlier(df, upper)
+
+            
+            out_csv = os.path.join(root, f'{fn}__remove_word_outlier.{ext}')
+            new_df.to_csv(
+                path_or_buf= out_csv,
+                index = False
+            )
+            draw_box_plot(new_df, img_path)
     else:
         draw_box_plot(df, img_path)    

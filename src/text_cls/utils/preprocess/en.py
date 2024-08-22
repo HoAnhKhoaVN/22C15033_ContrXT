@@ -352,7 +352,7 @@ class EnglishTextPreprocessor:
 
         # Extracting noun phrases using TextBlob
         blob = TextBlob(text)
-        noun_phrases = check_alphabet(blob.noun_phrases)
+        noun_phrases = check_alphabet(blob.noun_phrases) 
 
         # Tokenizing the sentence by replacing spaces in noun phrases with underscores
         processed_sentence = blob.string.replace(" ", "%20")
@@ -475,11 +475,11 @@ class EnglishTextPreprocessor:
                     if show_log:
                         print(f'join_words: {words}')
 
-                    tmp_s = re.sub(
-                        pattern= r"[']",
-                        repl= ' ',
-                        string = tmp_s
-                    )
+                    # tmp_s = re.sub(
+                    #     pattern= r"[']",
+                    #     repl= ' ',
+                    #     string = tmp_s
+                    # )
 
                     if show_log:
                         print('Remove quoue char:')
@@ -503,10 +503,10 @@ class EnglishTextPreprocessor:
                         print('tri gram')
                         print(tmp_s)
 
-                    tmp_s=' '.join([w for w in word_tokenize(tmp_s) if len(w)>2])
+                    tmp_s=' '.join([w for w in word_tokenize(tmp_s)])
 
                     if tmp_s.strip():
-                        res.append(f'{tmp_s}.')
+                        res.append(f'{tmp_s}.\n')
                         if show_log:
                             print(f'final: {tmp_s}')
 
@@ -515,7 +515,7 @@ class EnglishTextPreprocessor:
                 print(f"Error: {e}")
                 print(f's: {s}')
 
-        final_text = " ".join(res)
+        final_text = "".join(res)
         return final_text
     
     def preprocess_dataframe(
@@ -547,32 +547,29 @@ class EnglishTextPreprocessor:
         for text in tqdm(df_processed[TEXT]):
             new_text = self.preprocess_text(text, noun_phrase, show_log, remove_stop_word)
             preprocess_texts.append(new_text)
+        
             
         df_processed[TEXT] = preprocess_texts
         df_processed = self.remove_nan_rows(df_processed)
 
-        print(f'df_processed before')
-        print(df_processed.head(20))
+        # # region Remove Outlier . Only for train. Test thì chỉ cần lấy những kết quả của train để mà áp dụng vào.
+        # # Cụ thể, với xóa cái điểm ngoại vi thì trong tập test không thể xóa. Ta sẽ cắt lấy đi max_word. Mình đâu cần xóa dữ liệu. Chỉ cần trích đi các outlier theo tập train.            
+        # if is_train:
+        #     # region word
+        #     print(f'Train mode')
+        #     upper = self.find_upper(df_processed)
+        #     df_processed = self.removal_word_outlier(df = df_processed, upper= upper)
+        #     print(df_processed.head(20))
 
+        #     # endregion
+        # else: # Test
+        #     from src.text_cls.constant import MAX_WORD_LEN
+        #     print(f'Test mode with max word len is {MAX_WORD_LEN}')
+        #     df_processed = self.removal_word_outlier(df = df_processed, upper= MAX_WORD_LEN)
+        #     print(df_processed.head(20))
+        # # endregion
 
-        # region Remove Outlier . Only for train. Test thì chỉ cần lấy những kết quả của train để mà áp dụng vào.
-        # Cụ thể, với xóa cái điểm ngoại vi thì trong tập test không thể xóa. Ta sẽ cắt lấy đi max_word. Mình đâu cần xóa dữ liệu. Chỉ cần trích đi các outlier theo tập train.            
-        if is_train:
-            # region word
-            print(f'Train mode')
-            upper = self.find_upper(df_processed)
-            df_processed = self.removal_word_outlier(df = df_processed, upper= upper)
-            print(df_processed.head(20))
-
-            # endregion
-        else: # Test
-            from src.text_cls.constant import MAX_WORD_LEN
-            print(f'Test mode with max word len is {MAX_WORD_LEN}')
-            df_processed = self.removal_word_outlier(df = df_processed, upper= MAX_WORD_LEN)
-            print(df_processed.head(20))
-        # endregion
-
-        df_processed = self.remove_nan_rows(df = df_processed)
+        # df_processed = self.remove_nan_rows(df = df_processed)
 
         return df_processed
     
@@ -592,27 +589,29 @@ class EnglishTextPreprocessor:
         return df.dropna(subset=[TEXT, LABEL])
     
 if __name__ == "__main__":
+    INPUT = "src/text_cls/dataset/20newsgroups/orginal/train__preprocess__remove_sw__apostrophe__gensim__v4_10_bigram.csv"
+    OUTPUT = "src/text_cls/dataset/20newsgroups/orginal/merge_textblob_into_gensim__4.12.csv"
     # region INIT
     preprocessor = EnglishTextPreprocessor()
-    train_df = pd.read_csv("src/text_cls/dataset/20newsgroups/orginal/train_part_1.csv")
+    train_df = pd.read_csv(INPUT)
     print(train_df.head())
     
     # endregion
 
     # region PREPROCESS
     preprocessed_df = preprocessor.preprocess_dataframe(
-        train_df[144:145],
+        train_df[:20],
         noun_phrase = True,
-        show_log = True,
-        is_train= True
+        show_log = False,
+        is_train= True,
+        remove_stop_word= True
     )
-
     # endregion
 
     # region TO CSV
     print(preprocessed_df)
     preprocessed_df.to_csv(
-        path_or_buf= "test_df_en.csv",
+        path_or_buf= OUTPUT,
         index = False
     )
 

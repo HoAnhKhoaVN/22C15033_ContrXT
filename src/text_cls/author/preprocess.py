@@ -58,8 +58,8 @@ def preprocess(nlp, text: str, removeEmail, removeUrl, removeNumbers, removeOthe
     textNoNumbers = removeNumbers.sub("", textNoUrl)
 
     # Lemmatize
-#     get_lemmas = partial(lemmatize, nlp)
-#     lemmatized = " ".join(get_lemmas(textNoNumbers))
+    # get_lemmas = partial(lemmatize, nlp)
+    # lemmatized = " ".join(get_lemmas(textNoNumbers))
 
     # Also to be removed
     punct = set(string.punctuation)
@@ -132,12 +132,12 @@ if __name__ == "__main__":
 
 
     # region 3: Preprocess
-    df = setup(df)
+    df = setup(df[:10])
     print(df.head())
 
     fn = os.path.basename(TRAIN_PATH).split(".")[0]
     path = os.path.join(ROOT, f'{fn}.csv')
-    df.to_csv(path)
+    df.to_csv(path, index = True)
 
     # endregion
 

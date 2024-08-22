@@ -16,6 +16,8 @@ LABEL = 'label'
 EN = 'en'
 VI = 'vi'
 
+RANDOM_STATE = 42
+
 VIET_STOP_WORD_DASH_PATH = 'src/text_cls/asset/vietnamese-stopwords-dash.txt'
 VIET_STOP_WORD_PATH = 'src/text_cls/asset/vietnamese-stopwords.txt'
 
